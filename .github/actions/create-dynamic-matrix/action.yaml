@@ -1,0 +1,452 @@
+name: "Create Dynamic Tenant Matrix"
+description: "Generate matrix JSON for multi-tenant robot tests"
+
+inputs:
+  tenants:
+    description: "Comma-separated tenant list"
+    required: true
+
+  environments:
+    description: "Comma-separated environments"
+    required: true
+
+  tags:
+    description: "Robot tags"
+    required: true
+
+  retries:
+    description: "Comma-separated retry flags (aligned with tenants/envs)"
+    required: false
+    default: "false"
+
+  headless:
+    description: "Headless execution"
+    required: false
+    default: ""
+
+  versiontested:
+    description: "Version tested"
+    required: false
+    default: ""
+
+  suite_names:
+    description: "Comma-separated suite names"
+    required: false
+    default: ""
+
+outputs:
+  matrix:
+    description: "Generated matrix JSON"
+    value: ${{ steps.generate.outputs.matrix }}
+
+runs:
+  using: "composite"
+
+  steps:
+    - id: generate
+      shell: bash
+      run: |
+        #!/usr/bin/env bash
+        set -euo pipefail
+
+        tenants="${{ inputs.tenants }}"
+        environments="${{ inputs.environments }}"
+        tags="${{ inputs.tags }}"
+        retries="${{ inputs.retries }}"
+
+        # ------------------------------------------------------------
+        # New optional inputs
+        #
+        # These are optional so existing multi-tenant WEB jobs
+        # continue to work exactly as before.
+        # ------------------------------------------------------------
+
+        headless="${{ inputs.headless }}"
+        versiontested="${{ inputs.versiontested }}"
+        suite_names="${{ inputs.suite_names }}"
+
+        echo "========================================"
+        echo "CREATE DYNAMIC TENANT MATRIX"
+        echo "========================================"
+        echo "Tenants:       $tenants"
+        echo "Environments:  $environments"
+        echo "Tags:           $tags"
+        echo "Retries:        $retries"
+        echo "HEADLESS:       ${headless:-<empty>}"
+        echo "VERSIONTESTED:  ${versiontested:-<empty>}"
+        echo "SUITE_NAMES:    ${suite_names:-<empty>}"
+        echo "========================================"
+
+        # ------------------------------------------------------------
+        # Convert to arrays
+        # ------------------------------------------------------------
+
+        IFS=',' read -ra TENANT_ARRAY <<< "$tenants"
+        IFS=',' read -ra ENV_ARRAY <<< "$environments"
+        IFS=',' read -ra RETRY_ARRAY <<< "$retries"
+
+        # ------------------------------------------------------------
+        # Suite handling
+        #
+        # Existing web jobs:
+        #
+        #   suite_names=""
+        #
+        # -> one matrix entry exactly as before.
+        #
+        # Unify job:
+        #
+        #   suite_names="suite_1,suite_2"
+        #
+        # -> one matrix entry per suite.
+        # ------------------------------------------------------------
+
+        SUITE_MODE=false
+        SUITE_ARRAY=()
+
+        if [[ -n "$suite_names" && "$suite_names" != "null" ]]; then
+
+          SUITE_MODE=true
+
+          IFS=',' read -ra SUITE_ARRAY <<< "$suite_names"
+
+          # Remove whitespace
+          for j in "${!SUITE_ARRAY[@]}"; do
+            SUITE_ARRAY[$j]="$(echo "${SUITE_ARRAY[$j]}" | xargs)"
+          done
+
+          # Remove empty values
+          FILTERED_SUITE_ARRAY=()
+
+          for suite in "${SUITE_ARRAY[@]}"; do
+            if [[ -n "$suite" ]]; then
+              FILTERED_SUITE_ARRAY+=("$suite")
+            fi
+          done
+
+          SUITE_ARRAY=("${FILTERED_SUITE_ARRAY[@]}")
+
+          if [[ ${#SUITE_ARRAY[@]} -eq 0 ]]; then
+            SUITE_MODE=false
+          fi
+        fi
+
+        if [[ "$SUITE_MODE" == "true" ]]; then
+          echo "SUITE MODE ENABLED"
+          printf 'Suite: %s\n' "${SUITE_ARRAY[@]}"
+        else
+          echo "SUITE MODE DISABLED"
+          echo "Existing web matrix behavior will be used."
+        fi
+
+        # ------------------------------------------------------------
+        # Validation
+        # ------------------------------------------------------------
+
+        if [[ ${#TENANT_ARRAY[@]} -ne ${#ENV_ARRAY[@]} ]]; then
+          echo "ERROR: tenants and environments must have same number of elements"
+          exit 1
+        fi
+
+        if [[ ${#RETRY_ARRAY[@]} -ne 1 && \
+              ${#RETRY_ARRAY[@]} -ne ${#TENANT_ARRAY[@]} ]]; then
+          echo "ERROR: retries must be single value or match tenants count"
+          exit 1
+        fi
+
+        # ------------------------------------------------------------
+        # Build Robot tags
+        # ------------------------------------------------------------
+
+        build_tags() {
+
+          local input_tags="$1"
+          local arg_file_tag="$2"
+
+          if [[ -z "$arg_file_tag" ]]; then
+            echo "$input_tags"
+            return
+          fi
+
+          local output=""
+          local tokens=()
+
+          read -ra tokens <<< "$input_tags"
+
+          local i=0
+
+          while [[ $i -lt ${#tokens[@]} ]]; do
+
+            local token="${tokens[$i]}"
+
+            if [[ "$token" == "-i" || "$token" == "-e" ]]; then
+
+              local flag="$token"
+
+              ((i++))
+
+              if [[ $i -lt ${#tokens[@]} ]]; then
+
+                local expression="${tokens[$i]}"
+
+                output+="${flag} ${expression}AND${arg_file_tag} "
+
+              fi
+
+            fi
+
+            ((i++))
+
+          done
+
+          echo "$output" | xargs
+        }
+
+        # ------------------------------------------------------------
+        # Safe ARG variable extractor
+        # ------------------------------------------------------------
+
+        extract_arg_var() {
+          local var_name="$1"
+          local file="$2"
+        
+          grep -E "^--?variable[[:space:]]+$var_name:" "$file" 2>/dev/null \
+            | sed -E "s/^--?variable[[:space:]]+$var_name:[[:space:]]*//" \
+            | xargs || echo ""
+        }
+
+        include_array=()
+
+        # ------------------------------------------------------------
+        # Process tenant/environment
+        # ------------------------------------------------------------
+
+        for i in "${!TENANT_ARRAY[@]}"; do
+
+          tenant="$(echo "${TENANT_ARRAY[$i]}" | xargs)"
+          env_raw="$(echo "${ENV_ARRAY[$i]}" | xargs)"
+
+          retry_value="${RETRY_ARRAY[0]}"
+
+          if [[ ${#RETRY_ARRAY[@]} -gt 1 ]]; then
+            retry_value="${RETRY_ARRAY[$i]}"
+          fi
+
+          retry_value="$(echo "$retry_value" | xargs)"
+
+          echo "--------------------------------------------------"
+          echo "Processing index=$i"
+          echo "tenant=$tenant"
+          echo "env_raw=$env_raw"
+          echo "retry=$retry_value"
+
+          # ----------------------------------------------------------
+          # Parse environment
+          # ----------------------------------------------------------
+
+          env=""
+          line="A"
+          pwa_flag=""
+
+          if [[ "$env_raw" =~ ^([a-z]+)-([a-z])(_pwa)?$ ]]; then
+
+            env="${BASH_REMATCH[1]}"
+            line="${BASH_REMATCH[2]}"
+            pwa_flag="${BASH_REMATCH[3]}"
+
+          else
+
+            echo "WARNING: env_raw '$env_raw' did not match expected pattern."
+
+            env="$env_raw"
+            line="A"
+            pwa_flag=""
+
+          fi
+
+          echo "Parsed -> env=$env line=$line pwa_flag=$pwa_flag"
+
+          tenant_hyphen="${tenant//_/-}"
+
+          # ----------------------------------------------------------
+          # ARG FILE
+          # ----------------------------------------------------------
+
+          ARG_FILE_PATH="tenants/common_ordering_flow/${tenant_hyphen}/data/${env_raw}/web/${tenant_hyphen}-${env_raw}.args"
+
+          echo "ARG_FILE_PATH=$ARG_FILE_PATH"
+
+          # ----------------------------------------------------------
+          # Defaults
+          # ----------------------------------------------------------
+
+          platform="web"
+          shared_tc_repo="common_ordering_flow"
+          arg_file_tag=""
+          url=""
+
+          # ----------------------------------------------------------
+          # Read ARG file
+          # ----------------------------------------------------------
+
+          if [[ -f "$ARG_FILE_PATH" ]]; then
+
+            echo "ARG file found. Extracting variables..."
+
+            platform="$(extract_arg_var "platform" "$ARG_FILE_PATH")"
+            platform="${platform:-web}"
+
+            shared_tc_repo="$(extract_arg_var "shared_tc_repo" "$ARG_FILE_PATH")"
+            shared_tc_repo="${shared_tc_repo:-common_ordering_flow}"
+
+            arg_file_tag="$(extract_arg_var "tag" "$ARG_FILE_PATH")"
+
+            url="$(extract_arg_var "url" "$ARG_FILE_PATH")"
+
+          else
+
+            echo "WARNING: ARG file not found. Using defaults."
+
+          fi
+
+          echo "platform=$platform"
+          echo "shared_tc_repo=$shared_tc_repo"
+          echo "arg_file_tag=${arg_file_tag:-<none>}"
+
+          # ----------------------------------------------------------
+          # Build combined tags
+          # ----------------------------------------------------------
+
+          combined_tags="$(build_tags "$tags" "$arg_file_tag")"
+
+          echo "Original Tags : $tags"
+          echo "Combined Tags : $combined_tags"
+
+          # ----------------------------------------------------------
+          # URL generation
+          # ----------------------------------------------------------
+
+          if [[ -n "$url" ]]; then
+
+            echo "Using URL from ARG file: $url"
+
+          else
+
+            echo "URL not found in ARG file. Generating URL."
+
+            if [[ "$pwa_flag" == "_pwa" ]]; then
+
+              url="https://pwa-${tenant_hyphen}-${line}.${env}.tillster.com"
+
+            else
+
+              url="https://www-${tenant_hyphen}-${line}.${env}.tillster.com"
+
+            fi
+
+          fi
+
+          echo "url=$url"
+
+          # ----------------------------------------------------------
+          # Matrix entry function
+          # ----------------------------------------------------------
+
+          build_matrix_entry() {
+
+            local current_suite="$1"
+
+            local current_result_dir="results/${tenant}-${env_raw}"
+
+            # Only change result directory when suite mode
+            # is explicitly enabled.
+            if [[ "$SUITE_MODE" == "true" ]]; then
+              current_result_dir="results/${tenant}-${env_raw}-${current_suite}"
+            fi
+
+            jq -n \
+              --arg tenant "$tenant" \
+              --arg environment "$env_raw" \
+              --arg suite_name "$current_suite" \
+              --arg environment_line "$line" \
+              --arg platform "$platform" \
+              --arg shared_tc_repo "$shared_tc_repo" \
+              --arg tags "$combined_tags" \
+              --arg result_dir "$current_result_dir" \
+              --arg retry "$retry_value" \
+              --arg url "$url" \
+              --arg arg_file_tag "$arg_file_tag" \
+              --arg headless "$headless" \
+              --arg versiontested "$versiontested" \
+              --arg suite_names "$suite_names" \
+              '{
+                tenant: $tenant,
+                suite_name: $suite_name,
+                environment: $environment,
+                environment_line: $environment_line,
+                shared_tc_repo: $shared_tc_repo,
+                platform: $platform,
+                tags: $tags,
+                result_dir: $result_dir,
+                retry: ($retry | test("true|1"; "i")),
+                url: $url,
+                arg_file_tag: $arg_file_tag,
+                headless: $headless,
+                versiontested: $versiontested,
+                suite_names: $suite_names
+              }'
+          }
+
+          # ----------------------------------------------------------
+          # Matrix entries
+          # ----------------------------------------------------------
+
+          if [[ "$SUITE_MODE" == "true" ]]; then
+
+            echo "Creating matrix entries for suites..."
+
+            for suite in "${SUITE_ARRAY[@]}"; do
+
+              echo "Creating matrix entry:"
+              echo "  tenant=$tenant"
+              echo "  environment=$env_raw"
+              echo "  suite_name=$suite"
+
+              matrix_entry="$(build_matrix_entry "$suite")"
+
+              include_array+=("$matrix_entry")
+
+            done
+
+          else
+
+            echo "Creating standard matrix entry without suite."
+
+            matrix_entry="$(build_matrix_entry "")"
+
+            include_array+=("$matrix_entry")
+
+          fi
+
+        done
+
+        # ------------------------------------------------------------
+        # Final matrix
+        # ------------------------------------------------------------
+
+        matrix_json="$(printf '%s\n' "${include_array[@]}" | jq -s '{include: .}')"
+
+        echo "=================================================="
+        echo "Generated matrix JSON:"
+        echo "$matrix_json"
+        echo "=================================================="
+
+        # ------------------------------------------------------------
+        # Output
+        # ------------------------------------------------------------
+
+        {
+          echo "matrix<<EOF"
+          echo "$matrix_json"
+          echo "EOF"
+        } >> "$GITHUB_OUTPUT"

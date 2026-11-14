@@ -1,0 +1,58 @@
+name: "QA:REPORT:PACKAGE:INSTALL"
+description: Install Packages
+inputs:
+  node-version:
+    description: 'node version'
+    required: false
+    default: '24'
+  jdk:
+    description: Boolean controlling whether JDK is installed
+    required: false
+    default: ''
+  python-version:
+    description: Python version to install
+    required: false
+    default: '3.x'
+runs:
+  using: "composite"
+  steps:
+    - id: install-aws-cli
+      name: Install AWS CLI v2
+      shell: bash
+      run: |
+        if command -v aws >/dev/null 2>&1; then
+          echo "AWS CLI already installed: $(aws --version)"
+        else
+          echo "AWS CLI not found. Installing..."
+          curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+          unzip awscliv2.zip
+          sudo ./aws/install
+          aws --version
+        fi
+
+    - uses: actions/setup-node@v3
+      with:
+        node-version: ${{ inputs.node-version }}
+
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: ${{ inputs.python-version }}
+
+    - name: Install boto3 and requests
+      shell: bash
+      run: |
+        pip install boto3
+        pip install requests    
+
+    - name: "DOWNLOAD:ALLURE:COMMAND:LINE"
+      shell: bash
+      run: |
+        curl -o allure-2.13.8.tgz -OLs https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.13.8/allure-commandline-2.13.8.tgz
+        sudo tar -zxvf allure-2.13.8.tgz -C /opt/
+        sudo ln -s /opt/allure-2.13.8/bin/allure /usr/bin/allure || echo "exists"
+        allure --version
+        mkdir -p allure-results
+        allure generate --clean -o allure-results
+        cp -r results reports || echo "continue"
+        chmod -R 777 ./

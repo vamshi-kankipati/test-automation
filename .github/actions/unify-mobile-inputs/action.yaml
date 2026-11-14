@@ -1,0 +1,564 @@
+name: "UNIFY MOBILE INPUTS"
+
+description: "Load workflow_dispatch or repository_dispatch inputs and validate tenant information"
+
+inputs:
+  event_name:
+    description: "GitHub event name"
+    required: true
+
+  wd_environments:
+    description: "workflow_dispatch environments"
+    required: false
+    default: ""
+
+  wd_tags:
+    description: "workflow_dispatch tags"
+    required: false
+    default: ""
+
+  wd_tenants:
+    description: "workflow_dispatch tenants"
+    required: false
+    default: ""
+
+  wd_retries:
+    description: "workflow_dispatch retries"
+    required: false
+    default: ""
+
+  wd_os:
+    description: "Mobile OS"
+    required: false
+    default: ""
+
+  wd_app_urls:
+    description: "workflow_dispatch app URLs"
+    required: false
+    default: ""
+
+  wd_versiontested:
+    description: "workflow_dispatch version tested"
+    required: false
+    default: ""
+
+  wd_device:
+    description: "workflow_dispatch device"
+    required: false
+    default: ""
+
+  wd_os_version:
+    description: "workflow_dispatch OS version"
+    required: false
+    default: ""
+
+  wd_test_fairy_id:
+    description: "workflow_dispatch TestFairy ID"
+    required: false
+    default: ""
+
+  wd_suite_names:
+    description: "workflow_dispatch suite names"
+    required: false
+    default: ""
+
+  dispatch_tenant:
+    description: "Tenant from repository_dispatch payload"
+    required: false
+    default: ""
+
+  dispatch_environment:
+    description: "Environment from repository_dispatch payload"
+    required: false
+    default: ""
+
+  mobile_build_id:
+    description: "Mobile build ID from repository_dispatch payload"
+    required: false
+    default: ""
+
+
+outputs:
+  environments:
+    description: "Environment"
+    value: ${{ steps.set-inputs.outputs.environments }}
+
+  tags:
+    description: "Tags"
+    value: ${{ steps.set-inputs.outputs.tags }}
+
+  tenants:
+    description: "Tenant"
+    value: ${{ steps.set-inputs.outputs.tenants }}
+
+  retries:
+    description: "Retries"
+    value: ${{ steps.set-inputs.outputs.retries }}
+
+  os:
+    description: "OS"
+    value: ${{ steps.set-inputs.outputs.os }}
+
+  app_urls:
+    description: "App URLs"
+    value: ${{ steps.set-inputs.outputs.app_urls }}
+
+  versiontested:
+    description: "Version tested"
+    value: ${{ steps.set-inputs.outputs.versiontested }}
+
+  device:
+    description: "Device"
+    value: ${{ steps.set-inputs.outputs.device }}
+
+  os_version:
+    description: "OS version"
+    value: ${{ steps.set-inputs.outputs.os_version }}
+
+  test_fairy_id:
+    description: "TestFairy ID"
+    value: ${{ steps.set-inputs.outputs.test_fairy_id }}
+
+  suite_names:
+    description: "Suite names"
+    value: ${{ steps.set-inputs.outputs.suite_names }}
+
+  mobile_build_id:
+    description: "Mobile Build ID"
+    value: ${{ steps.set-inputs.outputs.mobile_build_id }}
+
+  tenant_match:
+    description: "Whether repository dispatch tenant matches config tenant"
+    value: ${{ steps.set-inputs.outputs.tenant_match }}
+
+
+runs:
+  using: "composite"
+
+  steps:
+    - name: "SET:TRIGGER:INPUTS"
+      id: set-inputs
+      shell: bash
+
+      env:
+        EVENT_NAME: ${{ inputs.event_name }}
+
+        WD_ENVIRONMENTS: ${{ inputs.wd_environments }}
+        WD_TAGS: ${{ inputs.wd_tags }}
+        WD_TENANTS: ${{ inputs.wd_tenants }}
+        WD_OS: ${{ inputs.wd_os }}
+        WD_RETRIES: ${{ inputs.wd_retries }}
+        WD_APP_URLS: ${{ inputs.wd_app_urls }}
+        WD_VERSIONTESTED: ${{ inputs.wd_versiontested }}
+        WD_DEVICE: ${{ inputs.wd_device }}
+        WD_OS_VERSION: ${{ inputs.wd_os_version }}
+        WD_TEST_FAIRY_ID: ${{ inputs.wd_test_fairy_id }}
+        WD_SUITE_NAMES: ${{ inputs.wd_suite_names }}
+
+        DISPATCH_TENANT: ${{ inputs.dispatch_tenant }}
+        DISPATCH_ENVIRONMENT: ${{ inputs.dispatch_environment }}
+        MOBILE_BUILD_ID_INPUT: ${{ inputs.mobile_build_id }}
+
+      run: |
+        set -e
+
+        TENANT_MATCH="true"
+
+        # =========================================================
+        # REPOSITORY DISPATCH
+        # =========================================================
+
+        if [[ "$EVENT_NAME" == "repository_dispatch" ]]; then
+
+          echo "========================================"
+          echo "REPOSITORY DISPATCH"
+          echo "========================================"
+
+          # -------------------------------------------------------
+          # Validate dispatch tenant
+          # -------------------------------------------------------
+
+          if [[ -z "$DISPATCH_TENANT" || "$DISPATCH_TENANT" == "null" ]]; then
+            echo "::error::TENANT is missing from repository_dispatch payload."
+            echo "tenant_match=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          # -------------------------------------------------------
+          # Validate dispatch environment
+          # -------------------------------------------------------
+
+          if [[ -z "$DISPATCH_ENVIRONMENT" || "$DISPATCH_ENVIRONMENT" == "null" ]]; then
+            echo "::error::ENVIRONMENT is missing from repository_dispatch payload."
+            echo "tenant_match=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          # -------------------------------------------------------
+          # Validate OS
+          #
+          # OS is NOT part of repository_dispatch.
+          # It comes from wd_os.
+          # -------------------------------------------------------
+
+          if [[ -z "$WD_OS" || "$WD_OS" == "null" ]]; then
+            echo "::error::wd_os is required for repository_dispatch."
+            echo "tenant_match=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          # -------------------------------------------------------
+          # Normalize dispatch values
+          # -------------------------------------------------------
+
+          DISPATCH_TENANT=$(echo "$DISPATCH_TENANT" | xargs | tr '[:upper:]' '[:lower:]')
+
+          ENVIRONMENTS=$(echo "$DISPATCH_ENVIRONMENT" | xargs | tr '[:upper:]' '[:lower:]')
+          
+          OS=$(echo "$WD_OS" | xargs)
+
+          OS_CONFIG=$(echo "$OS" | tr '[:upper:]' '[:lower:]')
+          
+          echo "Dispatch Tenant:      $DISPATCH_TENANT"
+          echo "Dispatch Environment: $ENVIRONMENTS"
+          echo "OS:                   $OS"
+          echo "OS Config:            $OS_CONFIG"
+
+          CONFIG_FILE=".github/workflows/Smoke_Test_Configuration/${DISPATCH_TENANT}-${ENVIRONMENTS}-unify-${OS_CONFIG}.json"
+
+          echo "========================================"
+          echo "CONFIGURATION"
+          echo "========================================"
+          echo "Config file: $CONFIG_FILE"
+          echo "========================================"
+
+          # -------------------------------------------------------
+          # Validate config file
+          # -------------------------------------------------------
+
+          if [[ ! -f "$CONFIG_FILE" ]]; then
+
+            echo "::error::Config file not found: $CONFIG_FILE"
+
+            echo "Available configuration files:"
+
+            find .github/workflows/Smoke_Test_Configuration \
+              -maxdepth 1 \
+              -type f \
+              -print || true
+
+            echo "tenant_match=false" >> "$GITHUB_OUTPUT"
+
+            exit 1
+          fi
+
+          echo "Config file found."
+
+          # -------------------------------------------------------
+          # Validate JSON
+          # -------------------------------------------------------
+
+          if ! jq empty "$CONFIG_FILE" 2>/dev/null; then
+            echo "::error::Invalid JSON in $CONFIG_FILE"
+            exit 1
+          fi
+
+          echo "JSON validation successful."
+
+          # -------------------------------------------------------
+          # Load configuration
+          # -------------------------------------------------------
+
+          CONFIG_ENVIRONMENTS=$(jq -r '.environments // empty' "$CONFIG_FILE")
+
+          TAGS=$(jq -r '.tags // empty' "$CONFIG_FILE")
+
+          TENANTS=$(jq -r '.tenants // empty' "$CONFIG_FILE")
+
+          RETRIES=$(jq -r '.retries // empty' "$CONFIG_FILE")
+
+          VERSIONTESTED=$(jq -r '.versiontested // empty' "$CONFIG_FILE")
+
+          DEVICE=$(jq -r '.device // empty' "$CONFIG_FILE")
+
+          OS_VERSION=$(jq -r '.os_version // empty' "$CONFIG_FILE")
+
+          TEST_FAIRY_ID=$(jq -r '.test_fairy_id // empty' "$CONFIG_FILE")
+
+          APP_URLS=$(jq -r '.app_urls // "null"' "$CONFIG_FILE")
+
+          MOBILE_BUILD_ID="$MOBILE_BUILD_ID_INPUT"
+
+          SUITE_NAMES=$(jq -r '
+            if .suite_names == null then
+              ""
+            elif (.suite_names | type) == "array" then
+              .suite_names | join(",")
+            else
+              .suite_names
+            end
+          ' "$CONFIG_FILE")
+
+          # -------------------------------------------------------
+          # TENANT VALIDATION
+          # -------------------------------------------------------
+
+          CONFIG_TENANT=$(echo "$TENANTS" | xargs | tr '[:upper:]' '[:lower:]')
+
+          echo "========================================"
+          echo "TENANT VALIDATION"
+          echo "========================================"
+          echo "Dispatch Tenant: $DISPATCH_TENANT"
+          echo "Config Tenant:   $CONFIG_TENANT"
+          echo "========================================"
+
+          if [[ -z "$CONFIG_TENANT" ]]; then
+            echo "::error::Tenant is missing from configuration."
+
+            echo "tenant_match=false" >> "$GITHUB_OUTPUT"
+
+            exit 0
+          fi
+
+          if [[ "$DISPATCH_TENANT" != "$CONFIG_TENANT" ]]; then
+
+            echo "========================================"
+            echo "TENANT MISMATCH"
+            echo "========================================"
+            echo "Dispatch tenant: $DISPATCH_TENANT"
+            echo "Config tenant:   $CONFIG_TENANT"
+            echo "Skipping execution."
+            echo "========================================"
+
+            echo "tenant_match=false" >> "$GITHUB_OUTPUT"
+
+            exit 0
+          fi
+
+          echo "Tenant MATCHED."
+
+          # -------------------------------------------------------
+          # ENVIRONMENT VALIDATION
+          # -------------------------------------------------------
+          
+          CONFIG_ENVIRONMENT=$(echo "$CONFIG_ENVIRONMENTS" | xargs | tr '[:upper:]' '[:lower:]')
+          
+          echo "========================================"
+          echo "ENVIRONMENT VALIDATION"
+          echo "========================================"
+          echo "Dispatch Environment: $ENVIRONMENTS"
+          echo "Config Environment:   $CONFIG_ENVIRONMENT"
+          echo "========================================"
+          
+          if [[ -z "$CONFIG_ENVIRONMENT" ]]; then
+            echo "::error::environments is missing from configuration."
+            echo "tenant_match=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          
+          DISPATCH_ENV_BASE=$(echo "$ENVIRONMENTS" | sed -E 's/-[ab]$//')
+          CONFIG_ENV_BASE=$(echo "$CONFIG_ENVIRONMENT" | sed -E 's/-[ab]$//')
+          
+          echo "Dispatch Base Environment: $DISPATCH_ENV_BASE"
+          echo "Config Base Environment:   $CONFIG_ENV_BASE"
+          
+          if [[ "$DISPATCH_ENV_BASE" != "$CONFIG_ENV_BASE" ]]; then
+          
+            echo "========================================"
+            echo "ENVIRONMENT MISMATCH"
+            echo "========================================"
+            echo "Dispatch environment: $ENVIRONMENTS"
+            echo "Config environment:   $CONFIG_ENVIRONMENT"
+            echo "Dispatch base:        $DISPATCH_ENV_BASE"
+            echo "Config base:          $CONFIG_ENV_BASE"
+            echo "Skipping execution."
+            echo "========================================"
+          
+            echo "tenant_match=false" >> "$GITHUB_OUTPUT"
+          
+            exit 0
+          fi
+          
+          echo "Environment MATCHED."
+          
+          ENVIRONMENTS="$CONFIG_ENVIRONMENT"
+          
+          echo "Effective Test Environment: $ENVIRONMENTS"
+
+
+          # -------------------------------------------------------
+          # Validate mobile build ID
+          # -------------------------------------------------------
+
+          if [[ -z "$MOBILE_BUILD_ID" || "$MOBILE_BUILD_ID" == "null" ]]; then
+            echo "::error::MOBILE_BUILD_ID is missing from repository_dispatch payload."
+            exit 1
+          fi
+
+          echo "Mobile Build ID: $MOBILE_BUILD_ID"
+
+        # =========================================================
+        # WORKFLOW DISPATCH
+        # =========================================================
+
+        else
+
+          echo "========================================"
+          echo "WORKFLOW DISPATCH"
+          echo "========================================"
+
+          ENVIRONMENTS=$(echo "$WD_ENVIRONMENTS" | xargs | tr '[:upper:]' '[:lower:]')
+
+          TAGS="$WD_TAGS"
+
+          TENANTS=$(echo "$WD_TENANTS" | xargs | tr '[:upper:]' '[:lower:]')
+
+          RETRIES="$WD_RETRIES"
+
+          OS=$(echo "$WD_OS" | xargs)
+          
+          OS_CONFIG=$(echo "$OS" | tr '[:upper:]' '[:lower:]')
+
+          APP_URLS="$WD_APP_URLS"
+
+          VERSIONTESTED="$WD_VERSIONTESTED"
+
+          DEVICE="$WD_DEVICE"
+
+          OS_VERSION="$WD_OS_VERSION"
+
+          TEST_FAIRY_ID="$WD_TEST_FAIRY_ID"
+
+          MOBILE_BUILD_ID=""
+
+          SUITE_NAMES=$(printf '%s' "$WD_SUITE_NAMES" | jq -r '
+            if type == "array" then
+              join(",")
+            else
+              .
+            end
+          ')
+
+          TENANT_MATCH="true"
+
+        fi
+
+        # =========================================================
+        # REQUIRED FIELD VALIDATION
+        # =========================================================
+
+        if [[ -z "$ENVIRONMENTS" ]]; then
+          echo "::error::environments is missing"
+          exit 1
+        fi
+
+        if [[ -z "$TAGS" ]]; then
+          echo "::error::tags is missing"
+          exit 1
+        fi
+
+        if [[ -z "$TENANTS" ]]; then
+          echo "::error::tenants is missing"
+          exit 1
+        fi
+
+        if [[ -z "$RETRIES" ]]; then
+          echo "::error::retries is missing"
+          exit 1
+        fi
+
+        if [[ -z "$OS" ]]; then
+          echo "::error::os is missing"
+          exit 1
+        fi
+
+        if [[ -z "$APP_URLS" ]]; then
+          APP_URLS="null"
+        fi
+
+        if [[ -z "$SUITE_NAMES" ]]; then
+          echo "::error::suite_names is missing"
+          exit 1
+        fi
+
+        # =========================================================
+        # WORKFLOW DISPATCH REQUIRED VALUES
+        # =========================================================
+
+        if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
+
+          if [[ -z "$VERSIONTESTED" ]]; then
+            echo "::error::versiontested is required for workflow_dispatch"
+            exit 1
+          fi
+
+          if [[ -z "$DEVICE" ]]; then
+            echo "::error::device is required for workflow_dispatch"
+            exit 1
+          fi
+
+          if [[ -z "$OS_VERSION" ]]; then
+            echo "::error::os_version is required for workflow_dispatch"
+            exit 1
+          fi
+
+          if [[ -z "$TEST_FAIRY_ID" ]]; then
+            echo "::error::test_fairy_id is required for workflow_dispatch"
+            echo "Use 'null' if TestFairy is not required."
+            exit 1
+          fi
+
+        fi
+
+        # =========================================================
+        # OUTPUTS
+        # =========================================================
+
+        echo "environments=$ENVIRONMENTS" >> "$GITHUB_OUTPUT"
+
+        echo "tags=$TAGS" >> "$GITHUB_OUTPUT"
+
+        echo "tenants=$TENANTS" >> "$GITHUB_OUTPUT"
+
+        echo "retries=$RETRIES" >> "$GITHUB_OUTPUT"
+
+        echo "os=$OS" >> "$GITHUB_OUTPUT"
+
+        echo "app_urls=$APP_URLS" >> "$GITHUB_OUTPUT"
+
+        echo "versiontested=$VERSIONTESTED" >> "$GITHUB_OUTPUT"
+
+        echo "device=$DEVICE" >> "$GITHUB_OUTPUT"
+
+        echo "os_version=$OS_VERSION" >> "$GITHUB_OUTPUT"
+
+        echo "test_fairy_id=$TEST_FAIRY_ID" >> "$GITHUB_OUTPUT"
+
+        echo "suite_names=$SUITE_NAMES" >> "$GITHUB_OUTPUT"
+
+        echo "mobile_build_id=$MOBILE_BUILD_ID" >> "$GITHUB_OUTPUT"
+
+        echo "tenant_match=$TENANT_MATCH" >> "$GITHUB_OUTPUT"
+
+        # =========================================================
+        # FINAL LOG
+        # =========================================================
+
+        echo "========================================"
+        echo "UNIFY MOBILE INPUTS"
+        echo "========================================"
+        echo "Trigger:          $EVENT_NAME"
+        echo "Environments:     $ENVIRONMENTS"
+        echo "Tags:             $TAGS"
+        echo "Tenants:          $TENANTS"
+        echo "Retries:          $RETRIES"
+        echo "OS:               $OS"
+        echo "App URLs:         $APP_URLS"
+        echo "Version Tested:   $VERSIONTESTED"
+        echo "Device:           $DEVICE"
+        echo "OS Version:       $OS_VERSION"
+        echo "TestFairy ID:     $TEST_FAIRY_ID"
+        echo "Suite Names:      $SUITE_NAMES"
+        echo "Mobile Build ID:  $MOBILE_BUILD_ID"
+        echo "Tenant Match:     $TENANT_MATCH"
+        echo "========================================"
