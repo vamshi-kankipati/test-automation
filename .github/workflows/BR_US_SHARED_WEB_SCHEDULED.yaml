@@ -1,0 +1,267 @@
+name: "BR-US-SHARED:WINDOWS:QA:WEB:TESTS"
+on:
+  workflow_dispatch:
+    inputs:
+      TESTRUNID:
+        description: "TESTRUNID"
+        required: true
+        default: "1083128"
+      TENANT_URL:
+        description: "TENANT_URL"
+        required: true
+        default: "https://www-br-us-a.qa.tillster.com/"
+      TENANT:
+        description: "TENANT"
+        required: true
+        default: "br-us"
+      ENVIRONMENT:
+        description: "ENVIRONMENT"
+        required: true
+        default: "qa-a"
+      PROJECT_ID:
+        description: "PROJECT_ID"
+        required: true
+        default: "104"
+      HEADLESS:
+        description: "HEADLESS"
+        required: true
+        default: "false"
+      EXECUTION_LINE:
+        description: "EXECUTION_LINE"
+        required: true
+        type: choice
+        options:
+          - PRODUCTION
+          - FEATURE
+      PROJECT_TOKEN:
+        description: "PROJECT_TOKEN"
+        required: true
+        default: "712952307175201304"
+      SUITE_NAMES:
+        description: "Suite_Names"
+        required: true
+        default: '["Suite_1","Suite_2","Suite_3","Suite_4","Suite_5","Suite_6"]'
+  schedule:
+    - cron: '30 15 * * 6'
+
+jobs:
+  reset_test_results:
+    name: reset_test_results
+    runs-on: windows-latest
+    env:
+      TESTRUNID: ${{ github.event.inputs.TESTRUNID || '1083128' }}
+      PROJECT_ID: ${{ github.event.inputs.PROJECT_TOKEN || '712952307175201304'}}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: "WINDOWS:QA:RESET:TEST:RESULTS"
+        uses: tillster/github-actions/qa_reset_test_results@v1
+        with:
+          TESTRUNID: "${{ env.TESTRUNID }}"
+          PROJECT_ID: "${{ env.PROJECT_ID }}"
+      
+  run_tests:
+    name: run_tests
+    needs: reset_test_results
+    runs-on: windows-latest
+    timeout-minutes: 360 # 6 hours timeout
+    strategy:
+      matrix:
+        SUITE_NAMES: ${{ fromJson(github.event.inputs.SUITE_NAMES || '["Suite_1","Suite_2","Suite_3","Suite_4","Suite_5","Suite_6"]') }}
+    env:
+      BRANCH: "origin/master"
+      ALLURE_REPORTS_BUCKET: "qa-reports.www"
+      CLOUD_FRONT_DISTRIBUTION_ID: "E36XHZ8PX8ZZ7A"
+      TESTRUNID: ${{ github.event.inputs.TESTRUNID || '1083128' }}
+      TENANT_URL: ${{ github.event.inputs.TENANT_URL || 'https://www-br-us-a.qa.tillster.com/' }}
+      TENANT: ${{ github.event.inputs.TENANT || 'br-us' }}
+      ENVIRONMENT: ${{ github.event.inputs.ENVIRONMENT || 'qa-a' }}
+      PROJECT_ID: ${{ github.event.inputs.PROJECT_ID || '104'}}
+      HEADLESS: ${{ github.event.inputs.HEADLESS || 'false' }}
+      EXECUTION_LINE: ${{ github.event.inputs.EXECUTION_LINE || 'PRODUCTION' }}
+      PROJECT_TOKEN: ${{ github.event.inputs.PROJECT_TOKEN || '712952307175201304' }}
+      BROWSER: ${{ github.event.inputs.BROWSER || 'chromium' }}
+      SUITE_NAMES: ${{ toJson(matrix.SUITE_NAMES) }}
+      PLATFORM: "web"
+      BROWSER_LAUNCH_TIMEOUT: "60"
+
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: "Send Start Notification"
+        uses: tillster/github-actions/utility_send_slack_message@v1
+        with:
+          slack_webhook: "${{ secrets.QA_SLACK_TOKEN }}"
+          message_title: "QA Tests: Starting Automation Test Execution"
+          slack_message: |
+            TEST RUN OVERVIEW:
+                - TENANT: ${{ env.TENANT }}
+                - ENVIRONMENT: ${{ env.ENVIRONMENT }}
+                - GHA_JOB_URL: <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|GHA JOB URL>
+                - TEST_RUN_URL: <https://praxis.tillster.com/projects/${{ env.PROJECT_ID }}?sel=runs&run=${{ env.TESTRUNID }}|TEST_RUN_URL>
+
+      - name: "WINDOWS:QA:WEB:TESTS"
+        uses: tillster/github-actions/qa_run_test_base_pipeline@v1
+        with:
+          TESTRUNID: "${{ env.TESTRUNID }}"
+          TENANT_URL: "${{ env.TENANT_URL }}"
+          TENANT: "${{ env.TENANT }}"
+          ENVIRONMENT: "${{ env.ENVIRONMENT }}"
+          PROJECT_ID: "${{ env.PROJECT_TOKEN }}"
+          HEADLESS: "${{ env.HEADLESS }}"
+          PROJECT_TOKEN: "${{ env.PROJECT_TOKEN }}"
+          BROWSER: "${{ env.BROWSER }}"
+          PLATFORM: "${{ env.PLATFORM }}"
+          SUITE_NAMES: "${{ env.SUITE_NAMES }}"
+
+  upload:
+    name: upload_artifacts
+    if: always()
+    needs: [ run_tests ]
+    runs-on: ${{ matrix.os }}
+    env:
+      BRANCH: "origin/master"
+      ALLURE_REPORTS_BUCKET: "qa-reports.www"
+      CLOUD_FRONT_DISTRIBUTION_ID: "E36XHZ8PX8ZZ7A"
+      TESTRUNID: ${{ github.event.inputs.TESTRUNID || '1083128' }}
+      TENANT_URL: ${{ github.event.inputs.TENANT_URL || 'https://www-br-us-a.qa.tillster.com/' }}
+      TENANT: ${{ github.event.inputs.TENANT || 'br-us' }}
+      ENVIRONMENT: ${{ github.event.inputs.ENVIRONMENT || 'qa-a' }}
+      PROJECT_ID: ${{ github.event.inputs.PROJECT_ID || '104'}}
+      HEADLESS: ${{ github.event.inputs.HEADLESS || 'false' }}
+      EXECUTION_LINE: ${{ github.event.inputs.EXECUTION_LINE || 'PRODUCTION' }}
+      PROJECT_TOKEN: ${{ github.event.inputs.PROJECT_TOKEN || '712952307175201304' }}
+      BROWSER: ${{ github.event.inputs.BROWSER || 'chromium' }}
+      SUITE_NAMES: ${{ toJson(matrix.SUITE_NAMES) }}
+      BROWSER_LAUNCH_TIMEOUT: "60"
+      PLATFORM: "web"
+      OS: ""
+
+    strategy:
+      matrix:
+        os: [ "ubuntu-latest" ]
+        SUITE_NAMES: ${{ fromJson(github.event.inputs.SUITE_NAMES || '["Suite_1","Suite_2","Suite_3","Suite_4","Suite_5","Suite_6"]') }}
+
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: "QA:REPORT:PACKAGE:INSTALL"
+        uses: ./.github/actions/qa-report-package-install/
+
+      - name: "AWS:AUTH"
+        uses: tillster/github-actions/utility_source_defaults_and_authenticate@v1
+        with:
+          shared_access_key: "${{ secrets.TILLSTER_SHARED_ACCESS_KEY }}"
+          shared_secret_key: "${{ secrets.TILLSTER_SHARED_SECRET_KEY }}"
+          infra_platform: "tillster"
+          default_variable_path: "vault/tillster-shared/dev/us/defaults"
+          github_token: "${{ secrets.DEVOPS_GIT_TOKEN }}"
+          aws_region:  "us-east-1"
+          debug: "true"
+          
+      - name: Download workflow artifacts
+        if: always()
+        uses: actions/download-artifact@v4
+        with:
+          name: artifacts-${{ matrix.SUITE_NAMES }}
+          path: artifacts
+        env:
+         SUITE_NAMES: ${{ matrix.SUITE_NAMES }} 
+
+      - name: "RENAME:ROBOT:REPORTS"
+        if: always()
+        shell: bash
+        run: |
+          ls
+          mv artifacts/report.html artifacts/index.html
+
+      - name: "AWS:COPY:FILE:TO:S3"
+        if: always()
+        uses: tillster/github-actions/aws_copy_files_to_s3@v1
+        with:
+          path_to_dir_or_file: "artifacts/"
+          s3_bucket: "${{env.ALLURE_REPORTS_BUCKET}}"
+          s3_bucket_path: "${{env.TENANT}}/robot-reports/"
+          assume_role: "${{ env.TF_VAR_deployment_role }}"
+
+      - name: "AWS:COPY:FILE:TO:S3:HISTORY:ROBOT"
+        if: always()
+        uses: tillster/github-actions/aws_copy_files_to_s3@v1
+        with:
+          path_to_dir_or_file: "artifacts/"
+          s3_bucket: "${{env.ALLURE_REPORTS_BUCKET}}"
+          s3_bucket_path: "${{env.TENANT}}/robot-reports/${{ github.run_number }}/${{ matrix.SUITE_NAMES }}"
+          assume_role: "${{ env.TF_VAR_deployment_role }}"
+
+      - name: "GENERATE:ROBOT:LINK:REPORT:HISTORY:UPLOAD:S3"
+        if: always()
+        shell: bash
+        run: |
+          IFS=',' read -ra SUITES <<< ${{ matrix.SUITE_NAMES }}
+          for suite in "${SUITES[@]}"; do
+            suite="${suite%\"}"
+            suite="${suite#\"}"
+            ROBOT_HISTORY_LINK=https://reports.qa.tillster.com/${{ env.TENANT }}/robot-reports/${{ github.run_number }}/$suite
+            export ROBOT_HISTORY_LINK=$ROBOT_HISTORY_LINK
+            export PATH=/home/runner/miniconda3/bin:$PATH
+            python routing_page/add_robot_report_to_db.py
+          done
+
+      - name: "GET:CLOUD:FRONT:DISTRIBUTION:DOMAIN"
+        if: always()
+        shell: bash
+        run: |
+          cloud_front_domain=$(aws cloudfront get-distribution --id ${{ env.CLOUD_FRONT_DISTRIBUTION_ID }} --query 'Distribution.DomainName' --output text)
+          echo "Cloud Robot Tenant Domain: ${cloud_front_domain}/${TENANT}/robot-reports/"
+          echo "cloud_front_domain=${cloud_front_domain}" >> ${GITHUB_ENV}
+
+      - name: "AWS:CLOUDFRONT:INVALIDATE:CACHE"
+        if: always()
+        uses: tillster/github-actions/aws_cloudfront_invalidate_cache@v1
+        with:
+          distribution_id: "${{ env.CLOUD_FRONT_DISTRIBUTION_ID }}"
+          path: "/*"
+          assume_role: "${{ env.TF_VAR_deployment_role }}"
+
+#      - name: "FETCH:CUCUMBER:RESULTS"
+#        if: always()
+#        uses: tillster/github-actions/qa_query_test_reports_cucumber_studio@v1
+#        with:
+#          PROJECT_ID: "${{ env.PROJECT_ID }}"
+#          TESTRUNID: "${{ env.TESTRUNID }}"
+#          CUCUMBER_CLIENT_ID: "${{ secrets.CUCUMBER_CLIENT_ID }}"
+#          CUCUMBER_USER_ID: "${{ secrets.CUCUMBER_USER_ID }}"
+#          CUCUMBER_ACCESS_TOKEN: "${{ secrets.CUCUMBER_ACCESS_TOKEN }}"
+
+      - name: "FETCH:PRAXIS:RESULTS"
+        if: always()
+        uses: tillster/github-actions/qa_query_test_reports_praxis@v1
+        with:
+          PROJECT_ID: "${{ env.PROJECT_TOKEN }}"
+          TESTRUNID: "${{ env.TESTRUNID }}"
+
+      - name: Send End Notification
+        if: always()
+        uses: tillster/github-actions/utility_send_slack_message@v1
+        with:
+          slack_webhook: "${{ secrets.QA_SLACK_TOKEN }}"
+          message_title: "QA Tests: Finished Automation Test Execution"
+          slack_message: |
+            TEST RUN OVERVIEW:
+                - TENANT: ${{ env.TENANT }}
+                - ENVIRONMENT: ${{ env.ENVIRONMENT }}
+                - GHA_JOB_URL: <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|GHA_JOB_URL>
+                - TEST_RUN_URL: <https://praxis.tillster.com/projects/${{ env.PROJECT_ID }}?sel=runs&run=${{ env.TESTRUNID }}|TEST_RUN_URL>
+                - REPORTS_URL: <https://reports.qa.tillster.com/reports/|REPORTS PAGE>
+
+            RUN DETAILS:
+                - PASSED: ${{ env.passed }}
+                - FAILED: ${{ env.failed }}
+                - NOT TESTED: ${{ env.not_tested }}
