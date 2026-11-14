@@ -1,0 +1,22 @@
+{
+    "channel": "__CHANNEL__",
+    "blocks": [
+        {
+            "type": "section",
+            "text": {
+                "type": "mrkdwn",
+                "text": "Hi @here, *PD Alert*: Automation failed to Test Ordering App."
+            }
+        },
+        {
+            "type": "divider"
+        },
+        {
+            "type": "section",
+            "text": {
+                "type": "mrkdwn",
+                "text": "*OVERVIEW:*\n TENANT - __TENANT__ \n GHA_JOB_URL - __GHA-JOB-URL__ \n __FAILURE-MSG__"
+            }
+        }
+    ]
+}

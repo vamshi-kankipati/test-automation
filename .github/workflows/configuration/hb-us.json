@@ -1,0 +1,13 @@
+{      
+  "TESTRUNID": "1094450",
+  "TENANT_URL": "https://order.hellobistro.com/store-selection",
+  "TENANT": "hb-us",
+  "ENVIRONMENT": "prod",
+  "PROJECT_ID": "97",
+  "HEADLESS": "true",
+  "EXECUTION_LINE": "PRODUCTION",
+  "PROJECT_TOKEN": "4711883172970063775541",
+  "PLATFORM":"web",
+  "CHANNEL" : "cucumberstudio-automation-execution-notifications",
+  "ENABLED": true
+}

@@ -1,0 +1,12 @@
+{      
+  "TESTRUNID": "1015858",
+  "TENANT_URL": "https://www.chowkingdelivery.com/home",
+  "TENANT": "ck-ph-web",
+  "ENVIRONMENT": "Prod",
+  "PROJECT_ID": "382806",
+  "HEADLESS": "true",
+  "EXECUTION_LINE": "PRODUCTION",
+  "PROJECT_TOKEN": "277103936539522998037230327326113370912602914909082959504",
+  "CHANNEL" : "cucumberstudio-automation-execution-notifications",
+  "ENABLED": true
+}

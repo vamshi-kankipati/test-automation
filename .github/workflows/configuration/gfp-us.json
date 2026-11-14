@@ -1,0 +1,12 @@
+{      
+  "TESTRUNID": "944077",
+  "TENANT_URL": "https://www.godfathers.com/home",
+  "TENANT": "gfp-us-web-ionic",
+  "ENVIRONMENT": "prod",
+  "PROJECT_ID": "404678",
+  "HEADLESS": "false",
+  "EXECUTION_LINE": "PRODUCTION",
+  "PROJECT_TOKEN": "81860728058070926321738230857759302872688007203993903050",
+  "CHANNEL" : "cucumberstudio-automation-execution-notifications",
+  "ENABLED": true
+}

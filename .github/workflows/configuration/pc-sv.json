@@ -1,0 +1,13 @@
+{      
+  "TESTRUNID": "1107287",
+  "TENANT_URL": "https://sv.campero.com/home",
+  "TENANT": "pc-sv-web",
+  "ENVIRONMENT": "prod",
+  "PROJECT_ID": "84",
+  "HEADLESS": "true",
+  "EXECUTION_LINE": "PRODUCTION",
+  "PLATFORM":"None",
+  "PROJECT_TOKEN": "35475654755812405215",
+  "CHANNEL" : "cucumberstudio-automation-execution-notifications",
+  "ENABLED": true
+}

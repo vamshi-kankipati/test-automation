@@ -1,0 +1,32 @@
+{
+	"channel": "__CHANNEL__",
+	"blocks": [
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Hi @here, *PD Alert*: Finished Automation to Test Ordering App."
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "*TEST RUN OVERVIEW:*\n TENANT - __TENANT__ \n ENVIRONMENT - PROD \n GHA_JOB_URL - __GHA-JOB-URL__ \n TEST_RUN_URL - __TEST-RUN-URL__ "
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "*RUN DETAILS:*\n PASSED - __PASSED__ \n FAILED - __FAILED__ \n NOT TESTED - __NOT-TESTED__"
+			}
+		}
+	]
+}

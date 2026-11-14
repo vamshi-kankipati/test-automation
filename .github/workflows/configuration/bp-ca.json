@@ -1,0 +1,13 @@
+{      
+  "TESTRUNID": "1101132",
+  "TENANT_URL": "https://order.bostonpizza.com/",
+  "TENANT": "bp-ca",
+  "ENVIRONMENT": "prod",
+  "PROJECT_ID": "99",
+  "HEADLESS": "true",
+  "EXECUTION_LINE": "PRODUCTION",
+  "PROJECT_TOKEN": "6471772068185436455273",
+  "CHANNEL" : "cucumberstudio-automation-execution-notifications",
+  "PLATFORM":"web",
+  "ENABLED": true
+}

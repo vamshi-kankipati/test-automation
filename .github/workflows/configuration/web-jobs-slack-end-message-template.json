@@ -1,0 +1,32 @@
+{
+	"channel": "__CHANNEL__",
+	"blocks": [
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "QA Tests: Finished Automation Test Execution"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "*TEST RUN OVERVIEW:*\n TENANT - __TENANT__ \n ENVIRONMENT - __ENVIRONMENT__ \n GHA_JOB_URL - __GHA-JOB-URL__ \n TEST_RUN_URL - __TEST-RUN-URL__ \n REPORTS_URL - __REPORTS_URL__ "
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "*RUN DETAILS:*\n PASSED - __PASSED__ \n FAILED - __FAILED__ \n NOT TESTED - __NOT-TESTED__"
+			}
+		}
+	]
+}

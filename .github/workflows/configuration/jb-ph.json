@@ -1,0 +1,12 @@
+{      
+  "TESTRUNID": "842364",
+  "TENANT_URL": "https://www.jollibeedelivery.com/home",
+  "TENANT": "jollibee_web",
+  "ENVIRONMENT": "prod",
+  "PROJECT_ID": "389759",
+  "HEADLESS": "true",
+  "EXECUTION_LINE": "PRODUCTION",
+  "PROJECT_TOKEN": "22131080030725784426084364120831560234559987696889298340",
+  "CHANNEL" : "cucumberstudio-automation-execution-notifications",
+  "ENABLED": true
+}

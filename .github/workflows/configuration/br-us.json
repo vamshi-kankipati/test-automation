@@ -1,0 +1,13 @@
+{      
+  "TESTRUNID": "1105309",
+  "TENANT_URL": "https://order.baskinrobbins.com/store-selection",
+  "TENANT": "br-us",
+  "ENVIRONMENT": "prod",
+  "PROJECT_ID": "104",
+  "HEADLESS": "true",
+  "EXECUTION_LINE": "PRODUCTION",
+  "PROJECT_TOKEN": "712952307175201304",
+  "CHANNEL" : "cucumberstudio-automation-execution-notifications",
+  "PLATFORM":"web",
+  "ENABLED": true
+}

@@ -1,0 +1,19 @@
+{
+  "aws_region": "us-east-1",
+  "generated_kubeconfig": "/home/runner/.kube/config",
+  "vault_paths": "kv-v2/dev/us/defaults/terraform,kv-v2/qa-legacy/us/security/defaults/route-53,kv-v2/qa/us/defaults/fargate",
+  "kubernetes_cluster_name": "tillster-shared-eks",
+  "bucket_name": "qa-reports.www",
+  "TF_VAR_dns_root": "qa.tillster.com",
+  "TF_VAR_domain_prefix": "reports",
+  "vault_namespace": "vault",
+  "vault_pod": "vault-1",
+  "TF_VAR_app_name":"qa-reports",
+  "TF_VAR_app_region":"us-east-1",
+  "TF_VAR_desired_count":"1",
+  "TF_VAR_platform_tag":"tillster",
+  "TF_VAR_purpose_tag":"qa-reports",
+  "TF_VAR_environment_tag":"dev",
+  "TF_VAR_tenant_tag":"shared",
+  "TF_VAR_service_tag":"qa-reports"
+}

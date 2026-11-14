@@ -1,0 +1,13 @@
+{      
+  "TESTRUNID": "1105358",
+  "TENANT_URL": "https://www-enp-us-a.tillster.com/",
+  "TENANT": "enp-us",
+  "ENVIRONMENT": "prod",
+  "PROJECT_ID": "98",
+  "HEADLESS": "true",
+  "EXECUTION_LINE": "PRODUCTION",
+  "PROJECT_TOKEN": "788973095155825068220",
+  "PLATFORM":"web",
+  "CHANNEL" : "cucumberstudio-automation-execution-notifications",
+  "ENABLED": true
+}

@@ -1,0 +1,13 @@
+{      
+  "TESTRUNID": "946980",
+  "TENANT_URL": "https://gt.campero.com/home",
+  "TENANT": "pc-gt-web",
+  "ENVIRONMENT": "prod",
+  "PROJECT_ID": "88",
+  "HEADLESS": "true",
+  "EXECUTION_LINE": "PRODUCTION",
+  "PLATFORM":"None",
+  "PROJECT_TOKEN": "866114305650370779944",
+  "CHANNEL" : "cucumberstudio-automation-execution-notifications",
+  "ENABLED": true
+}

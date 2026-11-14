@@ -1,0 +1,22 @@
+{
+  "channel": "__CHANNEL__",
+  "blocks": [
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "QA Tests: Starting Automation Test Execution"
+      }
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "*TEST RUN OVERVIEW:*\n TENANT - __TENANT__ \n ENVIRONMENT - __ENVIRONMENT__ \n GHA_JOB_URL - __GHA-JOB-URL__ \n TEST_RUN_URL - __TEST-RUN-URL__ "
+      }
+    }
+  ]
+}
