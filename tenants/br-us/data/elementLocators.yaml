@@ -1,0 +1,1077 @@
+# Header Locators
+HEADER_SIGNIN_LINK: //*[normalize-space(text())='header.logIn_i18'] #//*[@data-qa-label='HeaderLoginLnk']
+HEADER_SIGNUP_LINK: //*[normalize-space(text())='header.signUp_i18'] #//*[@data-qa-label='HeaderSignUpLnk']
+HEADER_CART_LINK: //*[@data-qa-label="AppHeaderCartBtn"] | //*[@data-qa-label='CartboxLnk']
+HEADER_CART_COUNT: //*[@data-test-id="HeaderCartCount"]
+HEADER_ORDERONLINE_LINK: //*[normalize-space(text())='header.navigation.orderOnline_i18'] #//*[@data-qa-label='Order_OnlineLnk']
+HEADER_DELIVERY_LINK: //*[normalize-space(text())='header.navigation.delivery_i18'] #//*[@data-qa-label='DeliveryLnk']
+HEADER_OURMENU_LINK: //*[contains(text(),'sidenav.link.reorder_i18')]/ancestor::*[4]//*[@data-qa-label="AppMenuBtn"]    |   //*[contains(text(),'header.welcomeBack.button.startOrder_i18')]/ancestor::*[4]//*[@data-qa-label="AppMenuBtn"]   |    //*[normalize-space(text())='header.navigation.ourMenu_i18']
+HEADER_GIFTCARDS_LINK: //*[normalize-space(text())='header.navigation.giftCards_i18'] #//*[@data-test-id='HeaderGiftCardsLink']
+HEADER_FINDASHOP_LINK: //*[normalize-space(text())='header.navigation.findAShop_i18'] #//*[@data-test-id='HeaderFindAShopLink']
+HEADER_OURSTORY_LINK: //*[normalize-space(text())='header.navigation.ourStory_i18'] #//*[@data-test-id='HeaderOurStoryLink']
+HEADER_FRANCHISING_LINK: //*[normalize-space(text())='header.navigation.franchising_i18'] #//*[@data-test-id='HeaderFranchisingLink']
+HEADER_HAMBURGERMENU_LINK: //*[@data-test-id='HeaderUserMenuBtn']
+HEADER_HAMBURGER_HOMEPAGE_LINK: //*[text()='header.hamburger.image.home_i18'] #//*[contains(text(),'Home Sweet HomePage')]
+HEADER_HAMBURGER_OURSTORY_LINK: //*[text()='header.hamburger.image.ourStory_i18'] #//*[@data-qa-label='HBrOurStoryLbl']
+HEADER_HAMBURGER_FINDASHOP_LINK: //*[text()='header.hamburger.image.findAShop_i18'] #//*[@data-qa-label='HBFindShopLbl']
+HEADER_HAMBURGER_PLACEANORDER_LINK: //*[contains(text(),'header.hamburger.image.placeOrder_i18')] #//*[@data-qa-label='HBPlaceOrderLbl']
+HEADER_LOGO_LINK: //*[@data-test-id='HeaderLogoLnk'] | //*[@data-qa-label="AppHeaderLogoBtn"]
+HEADER_GREETING_ELEMENT: //*[@data-test-id='WelcomeLbl']  |  //*[text()='home.welcomeBack.hi_i18']
+HEADER_MYACCOUNT_LINK: //*[@data-test-id='MyaccountDropdownLink']
+MYACCOUNT_ACCOUNTINFO_LINK: //*[@data-test-id='AccountDetailsLnk']
+HEADER_LOGOUT_LINK: //*[text()='header.logOut_i18'] #//*[@data-test-id='LogoutLnk']
+HEADER_ADDRESSEDIT_LINK : //*[@data-test-id='HeaderEditAddressLnk'] | //ion-view[@nav-view='active']//img[@data-test-id='BRCartEditAddressIcn']
+MYACCOUNT_ORDERHISTORY_LINK : //*[contains(text(),'header.navigation.orderHistory_i18')] #//*[@data-test-id='OrderHistoryLnk']
+HEADER_PRODUCT_CATEGORY_TITLE_LABEL: //*[contains(@data-qa-label,"Lbl") and normalize-space(text())='%s']
+HEADER_PRODUCT_SUBCATEGORY_TITLE_LABEL: (//*[contains(@data-qa-label,"Lbl") and normalize-space(text())='%s'])[2]
+HEADER_CATEGORY_TITLE_LABEL: //*[contains(@data-qa-label,'Lbl') and contains(text(),'%s')]
+HEADER_CATEGORY_BREADCRUMB_LINK: //*[@aria-label="%s"] #Request data-test-id
+HEADER_LOGIN_BUTTON: //*[contains(text(),'header.logIn_i18')]
+HEADER_MENUBACK_BUTTON_LOCATOR: //*[@qa-attribute='BRFlavours3DotBtn']
+
+#Homepage
+HOMEPAGE_GREETING_ELEMENT: //*[@class="welcome-message"]  #need data test id  WELCOME_MESSAGE_TEXT
+HOMEPAGE_STARTNEWORDER_BUTTON:  //*[contains(text(),'Start Order')]  #need i18 variable MENU_STARTORDER_BUTTON
+HOMEPAGE_LOYALTY_SIGNUP_IMG: //*[@data-test-id="BRHomeLoyaltySignupImg"]//*[contains(@src, "%s")]
+HOMEPAGE_LOYALTY_SIGNUP_LINK: //*[@data-test-id="BRHomeLoyaltySignupLink"]
+HOMEPAGE_LOYALTY_SIGNUP_TEXT: //*[@data-test-id="BRHomeLoyaltySignupTxt"]
+HOMEPAGE_LOYALTY_REWARDS_TEXT: //*[contains(text(),'loyalty.rewards.page.title_i18')]
+HOMEPAGE_LOYALTY_REWARDS_INFO_ICON: //*[text()='loyalty.rewards.page.title_i18']/following-sibling::*/img
+HOMEPAGE_LOYALTY_REWARDS_VIEWALL_BUTTON: //*[@data-qa-label="RewardsViewAll"]
+HOMEPAGE_LOYALTY_REWARD_ITEM: //*[@data-test-id="BRHomeLoyaltyRewardItem"]
+HOMEPAGE_LOYALTY_REWARD_PROGRESSBAR_TITLE: //*[contains(text(),'Visits until your next reward')]  #dynamic i18
+HOMEPAGE_LOYALTY_REWARD_PROGRESSBAR: //*[@class="progress-bar"]  #Request data-test-id  BRA-19027
+LOADING_MASK_INDICATOR: //*[@class='loading-mask__content'] #need data-test-id
+HOMEPAGE_HERO_BANNER: //*[normalize-space(@alt)='%s']  #need to request data-test-id
+HOMEPAGE_HERO_LOGIN_REQUIRED_TITLE_LOCATOR: //*[text()="notification.loginRequired.header_i18"]
+HOMEPAGE_HERO_LOGIN_REQUIRED_GOBACK_BUTTON: //*[contains(text(),"pushprimer.button.no_i18")]
+
+# Footers Locators
+FOOTER_MOREWAYSTOBR_LABEL: //*[contains(text(),'footer.header.moreWaysToBR_i18')] #//*[contains(text(),'More Ways to BR')]
+FOOTER_MOBILEAPP_LINK: //*[contains(text(),'footer.link.mobileApp_i18')] #//*[contains(text(),'Mobile App')]
+FOOTER_GIFTCARDS_LINK: //*[contains(text(),'footer.link.giftCards_i18')] #//*[@data-test-id='FooterGiftCardsLnk']
+FOOTER_JOINTHETEAM_LABEL: //*[contains(text(),'footer.header.joinTheTeam_i18')] #//*[contains(text(),'Join The Team')]
+FOOTER_CAREEROPPORTUNITIES_LINK: //*[contains(text(),'footer.link.careers_i18')] #//*[contains(text(),'Career Opportunities')]
+FOOTER_FRANCHISEEINFO_LINK: //*[contains(text(),'footer.link.franchises_i18')] #//*[contains(text(),'Franchise Information')]
+FOOTER_COMPANYINFO_LABEL: //*[contains(text(),'footer.header.companyInfo_i18')]  #//*[contains(text(),'Company Info')]
+FOOTER_OURSTORY_LINK: //*[@data-test-id='FooterOurStoryLnk']
+FOOTER_INTERNATIONAL_LINK: //*[@data-test-id='FooterInternationalLnk']
+FOOTER_FAQS_LINK: //*[@data-test-id='FooterFaqsLnk']
+FOOTER_PRESSROOM_LINK: //*[contains(text(),'footer.link.pressroom_i18')] #//*[contains(text(),'Pressroom')]
+FOOTER_SUSTAINABILITY_LINK: //*[contains(text(),'footer.link.responsibility_i18')] #//*[contains(text(),'Sustainability')]
+FOOTER_CONTACTUS_LINK: //*[contains(text(),'footer.link.contactUs_i18')] #//*[contains(text(),'Contact Us')]
+FOOTER_INSTAGRAM_LINK: (//*[@data-test-id='FooterInstagramLnk'])[2]
+FOOTER_FACEBOOK_LINK: (//*[@data-test-id='FooterFacebookLnk'])[2]
+FOOTER_TWITTER_LINK: (//*[@data-test-id='FooterTwitterLnk'])[2]
+FOOTER_TIKTOK_LINK: (//*[@data-qa-label='tiktokLnk'])[2]
+FOOTER_YOUTUBE_LINK: (//*[@data-test-id='FooterYoutubeLnk'])[2]
+FOOTER_PINTEREST_LINK: (//*[@data-test-id='FooterPinterestLnk'])[2]
+FOOTER_GETDEALS_TEXT: //*[contains(text(),'footer.label.appBlurb_i18')] #//*[contains(text(),'Get deals, send gifts, pay with the app, and more!')]
+FOOTER_EMAILADDRESS_LINK: //*[@data-test-id='FooterEmailAddressLnk']  #//*[contains(text(),'Email address')]
+FOOTER_DOWNLOADAPP_LINK: //*[@data-test-id='FooterDownloadAppLnk']
+FOOTER_DOWNLOADAPP_TEXT: //*[contains(text(),'footer.label.appBlurb_i18')] #//*[contains(text(),'Get deals, send gifts, pay with the app, and more!')]
+FOOTER_GETTHESCOOP_LINK: //*[@data-test-id='FooterGetTheScoopLnk']
+FOOTER_PRIVACYPOLICY_LINK: //*[contains(text(),'footer.link.privacyPolicy_i18')] #//*[contains(text(),'Privacy Policy')]
+FOOTER_TERMSOFUSE_LINK: //*[contains(text(),'footer.link.termsOfUse_i18')] #//*[contains(text(),'Terms of Use')]
+FOOTER_DONOTSELLPERSONALINFO_LINK: //*[contains(text(),'footer.link.doNotSellInfo_i18')] #//*[contains(text(),'Do Not Sell My Personal Info')]
+FOOTER_CAPRIVACY_LINK:  //*[contains(text(),'footer.link.caPrivacy_i18')]
+FOOTER_SITEMAP_LINK: //*[contains(text(),'footer.link.siteMap_i18')] #//*[contains(text(),'Site Map')]
+FOOTER_CATRANSPARENCY_LINK: //*[contains(text(),'footer.link.transparency_i18')] #//*[contains(text(),'CA Transparency in Supply Chains Act')]
+FOOTER_COPYRIGHT_LABEL: //*[@data-test-id='FooterCopyrightLbl']
+FOOTER_COOKIESETTINGS_LINK: //*[@data-test-id="FooterCookieSettingsLnk"]
+FOOTER_EXTERNAL_LINK_PRIVACY_POLICY_LABEL: //span[contains(text(),'Privacy Policy')]
+FOOTER_EXTERNAL_LINK_TERMSOFUSE_LABEL: //span[contains(text(),'Terms of Use')]
+EXTERNAL_BR_DOT_COM_HEADER_TITLE: (//*[@data-tagging-label='Baskin Robbins Logo'])[2]
+EXTERNAL_BR_DOT_COM_HEADER_ORDER_ONLINE_LINK: //span[contains(text(),'Order Online')]
+COOKIES_POPUP_ACCEPT_BUTTON: //*[text()='notifications.button.accept_i18']
+COOKIES_POPUP_ACCEPT_ALL_BUTTON: //*[contains(text(),"Accept All")] #Request i18 key
+FOOTER_STORES_BUTTON: //*[text()='footerNav.link.shops_i18']  | //XCUIElementTypeStaticText[contains(@name, 'footerNav.link.shops_i18')]  |  //android.widget.TextView[contains(@text, 'footerNav.link.shops_i18')]
+FOOTER_ORDER_BUTTON:  //*[text()='footerNav.link.order_i18'] | //XCUIElementTypeStaticText[contains(@name, 'footerNav.link.order_i18')]  |  //android.widget.TextView[contains(@text, 'footerNav.link.order_i18')]
+FOOTER_SHOPS_BUTTON: //*[text()='footerNav.link.shops_i18']  | //XCUIElementTypeStaticText[contains(@name, 'footerNav.link.shops_i18')]  |  //android.widget.TextView[contains(@text, 'footerNav.link.shops_i18')]
+FOOTER_PAY_BUTTON: //*[text()='footerNav.link.pay_i18'] | //XCUIElementTypeStaticText[contains(@name, 'footerNav.link.pay_i18')]  |  //android.widget.TextView[contains(@text, 'footerNav.link.pay_i18')]
+FOOTER_REWARDS_BUTTON: //*[text()='footerNav.link.rewards_i18'] | //XCUIElementTypeStaticText[@name='footerNav.link.rewards_i18']  |  //android.widget.TextView[@text='footerNav.link.rewards_i18']
+FOOTER_HOME_BUTTON: //*[text()='footerNav.link.home_i18'] | //XCUIElementTypeStaticText[contains(@name, 'footerNav.link.home_i18')]  |  //android.widget.TextView[contains(@text, 'footerNav.link.home_i18')]
+
+# Store Localization Locators
+STORELOCATOR_LOCATIONSERVICESOFF_OK_BUTTON: (//*[contains(text(),'storeLocator.geocodeOff.dialog.ok_i18')])[1] #//*[@data-qa-label='OkBtn']
+STORELOCATOR_FINDASHOP_LABEL: (//*[contains(text(),'navigation.option.label.findAShop_i18')])[2] #//*[@data-qa-label='PageTitleLbl' and contains(text(),'Find a Shop')]
+STORELOCATOR_ADDRESSINPUT_TEXTBOX: //*[@data-qa-label='SearchStoreTxt'] | //*[@id='store-locator-search-mobile']
+STORELOCATOR_ADDRESSCLEAR_BUTTON: //*[@data-qa-label="DeleteBtn"] | //*[@data-qa-label="BRShopsPageZipResetBtn"]
+STORELOCATOR_STORESEARCHICON_BUTTON: //*[@data-qa-label='SearchStoreTxt']/parent::div/following-sibling::*  |  //*[@data-qa-label="SearchStoreBtn"]
+STORELOCATOR_FAVORITES_ICON: //*[@id='%s']//*[@name='Favorite'] #//*[@id='%s']//*[@data-test-id='StoreFavoritesIcon']
+STORELOCATOR_FAVORITE_SELECTED_ATTRIBUTE: //*[@id='%s']//*[@name='Favorite']//*[@fill='none']
+STORELOCATOR_ORDER_BUTTON: //*[@id='%s']//*[@data-qa-label='OrderNowBtn'] #//*[@id='%s']//*[@data-test-id="StoreOrderBtn"]
+MOBILE_STORELOCATOR_ORDER_BUTTON: (//*[@id='%s']//*[@data-qa-label='OrderNowBtn'])[2] #//*[@id='%s']//*[@data-test-id="StoreOrderBtn"]
+STORELOCATOR_STORE_TILE: //*[@id='%s' and @data-qa-label='StoreInfoTile'] | //*[@id='%s' and @data-test-id='StoreInfoTile']
+STORELOCATOR_REMOVE_FAVORITESTORE_BUTTON: //*[@data-qa-label='DeselectStoreBtn']  | //*[@class='deselect-store-button'] #Requested data-test-id BRA-20089
+STORELOCATOR_STORE_UPDATE_POPUP_MODAL: //*[@class="columns small-12 notification__wrapper__contents__body"]   #Requested data-test-id BRA-19729
+STORELOCATOR_STORE_UPDATE_POPUP_CONFIRM: //*[@data-qa-label='OkBtn']  | //*[normalize-space(text())='cart.button.continue_i18'] | //*[normalize-space(text())='cart.button.confirm_i18']
+STORELOCATOR_STORE_UPDATE_POPUP_CANCEL_BUTTON: //*[@data-qa-label='CancelBtn'] | //*[@qa-attribute="BRConfirmPopUpNo"]
+STORELOCATOR_STOREAMENITIESRESULTS_LIST: //*[@class="column noPadding store-locator__results__stores__detail__attributes"] #Request data-test-id
+PICKUP_STORERESULTS_LIST: //*[@class='column store-locator__results__stores'] | //*[@data-test-id="StoreDetails"]
+PICKUP_FILTERS_BUTTON: //*[@data-qa-label='FilterBtn']  | //*[@data-qa-label='BRShopsPageFilterIcon']
+FILTERS_AMENITIES_LIST: //*[@data-qa-label='FilterOptionBtn' and contains(text(),'%s')] | //*[contains(@class,'filter-option') and contains(text(),'%s')]  #Requested data-test-id BRA-20089
+FILTERS_APPLYFILTERS_BUTTON: //*[normalize-space(text())='storeLocator.button.apply_i18'] | //*[contains(text(),'menu.products.filter.button.apply_i18')]
+FILTERS_PROMISE_TIME_IMAGE: //*[@class="store-locator__results__stores__detail__attributes__attribute__promise-time"] |  //*[@id='%s']//*[@class='promise-time']  #Requested data-test-id
+FILTERS_DUNKIN_IMAGE: //*[@id='%s']//*[@class="store-locator__results__stores__detail__attributes__attribute__dunkin"]  |  //*[@id='%s']//*[@class='dunkin']  #Requested data-test-id
+FILTERS_DRIVETHRU_IMAGE:  //*[@id='%s']//*[@class="store-locator__results__stores__detail__attributes__attribute__drive-thru"]  |  //*[@id='%s']//*[@class='drive-thru']  #Requested data-test-id
+LOCALIZED_ADDRESS_LINK: //*[@data-test-id='HeaderAddressTxt'] | //*[@data-qa-label="StoreAddressLnk"]
+STORELOCATOR_CITY_DETAILS: //*[@id='%s']//*[@data-qa-label='StoreCityLbl']
+STORELOCATOR_DEFAULTORDERMESSAGE_LABEL: //*[@data-qa-label='SLPlaceHolder'] | //*[@data-test-id='PickupNoNearbyStore']
+STORELOCATOR_MAP_IMAGE: //*[@data-qa-label='MapImg']  | //*[@aria-label='Map'] #Requested data-test-id BRA-20089
+STORELOCATOR_STORETILE_LIST: //*[@data-qa-label='StoreInfoTile'] | //*[@class='store-details']  #Requested data-test-id BRA-19027
+STORELOCATOR_FAV_BUTTON_LIST: //*[@name='Favorite'] #//*[@data-test-id='FavoritesBtn']
+STOREDETAILS_DIRECTIONS_LINK: //*[@id="%s"]//*[normalize-space(text())='storeLocator.label.getDirection_i18']
+STOREDETAILS_STOREPHONENUMBER_LOCATOR: //*[@id='%s']//*[@class="column store-locator__results__stores__detail__icons__wrapper"]/following-sibling::*  |   //*[@id='%s']//*[@class='col store-detail__info__icons__icon store-detail__info__tel']/following-sibling::span  #Requested data-test-id BRA-20089
+STORELOCATOR_MOREINFO_LINK_LIST: //*[contains(text(),'location.storeHours.label.moreInfo_i18')] #//*[@data-qa-label='StoreViewMoreLnk']
+STORELOCATOR_MOREINFO_LINK: //*[@id='%s' and @data-qa-label='StoreInfoTile']//*[@data-qa-label='StoreViewMoreLnk']  | //*[@id='%s' and @data-test-id='StoreInfoTile']//*[@class='store-week-hours__shop-hours']
+STORELOCATOR_ORDERNOW_BUTTON_LIST: //*[@data-qa-label='OrderNowBtn'] #//*[contains(text(),'location.storeDetails.label.orderNow_i18')]
+STORELOCATOR_KEEPASMYSHOPBUTTON: //*[contains(@id,'%s')]//*[contains(text(),'location.label.keepAsMyShop_i18')] #//*[contains(@id,'%s')]//*[@data-qa-label='KeepAsMyShopBtn']
+STORELOCATOR_DESELECT_BUTTON: //*[contains(@id,'%s')]//*[@data-qa-label='DeselectStoreBtn'] | //*[contains(@id,'%s')]//*[@class="deselect-store-button"]
+STORELOCATOR_PROMISE_TIME_IMG: //*[@id='%s']//*[@class="store-locator__results__stores__detail__attributes__attribute__promise-time"] #Need data-test-id
+STORELOCATOR_PROMISE_TIME_24HRS_IMG: //*[@id='%s']//*[contains(@data-ng-if,'24 hours')]//child::*[contains(@class, "store-locator__results")] | //*[@id='%s']//*[contains(@data-ng-if,'24 hours')]//child::*[@class="promise-time"]
+PICKUP_NONEARBYSTORE_LABEL: //*[@data-qa-label='NoShopsLbl']    |   //*[@class='store-try-another-search'] #Requested data-test-id BRA-19027
+PICKUP_INVALIDZIPCODE_POPUP_HEADER: //*[text()='storeLocator.addressSearch.dialogErrorDialog.title_i18']
+PICKUP_INVALIDZIPCODE_POPUP_BODY: //*[contains(text(),'storeLocator.addressSearch.dialogBadAddress.body_i18')]
+PICKUP_INVALIDZIPCODE_POPUP_OK_BUTTON: //*[@data-qa-label='OkBtn']  | //*[@qa-attribute='BRConfirmPopUpYes']
+PICKUP_INVALIDZIPCODE_POPUP_CLOSE_BUTTON: //*[normalize-space(text())='form.button.close_i18']
+STORELOCATOR_STORETILES_LIST: //*[@data-qa-label='StoreInfoTile']/..  | //*[@class='store-details']/.. #Requested data-test-id BRA-20089
+STORELOCATOR_STORELIST_INACTIVE_STORE_INFO_LABEL: //*[contains(text(),'menu.category.button.tempInactive.other_i18')] #//*[@data-qa-label='StoreInfoTile']//*[contains(text(),'Online ordering is temporarily unavailable for this shop')]
+STORELOCATOR_PROMISE_TIME_24HRS_TXT: //*[contains(@id,'%s')]//*[contains(text(),'storeLocator.label.promiseTime_i18')] #//*[contains(@id,'%s')]//*[@data-qa-label='PromiseTimeTxt' and contains(text(),'Custom Cakes In As Little As 24 Hours')]
+STORELOCATOR_SHOP_HOURS_LABEL: //*[@id='%s']//*[@data-qa-label="StoreHoursLbl" and contains(text(),'storeLocator.label.hoursToday_i18')] | //*[@id='%s']//*[contains(@aria-label,'storeLocator.label.hoursToday_i18') and @class="store-hours-of-operation"]
+STORELOCATOR_STORESEARCH_EXPAND_BUTTON: //*[@data-qa-label="ExpandRadiusBtn"]
+
+# Signup Locators
+MFA_SENDCODE_BUTTON: //*[contains(text(),'account.phoneNumberVerification.button.sendCode_i18')] #//*[contains(text(),'Send Code')]
+MFA_SECURITY_CODE_LOCATORS: //*[@name='code'] #//*[@data-test-id='OtpTextBox']
+MFA_CONFIRM_BUTTON: //*[contains(text(),'account.phoneNumberVerification.button.confirm_i18')] #//*[contains(text(),'Confirm')]
+CREATEACCOUNT_PAGE_TITLE: //*[contains(@class,'register-content__header-signup')]//*[normalize-space(text())='account.register.label.signUp_i18'] | //*[@class="header__wrapper__h1-span" and contains(text(),'account.register.label.signUp_i18')]
+CREATEACCOUNT_FIRSTNAME_TEXTBOX: //*[@data-qa-label='SignUpFirstNameTxt'] #//*[@data-test-id='FirstNameTextbox']
+CREATEACCOUNT_LASTNAME_TEXTBOX: //*[@data-qa-label='SignUpLastNameTxt'] #//*[@data-test-id='LastnNameTextbox']
+CREATEACCOUNT_EMAILADDRESS_TEXTBOX: //*[@data-qa-label='SignUpEmailTxt'] #//*[@data-test-id='EmailAddressTextbox']
+CREATEACCOUNT_EMAILADDRESS_EMPTY_TEXTBOX : //*[@data-qa-label='SignUpEmailTxt' and contains(@class,'ng-empty')] #//*[@data-test-id='EmailAddressTextbox' and contains(@class,'ng-empty')]
+CREATEACCOUNT_EMAILADDRESS_NONEMPTY_TEXTBOX: //*[@data-qa-label='SignUpEmailTxt' and contains(@class,'ng-not-empty')] #//*[@data-test-id='EmailAddressTextbox' and contains(@class,'ng-not-empty')]
+CREATEACCOUNT_PHONENUMBER_TEXTBOX: //*[@data-qa-label='SignUpPhoneNumberTxt'] #//*[@data-test-id='PhonenumberTextbox']
+CREATEACCOUNT_ZIPCODE_TEXTBOX : //*[@data-qa-label="SignUpZipCodeTxt"] | //*[@data-qa-label="ZipCodeTxt"]
+CREATEACCOUNT_PASSWORD_TEXTBOX: //*[@data-qa-label="SignUpPasswordTxt"] | //*[@data-qa-label="LoginPswdTxt"]
+CREATEACCOUNT_PASSWORD_HIDE_PASSWORD_LINK: //*[@data-qa-label='LoginPswdTxt']/following-sibling::* #//*[@data-test-id='HidePasswordLink']
+CREATEACCOUNT_CONFIRMPASSWORD_TEXTBOX: //*[@data-qa-label="SignUpConfirmPasswordTxt"] | //*[@data-qa-label="SignUpConfirmPswrdTxt"]
+CREATEACCOUNT_PRIVACYPOLICY_CHECKBOX: //*[@data-qa-label='AgeCnfrmtnLbl']  |  //*[@data-qa-label="SignUpAgreementCbx"]/following-sibling::*/*[@class="checkbox"]
+CREATEACCOUNT_SENDMEOFFERS_CHECKBOX: //*[@data-qa-label='EmailOffersCbxLbl']    |   //*[normalize-space(text())='account.register.label.enrollMe_i18']
+CREATEACCOUNT_BIOMETRICS_CHECKBOX: //*[@id="bioCheck"]   #Request data-test-id  BRA-19729
+CREATEACCOUNT_LOYALTY_CHECKBOX: //*[@data-qa-label="LoyaltyCbx"]    |   //*[@data-test-id="BRSignupLoyaltyCheckbox"]
+CREATEACCOUNT_LOYALTY_LEARNMORE_LINK: //*[text()='reward.link.learnMore_i18']
+CREATEACCOUNT_LOYALTY_OPTIN_IMAGE: //*[@class="loyalty-optin-image"]  #Requested data-test-id BRA-18168
+CREATEACCOUNT_CREATEACCOUNT_BUTTON: //*[@data-qa-label='SignUpBtn']  |  //*[@data-qa-label="BRCreateMyAccountBtn" and not (@disabled="disabled")]
+CREATEACCOUNT_MODAL_TITLE_LABEL: //*[contains(text(),'notification.emailExists.header_i18')]
+CREATEACCOUNT_ERRORMSG_POPUP_BODY: //*[contains(text(),'notification.emailExists.description_i18')]
+CREATEACCOUNT_USEDIFFERENTEMAIL_BUTTON: //*[contains(text(),'notification.button.useDifferentEmail_i18')] | //*[normalize-space(text())="Use Different email"]
+CREATEACCOUNT_POPUP_LOGIN_BUTTON: //*[normalize-space(text())='notification.button.login_i18' and @data-qa-label="LoginBtn"]  |  //*[normalize-space(text())='Log in']
+CREATEACCOUNT_SIGNUPMODAL_HEADER: //*[contains(text(),'notification.loginRequired.header_i18')] #//*[@id='loginRequiredHeader']/span
+CREATEACCOUNT_LOGIN_LINK: //*[@data-qa-label="SignUpLoginLnk"]   |   //*[@class="sign-up-info__link"]//*[normalize-space(text())='account.login.button.logIn_i18']
+CREATEACCOUNT_PRIVACYPOLICY_CHECKED_CHECKBOX: //*[@data-qa-label='SignUpAgeDsclmrCbx' and contains(@class,'ng-not-empty')] #//*[@data-test-id='PrivacyPolicyCheckbox' and contains(@class,'ng-not-empty')]
+CREATEACCOUNT_PRIVACYPOLICY_UNCHECKED_CHECKBOX: //*[@data-qa-label='SignUpAgeDsclmrCbx' and contains(@class,'ng-empty')] #//*[@data-test-id='PrivacyPolicyCheckbox' and contains(@class,'ng-empty')]
+CREATEACCOUNT_REQUIREDFIRSTNAME_ERROR_LABEL: //*[contains(text(),'account.register.error.required.firstName_i18')] #//*[@data-qa-label='SignUpFirstNameTxt']/parent::div/following-sibling::*//span[text()='Please enter a first name']
+CREATEACCOUNT_REQUIREDLASTNAME_ERROR_LABEL: //*[contains(text(),'account.register.error.required.lastName_i18')] #//*[@data-qa-label='SignUpLastNameTxt']/parent::div/following-sibling::*//span[text()='Please enter a last name']
+CREATEACCOUNT_REQUIREDEMAILADDRESS_ERROR_LABEL: //*[contains(text(),'account.register.error.required.email_i18')] #//*[@data-qa-label='SignUpEmailTxt']/parent::div/following-sibling::*//span[text()='Please enter an email address']
+CREATEACCOUNT_REQUIREDPHONENUMBER_ERROR_LABEL: //*[contains(text(),'account.create.required.phone_i18')] #//*[@data-qa-label='SignUpPhoneNumberTxt']/parent::div/following-sibling::*//span[text()='Please enter your phone number']
+CREATEACCOUNT_REQUIREDZIPCODE_ERROR_LABEL: //*[contains(text(),'account.create.required.zipcode_i18')] #//*[@data-qa-label='ZipCodeTxt']/parent::div/following-sibling::*//span[text()='Zip Code is required']
+CREATEACCOUNT_REQUIREDPASSWORD_ERROR_LABEL: //*[contains(text(),'account.register.error.required.password_i18')] #//*[@data-qa-label='LoginPswdTxt']/parent::div/following-sibling::*//span[text()='Please enter a password']
+CREATEACCOUNT_REQUIREDCONFIRMPASSWORD_ERROR_LABEL: //*[contains(text(),'account.register.error.required.confirmPassword_i18')] #//*[@data-qa-label='SignUpConfirmPswrdTxt']/parent::div/following-sibling::*//span[text()='Please confirm your password']
+CREATEACCOUNT_REQUIREDTERMSCHECKBOX_ERROR_LABEL: //*[contains(text(),'account.register.error.required.agreement_i18')] #//*[@data-qa-label='AgeCnfrmtnLbl']/parent::div/following-sibling::*//span[text()='Please accept terms and conditions to continue']
+CREATEACCOUNT_FIRSTNAME_LIMIT_ERROR_LABEL: //*[@data-qa-label='SignUpFirstNameTxt']/parent::div/following-sibling::*//span[text()='Maximum 50 characters allowed'] #//*[@data-test-id='FirstNameLimitErrorMsg']
+CREATEACCOUNT_LASTNAME_LIMIT_ERROR_LABEL: //*[@data-qa-label='SignUpLastNameTxt']/parent::div/following-sibling::*//span[text()='Maximum 50 characters allowed'] #[@data-test-id='LastNameLimitErrorMsg']
+CREATEACCOUNT_INCORRECTEMAIL_ERROR_LABEL: //*[contains(text(),'account.register.error.invalid.email_i18')] #//*[@data-qa-label='SignUpEmailTxt']/parent::div/following-sibling::*//span[text()='Please enter a valid email address']
+CREATEACCOUNT_EMAIL_LIMIT_ERROR_LABEL: //*[@data-qa-label='SignUpEmailTxt']/parent::div/following-sibling::*//span[text()='Maximum 50 characters allowed'] #//*[@data-test-id='EmailLimitErrorMsg']
+CREATEACCOUNT_PASSWORD_PATTERN_ERROR_LABEL: //*[@data-qa-label='LoginPswdTxt']/parent::div/following-sibling::*//span #//*[@data-test-id='PasswordPatternErrorMsg']
+CREATEACCOUNT_CONFIRMPASSWORD_PATTERN_ERROR_LABEL: //*[@data-qa-label='SignUpConfirmPswrdTxt']/parent::div/following-sibling::*//span #//*[@data-test-id='ConfirmPasswordPatternErrorMsg']
+CREATEACCOUNT_PASSWORDMISMATCH_ERROR_LABEL: //*[contains(text(),'account.register.error.equal.passwords_i18')] #//*[@data-qa-label='SignUpConfirmPswrdTxt']/parent::div/following-sibling::*//span[text()='Your passwords must match']
+CREATEACCOUNT_PRIVACYPOLICY_FOOTER_LINK: (//*[contains(text(),'Privacy Policy')])[2]
+CREATEACCOUNT_TERMS&CONDITION_FOOTER_LINK: &checkoutLoginfooterPolicyLink //*[contains(text(),'Terms and Conditions')]
+CREATEACCOUNT_MINIMUM_ZIPCODE_ERROR_LABEL: //*[@data-qa-label='ZipCodeTxt']/parent::div/following-sibling::*//span[text()='Zip Code should be 5 digits'] #//*[@data-test-id='SignUpZipcodeLengthErrorMsg']
+CREATEACCOUNT_BR_REWARDS_CHECKBOX_LABEL: //*[contains(text(),"Yes, sign me up for ")] #Request i18 key
+CREATEACCOUNT_ALERT_ERROR_MSG: //*[@data-qa-label="NotificationBar"]//*[text()="%s"]
+
+# Login locators
+LOGIN_EMAILADDRESS_TEXTBOX: //*[@qa-attribute="BRLoginEmailTxt"] | //*[@data-test-id='EmailAddressTextbox']  |   //*[normalize-space(text())='checkout.login.label.email_i18']/following::*[@data-qa-label='LoginEmailTxt'] | //*[@qa-attribute="BRLoginEmailTxt"]
+LOGIN_PASSWORD_TEXTBOX: //*[@qa-attribute="BRLoginPasswordTxt"] | //*[@data-test-id='PasswordTextbox']  |   //*[normalize-space(text())='checkout.login.label.password_i18']/following::*[@aria-label='Password'] | //*[@qa-attribute="BRLoginPasswordTxt"]
+LOGIN_SIGNIN_BUTTON: //*[@qa-attribute="BRLoginArrowImg"] | //*[@data-test-id='SignInBtn']   |   //*[normalize-space(text())='checkout.details.button.continueToPayment_i18' and @type='submit']
+LOGIN_SENDCODE_BUTTON: //*[@data-qa-label="BRPhoneNumberVerificationSendCodeBtn"] | //*[contains(text(),'account.phoneNumberVerification.button.sendCode_i18')]
+LOGIN_SECURITYCODE_TEXTBOX: //*[@name='code']  #//*[@data-test-id='OtpTextBox']
+LOGIN_SECURITYCODE_TEXTBOX_ERROR: //*[normalize-space(text())='account.phoneNumberVerification.error.wrongCode_i18']
+LOGIN_CONFIRMCODE_BUTTON: //*[contains(text(),'account.phoneNumberVerification.button.confirm_i18')]
+LOGIN_SECURITYCODE_RESEND_BUTTON: //*[text()='account.phoneNumberVerification.button.resend_i18']
+LOGIN_SECURITYCODE_RESEND_POPUP_TITLE: //*[text()='errors.response.retried.header_i18']
+LOGIN_SECURITYCODE_RESEND_POPUP_TEXT: //*[text()='account.mfa.resend.tryAgain_i18']
+LOGIN_SECURITYCODE_RESEND_POPUP_OK_BUTTON: //*[normalize-space(text())='builder.noMods.dialog.yes_i18']
+LOGIN_EMAILADDRESS_EMPTY_TEXTBOX: //*[@data-test-id='EmailAddressTextbox' and contains(@class,'ng-empty')] | //*[@data-test-id="LoginTxtBox" and contains(@class,'ng-empty')]
+LOGIN_PASSWORD_EMPTY_TEXTBOX: //*[@data-test-id='PasswordTextbox' and contains(@class,'ng-empty')] | //*[@data-test-id="PwdTxtbox" and contains(@class,'ng-empty')]
+LOGIN_SIGNIN_BUTTON_DISABLED_STATE : //*[@data-test-id='SignInBtn' or @aria-label='Log In' and @disabled='disabled'] | //*[@qa-attribute="BRLoginArrowImg" and @disabled='disabled']
+LOGIN_EMAILREQUIRED_ERROR_LABEL: //*[@aria-label='account.login.error.required.email_i18']//*[text()='%s'] | //*[@qa-attribute="BRLoginEmailTxt"]/following::*[text()='%s']
+LOGIN_PASSWORDREQUIRED_ERROR_LABEL: //*[@data-test-id='PasswordTextbox']/../following-sibling::*//span[text()='%s']
+LOGIN_INVALIDLOGIN_ERROR_LABEL: //*[@data-qa-label='InvalidLoginLbl']/*[contains(text(),'%s')]    |    //*[@data-test-id='LoginInvalidCredentialsLocator' and contains(text(),'%s')]
+LOGIN_SIGNUP_LINK:  //*[@data-qa-label="LoginSignUpLnk"]  | //a[normalize-space(text())='Sign Up' and @role="button"]
+LOGIN_PRIVACYPOLICY_LINK: //*[@data-test-id="LoginPrivacyPolicyLink"] | //*[@qa-attribute="BRSignUpPrivacyPolicyLnk"]
+LOGIN_TERMS&CONDITION_LINK: //*[@data-test-id="LoginTerms&ConLink"] | //*[@qa-attribute="BRSignUpTerms&ConditionsLnk"]
+LOGIN_SKIPBIRTHDAYCLUB_BUTTON: //*[@data-qa-label="AppSkipBtn"]
+LOGIN_ERRORPOPUP_TRYAGAIN_BUTTON: //*[contains(text(),'account.loginFailed.button.differentEmail_i18')]
+LOGIN_ERRORPOPUP_BODY_MSG: //*[text()='Login Failed']
+LOGIN_HEADER_LOGO_LINK: xpath=(//*[@data-qa-label='AppHeaderLogoBtn'])[2]
+LOGIN_HEADER_CART_LINK: xpath=(//*[@data-qa-label="AppHeaderCartBtn"])[2]
+
+# Forgot password locators
+LOGIN_FORGOTPASSWORD_MODAL: //*[@data-qa-label='FrgtPsswdLbl']/..   |   //*[@view-title='account.create.title.forgotPassword_i18']
+LOGIN_FORGOTPASSWORD_EMAILADDRESS_TEXTBOX: //*[@data-qa-label='BRForgotPasswordEmailTxt'] #//*[@data-test-id='ForgotPasswordPopupEmailAddressTextbox']
+LOGIN_FORGOTPASSWORD_SUBMIT_BUTTON: //*[contains(text(),'notification.forgotPassword.button.readyToReset_i18')] #//*[contains(text(),'Ready to Reset')]
+LOGIN_FORGOTPASSWORD_EMAILSUBMITTEDCONFIRM_POPUP: //*[contains(text(),'notification.emailSent.header_i18')]/.. | //*[@data-qa-label="HeadlineLbl"]/parent::div[@class="col"]
+LOGIN_FORGOTPASSWORD_EMAILSUBMITTEDCONFIRM_TEXT:  //*[normalize-space(text())='notification.emailSent.header_i18'] | //*[normalize-space(text())='Email sent!']
+LOGIN_FORGOTPASSWORD_LINK: //*[contains(text(),'account.login.button.forgot_i18')] | //*[normalize-space(text())='account.login.button.forgotPassword.ariaLabel_i18']
+LOGIN_FORGOTPASSWORD_DESCRIPTION_LABEL: //*[@data-qa-label='FrgtPswdDescLbl']   |   //*[@aria-label='notification.forgotPassword.description_i18']
+LOGIN_FORGOTPASSWORD_MODAL_CLOSE_BUTTON: //*[contains(text(),'form.button.close_i18')]    |   //*[@data-qa-label='AppCloseBtn']
+#LOGIN_FORGOTPASSWORD_PASS_RESET_STAGING_USERNAME_TEXTBOX:TBD
+#LOGIN_FORGOTPASSWORD_PASS_RESET_STAGING_PASSWORD_TEXTBOX: TBD
+#LOGIN_FORGOTPASSWORD_PASS_RESET_STAGING_SUBMIT_BUTTON: TBD
+LOGIN_RESETPASSWORD_PAGE: //*[@class='form form--reset-password']
+LOGIN_RESETPASSWORD_PASSWORD_TEXTBOX: //*[@id='reset-password-form-new-password']
+LOGIN_RESETPASSWORD_RETYPEPASSWORD_TEXTBOX : //*[@id='reset-password-form-confirm-new-password']
+LOGIN_RESETPASSWORD_SUBMIT_BUTTON : //*[@value='Reset Now']
+LOGIN_FORGOTPASSWORD_EMAILSENTCONFIRMATION_TEXT: //*[normalize-space(text())='notification.emailSent.description_i18']    |    //*[@data-qa-label='MessageLbl']
+LOGIN_FORGOTPASSWORD_EMAILSENTMODALSIGNIN_BUTTON: //*[@data-qa-label='LetsSignInBtn']
+LOGIN_FORGOTPASSWORD_REQUIREDEMAIL_ERRORMESSAGE_LABEL: (//*[contains(text(),'%s')])[1] #//*[@data-qa-label='BRForgotPasswordEmailTxt']/parent::div/following-sibling::div/span[text()='%s']
+LOGIN_FORGOTPASSWORD_CREATEACCOUNT_BUTTON: //*[normalize-space(text())='checkout.confirm.createMyAccount.label_i18']
+
+# Menu locators
+MENU_HOME_BUTTON:  //*[text()='navigation.option.label.home_i18']
+FULLMENU_CATEGORY_TILE: //*[contains(text(),'%s')]
+MENU_CATEGORY_SCREEN_UPDATE_MESSAGE: //*[contains(text(),'%s')]
+DEFAULT_ALACARTE_SUBCATEGORY: //*[@data-qa-label='SubCategoryLbl' and contains(text(),"%s")] | //a[not(contains(@class,'ng-hide'))]//*[@data-test-id='BRMenuProductTitle' and text()="%s"]
+DEFAULT_ALACARTE_CATEGORY: xpath=(//*[@data-test-id='BRMenuProductTitle' and text()='%s'])[2] | //*[@aria-label='%s']
+FAVORITES_SUBCATEGORY_LOCATOR: //*[@class="favorites-list__contents__item__info__header"]//following::*[normalize-space(text())='%s']  # need data test id #replace FAVORITES_ALACARTE_SUBCATEGORY
+FAVORITES_ADDTOCART_BUTTON: //*[@class="favorites-list__contents__item__info__header__item-name" and contains(text(),"%s")]//following::*[contains(text(),'builder.button.addToCart_i18')][1] #Need data-test-id
+FAVORITES_CUSTOMIZATION_BUTTON: //*[@class="favorites-list__contents__item__info__header__item-name" and contains(text(),"%s")]//following::*[contains(text(),'builder.button.customize_i18')][1]  #Need data-test-id
+FAVORITES_CUSTOMIZATION_LIST: //*[@class="favorites-list__contents__item__info"][contains(.,'%s')][1] #Need data-test-id
+
+# Cross sell & item added pop up locators
+ITEMADDED_POPUP_HEADING:  //*[contains(text(),'cart.notification.itemAdded.added_i18')] #//*[@data-qa-label='ItemAddedLbl']
+ITEMADDED_CHECKOUT_BUTTON: //*[contains(text(),'cart.notification.itemAdded.checkout_i18')]
+ITEMADDED_ORDERMORE_BUTTON: //*[contains(text(),'cart.notification.itemAdded.continueShopping_i18')] #//*[@data-qa-label='ContinueShoppingBtn']
+ITEMADDED_ITEM_DETAILS: //*[@data-qa-label='ItemNameLbl' and contains(text(),"%s")]   |   //*[@class="add-confirmation__wrapper__contents__description" and contains(text(),"%s")]  #Requested data-test-id BRA-19027
+ITEMADDED_UPSELL_LOCATOR: //*[@data-qa-label='UpsellNameLbl' and contains(text(),"%s")] #//*[@data-test-id='UpsellNameLbl']//*[contains(text(),"%s")]
+ITEMADDED_UPSELL_TILE: //*[@class="add-confirmation__wrapper__upsell"] #Requested for data-test-id
+ITEMADDED_UPSELL_PRODUCTLABEL: //*[normalize-space(text())='%s']/following::*[contains(text(),'builder.button.customize_i18')]
+ITEMADDED_UPSELL_SECOND_PRODUCTLABEL: (//*[@data-qa-label='UpsellNameLbl']/following::*[contains(text(),'builder.button.customize_i18')])[2] #Need data-test-id
+ITEMADDED_UPSELL_THIRD_PRODUCTLABEL: (//*[@data-qa-label='UpsellNameLbl']/following::*[contains(text(),'builder.button.customize_i18')])[3] #Need data-test-id
+ITEMADDED_UPSELL_INCREASE_QUANTITY: (//*[@data-qa-label='UpsellNameLbl'and contains(text(),"%s")]/following::*[@data-qa-label='IncreaseAmntBtn'])[1]  #Need data-test-id
+ITEMADDED_UNAVAILABLE_ITEM_ERROR_POPUP_TEXT: //*[contains(text(),"%s")]
+ITEMADDED_UNAVAILABLE_ITEM_ERROR_POPUP_ClOSE_LINK: xpath=(//*[@aria-label='Close']//span[contains(text(),'✕')])[1]
+ITEM_ADDED_UPSELL_LIST: //*[@data-qa-label="UpsellChk"] #Need data-test-id
+
+# Cart page locators
+CART_HEADING_LABEL: //*[contains(text(),'My Cart')] #Request i18 key
+CART_PICKUPTIME_ORDER_RESTRICTION_MESSAGE: //*[contains(text(),'menu.product.detail.label.orderRestriction.products_i18')]
+CART_ORDERTOTAL_LINEITEMS_LOCATOR: //*[@class='columns large-6 small-6 text-right' and @data-qa-label!='TotalPriceLbl' and @data-qa-label!='CouponDiscountTxt'] | //div[@class='cart-container__summary__order']//div[contains(@class,'order-subtotal') or contains(@class,'summary__tax')]//div[contains(@class,'text-right')]
+CART_ORDERTOTAL_FINALPRICE_LOCATOR: &total_value //*[@data-qa-label='TotalPriceLbl'] | //*[normalize-space()='Total']/following-sibling::*[1]
+CART_DISCOUNTPRICE_LOCATOR: &discount_value //*[@data-qa-label='CouponDiscountTxt'] | //div[contains(text(),'cart.summary.label.savings_i18')]//following-sibling::div[contains(@class,'text-right')]
+CART_VATPRICE_LOCATOR: &vat_value //*[normalize-space(text())='cart.summary.label.tax_i18']/following-sibling::*
+CART_SUBTOTAL_LOCATOR: &subtotal_value //*[@data-qa-label='SubTotalPriceLbl']   |   //*[normalize-space()='Order Subtotal']/following-sibling::*[1]
+CART_SELECTPICKUPTIME_BUTTON: //*[normalize-space(text())='cart.button.selectPickupTime_i18']
+CART_PICKUPTIMESELECTOR_SELECTTIME_BUTTON: //*[@data-qa-label='TimePickerBtn']  | //*[contains(text(),'cart.timeSelection.timePicker.placeholder_i18')]/parent::select #//*[@data-test-id="TimePickerBtn"]
+CART_PICKUPTIMESELECTOR_SELECTTIME_OPTIONS: //*[@data-qa-label='TimePickerDdl'] | //*[contains(text(),'cart.timeSelection.timePicker.placeholder_i18')]/../*
+CART_PICKUPTIMESELECTOR_CONTINUE_BUTTON: //*[contains(@class,"time-selection__content")]//*[contains(text(),'cart.button.continue_i18')] | //*[@data-qa-label="ContinueBtn"]
+CART_PICKUPTIMESELECTOR_CONTINUE_DISABLED_BUTTON: //*[contains(text(),'cart.button.continue_i18') and @disabled='disabled'] #//*[@data-qa-label='ContinueBtn' and @disabled='disabled']
+CART_INCREASE_QUANTITY: xpath=(//*[@data-qa-label='CartItemTile'][contains(.,'%s')]//*[@data-qa-label='IncreaseAmntBtn'])[2]  | //*[@class='cart-container__order-item'][contains(.,'%s')]//*[@data-test-id='BRCheckoutUpsellAddBtn']
+CART_COUPONCODE_TEXTBOX: //*[@data-qa-label="CouponCodeTxt"]  | //*[@data-test-id="BRCartCouponCodeInput"]
+CART_COUPON_APPLY_BUTTON: //*[@value='cart.button.apply_i18'] #//*[@data-qa-label="ApplyCouponBtn"]
+COUPON_REDEEM_DONE_BUTTON:  //*[@value='cart.button.applied_i18']
+CART_COUPON_DETAILS_LABEL: //*[text()='cart.label.couponDetails_i18']
+CART_COUPON_DETAILS_TEXT: //*[@data-qa-label='CouponDetailsTxt']  | //*[text()='cart.label.couponDetails_i18']/following-sibling::span
+CART_COUPON_TERMS_LABEL: //*[normalize-space(text())='cart.label.coupon.termsConditions_i18'] #//*[@data-qa-label='TermsConditionsLbl']
+CART_COUPON_TERMS_MORE_LINK: //*[contains(text(), 'cart.label.coupon.termsConditions.more_i18')]
+CART_COUPON_TERMS_TEXT: //*[normalize-space(text())='cart.label.coupon.termsConditions_i18']/following-sibling::span[2]
+CART_COUPON_YOUSAVED_LABEL: //*[normalize-space(text())='cart.summary.label.savings_i18'] #//*[@data-qa-label='YouSavedLbl']
+CART_COUPON_DISCOUNT_TXT: xpath=(//*[contains(text(),'cart.summary.label.savings_i18')]/following-sibling::*[1]) | //*[@data-qa-label='CouponDiscountTxt']
+CART_COUPON_DELETE_BUTTON: //*[@data-qa-label='DeleteCouponBtn'] #//*[@data-test-id='DeleteCouponBtn']
+CART_COUPON_INVALID_LABEL: //*[text() ='cart.error.invalidCoupon_i18']
+CART_COUPON_INVALID_ERROR_POPUP_TEXT: //*[@data-qa-label="genericPopupBodyMessage" and contains(text(),"%s")]
+CART_INVALID_COUPON_POPUP_CLOSE_BUTTON: &okayGotIt_button //*[normalize-space(text())='notification.button.okayGotIt_i18']
+CART_ITEM_NAME_TEXT: //*[@data-qa-label='ItemNameLbl' and contains(text(),"%s")]  | //*[@data-test-id='BRCartProductTitle' and contains(text(),"%s")]
+CART_EMPTYCART_TITLE_LABEL: //*[text()='cart.title.label.myCart_i18'] #//*[@data-qa-label='PageTitleLbl' and contains(text(),'My Cart')]
+CART_EMPTYCART_MSG_LABEL: //*[@data-qa-label='NoItemsInCartLbl' and text()='There are currently no items in your'] #//*[@data-test-id='NoItemsInCartLbl']
+CART_EMPTYCART_CONTINUESHOPPING_LINK: //*[@data-qa-label="NoItemsInCartLbl"]/following::*[normalize-space(text())='cart.button.continueShopping_i18'] | //*[@data-test-id="BREmptyCartBodyMsg"]/following::*[normalize-space(text())='Continue shopping']
+CART_DELETE_BUTTON: //*[normalize-space(text())='cart.button.remove_i18'] #//*[@data-qa-label='RemoveItemBtn']
+CART_DELETE_UPSELL: (//*[@data-qa-label="RemoveItemBtn"])[2] #Need data-test-id
+CART_ITEMDELETE_POPUP_HEADING: //*[@data-qa-label='PopupHeading']//*[contains(text(),'%s')] #//*[@data-test-id="PopupHeadingTxt"]//*[contains(text(),'%s')]
+CART_ITEMDELETE_POPUP_SUB_HEADING: //*[@data-qa-label='PopupSubHeading']//*[contains(text(),'%s')] #//*[@data-test-id="PopupSubHeading"]//*[contains(text(),'%s')]
+CART_ITEMDELETE_POPUP_CONFIRM: //*[@data-qa-label='OkBtn'] #//*[normalize-space(text())='cart.label.coupon.remove.yes_i18']
+CART_QUANTITY_LOCATOR: //*[@class='cart-count-badge' and normalize-space(text())='%s'] #Need data-test-id
+CART_ITEM_QUANTITY_LOCATOR: //*[contains(text(),'%s')]/following::*[@data-qa-label='QuantityLbl'] | //*[contains(text(),'%s')]/ancestor::*//*[contains(@aria-label,'Current quantity')]
+CART_EDIT_BUTTON: //*[@data-qa-label='CartItemTile'][contains(.,"%s")]//*[@data-qa-label='EditItemBtn']   |   //*[@data-test-id='BRCartProductTILE'][contains(.,"%s")]//*[normalize-space(text())='cart.button.edit_i18']
+CART_MOD_NAME: //*[@data-qa-label='SpecialInstrctnLbl' and contains(text(),"%s")] | //*[@ng-if='!subItem.specialInstruction' and contains(text(),'%s')] #Requested data-test-id BRA-20089
+CART_DECREASE_QUANTITY : (//*[@data-qa-label='CartItemTile'][contains(.,'%s')]//*[@data-qa-label='DecreaseAmntBtn'])[2] #(//*[@data-test-id='CartItemTile'][contains(.,'%s')]//*[@data-test-id='DecreaseAmntBtn'])[2]
+CART_EXTRATOPPING_LOCATOR: //*[@data-qa-label="ExtraToppingPriceLbl"] | //*[contains(@ng-if, 'subItem.childLineItems[0].price')]  #Requested data-test-id BRA-20089
+CART_SELECTPICKUPTIME_SELECTTIME_LABEL: //*[normalize-space(text())='cart.timeSelection.timePicker.placeholder_i18'] #//*[@data-qa-label='TimePickerBtn' and contains(text(),'Select Time')]
+CART_ORDERHISTORY_LINK_LOCATOR: //*[normalize-space(text())='cart.link.myOrderHistory_i18'] #//*[@data-qa-label='OrderHistoryCartLnk']
+CART_MAINITEMPRICE_LOCATOR: //*[@data-qa-label='ItemTotalLbl'] | //*[@data-test-id="BRCartItemPriceTxt"]
+CART_MAXIMUMAMOUNT_MODALTEXT_LOCATOR: //*[@data-qa-label='PopupHeading' and contains(text(),"%s")]/following-sibling::span #//*[@data-test-id='PopupHeading' and contains(text(),"%s")]/following-sibling::span
+CART_MAXIMUMAMOUNT_MODAL_CONFIRM: //*[normalize-space(text())='cart.button.confirm_i18'] #//*[@data-qa-label='OkBtn']
+CART_SPECIALINSTRUCTIONS_LABEL: &cartspecialinstructionslbl //*[@data-qa-label='SpclInstrctnsTxt']
+CART_SPECIALINSTRUCTIONS_1_LABEL: //*[@data-qa-label='SpecialInstructionsLbl'] #//*[@data-test-id='CartSpecialInstructionsLbl']
+CART_REORDER_ITEM_UNAVAILABLE_ERROR_LABEL: //*[normalize-space(text())='cart.unavailableItems.label_i18'] #//*[@data-qa-label='ItemsUnavailableLbl']
+CART_REORDER_ITEM_UNAVAILABLE_NAME_LABEL: //*[@data-test-id='UnavailableItemNameLbl'] #//*[@data-qa-label='UnavailableItemNameLbl']
+CART_ORDERMORE_BUTTON: //*[normalize-space(text())='cart.button.continueShopping_i18']
+CART_ITEMDELETE_POPUP_PRODUCTNAME_LABEL: //*[@data-qa-label='PopupMsgLbl' and contains(text(),"%s")] #//*[@data-test-id='PopupMsgLbl' and contains(text(),"%s")]
+CART_ITEMDELETE_POPUP_CANCEL: //*[normalize-space(text())='cart.label.coupon.remove.no_i18'] #//*[@data-qa-label='CancelBtn']
+CART_PRODUCTNAME_LABEL: &productname //*[@data-qa-label='ItemNameLbl'] #//*[@data-test-id='ItemNameLbl']
+CART_ITEM_REMOVE_BUTTON: (//*[@data-qa-label='ItemNameLbl' and contains(text(),"%s")]//following::button[@data-qa-label='RemoveItemBtn'])[1] #(//*[@data-test-id='ItemNameLbl' and contains(text(),"%s")]//following::*[normalize-space(text())='cart.button.remove_i18'])[1]
+CART_ITEMNAME_REMOVED_LABEL: //*[@data-qa-label='PopupMsgLbl'] #//*[@data-test-id='PopupMsgLbl']
+CART_COUPON_ELIGIBLE_ITEM_REMOVAL_POPUP_HEADING: //*[@data-qa-label='genericPopupTitle'] #//*[@data-test-id='EligibleItemCouponPopupTitle']
+CART_COUPON_CAKE_1_DETAILS_TEXT: //*[@data-qa-label='CouponDetailsTxt'and contains(text(),'%s')]  | //*[text()='cart.label.couponDetails_i18']/following-sibling::span[text()='%s']
+CART_COUPON_REMOVE_MODAL_POPUP: //*[normalize-space(text())='cart.label.coupon.remove.headline_i18'] #//*[@data-qa-label='PopupHeading' and contains(text(),'Remove coupon')]
+CART_COUPON_REMOVE_POPUP_OK_BUTTON: //*[normalize-space(text())='cart.label.coupon.remove.yes_i18']
+CART_COUPON_INVALID_ERROR_MESSAGE_TEXT: //*[@data-qa-label='InvalidCouponLbl']//*[1]  |  //*[@class="col cart-container__summary__promo__invalid-msg"]//*[1]   #Request data-test-id  BRA-19729
+CART_COUPON_GUESTUSER_SIGNIN_LINK:  //*[@data-qa-label='InvalidCouponLbl']//following::*//*[contains(text(),'account.login.button.logIn_i18')]    |   //*[contains(@class, "promo__invalid-msg")]//following::*[text() ='account.login.button.logIn_i18']
+CART_COUPON_GUESTUSER_SIGNUP_LINK:  //*[@data-qa-label='InvalidCouponLbl']//following::*//*[contains(text(),'account.register.button.signUp_i18')]   |   //*[contains(@class, "promo__invalid-msg")]//following::*[text() ='account.register.button.signUp_i18']
+CART_COUPON_INVALID_ERROR_TEXT : //*[contains(text(),'Oops! The coupon that you entered is not valid')] #Request to update i18 key
+CART_COUPON_MAXREDEMTION_ERROR_TEXT: //*[contains(text(),'The maximum number of redemptions on this coupon have been exceeded.')] #need data-test-id  and i18
+CART_COUPON_EXPIRED_ERROR_TEXT: //*[contains(text(),'This offer has expired')] #//*[normalize-space(text())='coupon.error.redemptionAfterEndDate_i18']
+CART_ITEM_TILE_DETAILS: //*[@data-qa-label='CartItemTile'][contains(.,'%s')] | //*[@data-test-id="BRCartProductTILE"][contains(.,'%s')]
+CART_PRODUCT_PRICE_LABEL: &mainitemprice //*[@data-qa-label='ItemPriceLbl'] | //*[@data-test-id='BRCartItemPriceTxt']
+CART_REORDER_MOD_UNAVAILABLE_ERROR_LABEL : (//*[contains(text(),'Some ingredients for your Celebration Party Cake are not currently available at this shop. Please edit your order')])[1] #([@data-test-id='ModUnavailableErrorTxt' and text()='Some ingredients for your Celebration Party Cake are not currently available at this shop. Please edit your order')])[1]']
+CART_MOD_ITEM_UNAVAILABILITY_ERROR_LABEL: //*[normalize-space(text())='cart.item.label.unavailableMods_i18'] #//*[contains(text(),'Ingredient Unavailable')]
+CART_MOD_ITEM_UNAVAILABILITY_INFO_LABEL: //*[@data-qa-label='UnavailableModLbl']/following::div[contains(text(),'%s')] #//*[@data-test-id='UnavailableModLbl']/following::div[contains(text(),'%s')]
+CART_ITEM_ADD_LOADER_LOCATOR: //*[@class='loading-mask']//following::span[contains(text(),"%s")] #//*[@data-test-id='loading-mask']//following::span[contains(text(),"%s")]
+CART_WITH_UPSELL1_ADDED: //*[@data-qa-label='ItemNameLbl' and normalize-space(text())='%s']
+CART_WITH_UPSELL2_ADDED: (//*[@data-qa-label='ItemNameLbl'])[3] #Requested data-test-id
+CART_WITH_UPSELL_ADDED: //*[@data-qa-label='ItemNameLbl'] #Requested data-test-id
+CART_REFUNDSTATEMENT_TEXT: //*[contains(text(),"Charges paid for completed orders are final and non-refundable.")] #Request i18 key
+CART_ADDCOUPON_LINK: //*[@class="cart-container__summary__coupon__header__pink-arrow"] #Requested data-test-id
+CART_SCREEN_SIGNUP_IMAGE: //*[contains(text(),'reward.label.youCouldEarnMore_i18')]/..//preceding-sibling::div/img
+CART_PAGE_SIGNUP_TEXT: //*[contains(text(),'reward.label.youCouldEarnMore_i18')]
+CART_PAGE_SIGNUP_LINK: //*[contains(text(),"Sign up")] #Request i18 key
+CART_PAGE_NO_REWARDS_MSG: //*[contains(text(),"No rewards (yet!)")] #Request i18 key
+CART_REWARDS_HEADING: //*[contains(text(),"Rewards & Offers")] #Request i18 key
+CART_REWARDS_INFO_ICON: //*[@class="rewards-info-icon"] #Request data-test-id
+CART_REWARDS_INFO_ICON_POPUP_MSG: //*[@data-qa-label="PopupMsgLbl"] #Request data-test-id
+CART_REWARDS_NAME: //*[@data-test-id="BRHomeLoyaltyRewardItem"]
+CART_REWARDS_EXPIRATION: //*[@class="loyalty-item-expiration"] #Request data-test-id
+CART_REWARDS_SPOON_IMAGE: //*[@class="loyalty-item-image"] #Request data-test-id
+CART_REWARDS_PAGINATION_ICON: //*[@data-qa-label="PaginationIcon"] #Request data-test-id
+CART_REWARDS_CAKE_OFFER_1_PAGINATION_ICON: //*[@data-qa-label="PaginationIcon"]/span[3] #Request data-test-id
+CART_REWARDS_CAKE_OFFER_2_PAGINATION_ICON: //*[@data-qa-label="PaginationIcon"]/span[4] #Request data-test-id
+CART_REWARDS_OFFER: //*[@data-test-id="BRHomeLoyaltyRewardItem" and contains(text(),"%s")]
+CART_REWARDS_ORDER_SUBTOTAL_LABEL: //*[contains(text(),"Order Subtotal")] #Request i18 key
+CART_REWARDS_ORDER_SUBTOTAL_VALUE: //*[contains(text(),"Order Subtotal")]/following-sibling::div #Request i18 key
+CART_REWARDS_OFFER_LABEL: //*[contains(text(),"Baskin-Robbins Offers:")]
+CART_REWARDS_OFFER_NAME: //*[@data-qa-label="OrderSubTtlLbl" and contains(text(),"%s")] | //*[text()="Baskin-Robbins Offers:"]/following::*[contains(text(),'%s')] #Request data-test-id
+CART_REWARDS_OFFER_VALUE: //*[text() ="Baskin-Robbins Offers:"]/following::*[@data-qa-label="SubTotalPriceLbl"]  | //*[text() ="Baskin-Robbins Offers:"]/following::*[@aria-label="-"]
+CART_BR_REWARDS_LABEL: //*[contains(text(),'loyalty.cart.summary.rewards.title_i18')]
+CART_BR_REWARDS_VALUE_LOCATOR: //*[text() ='loyalty.cart.summary.rewards.title_i18']/following::*[@data-qa-label="SubTotalPriceLbl"]    |   //*[text()='loyalty.cart.summary.rewards.title_i18']/following::*[@class="col col-50 text-right cart-container__summary__order-subtotal--trebuchet"]
+CART_REWARDS_TAX_LABEL: //*[normalize-space(text())='cart.summary.label.tax_i18']
+CART_REWARDS_TAX_VALUE: //*[normalize-space(text())='cart.summary.label.tax_i18']/following-sibling::div
+CART_REWARDS_TOTAL_LABEL: //*[normalize-space(text())='cart.summary.label.total_i18']
+CART_REWARDS_DISCOUNT_ERROR: //*[contains(text(),"Sorry you can not enter a coupon code with a reward or offer selected.")] #Request i18 key
+CART_REWARDS_DISCOUNT_ERROR_HEADER: //*[contains(text(),"Oh fudge!")] #Request i18 key
+CART_REWARDS_MORE_THAN_ONE_OFFER_ERROR_HEADER: //*[@data-qa-label="PopupMsgLbl" and contains(text(),"%s")]    |   //*[@class="content" and contains(text(),"%s")] #Request data-test-id
+CART_REWARDS_CHALLENGE_PROGRESSBAR: //*[@data-test-id="RewardsProgressBar"]
+CART_REWARDS_QUANTITY_LOCATOR: //*[normalize-space(text())='%s']/parent::*/following::*[@class="counter"]  #Requested data-test-id BRA-19729
+CART_REDEEM_REWARD_VALUE: //*[text() ="Baskin-Robbins Offers:"]/ancestor::*[@class='summary-rewards-wrapper']/div[contains(@class,'rewards-summary-items')]//*[contains(@class,'order-subtotal')] #Request data-test-id
+
+# Checkout Page
+CHECKOUT_TOTAL_LOCATOR: *total_value
+CHECKOUT_SUBTOTAL_LOCATOR: *subtotal_value
+CHECKOUT_VATPRICE_LOCATOR: *vat_value
+CHECKOUT_PROMOCODE_DISCOUNTPRICE: *discount_value
+CHECKOUT_YOURINFO_HEADING: xpath=(//*[normalize-space(text())='checkout.details.label.yourInformation_i18' and @qa-attribute='AppHeaderTitleTxt'])[2] | //*[normalize-space(text())='checkout.details.label.yourInformation_i18' and @data-qa-label='PageTitleLbl']
+CHECKOUT_ALREADYHAVEANACCOUNT_TEXT: //*[normalize-space(text())='checkout.title.alreadyHaveAnAccount_i18']
+CHECKOUT_GUEST_CONTINUE_BUTTON: //*[normalize-space(text())='checkout.button.continue.as.guest_i18'] #//*[contains(text(),'Continue as a guest')]
+CHECKOUT_FIRSTNAME_TEXTBOX: //*[contains (text(),'checkout.guest.label.firstName_i18')]/following-sibling::*/input
+CHECKOUT_LASTNAME_TEXTBOX: //*[contains (text(),'checkout.guest.label.lastName_i18')]/following-sibling::*/input
+CHECKOUT_PHONENUMBER_TEXTBOX: //*[contains (text(),'checkout.guest.label.phone_i18')]/following-sibling::*/input
+CHECKOUT_PASSWORD_TEXTBOX: //*[@data-qa-label="LoginPswdTxt"]
+CHECKOUT_GUEST_EMAILADDRESS_TEXTBOX:  //*[@data-test-id='GuestCheckoutEmail'] | (//*[@data-qa-label='LoginEmailTxt'])[1]
+CHECKOUT_CONTINUE_BUTTON: xpath=(//*[normalize-space(text())='checkout.details.button.continueToPayment_i18'])[1]
+CHECKOUT_CONTINUE_DISABLED_BUTTON: xpath=(//*[normalize-space(text())='checkout.details.button.continueToPayment_i18'])[1][@disabled="disabled"]
+CHECKOUT_PICKUP_ORDER_TIME_LABEL: //*[@class="order-pick-up-time"] | //*[@class='time-slot']    #Requested data-test-id BRA-19027
+CHECKOUT_PICKUP_EXISTINGUSER_LOGIN_EMAILADDRESS_TEXTBOX: //*[@id='checkout-login-email'] #//*[@data-test-id="CheckoutLoginEmailTxtBox"]
+CHECKOUT_PICKUP_EXISTINGUSER_LOGIN_PASSWORD_TEXTBOX: //*[@id='checkout-login-password'] #//*[@data-test-id="CheckoutPasswordTxtBox"]
+CHECKOUT_PICKUP_SEND_ME_OFFERS_UNCHECKED_CHECKBOX: //*[@data-qa-label='SignUpReceiveOfferCbx' and contains(@class,'ng-empty')] | //*[@id="enrollMe" and contains(@class, "ng-empty")]
+CHECKOUT_PICKUP_SEND_ME_OFFERS_CHECKED_CHECKBOX: //*[@data-qa-label='SignUpReceiveOfferCbx' and contains(@class,'ng-not-empty')] | //*[@id="enrollMe" and contains(@class, "ng-not-empty")]
+CHECKOUT_GUEST_EMAIL_OPTIN_CHECKBOX: //*[normalize-space(text())='checkout.guest.label.emailOptIn_i18'] #//*[@data-qa-label='EmailOptinLbl']
+CHECKOUT_GUEST_PHOTOCAKE_TITLE: //*[normalize-space(text())='header.guest_i18'] #//*[contains(text(),'Guest')]
+CHECKOUT_GUEST_PHOTOCAKE_FIRSTNAME_TEXTBOX: //*[@id='guest-checkout-first-name'] #//*[@data-test-id="CheckoutGuestPhotoCakeFirstNameTxtBox"]
+CHECKOUT_GUEST_PHOTOCAKE_LASTNAME_TEXTBOX: //*[@id='guest-checkout-last-name'] #//*[@data-test-id="CheckoutGuestPhotoCakeLastNameTxtBox"]
+CHECKOUT_GUEST_PHOTOCAKE_CONTINUE_BUTTON: //*[normalize-space(text())='photocake.label.continue_i18'] #//*[contains(text(),'Continue')]
+CHECKOUT_GUEST_PHOTOCAKE_EMAIL_TEXTBOX: //*[@id='guest-checkout-email'] #//*[@data-test-id="CheckoutGuestPhotoCakeEmailTxtBox"]
+CHECKOUT_YOURINFO_SIGNUP_LINK: xpath=(//*[contains(@class, 'guest-checkout-content')]/a[contains(text(),'account.register.button.signUp_i18'  )])[2]   |   //*[@class="guest-checkout__context-switcher__link"]//*[normalize-space()='account.register.button.signUp_i18']
+CHECKOUT_YOURINFO_SIGNUP_MSG_INFO_LINK: (//*[contains(text(),"Don't have an account yet?")])[2] #Request i18 key
+CHECKOUT_GUEST_SIGNUP_LINK: (//*[contains(text(),'account.register.label.signUp_i18')])[3]
+CHECKOUT_GUEST_SIGNUP_MSG_INFO_LINK: (//*[contains(text(),"Dont have an account yet?")])[1] #Request i18 key
+CHECKOUT_GUEST_SIGNIN_LINK: xpath=//*[@aria-label='Already have an account? Log in']/span[contains(text(),'Log in')]  | (//*[contains(@class, 'guest-checkout-content')]/a[contains(text(),'Log In')])[1] #Requested data-test-id BRA-19027
+CHECKOUT_YOURINFO_EMAILADDRESS_TEXTBOX: (//*[@data-qa-label='LoginEmailTxt'])[2] #//*[@data-test-id="CheckoutExistingLoginEmailTxtBox"]
+CHECKOUT_PICKUP_DISCLAIMER_TEXT: //*[contains(text(),"%s")]
+CHECKOUT_GUEST_EMPTY_FIRST_NAME_ERROR_LABEL: //*[normalize-space(text())='account.register.error.required.firstName_i18'] #//*[@data-qa-label='FirstNameErrorRequired' and contains(text(),'Please enter a first name')]
+CHECKOUT_GUEST_EMPTY_SECOND_NAME_ERROR_LABEL: //*[normalize-space(text())='account.register.error.required.lastName_i18'] #//*[@data-qa-label='LastNameErrorRequired' and contains(text(),'Please enter a last name')]
+CHECKOUT_GUEST_EMPTY_PHONE_NUMBER_ERROR_LABEL:  //*[@data-qa-label='PhoneNumberErrorRequired' and contains(text(),'Please enter your phone number')]
+CHECKOUT_GUEST_EMPTY_EMAIL_ERROR_LABEL: //*[normalize-space(text())='account.register.error.required.email_i18'] #//*[@data-qa-label='EmailErrorRequired' and contains(text(),'Please enter an email address')]
+CHECKOUT_PICKUP_CONTINUETOPAYMENT_DISABLED_BUTTON: //*[normalize-space(text())='checkout.details.button.continueToPayment_i18' and @disabled='disabled'] #//*[@data-qa-label='ContinueToPaymntBtn' and @disabled='disabled']
+CHECKOUT_GUEST_MORETHAN50CHARS_FIRST_NAME_ERROR_LABEL: //*[@data-qa-label='FirstNameErrorMaxlength' and contains(text(),'Maximum 50 characters allowed')] #//*[@data-test-id='CheckoutFirstNameMaxLengthError']
+CHECKOUT_GUEST_MORETHAN50CHARS_LAST_NAME_ERROR_LABEL: //*[@data-qa-label='LastNameErrorMaxlength' and contains(text(),'Maximum 50 characters allowed')] #//*[@data-test-id='CheckoutLastNameMaxLengthError']
+CHECKOUT_GUEST_MORETHAN50CHARS_EMAIL_ERROR_LABEL: //*[@data-qa-label='EmailErrorMaxlength' and contains(text(),'Maximum 50 characters allowed')] #//*[@data-test-id='CheckoutEmailMaxLengthError']
+CHECKOUT_GUEST_INVALIDPATTERN_EMAIL_ERROR_LABEL: //*[@data-qa-label='EmailErrorPattern' and contains(text(),'Please enter a valid email address')] #//*[@data-test-id='CheckoutInvalidEmailFormatError']
+CHECKOUT_GUEST_LOGIN_PRIVACYPOLICY_LINK: (//*[contains(text(),'Privacy Policy')])[1]
+CHECKOUT_GUEST_LOGIN_TERMS&CONDITIONS_LINK: *checkoutLoginfooterPolicyLink
+CHECKOUT_GOBACK_LINK: //*[@class='button icon-points'] #Requested data-test-id
+CHECKOUT_PHONENUMBER_TEXT: //*[@data-qa-label="StorePhnLbl"]    |   //*[@class="address phonenumber"] #requested data-test-id BRA-19027
+CHECKOUT_PHONE_ICON: (//*[@data-qa-label="PhnImg"]) #need data test id
+CHECKOUT_ADDRESS_LOCATOR: (//*[@class="order-summary__head__pick-up__location__address"]) #need data test id  #CHECKOUT_DEFAULT_STORE_ADDRESS_LABEL
+CHECKOUT_EDITPICKUPTIME_LINK: //*[normalize-space(text())='Edit Pickup'] #need i18 variable
+CHECKOUT_EDITCART_LABEL: //*[text()='orderSummary.label.editCart_i18']
+CHECKOUT_ITEM_TILE: //*[@class="columns small-10 order-summary__item-wrapper"]  #Requested data-test-id BRA-19729
+CHECKOUT_SELECTEDSHOP_HEADING: //*[normalize-space(text())='cart.timeSelection.label.selectedShop_i18']
+CHECKOUT_GPAY_LABEL: //*[text() ='checkout.payment.label.googlePay_i18']
+CHECKOUT_APPLEPAY_LABEL: //*[text() ='Apple Pay']
+CHECKOUT_GIFTCARD_BALANCE_LOCATOR: //*[contains(@aria-label, "Balance")] #Requested data-test-id BRA-19885
+CHECKOUT_SAVECARD_CHECKBOX: //*[text() ='%s']/following::*[@type="checkbox"]
+CHECKOUT_SAVECARD_CHECKBOX_CHECKED: //*[text() ='%s']/following::*[contains(@class, "checked")]
+CHECKOUT_REWARDS_EXPAND_BUTTON: //*[text() ='checkout.confirm.progressiveEnrollment.cta_i18']/following-sibling::*[@alt="arrow"]
+CHECKOUT_REWARDS_SIGNMEUP_TEXT: &rewardsSignmeup_text //*[text() ='checkout.confirm.progressiveEnrollment.signup_i18']
+CHECKOUT_REWARDS_IMAGE: &BRrewards_image //*[@aria-label='loyalty.cart.summary.rewards.title_i18' and contains(@src, "%s")] | //*[@aria-label='loyalty.rewards.page.title_i18' and contains(@src, "%s")] #Requested data-test-id BRA-19374
+CHECKOUT_REWARDS_SIGNUP_TEXT: &rewardsMissing_text //*[text() ="You're missing out on rewards!"]
+CHECKOUT_REWARDS_SIGNUP_LINK: &rewardsSignup_link //*[text() ='checkout.confirm.progressiveEnrollment.cta_i18']
+CHECKOUT_REWARDS_CHECKBOX: //*[@data-qa-label="SignUpLoyaltyCbx"]
+CHECKOUT_REWARDS_TERMS_TEXT: &rewardsTerms_text //*[normalize-space(text())='checkout.confirm.progressiveEnrollment.agreement_i18']
+CHECKOUT_REWARDS_TERMS_LINK: &rewardsTerms_link //*[normalize-space(text())='loyalty.overview.terms.conditions_i18']
+
+# Payment page
+PAYMENT_HEADING_LABEL: //*[normalize-space(text())='payment.title_i18'] | //XCUIElementTypeStaticText[@name='payment.label.enterPaymentInfo_i18']   #Requested data-test-id
+PAYMENT_PHONENUMBER_TEXTBOX: //*[@data-qa-label='PhoneNumberTxt'] #Requested data-test-id
+PAYMENT_CARDNUMBER_TEXTBOX_web: //iframe[@id='targetFrame'] >>> //*[@aria-label='checkout.payment.label.creditCardNumber_i18']
+PAYMENT_EXPIRYDATE_TEXTBOX_web: //iframe[@id='targetFrame'] >>> //*[@name="expiry"] #Requested data-test-id
+PAYMENT_SECURITYCODE_TEXTBOX_web: //iframe[@id='targetFrame'] >>> //*[@placeholder='checkout.payment.label.creditCardCVV_i18'] #Requested data-test-id
+PAYMENT_NAMEONCARD_TEXTBOX: //iframe[@id='targetFrame'] >>> //input[@name="firstName"] #Requested data-test-id
+PAYMENT_FIRSTNAME_TEXTBOX_web: //iframe[@id='targetFrame'] >>> //input[@name="firstName"] #Requested data-test-id
+PAYMENT_LASTNAME_TEXTBOX_web: //iframe[@id='targetFrame'] >>> //input[@name="lastName"] #Requested data-test-id
+PAYMENT_ADDRESS_TEXTBOX_web: //iframe[@id='targetFrame'] >>> //*[@placeholder='payment.placeholder.addressLabel_i18']
+PAYMENT_ZIPCODE_TEXTBOX_web: //iframe[@id='targetFrame'] >>> //*[@placeholder='checkout.payment.label.zipCode_i18']
+PAYMENT_CONFIRMORDER_BUTTON_web: //iframe[@id='targetFrame'] >>> //*[text()='checkout.button.completeOrder_i18']  #Requested data-test-id
+PAYMENT_CREDITCARD_SAVE_CHECKBOX_web: //iframe[@id='targetFrame'] >>> //*[text()="By saving this card, you agree that this card will be saved and used for purchases. You can unregister the card at any time in your account profile."] #Request i18 key
+PAYMENT_PICKUP_ORDERTIME_LABEL: //*[@class="order-pick-up-time"]  | //*[@class='time-slot'] #Requested data-test-id
+PAYMENT_CITY_TEXTBOX_web: //iframe[@id='targetFrame'] >>> //*[@placeholder='payment.placeholder.city_i18']
+PAYMENT_STATE_TEXTBOX: //iframe[@id='targetFrame'] >>> //*[@id='state'] #Requested data-test-id
+PAYMENT_CITY_EMPTY_TEXTBOX: //*[@data-qa-label='CityTxt' and contains(@class,'ng-empty')]  #Requested data-test-id
+PAYMENT_STATE_EMPTY_TEXTBOX: //*[@data-qa-label='StateDrpDwn' and contains(@class,'ng-empty')] #Requested data-test-id
+PAYMENT_PICKUP_STORE_LABEL : (//*[@data-qa-label='StoreAddressLbl']) #Requested data-test-id
+PAYMENT_EDIT_CART_LINK: //*[contains(text(),'orderSummary.label.editCart_i18')]
+PAYMENT_SUMMARY_LABEL: //*[@data-qa-label='SummaryLbl'] #Requested data-test-id
+PAYMENT_PRODUCTNAME_LABEL: *productname
+PAYMENT_PRODUCT_PRICE_LABEL: *mainitemprice
+PAYMENT_PRODUCT_QUANTITY_LABEL: //*[@data-qa-label='QuantityLbl'] #Requested data-test-id
+PAYMENT_PRODUCT_SERVE_SIZE_LABEL: //*[contains(text(),'Serving Size')] #Need to request i18 key
+PAYMENT_PRODUCT_CAKE_FLAVOR_LABEL: //*[contains(text(),'Cake Type')] #Need to request i18 key
+PAYMENT_PRODUCT_ICECREAM_FLAVOR_LABEL: //*[contains(text(),'Ice Cream Flavor')] #Need to request i18 key
+PAYMENT_PRODUCT_SPECIALMESSAGE_LABEL: //*[contains(text(),'Special Message')] #Need to request i18 key
+PAYMENT_PRODUCT_SPECIALINSTRCUTIONS_LABEL: //*[contains(text(),'Instructions:')] #Need to request i18 key
+PAYMENT_DISABLED_COMPLETEORDER_BUTTON: //iframe[@id='targetFrame'] >>> //*[text()='checkout.button.completeOrder_i18']
+PAYMENT_BLANK_PHONENUMBER_TEXTBOX: //*[contains(@class, 'ng-empty')] [@data-qa-label='PhoneNumberTxt'] #Requested data-test-id
+PAYMENT_BLANK_CARDNUMBER_TEXTBOX: //iframe[@id='targetFrame'] >>> //*[@aria-label='checkout.payment.label.creditCardNumber_i18'][not (contains (@class, 'Active'))] #Requested data-test-id
+PAYMENT_BLANK_EXPIRYDATE_TEXTBOX: //iframe[@id='targetFrame'] >>> //*[@name="expiry"][not (contains (@class, 'Active'))] #Requested data-test-id
+PAYMENT_BLANK_SECURITYCODE_TEXTBOX: //iframe[@id='targetFrame'] >>> //*[@placeholder='checkout.payment.label.creditCardCVV_i18'][not (contains (@class, 'Active'))]
+PAYMENT_BLANK_NAMEONCARD_TEXTBOX: //iframe[@id='targetFrame'] >>> //input[@name="firstName"][not (contains (@class, 'Active'))] #Requested data-test-id
+PAYMENT_BLANK_LASTNAME_TEXTBOX: //iframe[@id='targetFrame'] >>> //input[@name="lastName"][not (contains (@class, 'Active'))] #Requested data-test-id
+PAYMENT_BLANK_ADDRESS_TEXTBOX: //iframe[@id='targetFrame'] >>> //*[@placeholder='payment.placeholder.addressLabel_i18'][not (contains (@class, 'Active'))]
+PAYMENT_BLANK_ZIPCODE_TEXTBOX: //iframe[@id='targetFrame'] >>> //*[@placeholder='checkout.payment.label.zipCode_i18'][not (contains (@class, 'Active'))]
+PAYMENT_BLANK_CITY_TEXTBOX: //iframe[@id='targetFrame'] >>> //*[@placeholder='payment.placeholder.city_i18'][not (contains (@class, 'Active'))]
+PAYMENT_BLANK_STATE_TEXTBOX: //iframe[@id='targetFrame'] >>> //*[@id='state'][not (contains (@class, 'Active'))] #Requested data-test-id
+PAYMENT_CART_ITEMSDETAILS_TEXT : //*[@data-qa-label='ItemNameLbl'][contains(.,'%s')]/../.. #Requested data-test-id
+PAYMENT_EXPIRED_DATE_ERROR_LABEL: //iframe[@id='targetFrame'] >>> //*[contains(@class,"error")][text()='Expiration date is invalid.'] #Need to request i18 key
+PAYMENT_EXPIRED_DATE_ERROR_1_LABEL : //iframe[@id='targetFrame'] >>> //*[contains(@class,"error")][text()='Expiration date is invalid.'] #Need to request i18 key
+PAYMENT_FAILURE_TRYAGAIN_BUTTON: //*[contains(text(),'Try Again')] #Need to request i18 key
+PAYMENT_FAILURE_1_ERROR_TEXT: //*[contains(text(),'If you continue to experience issues, please contact your local Baskin-Robbins shop to place your order.')] #Need to request i18 key
+PAYMENT_FAILURE_2_ERROR_TEXT : //*[contains(text(),'We were unable to process payment. Please try again.')] #Need to request i18 key
+PAYMENT_EMPTY_PHONENUMBER_ERROR_LABEL: //*[@data-qa-label='PhoneNumberTxt']/parent::div/following-sibling::div/span[text()='Please enter your phone number'] #Requested data-test-id
+PAYMENT_EMPTY_CARDNUMBER_ERROR_LABEL: //iframe[@id='targetFrame'] >>> //*[@class="error"][text()='Card number is required.'] #Need to request i18 key
+PAYMENT_EMPTY_EXPIRATIONNDATE_ERROR_LABEL: //iframe[@id='targetFrame'] >>> //*[@class="error"][text()='Expiration date is required.'] #Need to request i18 key
+PAYMENT_EMPTY_CVV_ERROR_LABEL: //iframe[@id='targetFrame'] >>> //*[@class="error"][text()='CVV code is required.'] #Need to request i18 key
+PAYMENT_EMPTY_NAMEONCARD_ERROR_LABEL: //iframe[@id='targetFrame'] >>> //*[@class="error"][text()='First name is required.'] #Need to request i18 key
+PAYMENT_EMPTY_FIRSTNAME_ERROR_LABEL: //iframe[@id='targetFrame'] >>> //*[@class="error"][text()='First name is required.'] #Need to request i18 key
+PAYMENT_EMPTY_LASTNAME_ERROR_LABEL: //iframe[@id='targetFrame'] >>> //*[@class="error"][text()='Last name is required.'] #Need to request i18 key
+PAYMENT_EMPTY_ADDRESS1_ERROR_LABEL: //iframe[@id='targetFrame'] >>> //*[@class="error"][text()='Street address is required.'] #Need to request i18 key
+PAYMENT_EMPTY_CITY_ERROR_LABEL: //iframe[@id='targetFrame'] >>> //*[@class="error"][text()='City is required.'] #Need to request i18 key
+PAYMENT_EMPTY_STATE_ERROR_LABEL: //iframe[@id='targetFrame'] >>> //*[@class="error"][text()='State is required.'] #Need to request i18 key
+PAYMENT_EMPTY_ZIPCODE_ERROR_LABEL: //iframe[@id='targetFrame'] >>> //*[@class="error"][text()='Zip code is required.'] #Need to request i18 key
+PAYMENT_PHONENUMBER_LESSTHAN10DIGITS_ERROR_LABEL: //*[@data-qa-label='PhoneNumberTxt']/parent::div/following-sibling::div/span[text()='Phone number should be 10 digits'] #Requested data-test-id
+PAYMENT_INCORRECT_CITY_ERROR_LABEL: //*[@data-qa-label='CityTxt']/parent::div/following-sibling::div/span[text()='Please enter a valid city'] #Requested data-test-id
+PAYMENT_CITY_MAXIMUM_CHARACTER_ERROR_LABEL: //*[@data-qa-label='CityTxt']/parent::div/following-sibling::div/span[text()='Maximum 50 characters allowed'] #Requested data-test-id
+PAYMENT_ZIPCODE_LESS_CHARACTER_ERROR_LABEL:  //iframe[@id='targetFrame'] >>> //*[contains (@class, "error")][text()='Zip code is invalid.'] #Need to request i18 key
+PAYMENT_OPTIONAL_ADDRESS_MAXIMUM_CHARACTER_ERROR_LABEL: //*[@data-qa-label='AddressTwoTxt']/parent::div/following-sibling::div/span[text()='Maximum 50 characters allowed'] #Requested data-test-id
+PAYMENT_NAME_SPECIALCHARACTERS_ERROR_LABEL: //*[@data-qa-label='NameTxt']/parent::div/following-sibling::div/span[text()='Name should not contain special characters'] #Requested data-test-id
+PAYMENT_OPTIONAL_ADDRESS_SPECIALCHARACTERS_ERROR_LABEL: //*[@data-qa-label='AddressTwoTxt']/parent::div/following-sibling::div/span[text()='Please enter a valid address'] #Requested data-test-id
+PAYMENT_MANDATE_ADDRESS_SPECIALCHARACTERS_ERROR_LABEL: //*[@data-qa-label='AddressOneTxt']/parent::div/following-sibling::div/span[text()='Please enter a valid address'] #Requested data-test-id
+PAYMENT_MANDATE_ADDRESS_MAXIMUM_CHARACTER_ERROR_LABEL: //*[@data-qa-label='AddressOneTxt']/parent::div/following-sibling::div/span[text()='Maximum 50 characters allowed'] #Requested data-test-id
+PAYMENT_NAME_MAXIMUM_CHARACTER_ERROR_LABEL: //*[@data-qa-label='NameTxt']/parent::div/following-sibling::div/span[text()='Maximum 50 characters allowed'] #Requested data-test-id
+PAYMENT_MIN_CVV_ERROR_VALUE: //iframe[@id='targetFrame'] >>> //*[contains (@class, "error")][text()='CVV code is invalid.'] #Need to request i18 key
+PAYMENT_VALID_NON_AMEX_CVV_ERROR_VALUE: //*[@data-qa-label='CVVTxt']/parent::div/following-sibling::div/span[text()='Please enter a valid 3-digit CVV.'] #Requested data-test-id
+PAYMENT_EDIT_PICK_UP_TIME_LINK: (//*[contains(text(),'Edit Pickup')])[1]  #Need to request i18 key
+PAYMENT_CREDITCARD_CHECKBOX: //iframe[@id='targetFrame'] >>> //*[@id="checkRef"]
+PAYMENT_SAVEDCREDITCARD_EXPAND_BUTTON: //*[@class='pink-arrow'] | //*[contains(@class,"card-item")]//*[@class='pink-arrow']
+PAYMENT_SAVEDCREDITCARD_DUPLICATE_ERRORMSG: (//*[contains(text(),'%s')])
+PAYMENT_SAVEDCREDITCARD_LAST_DIGITS_VALUE: //*[contains(text(),'%s')]
+PAYMENT_SAVEDCREDITCARD_ADDNEWCARD_LINK: //*[normalize-space(text())='payment.label.useNewMethod_i18']
+PAYMENT_CREDITCARD_COMPLETE_ORDER_BUTTON: //*[contains(text(),'checkout.button.completeOrder_i18')]
+PAYMENT_CREDITCARD_HPP_CLOSE_BUTTON: (//*[@aria-label="Exit New Payment Method"]) #Request i18 key
+PAYMENT_ERRORNOTIFICATION_HEADER: //*[(text()='payment.error.title_i18')]
+PAYMENT_ERRORNOTIFICATION_BODY: //*[(text()='payment.error.message_i18')]
+PAYMENT_ERRORNOTIFICATION_OK_BUTTON: *okayGotIt_button
+
+# Native Payment Locators:
+PAYMENT_FIRSTNAME_TEXTBOX_Android:  //android.widget.EditText[@resource-id="firstName"]
+PAYMENT_FIRSTNAME_TEXTBOX_iOS:  //XCUIElementTypeTextField[@name='checkout.guest.label.firstName_i18']
+PAYMENT_LASTNAME_TEXTBOX_Android:   //android.widget.EditText[@resource-id="lastName"]
+PAYMENT_LASTNAME_TEXTBOX_iOS: //XCUIElementTypeTextField[@name='checkout.guest.label.lastName_i18']
+PAYMENT_CARDNUMBER_TEXTBOX_Android: //android.widget.EditText[@resource-id="ccNum"]
+PAYMENT_CARDNUMBER_TEXTBOX_iOS:   //XCUIElementTypeTextField[@name='checkout.payment.label.creditCardNumber_i18']
+PAYMENT_EXPIRYDATE_TEXTBOX_Android:   //android.widget.EditText[@resource-id="expiry"]
+PAYMENT_EXPIRYDATE_TEXTBOX_iOS:   //XCUIElementTypeTextField[@value='MM / YY']
+PAYMENT_SECURITYCODE_TEXTBOX_Android:   //android.widget.EditText[@resource-id="cvv"]
+PAYMENT_SECURITYCODE_TEXTBOX_iOS:   //XCUIElementTypeSecureTextField[@value='checkout.payment.label.creditCardCVV_i18']
+PAYMENT_ADDRESS_TEXTBOX_Android:  //android.widget.EditText[@resource-id="address1"]
+PAYMENT_ADDRESS_TEXTBOX_iOS:  //XCUIElementTypeTextField[@name="Street Address"]
+PAYMENT_CITY_TEXTBOX_Android: //android.widget.EditText[@resource-id="city"]
+PAYMENT_CITY_TEXTBOX_iOS: //XCUIElementTypeTextField[@name='checkout.payment.label.city_i18']
+PAYMENT_ZIPCODE_TEXTBOX_Android:  //android.widget.EditText[@resource-id="zip"]
+PAYMENT_ZIPCODE_TEXTBOX_iOS:  //XCUIElementTypeTextField[@name='checkout.payment.label.zipCode_i18']
+PAYMENT_STATE_BUTTON_Android: //android.view.View[@resource-id="state"]
+PAYMENT_STATE_BUTTON_iOS: //XCUIElementTypeOther[@value='checkout.payment.label.state_i18']
+PAYMENT_STATE_OPTION_Android:   //android.widget.CheckedTextView
+PAYMENT_STATE_OPTION_iOS:   //XCUIElementTypeCell
+PAYMENT_CONFIRMORDER_BUTTON_Android:  //android.widget.Button[@text='checkout.button.completeOrder_i18']
+PAYMENT_CONFIRMORDER_BUTTON_iOS:  //XCUIElementTypeTextField[@name='checkout.payment.label.zipCode_i18']//following-sibling::XCUIElementTypeButton[@name='checkout.button.completeOrder_i18']
+PAYMENT_ADDPAYMENTMETHOD_BUTTON_iOS:  //XCUIElementTypeButton[@name='Add Payment Method']
+PAYMENT_ADDPAYMENTMETHOD_BUTTON_Android:  //android.widget.Button[@text='Add Payment Method']
+PAYMENT_CREDITCARD_SAVE_CHECKBOX_iOS: //XCUIElementTypeSwitch[@value="0"]
+PAYMENT_CREDITCARD_SAVE_CHECKBOX_Android: //android.widget.CheckBox[@checkable='true']
+PAYMENT_CARDNUMBER_ERROR_TEXT_iOS: //XCUIElementTypeStaticText[@name='checkout.format.creditCardNumber_i18']
+PAYMENT_CARDNUMBER_ERROR_TEXT_Android: //android.view.View[@text='checkout.format.creditCardNumber_i18']
+
+# Order Confirmation Page
+ORDERCONFIRMATION_TOTAL_LOCATOR: *total_value
+ORDERCONFIRMATION_SUBTOTAL_LOCATOR: //*[normalize-space(text())='cart.summary.label.orderSubtotal_i18']/following-sibling::*
+ORDERCONFIRMATION_VATPRICE_LOCATOR:  *vat_value
+ORDERCONFIRMATION_DISCOUNTPRICE_LOCATOR: //*[normalize-space(text())='cart.summary.label.savings_i18']/following::*
+ORDERCONFIRMATION_CONFIRMATION_TEXT: //*[normalize-space(text())='checkout.confirm.thankYou.label_i18'] | //*[normalize-space(text())='Thank You!']
+ORDERCONFIRMATION_ORDERPLACED_MESSAGE: //*[@data-qa-label="ThankYouLbl"] | //*[@class="checkout-confirm__info__thank-you"]
+ORDERCONFIRMATION_ORDERNUMBER_LOCATOR: //*[@data-qa-label="OrderNumberLbl"] | //span[text()='Order Number']/following-sibling::span
+ORDERCONFIRMATION_PAYMENT_LOCATOR: //*[@data-qa-label="PaymentLbl"] | //*[text()='payment.title_i18']/following-sibling::*[@class='col font-family-regular']
+ORDERCONFIRMATION_PICKUPTIME_LOCATOR: //*[@data-qa-label='PickUpAddressTile'] | //*[@class='order-summary__head__pick-up']   #Requested data-test-id BRA-19027
+ORDERCONFIRMATION_GETDIRECTIONS_LINK: //*[@data-qa-label='GetDirectionsLnk'] #//*[normalize-space(text())='checkout.confirm.getDirection.label_i18']
+ORDERCONFIRMATION_PICKUPLOCATION_MAP: //*[@aria-label='Map'] #//*[@data-test-id="PickUpLocationMapImage"]
+ORDERCONFIRMATION_CREATEMYACCOUNT_BUTTON: //*[normalize-space(text())='checkout.confirm.createMyAccount.label_i18'] #//*[@data-qa-label='CreateAccntBtn']
+ORDERCONFIRMATION_CONTINUESHOP_LINK: //*[normalize-space(text())='checkout.confirm.continueShopping.label_i18'] #//*[contains(text(),'Continue Shopping')]
+ORDERCONFIRMATION_PICKUPTIME_VALUE_LOCATOR: //*[@class='order-summary__head__pick-up']  | (//*[contains(text(),'Pick Up') and @class='column checkout-confirm__info__pickup__label']/following-sibling::*)[1]
+ORDERCONFIRMATION_ORDERHISTORY_BUTTON:  xpath=(//*[normalize-space(text())='checkout.confirm.orderHistory.label_i18'])[2]  |  //*[@class="button button-violet-red expanded" and normalize-space(text())='checkout.confirm.orderHistory.label_i18']
+ORDERCONFIRMATION_ITEMDETAILS_TEXT: //*[@data-qa-label='ConfirmOrderItem'][contains(.,'%s')]  | //*[@class='cart-container__order-item']//img[@alt='%s']/following::div[@class='cart-container__order-item__col2']    |  //*[@class='cart-container__order-item__col2__description__text'  and contains(text(),'%s')]
+ORDERCONFIRMATION_DISCOUNT_TEXT: //*[contains (text(),'cart.summary.label.savings_i18')]
+ORDERCONFIRMATION_DISCOUNT_VALUE_CAKE_TEXT: //*[normalize-space(text())='cart.summary.label.savings_i18']/following-sibling::span[contains(text(),' -$3.00')] #//*[contains(text(),'You Saved')]/following-sibling::span[contains(text(),' -$3.00')]
+ORDERCONFIRMATION_INCORRECTTOTAL_TEXT: //*[@data-qa-label='TotalPriceLbl' and text()=" $0.00"] | //*[@class="col col-50 text-right order-summary__number order-summary__number--bold" and text()=" $0.00"]
+ORDERCONFIRMATION_CARD_DETAILS_TEXT:  //*[@data-qa-label='PaymentLbl'] #//*[@data-test-id="PaymentDetailsLbl"]
+ORDERCONFIRMARION_DECO_CHARACTER_TOPPER_LABEL: //*[contains(text(),'Collectible Character Cake Topper')]
+ORDERCONFIRMATION_ITEMS_NAME_TEXT: //*[@data-qa-label='ItemNameLbl' and contains(text(),'%s')] | //*[@class="cart-container__order-item__col2__description__text" and contains(text(),"%s")]
+ORDERCONFIRMATION_PICKUP_STORENAME: //*[contains(text(),'Pick Up Location')]/following-sibling::div/div | //*[@address-type='STORE_ADDRESS' and (not(@data-qa-label) or @data-qa-label!='StoreAddressLnk')]
+ORDERCONFIRMATION_ITEM_DETAIL: //*[@data-qa-label="ConfirmOrderItem"]/div[@class='column product-details']/div//span[contains(text(),'%s')] #//*[@data-test-id='ConfirmOrderItemDetailsTile']/div[@class='column product-details']/div//span[contains(text(),'%s')]
+ORDERCONFIRMATION_APPSTORE_LINK: //*[@class='checkout-confirm__app-store-icon'] #Requested data-test-id BRA-18709
+ORDERCONFIRMATION_GOOGLEPLAY_LINK:  //*[@class='checkout-confirm__google-play-icon']  #Requested data-test-id BRA-18709
+ORDERCONFIRMATION_DOWNLOADAPP_DISCLAIMER_TEXT: //*[contains(text(),'checkout.confirm.downloadOurApp.disclaimer_i18')]
+ORDERCONFIRMATION_REWARDS_IMAGE: *BRrewards_image
+ORDERCONFIRMATION_REWARDS_SIGNUP_TEXT: *rewardsMissing_text
+ORDERCONFIRMATION_REWARDS_SIGNUP_LINK: *rewardsSignup_link
+ORDERCONFIRMATION_REWARDS_POPUP_SIGNMEUP_TEXT: *rewardsSignmeup_text
+ORDERCONFIRMATION_REWARDS_POPUP_IMAGE:  //*[@class="progressive-enrollment-image-wrapper"]//*[contains(@src, "%s")]  #Requested data-test-id BRA-19729
+ORDERCONFIRMATION_REWARDS_POPUP_CHECKBOX: (//*[@data-qa-label="SignUpLoyaltyCbx"])[2]
+ORDERCONFIRMATION_REWARDS_POPUP_TERMS_TEXT: *rewardsTerms_text
+ORDERCONFIRMATION_REWARDS_POPUP_TERMS_LINK: *rewardsTerms_link
+ORDERCONFIRMATION_REWARDS_POPUP_SIGNUP_BUTTON: //*[normalize-space(text())='reward.label.signUpForBrRewards_i18']
+ORDERCONFIRMATION_REWARDS_OFFER_VALUE: //*[@class="cart-container__summary__rewards-summary-items"]//*[@data-qa-label="SubTotalPriceLbl"]  |  //*[@class="cart-container__summary__rewards-summary-items"]//following::*[contains(@class, "order-subtotal")]
+
+# Product builder
+MENU_SUBPRODUCT_ENABLE_ORDERONLINE_BUTTON: xpath=(//*[contains(text(),'Order Online')])[2]  | //XCUIElementTypeButton[@name = 'Order Online'] | //*[@name='Order Online']
+MENU_DEFAULT_LOCALIZEDADDRESS_LINK: //*[@data-test-id='HeaderAddressTxt' and contains(text(),'%s')] | //*[@data-qa-label='StoreAddressLnk' and contains(text(),'%s')]
+PRODUCTDETAILS_ADDTOCART_BUTTON: //*[contains(text(),'Add To Cart')]
+PRODUCTDETAILS_ADDTOCART_BUTTON_DISABLED_STATE: //*[normalize-space(text())='menu.category.button.addToCart_i18' and @disabled='disabled']
+MENU_PRODUCT_BUILDERUI_STORECLOSED_ERROR_POPUP_BODY:  //*[text()='menu.orderStatus.closedAndNotAccepting_i18'] #need i18
+MENU_PRODUCT_BUILDERUI_CUSTOMIZATION_1_LABEL: //*[contains(text(),'%s')]
+MENU_PRODUCT_BUILDERUI_CUSTOMIZATION_2_LABEL: //*[contains(text(),'%s')]
+MENU_PRODUCT_BUILDERUI_CUSTOMIZATION_3_LABEL: //*[contains(text(),'%s')]
+MENU_PRODUCT_BUILDERUI_CUSTOMIZATION_4_LABEL: //*[@class="builder-content__mod-section__title--name row" and contains(text(), '%s')] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_CUSTOMIZATION_5_LABEL: //*[@class="builder-content__mod-section__title--name row" and contains(text(), '%s')] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_CUSTOMIZATION_6_LABEL: //*[@class="builder-content__mod-section__title--name row" and contains(text(), '%s')] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_CUSTOMIZATION_7_LABEL: //*[@class="builder-content__mod-section__title--name row" and contains(text(), '%s')] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_CUSTOMIZATION_SPECIALINSTRUCTIONS_LABEL: //*[normalize-space(text())='builder.label.specialInstructions_i18']
+MENU_PRODUCT_BUILDERUI_SPECIALINSTRUCTIONS_INPUT_TEXTBOX: *cartspecialinstructionslbl
+#MENU_PRODUCT_BUILDERUI_MOD_CUSTOMIZATION_1_LABEL : //*[@data-qa-label="ProductSizeLbl" and contains(text(),'%s')] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_MOD_CUSTOMIZATION_1_LABEL : //*[@data-qa-label="ModifierLbl" and normalize-space(text())='%s'] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_SPECIAL_MESSAGE_MOD_NONE_LOCATOR: //*[@class="builder-content__mod-section__title--name row" and contains(text(), 'builder.label.specialMessage_i18')]/following::*[@data-qa-label='ModifierLbl' and text()='None']  #Need data-test-id
+MENU_PRODUCT_BUILDERUI_SMASH_CAKE_MOD_NONE_LOCATOR: //*[@class="builder-content__mod-section__title--name row" and contains(text(), 'Smash Cake')]/following::*[@data-qa-label='ModifierLbl' and text()='None'] #Need data-test-id
+MENU_PRODUCT_BUILDERUI_MODIFIERS_LINK: //*[text()[normalize-space() ='%s']]//preceding-sibling::*[@data-qa-label='ModifierBtn'] #Need data-test-id
+MENU_PRODUCT_BUILDERUI_SPECIALMESSAGE_MODIFIERS_LINK: (//*[text()[normalize-space() ='%s']])/parent::*[@data-qa-label='ModifierBtn']  #Need data-test-id
+MENU_PRODUCT_BUILDERUI_SAVECHANGES_BUTTON : //*[@data-qa-label='AddToBagBtn']     |   //*[contains(text(),'builder.button.saveChanges_i18')]
+MENU_PRODUCT_BUILDERUI_SERVESIZE_MOD_NEXT_BUTTON: (//*[@data-qa-label='NextSlideIcon'])[1] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_CAKE_MOD_NEXT_BUTTON: (//*[@data-qa-label='NextSlideIcon'])[2] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_ICECREAM_MOD_NEXT_BUTTON: (//*[@data-qa-label='NextSlideIcon'])[3] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_SPECIALMSG_MOD_NEXT_BUTTON: (//*[@data-qa-label='NextSlideIcon'])[4] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_MSGCOLOR_MOD_NEXT_BUTTON: (//*[@data-qa-label='NextSlideIcon'])[5] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_EXTRATOPPINGS_NEXT_BUTTON : (//*[@data-qa-label='NextSlideIcon'])[7] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_VISUAL_CAKE_BUILDER_LABEL : //*[@data-qa-label='VisualBuilderBtn'] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_NUTRITION_INFO_LINK : &moredetails //*[normalize-space(text())='builder.label.nutritionAndAllergens_i18']
+MENU_PRODUCT_BUILDERUI_MORE_DETAILS_LINK : *moredetails
+MENU_PRODUCT_BUILDERUI_NUTRITION_INFO_TAB: //*[@class='nav-link'][contains(text(),"%s")] #Request data-test-id
+MENU_PRODUCT_BUILDERUI_ALLERGENS_LABEL : //*[normalize-space(text())='menu.product.nutrition.allergens_i18']
+MENU_PRODUCT_BUILDERUI_INGREDIENTS_LABEL : //*[normalize-space(text())='menu.product.nutrition.ingredients_i18']
+MENU_PRODUCT_BUILDERUI_INGREDIENTS_INFO_LABEL: //*[@class='menu-nutrition__description']  | //*[contains(@ng-bind-html,'shortDescription')] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_ITEM_NAME_TITLE_LABEL:  //*[@data-qa-label='ProductNameLbl' and contains(text(),'%s')] | //*[@class="no-margin-bottom builder-content__product-details__info__name" and contains(text(),'%s')]
+MENU_PRODUCT_BUILDERUI_ITEM_NAME_1_TITLE_LABEL: (//*[@data-qa-label="ProductNameLbl" and contains(text(),"%s")])[2] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_SPECIAL_MESSAGE_INPUT_LOCATOR: //*[@data-qa-label='CustomMsgTxt'] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_CUSTOMIZATION_9_LABEL: //*[@data-qa-label="ModifierLbl" and contains(text(),"%s")] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_SERVESIZE_LABEL: xpath=(//*[contains(text(),'Serving Size')]//following::*[text()='%s'])//preceding-sibling::*[@data-qa-label='ModifierBtn']   |  //*[@data-qa-label="ModifierBtn"][following-sibling::label[contains(., '%s')]] # Need data-test-id
+MENU_PRODUCT_BUILDERUI_CUSTOMIZATION_8_LABEL: //*[@data-qa-label="ModifierLbl" and contains(text(),'%s')] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_EXTRACOSTMODIFIER_LABEL: xpath=(//*[normalize-space(text()) ='%s'])[2]//preceding-sibling::*[@data-qa-label='ModifierBtn'] # Need data-test-id
+MENU_PRODUCT_BUILDERUI_SELECTFLAVOR_MOD_NEXT_BUTTON: (//*[@data-qa-label='NextSlideIcon'])[6] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_DECO_CAKETOPPER_EXTRCOST_LABEL: //*[@data-qa-label='ModifierOptionLbl' and contains(text(),'Collectible Character Cake Topper')]/parent::legend/following-sibling::div[contains(@data-container-class,'mod-section')]//span[contains(text(),'$5.00')] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_PRODUCT_PRICE_LABEL: (//*[@class='builder-content__product-details__info__price'])[1] #Requested data-test-id
+MENU_PRODUCT_BUILDER_FUDGECRUNCH_LABEL: //*[@data-qa-label='ProductCategoryBtn']/span[contains(text(),'Fudge Crunch')]    |   //*[normalize-space(text())="Fudge Crunch"]
+MENU_PRODUCT_BUILDER_FUDGECRUNCH_1_LABEL: (//*[@data-qa-label='ProductCategoryBtn']/span[contains(text(),'Fudge Crunch')])[1] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_SELECTED_SERVESIZE_LABEL : //*[@data-qa-label='ModifierOptionLbl' and contains(text(),'Serving Size')]/../following-sibling::div[contains(@data-container-class,'mod-section')]//*[@data-qa-label='ModifierLbl' and text()='%s']/preceding-sibling::div/img/following-sibling::div[@class='checkmark'] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_ICECREAMFLAVOR_LABEL: //*[@data-qa-label="ProductSizeLbl" and contains(text(),"%s")]//following-sibling::* #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_SELECTED_ICECREAMFLAVOR_LABEL: //*[@data-qa-label='ModifierOptionLbl' and contains(text(),'Ice Cream Flavor')]/../following-sibling::div[contains(@data-container-class,'mod-section')]//*[@data-qa-label='ModifierLbl' and text()="%s"]/preceding-sibling::div/img/following-sibling::div[@class='checkmark'] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_ICECREAMCAKE_LABEL: (//*[@data-qa-label='ProductCategoryBtn']/span[contains(text(),'builder.label.classic_i18')]) #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_SERVESIZE_FUDGECRUNCH_TEXT_LABEL: //*[contains(text(),'builder.label.fudgeCrunchBlurb_i18')] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_CUSTOMIZEORDER_LABEL: //*[normalize-space(text())='builder.button.customize_i18']
+MENU_PRODUCT_BUILDERUI_SMASHCAKE_MODIFIER_LABEL: //*[contains(text(),'Smash Cake')]//following::*[contains(text(),'%s')]/preceding-sibling::div/img #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_SMASHCAKE_IMAGE_LOCATOR: //*[contains(text(),'Smash Cake')]//following::*[@src='%s'] #Need data-test-id
+MENU_PRODUCT_BUILDERUI_SMASHCAKE_DEFAULT_MODIFIER_SELECTED: &default_mod_selected //*[@data-qa-label="ModifierLbl" and contains(text(),'%s')]//parent::*//preceding-sibling::*[@class='pink-circle-check-mark'] #Requested data-test-id
+MENU_PRODUCT_SMASHCAKE_SWIMLANE6_MESSAGE_LOCATOR: //*[@data-qa-label="ModifierFld"]/*[contains(text(),'%s')] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_SPECIALMESSAGE_MODIFIER_LABEL: //*[@data-qa-label="ModifierOptionLbl" and contains(text(),'Special Message')]//../parent::fieldset//label[@data-qa-label='ModifierLbl' and contains(text(),'%s')] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_SMASHCAKE_SPECIALMESSAGE_MODIFIER_LABEL: //*[normalize-space(text())='Smash Cake Special Message']//following::*[@data-qa-label="ModifierLbl" and contains(text(),'%s')] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_GENDERREVEAL_COLOR_MODIFIER_LABEL: //*[@data-qa-label="ModifierOptionLbl" and contains(text(),'Frosting Layer Color')]//../parent::fieldset//label[@data-qa-label='ModifierLbl' and contains(text(),'%s')]/preceding-sibling::div/img #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_GENDERREVEAL_COLOR_DEFAULT_MODIFIER_SELECTED: //*[@data-qa-label="ModifierOptionLbl" and contains(text(),'Frosting Layer Color')]//../parent::fieldset//label[@data-qa-label='ModifierLbl' and contains(text(),'%s')]/parent::div/parent::div/preceding-sibling::input[@value='true'] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_SPECIALMESSAGE_DEFAULT_MODIFIER_SELECTED: //*[@data-qa-label="ModifierOptionLbl" and contains(text(),'Special Message')]//../parent::fieldset//label[@data-qa-label='ModifierLbl' and contains(text(),'%s')]/parent::div/parent::div/preceding-sibling::input[@value='true'] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_SPECIALMESSAGECOLOR_DEFAULT_MODIFIER_SELECTED: //*[@data-qa-label="ModifierOptionLbl" and contains(text(),'5. Special Message Color')]//../parent::fieldset//label[@data-qa-label='ModifierLbl' and contains(text(),'%s')]/parent::div/parent::div/preceding-sibling::input[@value='true'] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_SMASHCAKETYPE_MODIFIER_SELECTED_LABEL: *default_mod_selected
+MENU_PRODUCT_BUILDERUI_SMASHCAKETYPE_MODIFIER_LABEL: //*[contains(text(),'Smash Cake Type')]//following::*[contains(text(),'%s')]/preceding-sibling::div/img #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_CAKEFLAVOR_LABEL : //*[normalize-space(text())='Smash Cake Flavor']//following::*[@data-qa-label="ModifierLbl" and contains(text(),'%s')]  #Need data-test-id
+MENU_PRODUCT_BUILDERUI_SMASHCAKEFLAVOR_MODIFIER_SELECTED: //*[@data-qa-label="ModifierOptionLbl" and contains(text(),'8. Smash Cake Flavor')]//parent::legend/parent::fieldset//label[@data-qa-label='ModifierLbl' and contains(text(),'%s')]/parent::div/parent::div/preceding-sibling::input[@value='true'] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_SMASHSPECIALMESSAGECOLOR_DEFAULT_MODIFIER_SELECTED: //*[@data-qa-label="ModifierOptionLbl" and contains(text(),'10. Smash Cake Special Message Color')]/../following-sibling::div[3]//label[@data-qa-label="ProductSizeLbl" and contains(text(),'%s')]/preceding-sibling::input[@value='true'] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_SMASHSPECIALMESSAGECOLOR_NEXT_BUTTON: (//*[@data-qa-label='NextSlideIcon'])[10] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_SMASHCAKESPECIALMESSAGE_NEXT_BUTTON: (//*[@data-qa-label='NextSlideIcon'])[5] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_SMASHCAKESPECIALMESSAGE_NEXT_1_BUTTON: (//*[@data-qa-label='NextSlideIcon'])[9] #Requested data-test-id
+MENU_PRODUCT_BUILDER_ICECREAMCAKE_LABEL : (//*[@data-qa-label='ProductCategoryBtn'] /span[contains(text(),'builder.label.classic_i18')]) #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_SPECIALINSTRUCTIONS_DISCLAIMER_TEXTBOX: //*[@class='builder-content__special-instructions__info'] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_SPECIALMESSAGE_DROPDOWN_ARROW: //*[@class="builder-content__mod-section__title--name row" and contains(text(),"%s")]/parent::div/parent::div/following-sibling::div #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_CHECKED_SPECIALMESSAGE_LOCATOR: //*[@data-qa-label="ModifierLbl" and contains(text(),'None')]//parent::*//preceding-sibling::*[@class='pink-circle-check-mark'] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_SPECIALMESSAGECOLOUR_LABEL: //*[@data-qa-label="ModifierLbl" and normalize-space(text())='%s'] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_CUSTOM_OTHER_COLOUR_LABEL: //*[contains(text(),'Enter custom color here:')] #Request i18 key
+MENU_PRODUCT_BUILDERUI_CUSTOM_OTHER_COLOUR_ERROR_LABEL : //*[contains(text(),'Enter a special message color')] #Request i18 key
+MENU_PRODUCT_BUILDERUI_SPECIALMESSAGE_LABEL: //*[@data-qa-label="ModifierLbl" and contains(text(),"%s")] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_CHECKED_CUSTOMMESSAGE_LOCATOR : //*[@data-qa-label="ModifierLbl" and contains(text(),'Custom Message')]//parent::*//preceding-sibling::*[@class='pink-circle-check-mark'] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_BLANK_CUSTOMMESSAGR_ERROR_LABEL: //*[@data-qa-label='CustomMsgTxt']/parent::div/../..//following::span[contains(text(),'Enter a special message')] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_NUTRITION_LABEL: //*[contains(text(),'Nutrition Information')]
+MENU_PRODUCT_BUILDERUI_NUTRITION_INFO_LABEL : //*[contains(text(),'Nutrition information for this product will vary based upon your customized selection.')] #Request i18 key
+MENU_PRODUCT_BUILDERUI_NUTRITION_INFO_LOCATOR : //*[contains(text(),'menu.product.nutrition.label_i18')]//following::*[@class="menu-nutrition__description menu-nutrition__description--no-info"]  #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_SERVESIZE_MOD_PREVIOUS_BUTTON: (//*[@data-qa-label='PreviousSlideIcon'])[1] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_CAKE_MOD_PREVIOUS_BUTTON: (//*[@data-qa-label='PreviousSlideIcon'])[2] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_ICECREAM_MOD_PREVIOUS_BUTTON: (//*[@data-qa-label='PreviousSlideIcon'])[3] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_SPECIALMSG_MOD_PREVIOUS_BUTTON: (//*[@data-qa-label='PreviousSlideIcon'])[4] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_MSGCOLOR_MOD_PREVIOUS_BUTTON: (//*[@data-qa-label='PreviousSlideIcon'])[5] #Requested data-test-id
+#MENU_PRODUCT_BUILDERUI_EXTRA_TOPPING_MOD_PREVIOUS_BUTTON: (//*[@data-qa-label='PreviousSlideIcon'])[4]
+MENU_PRODUCT_BUILDERUI_NUTRITION_INFO_TEXT_1_LABLE : //*[contains(text(),'Please be advised that our products may contain or may have been further processed on shared equipment that may have come in contact with allergens including Eggs, Milk, Peanuts, Sesame, Soy, Tree Nuts or Wheat')]
+MENU_PRODUCT_BUILDERUI_NUTRITION_INFO_TEXT_2_LABLE : //*[contains(text(),'Before placing your order, please inform your server if a person in your party has a food allergy.')]
+MENU_PRODUCT_BUILDER_ORDER_RESTRICTION_TEXT_LABEL: (//*[contains(@class,'menu-item-detail__restriction')])[1] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_SELECTED_MODIFIER_LOCATOR: //*[@data-qa-label="ModifierLbl" and contains(text(),"%s")]/..//*[@class='checkmark'] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_ALLERGEN_INFO_LOCATOR: xpath=(//*[contains(text(),'menu.products.filter.allergen_i18')]//following::*[@data-ng-if="data.allergens.length" or @data-ng-if="!data.allergens.length"]) | //*[contains(@class,'menu-nutrition__wrapper__no-allergen-item')] #Requested data-test-id BRA-20089
+MENU_PRODUCT_BUILDERUI_CAKE_NUTRITION_INFO_LOCATOR : //*[contains(text(),'Nutrition information for this product will vary based upon your customized selection. 2000 calories a day is used for general nutrition advice, but calorie needs vary. Additional nutrition information is available upon request')]
+MENU_PRODUCT_BUILDERUI_SPECIALMSG_NFL_MOD_NEXT_BUTTON: (//*[@data-qa-label='NextSlideIcon'])[6] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_DEFAULT_SELECTED_ICECREAMCAKE_LOCATOR : (//*[contains(text(),'builder.label.classic_i18')]/parent::button[@aria-selected='true'])
+MENU_PRODUCT_BUILDERUI_ARROW_LOCATOR: //*[contains(text(), '%s')]//parent::*//parent::*//following-sibling::*[contains(@class,'arrow')]/child::*  # need data-test-id
+MENU_PRODUCT_BUILDERUI_HIDDEN_LOCATOR: //*[contains(text(), '%s')]//parent::*//parent::*//following-sibling::*[contains(@class,'arrow')]/child::*[@class!='open'] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_EXPANDED_LOCATOR : //*[contains(text(), '%s')]//parent::*//parent::*//following-sibling::*[contains(@class,'arrow')]/child::*[@class='open'] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_HIDE_PRODUCTIMAGE_LOCATOR: //*[contains(text(),'HIDE')]
+MENU_PRODUCT_BUILDERUI_SHOW_PRODUCTIMAGE_LOCATOR: //*[contains(text(),'SHOW')]
+MENU_PRODUCT_BUILDERUI_HIDDEN_PRODUCTIMAGE_LOCATOR: //*[@data-qa-label='VisualBuilderTile']//following::div[contains(@class,'lp-container__contents--hidden')] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_SHOWN_PRODUCTIMAGE_LOCATOR : //*[@data-qa-label='VisualBuilderTile']//following::div[contains(@class,'lp-container__contents--visible')] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_PRODUCTIMAGE_FLAVORSLAYERS_LABEL: (//*[@data-qa-label='VisualBuilderTile']//following::div[contains(@class,'lp-container__contents--visible')]//following::span[contains(text(),'%s')])[1] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_ITEM_DESCRIPTION_LABEL: //*[contains(text(),"%s")] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_HELPER_TEXT: //*[@class='additional-description-text'] #Need to request data-test-id
+MENU_PRODUCT_BUILDERUI_SELECTED_MODIFIER_TEXT_LOCATOR: //*[@class="builder-content__mod-section__title--name row" and contains(text(), '%s')]//following-sibling::*[@class='builder-content__mod-section__title--receiptDescription row'] # Need data-test-id
+MENU_PRODUCT_BUILDERUI_SELECTED_EXTRA_TOPPINGS_MODIFIER_TEXT_LOCATOR: //*[@data-test-id='BuilderStepTitle' and contains(text(),'%s')]//following-sibling::div
+MENU_PRODUCT_BUILDERUI_EXPANDED_SELECTED_MODIFIER_LOCATOR: //*[@data-qa-label="ModifierLbl" and contains(text(),'%s')]//parent::*//preceding-sibling::*[@class='pink-circle-check-mark'] #Requested data-test-id
+MENU_PRODUCT_BUILDERUI_DEFAULT_CUSTOMISATION_SELECTION_VALUE: //*[@class="builder-content__mod-section__title--receiptDescription row" and contains(text(),"%s")] #Request data-test-id
+MENU_PRODUCT_CUSTOMIZATION_FLOW_PRICE_LOCATOR: //*[@data-qa-label="ProdPriceLbl"] | (//*[contains(@ng-if,'builderuserollupprice')])[1]  #Requested data-test-id BRA-20089
+MENU_PRODUCT_SEARCHBAR_TEXTBOX: //*[contains(@class,'show-for-large')]//child::*[@placeholder='Search'] | //*[@id="search-list-input-box"] #need to request for data-test-id and i18 key
+MENU_PRODUCT_SEARCH_BUTTON: //*[contains(@class,'show-for-large')]//child::*[contains(@class,'search-list-button')] | //*[@id="search-list-input-box"]/following::*[@class="search-list__wrap__input-button search-list-button"] # need data-test-id
+MENU_PRODUCT_SEARCH_CLEAR_BUTTON:  //*[contains(@class,'show-for-large')]//child::*[contains(@class,'clear-button')]  | //*[@class='search-list row']//*[contains(@class,'clear-button')] #Requested data-test-id BRA-20089
+MENU_SEARCH_EMPTY_TEXTBOX:  //*[contains(@class,'show-for-large')]//child::*[@placeholder='Search' and contains(@class,'ng-empty')] | //*[@id='search-list-input-box' and contains(@class,'ng-empty')]  #Requested data-test-id BRA-20089
+MENU_STORECLOSED_TEXT : //*[contains(text(),'menu.orderStatus.closedAndOnlyAccepting_i18')]
+
+# Order History
+ORDERHISTORY_PAGE_TITLE_LABEL: //*[@data-qa-label="PageTitleLbl" and contains(text(),'myaccount.title.orderHistory_i18')] | //*[@aria-label='myaccount.title.orderHistory_i18' and contains(text(),'myaccount.title.orderHistory_i18')]
+ORDERHISTORY_ORDERNUMBER_LOCATOR: //*[@data-qa-label="OrderNumberLbl" and contains(text(),'%s')] | //*[@data-test-id="BROrderHistoryOrderNumberTxt"][contains(text(),"%s")]
+ORDERHISTORY_ORDER_TOTAL: xpath=(//*[@data-qa-label='TotalPriceLbl'])[2]  | //*[contains(text(),'orderhistory.detail.label.total_i18')]/following-sibling::div
+ORDERHISTORY_ORDER_SUBTOTAL: xpath=(//*[@data-qa-label='SubTotalPriceLbl'])[2]  | //*[contains(text(),'cart.summary.label.orderSubtotal_i18')]/following-sibling::div
+ORDERHISTORY_VATPRICE_LOCATOR: xpath=(//*[@data-qa-label="TaxPriceLbl"])[2] | //*[contains(text(),'cart.summary.label.tax_i18')]/following-sibling::div
+ORDERHISTORY_DISCOUNTPRICE_LOCATOR: xpath=(//*[@data-qa-label="CouponDiscountTxt"])[2]  | //*[contains(text(),'cart.summary.label.savings_i18')]/following-sibling::div
+ORDERHISTORY_PAYMENTTYPE_LOCATOR: xpath=(//*[normalize-space()='orderhistory.label.payment_i18'])[3]/following::*[@class="order-detail__regular-value"]  |  //*[contains(@class,"order-details")]/following::*[@data-test-id="OrderPaymentType"]
+ORDERHISTORY_PRODUCT_DETAIL : //*[@class="columns medium-12 large-10"]  | //*[@class='cart-container__order-item__col2']
+ORDERHISTORY_ORDERITEMS_LIST: //*[@data-test-id="BROrderHistoryOrderNumberTxt" and contains(text(),'%s')]/../following-sibling::div//span[1]/span  | //*[@data-qa-label="OrderNumberLbl" and contains(text(),'%s')]/../following-sibling::div//span[contains(@class,'item-names__name')] #Requested data-test-id
+ORDERHISTORY_ORDER_STOREADDRESS_TEXT: //*[@data-qa-label='OrderNumberLbl' and contains(.,'%s')]/following::div[@data-qa-label='StoreAddressLbl'][1] | //*[@data-test-id='BROrderHistoryOrderNumberTxt' and contains(.,'%s')]/following::div[contains(@class,'address')][1]
+ORDERHISTORY_VIEWDETAILS_BUTTON: //*[@data-qa-label="OrderNumberLbl" and contains(text(),'%s')]/../following-sibling::div//*[@data-qa-label="ViewDetailsBtn"] | //*[@data-test-id="BROrderHistoryOrderNumberTxt" and contains(text(),'%s')]/../following-sibling::div//*[@name='View Details'] #Requested data-test-id
+ORDERHISTORY_ITEM_NAME: xpath=(//*[@data-qa-label='ItemNameLbl' and contains(text(),"%s")])[2] | //*[@data-test-id="BROrderHistoryViewDetailsProductName" and contains(text(),'%s')]
+ORDERHISTORY_VIEWDETAILS_STORE_ADDRESS: xpath=(//*[@data-address-type="STORE_ADDRESS"])[6]  | (//*[@data-test-id='BROrderHistoryViewDetailsAddressTxt'])[1] #Requested data-test-id
+ORDERHISTORY_VIEWDETAILS_ORDERNUMBER_LOCATOR: //*[@data-test-id='OrderStatusOrderIdTxt' and contains(text(),'%s')]  | //*[@data-test-id='BROrderHistoryViewDetailsTitleTxt' and contains(text(),'%s')]
+ORDERHISTORY_BACK_LINK: xpath=(//*[@data-qa-label="OrderHistoryBackBtn"])[2]  | //*[@qa-attribute="BRGoBackBtn"] #Requested data-test-id
+ORDERHISTORY_NO_ORDERS_INFO_TEXT : //*[(text()="We make it easy to reorder. Here's where you'll find your order history")]
+ORDERHISTORY_ORDERNUMBER_LABEL_LIST: //*[@data-qa-label='OrderNumberLbl']   |   //*[contains(@class, "order-id")] #Requested data-test-id
+ORDERHISTORY_ORDERITEMS_LABEL_LIST:  //*[@data-qa-label='OrderInfoLbl'] | //*[@class="col text-left"]//following::*[@class="order-history__inner__order-info__label"] #Requested data-test-id BRA-19027
+ORDERHISTORY_SUBTITLE_LABEL: //*[text()='orderhistory.title.previousOrder_i18']/parent::div
+ORDERHISTORY_PICKUPADDRESS_LABEL_LIST: //*[contains(@class, "pick-up__location__in-shop")]  #Requested data-test-id BRA-19027
+ORDERHISTORY_ORDERVIEWDETAILS_BUTTON_LIST: //*[normalize-space(text())='orderhistory.title.viewDetails_i18']
+ORDERHISTORY_ORDERREORDER_BUTTON_LIST: //*[normalize-space(text())='orderhistory.button.reorder_i18']
+ORDERHISTORY_ORDERTOTAL_LABEL_LIST: //*[@data-qa-label='OrderPriceLbl'] | //*[contains(@class, "order-price")]
+ORDERHISTORY_ORDERDATE_LABEL_LIST: //*[@data-qa-label='OrderDateLbl']/parent::div | //*[@class="col text-right col-25"]
+ORDERHISTORY_LAST_ORDER_VIEWDETAILS_BUTTON: xpath=(//*[normalize-space(text())='orderhistory.title.viewDetails_i18'])[12]
+ORDERHISTORY_ORDERDETAILLS_REORDER_BUTTON: xpath=(//*[@data-qa-label="ReorderBtn"])[2] | //*[normalize-space(text())='orderhistory.button.reorder_i18' and contains(@class,"button-violet-red")]
+ORDERHISTORY_ORDERDETAILS_ITEMNAME_LABEL: (//*[@data-qa-label='ItemNameLbl'])[2] #Requested data-test-id
+ORDERHISTORY_ORDERDETAILS_EXTRATOPPING_LOCATOR: xpath=(//*[@data-qa-label="ExtraToppingPriceLbl"])[2] | //*[contains(@ng-if, 'subItem.childLineItems[0].price')] #Requested data-test-id BRA-20089
+ORDERHISTORY_ORDERDETAILS_DECO_TOPPER_LOCATOR: xpath=(//*[contains(text(),'Collectible Character Cake Topper')])[2] | //*[@ng-if='!subItem.specialInstruction' and contains(text(),'Collectible Character Cake Topper')]
+ORDERHISTORY_PICKUPADDRESS_TEXT: //*[@data-qa-label='OrderNumberLbl' and contains(text(),'%s')]/parent::div//following-sibling::*//*[@data-qa-label='StoreAddressLbl']  | //*[@data-test-id='BROrderHistoryOrderNumberTxt' and contains(text(),'%s')]/parent::div//following-sibling::*//*[@address-type='STORE_ADDRESS'] #Requested data-test-id
+ORDERHISTORY_VIEWDETAILS_MOD_NAME: xpath=(//*[@ng-if="!subItem.specialInstruction"])[2][contains(text(),'%s')] | (//*[@data-qa-label='SpecialInstrctnLbl' and contains(text(),"%s")])[2] #Requested data-test-id
+ORDERHISTORY_PICKUPADDRESS_LIST: //*[contains(@id,'mainContent')]//*[@data-qa-label='StoreAddressLbl']/parent::div  | //*[@data-test-id='PickUpLocationLabel']/parent::div/div[2] #Requested data-test-id
+ORDERHISTORY_PREVIOUSORDER_DROPDOWN_VALUE: //*[@aria-label="previousOrders"]/option | //android.widget.CheckedTextView[@resource-id="android:id/text1"]  | //XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeButton
+ORDERHISTORY_PREVIOUSORDER_LABEL: (//*[contains(text(),"Previous Orders")])[2] #Request i18 key
+ORDERHISTORY_SHOWMORE_BUTTON: //*[@id="loadMoreButton"] #Request data-test-id
+ORDERHISTORY_BR_REWARDS_ACTIVITY_DROPDOWN_VALUE: //*[contains(@label,"Baskin-Robbins Rewards Activity")] #Request data-test-id
+ORDERHISTORY_BR_REWARDS_ACTIVITY_DISABLED: //*[contains(text(),"Baskin-Robbins Rewards Activity")] #Request i18 key
+ORDERHISTORY_DROPDOWN_ARROW: //*[@data-test-id="BROrderHistoryDropdownBtn"] | //*[contains(text(),'Previous Order')]/..  #Request i18 key
+ORDERHISTORY_DROPDOWN_OPTIONS: //*[contains(text(),'Previous Order')]/../*  #Request i18 key
+ORDERHISTORY_BR_REWARDS_ACTIVITY_LOADMORE_BUTTON: //*[@id="loadMoreActivity"]
+ORDERHISTORY_BR_REWARDS_ACTIVITY_LOADMORE_BUTTON_TEXT: //*[contains(text(),"No more activity to display")] #Request i18 key
+ORDERHISTORY_BR_REWARDS_ACTIVITY_REGISTER_TEXT: //*[contains(text(),"Register")] #Request i18 key
+ORDERHISTORY_BR_REWARDS_ACTIVITY_ACTIVATE_TEXT: //*[contains(text(),"Activate")] #Request i18 key
+ORDERHISTORY_BR_REWARDS_ACTIVITY_REDEEMED_TEXT: //*[contains(text(),"Redeemed")] #Request i18 key
+ORDERHISTORY_BR_REWARDS_ACTIVITY_TEXT: //*[contains(text(),"%s")]
+ORDERHISTORY_ORDER_REORDER_BUTTON:  //*[@data-qa-label='OrderNumberLbl' and contains(text(),'%s')]/ancestor::*[@data-qa-label='OrderHistoryTile']//*[@data-qa-label='ReorderBtn'] | //*[@data-test-id="BROrderHistoryOrderNumberTxt" and contains(text(),'%s')]/ancestor::*[@data-test-id="BROrderHistoryRewardsActivityBody"]//*[@name='orderhistory.button.reorder_i18']
+
+# Menu Filters
+MENU_ITEMS_FILTERBY_HEADING:  //*[normalize-space(text())='menu.products.label.filterBy_i18']
+MENU_ITEMS_FILTERBY_NAME_DROPDOWN_LINK : //*[@data-qa-label='FilterOptionLbl' and contains(text(),'%s')]/following-sibling::*[@data-qa-label='DownArrowBtn'] | //*[contains(text(),"%s")]/following-sibling::*[@alt='Open Filter'] #Requested data-test-id
+MENU_ITEMS_FILTERBY_NAME_LOCATOR: //*[@data-qa-label='FilterOptionLbl' and contains(text(),"%s")] | //*[@data-qa-label='ViewToggleBtn']//*[contains(text(),'%s')] #Requested data-test-id
+MENU_ITEMS_FILTERBY_SUBCAT_FILTER_NAME_LOCATOR: //*[@data-qa-label='FilterSubCatLbl' and contains(text(),"%s")] | //*[@role='checkbox' and contains(text(),'%s')] #Requested data-test-id
+MENU_ITEMS_FILTERBY_SUBCAT_CHECKED_FILTER_NAME_LOCATOR: //*[@data-qa-label='FilterSubCatLbl' and contains(text(),"%s")]/..//input[contains(@class,'ng-not-empty')]  | //*[@role='checkbox' and contains(text(),'%s') and contains(@class,'button-outline-checked')] #Requested data-test-id BRA-20089
+MENU_ITEMS_FILTERBY_SUBCAT_UNCHECKED_FILTER_NAME_LOCATOR: //input[contains(@class,'ng-empty')]//following-sibling::*[@data-qa-label='FilterSubCatLbl' and contains(text(),"%s")]  | //*[@role='checkbox' and contains(text(),'%s')] #Requested data-test-id
+MENU_ITEMS_FILTERBY_SUBCAT_FILTER_ZERO_RESULTS_LOCATOR: (//*[contains(text(),'0 Results')])[1]
+MENU_ITEMS_FILTERBY_SUBCAT_CLEARALL_RESULTS_LOCATOR: xpath=(//*[contains(text(),'Clear All')])[1]
+MENU_ITEMS_FILTERBY_SUBCAT_OPTIONS_FILTER_NAME_LOCATOR : //*[@data-qa-label='FilterSubOptionLbl' and contains(text(),"%s")] | //*[@class='button-container__input button button-outline ng-pristine ng-untouched ng-valid ng-not-empty' and contains(text(),'%s')] #Requested data-test-id BRA-20089
+MENU_ITEMS_FILTERBY_SUBCAT_FILTERS_ZERO_RESULTS_INFO_TEXT : //*[contains(text(),'menu.products.filter.notFound_i18')]
+MENU_ITEM_IMAGE_LOCATOR: //*[@src='%s']
+MENU_TITLE: //*[contains(@class,"page-title")][text()='menu.title_i18']
+MENU_FILTER_LOCATOR: //*[@qa-attribute="BRFlavoursFilterBtn"]
+MENU_FILTER_PAGE_CLOSE_BUTTON:  //*[contains(text(),'navigation.button.close_i18')]//*
+
+# Sitemap locators
+SITEMAP_MENU_INSTAGRAM_ICON_LOCATOR : (//*[@data-test-id='FooterInstagramLnk'])[2]
+SITEMAP_MENU_FACEBOOK_ICON_LOCATOR : (//*[@data-qa-label='facebookLnk'])[1] #//*[@data-test-id="SiteMapFacebookLink"]
+SITEMAP_MENU_TWITTER_ICON_LOCATOR : (//*[@data-qa-label='twitterLnk'])[1] #//*[@data-test-id="SiteMapTwitterLink"]
+SITEMAP_MENU_YOUTUBE_ICON_LOCATOR : (//*[@data-qa-label='youtubeLnk'])[1] #//*[@data-test-id="SiteMapYoutubeLink"]
+SITEMAP_MENU_TIKTOK_ICON_LOCATOR: (//*[@data-qa-label='tiktokLnk'])[1] #(//*[@data-test-id="SiteMapTiktokLink"])[1]
+SITEMAP_MENU_OURMENU_LABEL: (//*[contains(text(),'header.hamburger.ourMenu_i18')])[1] #(//*[contains(text(),'Our Menu')])[1]
+SITEMAP_MENU_DELIVERY_LINK:  (//*[contains(text(),'header.hamburger.delivery_i18')])[1] #(//*[contains(text(),'Delivery')])[1]
+SITEMAP_MENU_JOINTHETEAM_LABEL: (//*[contains(text(),'header.hamburger.joinTheTeam_i18')])[1] #(//*[contains(text(),'Join The Team')])[1]
+SITEMAP_MENU_CAREEROPPORTUNITY_LINK: (//*[contains(text(),'header.hamburger.career_i18')])[1] #(//*[contains(text(),'Career Opportunities')])[1]
+SITEMAP_MENU_FRANCHISEOPPORTUNITY_LINK: (//*[contains(text(),'Franchisee Opportunities')])[1] #Need i18 key
+SITEMAP_MENU_COMPANYINFO_LABEL: (//*[contains(text(),'header.hamburger.companyInfo_i18')])[1] #(//*[contains(text(),'Company Info')])[1]
+SITEMAP_MENU_OURSTORY_LINK: (//*[contains(text(),'header.hamburger.ourStory_i18')])[1] #(//*[contains(text(),'Our Story')])[1]
+SITEMAP_MENU_INTERNATIONAL_LINK: (//*[contains(text(),'header.hamburger.international_i18')])[1] #(//*[contains(text(),'International')])[1]
+SITEMAP_MENU_FAQS_LINK: (//*[contains(text(),'header.hamburger.faqs_i18')])[1] #(//*[contains(text(),'FAQs')])[1]
+SITEMAP_MENU_PRESSROOM_LINK: (//*[contains(text(),'header.hamburger.pressroom_i18')])[1] #(//*[contains(text(),'Pressroom')])[1]
+SITEMAP_MENU_SUSTAINABILITY_LINK: (//*[contains(text(),'header.hamburger.responsibility_i18')])[1] #(//*[contains(text(),'Sustainability')])[1]
+SITEMAP_MENU_JOY_LINK: //*[contains(text(),'header.hamburger.joy_i18')]
+SITEMAP_MENU_CONTACTUS_LINK: (//*[contains(text(),'header.hamburger.contactUs_i18')])[1] #(//*[contains(text(),'Contact Us')])[1]
+SITEMAP_MENU_MOREWAYSTOBR_LABEL: (//*[contains(text(),'header.hamburger.moreWaysToBR_i18')])[1] #(//*[contains(text(),'More Ways to BR')])[1]
+SITEMAP_MENU_MOBILEAPP_LINK: (//*[contains(text(),'header.hamburger.mobileApp_i18')])[1] #(//*[contains(text(),'Mobile App')])[1]
+SITEMAP_MENU_GIFTCARDS_LINK: (//*[contains(text(),'header.hamburger.giftCards_i18')])[1] #(//*[contains(text(),'Gift Cards')])[1]
+SITEMAP_MENU_ICECREAMSOCIAL_LABEL: (//*[contains(text(),'header.hamburger.iceCreamSocial_i18')])[1] #(//*[contains(text(),'Ice Cream Social')])[1]
+SITEMAP_MENU_CLOSE_ICON_LINK: //*[contains(text(),'header.hamburger.image.closeMenu_i18')]
+SITEMAP_MENU_CATEGORY_LINK: //a[normalize-space(text())="%s"]
+
+# Ready Now Locators
+READYNOW_ADVANCE_NOTICE_BADGE: //*[contains(@data-qa-label,'CustomMade')]//following::*[text()="%s"] | //*[@data-test-id='BRMenuProductTitle' and contains(text(),"%s")]/ancestor::ion-item//*[contains(@data-qa-label,'CustomMade')]
+READYNOW_ADVANCE_NOTICE_BADGE_PDP: //*[contains(@data-qa-label,'CustomMade')]
+READYNOW_DEFAULT_ALACARTE_CATERGORY_SUBHEADER_TEXT: //*[contains(text(),"Our Cakes are customizable with your favorite ice cream & cake flavors, design, and special message. To ensure we craft your order just right, some Cakes and Pies may require a minimum of 48 hours for preparation.")] # Need i18 key
+READYNOW_MENU_CATEGORY_4_SUBHEADER_TEXT: //*[contains(text(),"Our Polar Pizza® Ice Cream Treats are customizable with your favorite ice cream flavor, a cookie or brownie crust, and all toppings you can’t go without. To ensure we craft your order just right, Polar Pizzas® may require a minimum of 48 hours for preparation.")]
+READYNOW_NON_ELIGIBLE_MIXED_CART_PRODUCT_ERROR_HEADER: //*[contains(text(),"cart.error.canNotAddItemHeader_i18")]
+READYNOW_NON_ELIGIBLE_MIXED_CART_PRODUCT_ERROR_SUBHEADER: //*[@data-qa-label='PopupMsgLbl' and normalize-space(text())='cart.error.canNotAddItemMsg_i18']
+READYNOW_NON_ELIGIBLE_MIXED_CART_PRODUCT_ERROR_OKBUTTON: *okayGotIt_button
+READYNOW_MIXED_CART_REGULAR_AND_READYNOW_PRODUCT_HELPER_TEXT: |
+  (//*[contains(text(),'NOTE: If your order contains custom items requiring at least 24 or 48 hours to create, all items in your order will be available for pick up on or after the 24-48 hour window, as determined by your selected "Pick Up Time"')])[2]
+READYNOW_ORDERHISTORY_READYNOW_PRODUCT_STATUS: //*[contains(text(),"Pending")]
+
+# DOTCOM
+DOTCOM_LOGIN_BUTTON: //*[@value='Log In']
+DOTCOM_EMAIL: //*[@id="login-form-email"]
+DOTCOM_PASSWORD: //*[@id="login-form-password"]
+DOTCOM_MYACCOUNT_EMAIL_FIELD: //*[@id="email"]
+DOTCOM_MYACCOUNT_UPDATE_ACCOUNT_DETAILS_BUTTON: //*[@value="Update Account Details"]
+
+# Welcome Module
+WELCOME_MENU_CATEGORY_PAGE_LABEL: //*[text()='home.welcomeBack.hey_i18']
+WELCOME_MENU_CATEGORY_PAGE_START_ORDER_BUTTON: //*[contains(text(),"Start Order")] #Request i18 key for Start Order
+WELCOME_BACK_MENU_CATEGORY_PAGE_LABEL: //*[@class="welcome-message"] #//*[@data-test-id='welcome-message']
+WELCOME_BACK_MENU_CATEGORY_PAGE_REORDER_LABEL: //*[normalize-space(text())='cart.button.reorder_i18']
+
+MENU_PRODUCT_PHOTOCAKE_IMAGEUPLOAD_FRAME: //*[@id='photo-uploader'] # Need data-test-id key
+MENU_PRODUCT_PHOTOCAKE_POLICY_ACCEPT_BUTTON:  //*[normalize-space(text())='notifications.button.accept_i18']
+MENU_PRODUCT_PHOTOCAKE_IMAGEBLUR_ACCEPT_BUTTON:  //*[normalize-space(text())='builder.label.photocake.needhelp.button_i18']
+MENU_PRODUCT_PHOTOCAKE_LOGIN_LINK:  //*[contains(@class, 'guest-checkout-content') and contains(text(),'account.photoCake.label.loginInformation_i18')] # Need data-test-id
+MENU_PRODUCT_PHOTOCAKE_LOGIN_SECTION_HEADING: (//*[@class='subheading subheading-normal'])[2] # Need data-test-id
+
+#Loyalty
+LOYALTY_REWARDS_OVERVIEW_LOGO: //*[@class="loyalty"]//*[@class="logo"] | //*[@data-test-id="BRLoyaltyOverviewBRImg"]   #Requested data-test-id BRA-19729
+LOYALTY_REWARDS_OVERVIEW_LOGO_HEADER: //*[contains(text(),'loyalty.overview.header_i18')]
+LOYALTY_REWARDS_OVERVIEW_LOGO_SUBHEADER: //*[contains(text(),'loyalty.overview.subheader_i18')]
+LOYALTY_REWARDS_OVERVIEW_JOIN_BUTTON: //*[contains(text(),'loyalty.overview.button.join_i18')]
+LOYALTY_REWARDS_OVERVIEW_T&C_BUTTON: *rewardsTerms_link
+LOYALTY_REWARDS_OVERVIEW_PERKS_TEXT: //*[contains(text(),'loyalty.overview.perks.label_i18')]
+LOYALTY_REWARDS_OVERVIEW_WELCOME_SCOOP_HEADER: //*[normalize-space(text())='loyalty.overview.perks.label.scoop_i18']
+LOYALTY_REWARDS_OVERVIEW_WELCOME_SCOOP_SUBHEADER: //*[normalize-space(text())='loyalty.overview.perks.label.scoop.details_i18']
+LOYALTY_REWARDS_OVERVIEW_SWEET_DEALS_HEADER: //*[normalize-space(text())='loyalty.overview.perks.label.deals_i18']
+LOYALTY_REWARDS_OVERVIEW_SWEET_DEALS_SUBHEADER: //*[normalize-space(text())='loyalty.overview.perks.label.deals.details_i18']
+LOYALTY_REWARDS_OVERVIEW_CHALLENGES_HEADER: //*[normalize-space(text())='loyalty.overview.perks.label.badges_i18']
+LOYALTY_REWARDS_OVERVIEW_CHALLENGES_SUBHEADER: //*[normalize-space(text())='loyalty.overview.perks.label.badges.details_i18']
+LOYALTY_REWARDS_OVERVIEW_WELCOME_SCOOP_LOGO: //*[@class="overview-image scoop"] | //*[@data-test-id="BRLoyaltyOverviewWelcomeImg"]  #Requested data-test-id BRA-19729
+LOYALTY_REWARDS_OVERVIEW_SWEET_DEALS_LOGO:  //*[@class="overview-image deals"] | //*[@data-test-id="BRLoyaltyOverviewDealsImg"]  #Requested data-test-id BRA-19729
+LOYALTY_REWARDS_OVERVIEW_CHALLENGES_LOGO:  //*[@class="overview-image challenges"] | //*[@data-test-id="BRLoyaltyOverviewBadgesImg"]  #Requested data-test-id BRA-19729
+LOYALTY_REWARDS_CHALLENGE_POPUP_HEADER: //*[@class="loyalty-item-details__header"]//*[text() ='loyalty.item-details.header.challenge_i18']
+LOYALTY_REWARDS_CHALLENGE_ITEM_TEXT: //*[@class="loyalty-item-name"]  #Request data-test-id BRA-19729
+LOYALTY_REWARDS_CHALLENGE_PROGRESSBAR: //*[@class="reward-visits_progress--details"]/following::*[@data-test-id="RewardsProgressBar"]
+LOYALTY_REWARDS_CHALLENGE_POPUP_ORDER_BUTTON: //*[normalize-space(text())='menu.category.button.orderNow_i18']
+LOYALTY_WELCOME_DRAWER_CLOSE_BUTTON: //*[contains(text(),"Close")] #Request i18 key
+LOYALTY_WELCOME_DRAWER_POPUP_HEADING: //*[contains(@data-qa-label,'PopupHeading') and contains(text(),'Welcome to')] #Request data-test-id
+LOYALTY_WELCOME_DRAWER_POPUP_SUBHEADING: //*[contains(text(),"Now that you're in, you'll have exclusive access to")] #Request i18 key
+LOYALTY_WELCOME_DRAWER_REWARDS_TEXT: //*[@class="loyalty-welcome__access-image scoop"]//following-sibling::div[contains(text(),"Custom")] #Request data-test-id
+LOYALTY_WELCOME_DRAWER_REWARDS_IMAGE: //*[@class="loyalty-welcome__access-image scoop"] #Request data-test-id
+LOYALTY_WELCOME_DRAWER_OFFERS_TEXT: //*[@class="loyalty-welcome__access-image deals"]//following-sibling::div[contains(text(),"Sweet")] #Request data-test-id
+LOYALTY_WELCOME_DRAWER_OFFERS_IMAGE: //*[@class="loyalty-welcome__access-image deals"] #Request data-test-id
+LOYALTY_WELCOME_DRAWER_CHALLENGES_IMAGE: //*[@class="loyalty-welcome__access-image challenges"] #Request data-test-id
+LOYALTY_WELCOME_DRAWER_CHALLENGES_TEXT: //*[@class="loyalty-welcome__access-image challenges"]//following-sibling::div[contains(text(),"Challenges")] #Request data-test-id
+LOYALTY_WELCOME_DRAWER_LETS_STARTED_BUTTON: //*[contains(text(),"Let's get started")] #Request i18 key
+LOYALTY_REWARDS_DUNKIN_BROWSER_TITLE_TEXT: //XCUIElementTypeStaticText[@name="GET THE APP."] | //android.widget.TextView[@text="GET THE APP."]
+
+# Mobile
+MOBILE_HEADER_MYACCOUNT_ICON: //*[contains (@aria-label,"User Icon")] #Request data-test-id
+MOBILE_LOGIN_LINK: //*[normalize-space(text())='Log In'][not (@data-test-id="HeaderSignInLnk")]
+MOBILE_PICKUP_LATER_TIME_SELECTION_LINK: (//*[contains(text(),'cart.button.selectPickupTime_i18')])[2]
+MOBILE_PICKUP_LOCALIZATION_ADDRESS_BAR: //*[@data-address-type="STORE_ADDRESS" and contains(text(),'%s')][not (@data-test-id='HeaderAddressTxt' )] # Need to request data-test-id
+MOBILE_PICKUP_CHECKOUT_CONTINUETOPAYMENT_BUTTON: (//*[normalize-space(text())='checkout.details.button.continueToPayment_i18'])[2]
+
+# LOADING ICON LOCATOR
+loading_icon: //*[@class='loading-container visible active']  #UPDATE: request data-test-id
+
+# App Tracking Transparency pop-up locators:
+ATT_POPUP_HEADER_LABEL:  //XCUIElementTypeStaticText[@name="Allow “Baskin-Robbins” to track your activity across other companies’ apps and websites?"]
+ATT_POPUP_BODY_LABEL: //XCUIElementTypeStaticText[@name="This identifier will be used to deliver personalized ads to you."]
+ATT_POPUP_ALLOWTOTRACK_BUTTON: //XCUIElementTypeButton[@name="Allow"]
+ATT_POPUP_ASKNOTTOTRACK_BUTTON:  //XCUIElementTypeButton[@name="Ask App Not to Track"]
+
+# Cookies pop-up locators:
+APP_COOKIES_ACCEPT_BUTTON:  //button[@aria-label='Accept All']  |  //XCUIElementTypeButton[@name="Accept All"] | //*[contains(text(),"Accept All")]
+APP_COOKIES_REJECT_BUTTON:  //*[text()='Reject Non-Essential']  |  //XCUIElementTypeButton[@name="Reject Non-Essential"]
+APP_COOKIES_PREFERENCES_BUTTON: //*[text()='Cookie Preferences']  |  //XCUIElementTypeButton[@name="Cookie Preferences"]
+APP_COOKIES_HEADER_LABEL: //*[text()='Our online services use cookies and similar technologies to provide a personalized experience, assist functionality, support marketing and advertising, and understand how visitors interact with the service. Some uses of these technologies involve sharing information about your use of our online services with third parties. '] | //XCUIElementTypeStaticText[@name="Our online services use cookies and similar technologies to provide a personalized experience, assist functionality, support marketing and advertising, and understand how visitors interact with the service. Some uses of these technologies involve sharing information about your use of our online services with third parties."]
+APP_COOKIES_BODY_LABEL: //*[text()='By continuing to our online services, you consent to our ']/*[text()='footer.link.termsOfUse_i18' and normalize-space(text()='and to our use of tracking technologies as explained in our')]/following-sibling::*[text()='Privacy Policy']  | //XCUIElementTypeStaticText[@name="By continuing to our online services, you consent to our"]
+  /following-sibling::XCUIElementTypeLink[@name="Terms of Use (opens in a new tab)"]
+  /following-sibling::XCUIElementTypeStaticText[@name="and to our use of tracking technologies as explained in our"]
+  /following-sibling::*//XCUIElementTypeStaticText[@name="Privacy Policy (opens in a new tab)"]
+
+#Notification pop-up locators:
+ACTIVATE_NOTIFICATION_DENY_BUTTON: //android.widget.Button[@text="Maybe Later "] | //XCUIElementTypeButton[@name="Maybe Later"] | //*[normalize-space(text())='Maybe Later']
+ACTIVATE_NOTIFICATION_OK_BUTTON: //android.widget.Button[@text="Okay "] | //XCUIElementTypeButton[@name="Okay"]
+ACTIVATE_NOTIFICATION_ALLOW_BUTTON: //XCUIElementTypeButton[@name="Allow"] | //android.widget.Button[@text="Allow"]
+
+APP_NOTIFICATION_HEADER_LABEL:  //android.widget.TextView[@text="Turn On Notifications"]  |  //XCUIElementTypeOther[@name="Turn On Notifications"]
+APP_NOTIFICATION_BODY_LABEL:  //android.widget.TextView[@text="We'll let you know about Baskin Robbins News, offers, and promotions, so you never miss a deal."]/following-sibling::android.widget.TextView[@text="Once you tap Okay, your device will also prompt you to enable notifications."] |  //XCUIElementTypeStaticText[@name="We'll let you know about Baskin Robbins News, offers, and promotions, so you never miss a deal."]/parent::*/following-sibling::*/XCUIElementTypeStaticText[@name="Once you tap Okay, your device will also prompt you to enable notifications."]
+APP_NOTIFICATION_POPUP_ALLOW_BUTTON:  //android.widget.Button[@text="Okay "] | //XCUIElementTypeButton[@name='pushprimer.button.yes_i18']
+APP_NOTIFICATION_POPUP_MAYBELATER_BUTTON: //android.widget.Button[@text="Maybe Later "] | //XCUIElementTypeButton[@name='pushprimer.button.no_i18']
+
+NOTIFICATION_HEADER_LABEL:  //android.widget.ImageView[@resource-id="com.android.permissioncontroller:id/permission_icon"]  |  //XCUIElementTypeStaticText[@name="“Baskin-Robbins” Would Like to Send You Notifications"]
+NOTIFICATION_BODY_LABEL:  //android.widget.TextView[@text='Allow Baskin-Robbins to send you notifications?']  |  //XCUIElementTypeStaticText[@name="Notifications may include alerts, sounds, and icon badges. These can be configured in Settings."]
+NOTIFICATION_POPUP_ALLOW_BUTTON:  //android.widget.Button[@text='Allow']  |  //XCUIElementTypeButton[@name="Allow"]
+NOTIFICATION_POPUP_DENY_BUTTON: //android.widget.Button[@text="Don’t allow"]  | //XCUIElementTypeButton[@name="Don’t Allow"]
+NOTIFICATIONS_CHECKBOX_UNCHECKED: //*[@data-test-id="BRNotificationsToggleBtn"][@aria-checked="false"]
+NOTIFICATION_CANCEL_BUTTON:  //*[contains(text(), 'multistep.upsell.skip_i18')]
+NOTIFICATIONS_CHECKBOX_CHECKED:  //*[@data-test-id='BRNotificationsToggleBtn'][@aria-checked='true']
+
+#LBS pop-up locators:
+APP_LBS_HEADER_LABEL: //android.widget.TextView[@text='Location Services']  | //XCUIElementTypeStaticText[@name='Location Services']
+APP_LBS_BODY_LABEL: //android.widget.TextView[@text="Allow Baskin Robbins® App to access your location even when you are not using the app? We need your location to provide you special offers and locate shops around you."] | //XCUIElementTypeStaticText[@name="Allow Baskin Robbins® App to access your location even when you are not using the app? We need your location to provide you special offers and locate shops around you."]
+APP_LBS_CONTINUE_BUTTON:  //android.widget.Button[@text="Continue "]  |  //XCUIElementTypeButton[@name='location.confirm.continue_i18']  | //*[@qa-attribute='BRConfirmPopUpYes']
+LBS_POPUP_HEADER_LABEL: //android.widget.TextView[@text='Allow Baskin-Robbins to access this device’s location?'] | //XCUIElementTypeStaticText[@name="Allow “Baskin-Robbins” to use your location?"]
+LBS_POPUP_BODY_LABEL: //android.widget.RadioButton[@text='Precise']/following-sibling::android.widget.RadioButton[@text='Approximate']  | //XCUIElementTypeStaticText[@name="Your location will be used to find local restaurants and place an order."]
+LBS_POPUP_ALLOW_ONCE_BUTTON:  //android.widget.Button[@text='Only this time'] |  //XCUIElementTypeButton[@name="Allow Once"]
+LBS_POPUP_ALLOW_WHILEUSINGAPP_BUTTON: //android.widget.Button[@text='While using the app']  | //XCUIElementTypeButton[@name="Allow While Using App"]
+LBS_POPUP_DENY_BUTTON:  //android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_deny_button"]  |  //XCUIElementTypeButton[@name="Don’t Allow"]  |  //android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_deny_and_dont_ask_again_button"]
+
+DONE_KEYBOARD_BUTTON: //XCUIElementTypeButton[@name='Done']
+
+# SideNavigation Locators:
+SIDENAVIGATION_MENU_BUTTON: //*[@data-qa-label='AppMenuBtn']
+SIDENAVIGATION_LOGIN_SIGNUP_BUTTON: //*[contains(text(),'Sign Up / Log In')]
+SIDENAVIGATION_ORDERNOW_BUTTON: //*[contains(text(),'Order Now')] | //*[@data-qa-label="NavOptionLnk" and contains(text(),'Order Now')]
+SIDENAVIGATION_SIGNOUT_BUTTON:  //*[normalize-space(text())='sidenav.link.signout_i18']
+SIDENAVIGATION_ACCOUNTINFO_BUTTON: //*[contains(text(),'sidenav.link.account_i18')]
+SIDENAVIGATION_ACCOUNTINFO_HEADER_TITLE: //*[@qa-attribute="AppHeaderTitleTxt"][text()='sidenav.link.account_i18']
+SIDENAVIGATION_EDITPROFILE_BUTTON: //*[contains(text(),'myprofile.option.button.editprofile_i18')]
+SIDENAVIGATION_MYPAYMENT_BUTTON: //*[contains(text(),'myprofile.option.button.managePayments_i18')]
+SIDENAVIGATION_REWARDS_BUTTON: //*[contains(text(),'header.quick.links.orderNow_i18')]/following::*[contains(text(),'loyalty.rewards.page.title_i18')]
+SIDENAVIGATION_BIRTHDAYCLUB_BUTTON: //*[contains(text(),'myprofile.option.button.editbirthdayclub_i18')]
+SIDENAVIGATION_NOTIFICATION_BUTTON: //*[contains(text(),'myprofile.option.button.setnotifications_i18')]
+SIDENAVIGATION_PAYINSHOP_BUTTON: //*[contains(text(),'Pay In-Shop')]  #Requested i18 BRA-18169
+SIDENAVIGATION_ORDERHISTORY_BUTTON: //*[contains(text(),'myaccount.button.viewPastOrders_i18')][@data-qa-label="ProfileOptionLnk"]
+SIDENAVIGATION_SENDAGIFT_BUTTON: //*[@aria-label='myprofile.option.button.giftCards_i18']
+SIDENAVIGATION_DUNKINREWARDS_BUTTON: //*[@data-qa-label="ProfileOptionLnk"]//*[@aria-label="Dunkin' Rewards®"]
+SIDENAVIGATION_CLOSE_ICON: &header_close_icon //*[@data-qa-label="AppHeaderBackBtn"]
+
+# Edit Profile Locators:
+EDITPROFILE_FIRSTNAME_TEXTBOX: //*[@data-qa-label="BREditProfileFirstNameTxt"]
+EDITPROFILE_LASTNAME_TEXTBOX: //*[@data-qa-label="BREditProfileLastNameTxt"]
+EDITPROFILE_EMAIL_TEXTBOX: //*[@data-qa-label="BREditProfileEmailAddressTxt"]
+EDITPROFILE_SAVE_BUTTON: //*[@data-qa-label="BREditProfileSaveChangesBtn"]
+EDITPROFILE_SAVE_BUTTON_DISABLED_STATE: //*[text() ='builder.button.saveChanges_i18' and contains(@class, "disabled")]
+EDITPROFILE_SUCCESS_BANNER: //*[contains(text(),'Your account has been updated')]
+EDITPROFILE_PHONENUMBER_TEXTBOX:  //*[@data-qa-label='BREditProfilePhoneNumberTxt']
+EDITPROFILE_CURRENTPASSWORD_TEXTBOX: //*[@data-qa-label="CurrentPasswordTxt"]
+EDITPROFILE_CONFIRMPASSWORD_TEXTBOX: //*[@data-qa-label="ChangePasswordConfirmNewPasswordTxt"]
+EDITPROFILE_NEWPASSWORD_TEXTBOX: //*[@data-qa-label="ChangePasswordNewPasswordTxt"]
+EDITPROFILE_PASSWORDCHANGE_ERROR_MESSAGE: //*[@data-qa-label='PopupErrorMsgLbl' and text()='This password is already used']
+EDITPROFILE_PASSWORDCHANGE_ERROROK_BUTTON:  //*[@data-qa-label='PopupOkBtn' and text()="Okay, got it"]
+EDITPROFILE_GENERIC_ERROR_MESSAGE:  //*[@data-qa-label='PopupErrorMsgLbl' and text()='%s']
+EDITPROFILE_REWARDS_DUNKIN_ARROW: //*[@data-qa-label="DunkinRewardsLnk"]//*
+EDITPROFILE_REWARDS_DUNKIN_CHECKBOX_ENABLED: //*[text()="I'm a Dunkin Rewards Member"]//ancestor::*[4]//*[contains(@class,"ng-not-empty")]  #Request i18 key BRA-17414
+EDITPROFILE_REWARDS_DUNKIN_CHECKBOX_DISABLED: //*[text()="I'm a Dunkin Rewards Member"]//ancestor::*[4]//*[contains(@class,"ng-empty")]
+EDITPROFILE_CLOSE_BUTTON: *header_close_icon
+EDITPROFILE_DELETE_ACCOUNT_BUTTON: //*[@data-qa-label="DeleteAccountLink"]
+EDITPROFILE_DELETE_ACCOUNT_POPUP_HEADER_TITLE: //*[contains(text(),'myprofile.option.modal.title_i18')]
+EDITPROFILE_DELETE_ACCOUNT_POPUP_TEXT: //*[contains(text(),'myprofile.option.modal.body_i18')]
+EDITPROFILE_DELETE_ACCOUNT_POPUP_YES_BUTTON: //*[contains(text(),'myprofile.option.modal.yes_i18')]
+
+#Birthday Club Locators:
+BIRTHDAYCLUB_ABSOLUTELY_BUTTON: //*[@qa-attribute="BRBirthdayClubAbsolutelyBtn"]
+BIRTHDAYCLUB_ACCOUNT_ABSOLUTELY_BUTTON: //*[text()='birthdayClub.button.agree_i18']/../*[contains(@class,"circle")]
+BIRTHDAYCLUB_MONTH_BUTTON: //android.view.View[@text='birthdayClub.label.option.month_i18']  |  //XCUIElementTypeOther[@value='birthdayClub.label.option.month_i18']
+BIRTHDAYCLUB_MONTH_OPTION: //*[@resource-id="android:id/custom"]//android.widget.CheckedTextView  |  //XCUIElementTypeCollectionView/XCUIElementTypeCell
+BIRTHDAYCLUB_DAY_BUTTON: //android.view.View[@text='birthdayClub.label.option.day_i18']  |  //XCUIElementTypeOther[@value='birthdayClub.label.option.day_i18']
+BIRTHDAYCLUB_DAY_OPTION: //*[@resource-id="android:id/custom"]//android.widget.CheckedTextView  |  //XCUIElementTypeCollectionView/XCUIElementTypeCell
+BIRTHDAYCLUB_SAVEINFO_BUTTON: //*[@data-qa-label="SaveMyBirthdayClubInfoBtn"]
+BIRTHDAYCLUB_SAVEINFO_BUTTON_DISABLED_STATE: //*[@data-qa-label='SaveMyBirthdayClubInfoBtn'][@disabled='disabled']
+BIRTHDAYCLUB_PERKS_POPUPCLOSE_BUTTON: &screen_close_icon //*[@data-qa-label="AppCloseBtn"] | //android.widget.ImageButton[@content-desc="Close Button"]
+BIRTHDAYCLUB_PERKS_POPUP_TITLE: //*[@data-qa-label="HeadlineLbl" and contains(text(),'birthdayClub.perks_i18')]
+BIRTHDAYCLUB_PERKS_POPUP_BODY:  //*[@data-qa-label="MessageLbl" and normalize-space(text())="Welcome to the best club around, where you get free deliciousness just for being you."]
+BIRTHDAYCLUB_BIRTHDAYRULE_HEADING: //*[normalize-space(text())='Birthdays Rule!']
+BIRTHDAYCLUB_BIRTHDATE_TEXT:  //*[@qa-attribute='BRMyBirthdayClubBirthdateLbl']/following-sibling::div/*[@class='dob']
+BIRTHDAYCLUB_NEXT_BUTTON: //*[@qa-attribute="BRBirthdayClubNextBtn"]
+BIRTHDAYCLUB_JOINED_POPUP_TITLE: //*[@data-qa-label="HeadlineLbl" and text()='account.title.worldOfFlavors_i18']
+BIRTHDAYCLUB_JOINED_POPUP_BOBY:  //*[@data-qa-label="MessageLbl" and normalize-space(text())='account.title.worldOfFlavors.thankyou.message_i18']
+BIRTHDAYCLUB_NOWLETSEXPLORE_BUTTON: //*[@data-qa-label="SaveMyBirthdayClubInfoBtn"]
+BIRTHDAYCLUB_TITLE_LOCATOR: //*[@qa-attribute="AppHeaderTitleTxt"][text()='birthdayClub.title_i18']
+BIRTHDAYCLUB_GENDER_BUTTON: //*[text()="%s"]/preceding-sibling::*
+BIRTHDAYCLUB_BIRTHDAYCLUBTAB_BUTTON: //*[@qa-attribute="BRMyBirthdayClubMyBirthdayClubLnk"]
+BIRTHDAYCLUB_FAMILYMEMBERSTAB_BUTTON: //*[@data-qa-label="BRFamilyMembersFamilyMembersLnk"]
+BIRTHDAYCLUB_FAMILYMEMBERSTAB_BUTTON_DISABLED_STATE: //*[@data-qa-label="BRFamilyMembersFamilyMembersLnk"][@class="tab-item"]
+BIRTHDAYCLUB_FAMILYMEMBERS_MESSAGE_LOCATOR: //*[text()='familyMembers.label.shareTheJoy_i18']
+BIRTHDAYCLUB_FAMILYMEMBERS_ADD_BUTTON: //*[@data-qa-label="AddFamilyMemberLnk"]
+BIRTHDAYCLUB_FAMILYMEMBERS_FIRSTNAME_TEXTBOX: //*[@data-qa-label="BRFamilyMemberFirstNameTxt"]
+BIRTHDAYCLUB_FAMILYMEMBERS_LASTNAME_TEXTBOX: //*[@data-qa-label="BRFamilyMemberLastNameTxt"]
+BIRTHDAYCLUB_FAMILYMEMBERS_RELATIONSHIP_BUTTON: //XCUIElementTypeOther[@value="RELATIONSHIP"]  |  //android.view.View[@text='RELATIONSHIP']
+BIRTHDAYCLUB_FAMILYMEMBERS_RELATIONSHIP_OPTION: &option_default //XCUIElementTypeCollectionView//XCUIElementTypeButton  |  //android.widget.ListView/android.widget.CheckedTextView
+BIRTHDAYCLUB_FAMILYMEMBERS_BIRTHDAYMONTH_BUTTON: //XCUIElementTypeOther[@value='birthdayClub.label.option.month_i18']  |  //android.view.View[@text='birthdayClub.label.option.month_i18']
+BIRTHDAYCLUB_FAMILYMEMBERS_BIRTHDAYMONTH_OPTION: *option_default
+BIRTHDAYCLUB_FAMILYMEMBERS_BIRTHDAYDAY_BUTTON: //XCUIElementTypeOther[@value='birthdayClub.label.option.day_i18']  |  //android.view.View[@text='birthdayClub.label.option.day_i18']
+BIRTHDAYCLUB_FAMILYMEMBERS_BIRTHDAYDAY_OPTION: *option_default
+BIRTHDAYCLUB_FAMILYMEMBERS_SAVE_BUTTON: //XCUIElementTypeButton[@name='familyMembers.button.saveFamilyMember_i18']  |  //android.widget.Button[@text='familyMembers.button.saveFamilyMember_i18']  |  //*[contains(text(),'familyMembers.button.saveFamilyMember_i18')]
+BIRTHDAYCLUB_FAMILYMEMBERS_DELETE_BUTTON: //li[normalize-space()='%s']/following-sibling::li//a[@qa-attribute='BRFamilyMemberDeleteTxtLnk']
+BIRTHDAYCLUB_FAMILYMEMBERS_ADDED_LOCATOR: //*[@data-qa-label='AddedFamilyMemberLbl']//li[1]
+BIRTHDAYCLUB_FAMILYMEMBERS_REMOVE_BUTTON: //*[text()='%s']/ancestor::div/following-sibling::div//button[@qa-attribute='BRFamilyMemberRemoveBtn']
+BIRTHDAYCLUB_FAMILYMEMBERS_ADDED_DETAILS_LOCATOR: //*[text()='%s']/ancestor::div[@class='added-family-member']/following-sibling::div
+
+#SHOP_CARDS LOCATORS:
+SHOP_CARDS_TITLE: xpath=(//*[normalize-space(text())='header.navigation.giftCards_i18'])[2]
+SHOP_CARDS_ADDNEWCARD_BUTTON: //*[@data-qa-label="BRPayAddANewCardBtn"]
+SHOP_CARDS_NOPE_BUTTON: //*[@ng-click="chooseGiftCard(false)"]   #Requested data-test-id BRA-19027
+SHOP_CARDS_DESIGN_BUTTON: //*[@data-qa-label="CardDesignBtn"]
+SHOP_CARDS_DESIGN_NEXT_BUTTON: xpath=(//*[normalize-space(text())='cardpayment.addcard.button.next_i18']//parent::*[@type='button'])[2]
+SHOP_CARDS_VALUE_BUTTON: //*[@data-qa-label="AddValueAmountBtn"][contains (text(),"%s")]
+SHOP_CARDS_CONFIRMATIONTEXT_LOCATOR: //*[@data-qa-label="CardAddedMsgLbl"]
+SHOP_CARDS_CONFIRMATIONBALANCE_LOCATOR: //*[@data-qa-label="BalanceLbl"]
+SHOP_CARDS_CLOSE_BUTTON: *screen_close_icon
+SHOP_CARDS_EXISTINGCARD_BUTTON: xpath=(//XCUIElementTypeOther[@name='myaccount.label.giftCards_i18'])[1]/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[2] | //android.widget.Image[@text="br-card-02"]
+SHOP_CARDS_MERGECARD_BUTTON: //*[contains (text(),'cardpayment.cards.mergeCards.button_i18')]
+SHOP_CARDS_MERGECONFIRMATION_LOCATOR: //*[contains (text(),'cardpayment.cards.confirm.button_i18')]
+SHOP_CARDS_PAYINSTORE_BUTTON: //*[@data-qa-label="BRPayPayInStoreBtn"]
+SHOP_CARDS_ADDFUNDS_BUTTON: //*[contains(text(),'cardpayment.cards.addValue.button_i18')]
+SHOP_CARDS_TRANSACTIONHISTORY_BUTTON: //*[@data-qa-label="BRPayTransactionHistoryBtn"]
+SHOP_CARDS_BALANCE_LOCATOR: xpath=(//*[@class="value-label"])[1]   #Requested data-test-id BRA-19027
+SHOP_CARDS_AMOUNTEXCEEDED_POPUP_HEADER: //*[@data-qa-label="ErrorHeaderLbl" and text() ='cardpayment.transaction.amountExceeded.header_i18']
+SHOP_CARDS_AMOUNTEXCEEDED_POPUP_TEXT: //*[@data-qa-label="PopupErrorMsgLbl" and text() ='cardpayment.transaction.amountExceeded.message_i18']
+SHOP_CARDS_AMOUNTEXCEEDED_POPUP_OK_BUTTON: *okayGotIt_button
+SHOP_CARDS_DELETECARD_BUTTON: //*[@data-qa-label="BRPayDeleteCardBtn"]
+
+#Manage Payments Locators:
+PAYMENTMETHODS_HEADER_LABEL: //*[text() ='myprofile.option.button.managePayments_i18' and @qa-attribute="AppHeaderTitleTxt"]
+PAYMENTMETHODS_ADD_NEWCARD_BUTTON: //*[normalize-space(text())='myaccount.label.addNewCard_i18']
+PAYMENTMETHODS_NEWCARD_EDIT_LINK: //*[contains(text(),'myaccount.label.edit_i18')]
+PAYMENTMETHODS_CARD_REMOVE_BUTTON: //*[contains(text(),'myaccount.label.remove_i18')]
+PAYMENTMETHODS_EXP_DATE_TEXTBOX: //*[@qa-attribute="BRCreditCardExpirationTxt"]
+PAYMENTMETHODS_ZIPCODE_TEXTBOX: //*[@qa-attribute="BRCreditCardZipCodeTxt"]
+PAYMENTMETHODS_SAVE_NEWCARD_BUTTON: //*[contains(text(),"Save Card")]  #Request i18 key BRA-17414
+PAYMENTMETHODS_CARD_REMOVE_CONFIRMATION_BUTTON: //*[@qa-attribute="BRConfirmPopUpYes"]
+PAYMENTMETHODS_ADD_GIFTCARD_BUTTON: //*[normalize-space(text())='myaccount.label.addNewGiftCard_i18']
+PAYMENTMETHODS_GIFTCARD_NUMBER_LOCATOR:  //*[contains(text(),'myaccount.label.giftCardEndingIn_i18')]
+PAYMENTMETHODS_GIFTCARD_BALANCE_LOCATOR:  //*[@data-test-id="BRGiftCardBalance"]
+
+#Rewards screen locators:
+REWARDS_SCANINSHOPTAB_BUTTON: //*[text()= 'loyalty.rewards.page.tab.scan_i18']
+REWARDS_SCANINSHOPTAB_BUTTON_ACTIVE: //*[contains(@class, 'active')]//*[text()='loyalty.rewards.page.tab.scan_i18']
+REWARDS_REWARDSTAB_BUTTON: //*[@class="tab-item"]//*[text()= 'loyalty.rewards.page.tab.rewards_i18']
+REWARDS_REWARDSTAB_BUTTON_ACTIVE: //*[contains(@class, 'active')]//*[text()='loyalty.rewards.page.tab.rewards_i18']
+REWARDS_SCANINSHOP_REWARDS_TITLE: //*[text()='loyalty.rewards.label.rewards_i18'][@class="rewards-brand"]
+REWARDS_SCANINSHOP_REWARDS_INFO: //*[text()= 'loyalty.rewards.label.rewards_i18']/following::*[@class="rewards-info-icon"]
+REWARDS_SCANINSHOP_REWARDS_BUTTON: //*[@data-test-id="BRRewardsScreenRewardBtn" and contains(text(),'%s')]
+REWARDS_SCANINSHOP_OFFERS_TITLE: //*[text()='loyalty.rewards.label.offers_i18']
+REWARDS_SCANINSHOP_OFFERS_INFO: //*[text()= 'loyalty.rewards.label.offers_i18']/following::*[@class="rewards-info-icon"]
+REWARDS_SCANINSHOP_OFFERS_BUTTON: //*[@data-test-id="BRRewardsScreenOfferBtn" and contains(text(),'%s')]
+REWARDS_SCANINSHOP_EXPIRE_DATE_TEXT: //*[contains(@aria-label,"Expires:")]
+REWARDS_SCANINSHOP_SPOON_IMAGE: //*[@class="reward-list-item-image" and @src="%s" ]
+REWARDS_SCANINSHOP_DUNKIN_CTA_BUTTON: //*[@data-test-id="DunkinRewardCTA"]
+
+# Send Gift Locators:
+SENDAGIFT_HEADER_LOCATOR: //*[@qa-attribute="AppHeaderTitleTxt" and (text()='sendAGift.title.view_i18')]
+SENDAGIFT_VALUE_BUTTON: //*[@data-qa-label="AddValueAmountBtn"]/*[@class="amount-value"][contains (text(),"%s")]
+SENDAGIFT_DESIGN_BUTTON: //*[@data-qa-label="CardDesignBtn"]/parent::*[@aria-label="card Design Prom Test"]
+SENDAGIFT_NEXT_BUTTON: //*[normalize-space(text())='cardpayment.addcard.button.next_i18' and not (@disabled="disabled")]
+SENDAGIFT_SENDERNAME_INPUT: //*[@data-qa-label="BRSendAGiftYourNameTxt"]
+SENDAGIFT_DELIVERYOPTION_EMAIL_BUTTON: //*[@qa-attribute="BRSendAGiftEmailBtn"]
+SENDAGIFT_RECIPIENTSEMAIL_INPUT: //*[@data-qa-label="BRSendAGiftRecipientEmailTxt"]
+SENDAGIFT_RECIPIENTSNAME_INPUT: //*[@data-qa-label="BRSendAGiftRecipientNameTxt"]
+SENDAGIFT_DELIVERYOPTION_TEXT_BUTTON: //*[@qa-attribute="BRSendAGiftTextBtn"]
+SENDAGIFT_RECIPIENTSPHONE_INPUT: //*[@data-test-id="BRSendAGiftRecipientPhoneTxt"]
+SENDAGIFT_INCORRECTEMAIL_ERROR_LABEL:  //*[contains(text(),'account.register.error.invalid.email_i18')]
+SENDAGIFT_INCORRECTPHONE_ERROR_LABEL: //*[text()='Invalid Phone Number']
+SENDAGIFT_GOTOMYCONTACTS_LINK: //*[@data-test-id="BRGoToMyContactsLink"]
+SENDAGIFT_GOTOMYCONTACTS_SEND_BUTTON: //XCUIElementTypeButton[@name="sendButton"]
+SENDAGIFT_GOTOMYCONTACTS_POPUP_HEADER: //*[contains(text(),'sendAGift.access.contact.dialog.title.access_i18')]
+SENDAGIFT_CONFIRMATION_TEXT: //*[contains(text(),'sendAGift.payment.confirmation.title_i18')]
+
+#Biometric:
+BIOMETRIC_LOGIN_ENABLE_LINK:  //*[normalize-space(text())='account.signup.title.enableBiometrics_i18']
+BIOMETRIC_ON_TOGGLE_BUTTON: //*[@data-test-id="BRBiometricsToggleBtn"][@aria-checked="false"]/*[@class='toggle disable-user-behavior']
+BIOMETRIC_LOGIN_TITLE: //*[text()='account.biometrics.subtitle_i18']
+BIOMETRIC_NOTENROLLED_ERROR_TITLE: //*[@class="title" and text()='account.error.biometrics.headline_i18']
+BIOMETRIC_NOTENROLLED_ERROR_TEXT: //*[text()='account.error.biometrics.notenrolled_i18']
+BIOMETRIC_NOTENROLLED_ERROR_OK_BUTTON: //*[@qa-attribute="BRConfirmPopUpYes"]

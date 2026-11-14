@@ -1,0 +1,212 @@
+#Tenant Information
+ELEMENTLOCATOR_PATH: tenants/br-us/data/elementLocators.yaml
+FE_REPO: https://username:password@github.com/tillster/mobilem8-responsive-app.git
+DEFAULT_LANG_i18N: [/mobilem8-responsive-app/themes/br-foundation/i18n/en-us.lang.json,
+                    /mobilem8-responsive-app/themes/ionic/themes/br/i18n/en-us.lang.json,
+                    /mobilem8-responsive-app/themes/mobile-international-ionic/i18n/_en.lang/,
+                    /mobilem8-responsive-app/themes/mobile-international-ionic/i18n/en.lang.json]
+
+# Item Details:
+CART_ITEM_DETAILS_ALACARTE_DEFAULT_VALUE_web:   |-
+  Celebration Party Cake
+  \$\d+\.\d\d
+  Serving Size\: 9\" Round Serves 12\-16
+  Cake Type\: Confetti Cake
+  Ice Cream Flavor\: Vanilla
+  Special Message\: None
+  Edit
+  Remove
+  \- 1 \+
+  \$\d+\.\d\d
+
+CART_ITEM_DETAILS_ALACARTE_DEFAULT_VALUE_Android: &cart_item_alacarte_value  |-   
+  Celebration Party Cake
+  \$\d+\.\d\d
+  QTY\: 1
+  Serving Size\: 9\" Round Serves 12\-16
+  Cake Type\: Confetti Cake
+  Ice Cream Flavor\: Vanilla
+  Special Message\: None
+  Edit
+  Remove
+
+CART_ITEM_DETAILS_ALACARTE_DEFAULT_VALUE_iOS: *cart_item_alacarte_value
+
+CART_ITEM_DETAILS_READYNOW_DEFAULT_VALUE_web:   |-
+  Single Scoop \(100\-300 CAL\)
+  \$\d+\.\d\d
+  Select Flavor\: Brookie Batter \(190/300 CAL / Scoop\)
+  Select Toppings\: No Topping
+  Select a Cup or Cone\: Cup
+  Edit
+  Remove
+  \- 1 \+
+  \$\d+\.\d\d
+
+CART_ITEM_DETAILS_READYNOW_DEFAULT_VALUE_Android: &cart_item_readynow_value   |-
+  Single Scoop \(100\-300 CAL\)
+  \$\d+\.\d\d
+  Select Flavor\: Brookie Batter \(190/300 CAL / Scoop\)
+  Select Toppings\: No Topping
+  Select a Cup or Cone\: Cup
+  Edit
+  Remove
+
+CART_ITEM_DETAILS_READYNOW_DEFAULT_VALUE_iOS: *cart_item_readynow_value
+
+CART_DEFAULT_ITEM_DETAILS_WITH_CUSTOMIZE_VALUE_web:   |-
+  Celebration Party Cake
+  \$\d+\.\d\d
+  Serving Size\: 9\" Round Serves 12\-16
+  Cake Type\: Chocolate Cake
+  Ice Cream Flavor\: Baseball Nut\®
+  Special Message\: Happy Birthday Dear
+  Special Message Color\: Blue
+  Instructions\: Add extra cream
+  Edit
+  Remove
+  \- 1 \+
+  \$\d+\.\d\d
+
+CART_DEFAULT_ITEM_DETAILS_WITH_CUSTOMIZE_VALUE_Android:  &cart_item_alacarte_customize_value |-
+  Celebration Party Cake
+  \$\d+\.\d\d
+  QTY\: 1
+  Serving Size\: 9\" Round Serves 12\-16
+  Cake Type\: Chocolate Cake
+  Ice Cream Flavor\: Baseball Nut\®
+  Special Message\: Happy Birthday Dear
+  Special Message Color\: Blue
+  Instructions\: Add extra cream
+  Edit
+  Remove
+
+CART_DEFAULT_ITEM_DETAILS_WITH_CUSTOMIZE_VALUE_iOS: *cart_item_alacarte_customize_value
+
+CART_ITEM_DETAILS_WITH_FUDGECRUNCH_CAKE_web:  |-
+  Celebration Party Cake Fudge Crunch
+  \$\d+\.\d\d
+  Serving Size\: 9\" Round Serves 12\-16
+  Cake Type\: Fudge Crunch
+  Special Message\: None
+  Edit
+  Remove
+  \- 1 \+
+  \$\d+\.\d\d
+
+CART_ITEM_DETAILS_WITH_FUDGECRUNCH_CAKE_Android: &cart_item_fudgecrunch_cake_value  |-
+  Celebration Party Cake Fudge Crunch
+  \$\d+\.\d\d
+  QTY\: 1
+  Serving Size\: 9\" Round Serves 12\-16
+  Cake Type\: Fudge Crunch
+  Special Message\: None
+  Edit
+  Remove
+
+CART_ITEM_DETAILS_WITH_FUDGECRUNCH_CAKE_iOS: *cart_item_fudgecrunch_cake_value
+
+CART_ITEM_DETAILS_EDITED_WITH_FUDGECRUNCH_CAKE_web:  |-
+  Celebration Party Cake Fudge Crunch
+  \$\d+\.\d\d
+  Serving Size\: 2/3 Sheet Serves 12-16 8"x8"
+  Cake Type\: Fudge Crunch
+  Special Message\: None
+  Edit
+  Remove
+  \- 1 \+
+  \$\d+\.\d\d
+
+CART_ITEM_DETAILS_EDITED_WITH_FUDGECRUNCH_CAKE_Android: &cart_item_fudgecrunch_cake_value_edited  |-
+  Celebration Party Cake Fudge Crunch
+  \$\d+\.\d\d
+  QTY\: 1
+  Serving Size\: 2/3 Sheet Serves 12-16 8"x8"
+  Cake Type\: Fudge Crunch
+  Special Message\: None
+  Edit
+  Remove
+
+CART_ITEM_DETAILS_EDITED_WITH_FUDGECRUNCH_CAKE_iOS: *cart_item_fudgecrunch_cake_value_edited
+
+ORDERCONFIRMATION_ITEM_DETAILS_ALACARTE_DEFAULT_VALUE_web:   |-
+  Celebration Party Cake
+  \$\d+\.\d\d
+  Qty\: 1
+  Serving Size\: 9\" Round Serves 12\-16
+  Cake Type\: Confetti Cake
+  Ice Cream Flavor\: Vanilla
+  Special Message\: None
+
+ORDERCONFIRMATION_ITEM_DETAILS_ALACARTE_DEFAULT_VALUE_Android: &orderconfirmation_item_alacarte_value   |-
+  Celebration Party Cake
+  \$\d+\.\d\d
+  QTY\: 1
+  Serving Size\: 9\" Round Serves 12\-16
+  Cake Type\: Confetti Cake
+  Ice Cream Flavor\: Vanilla
+  Special Message\: None
+
+ORDERCONFIRMATION_ITEM_DETAILS_ALACARTE_DEFAULT_VALUE_iOS: *orderconfirmation_item_alacarte_value
+
+ORDERCONFIRMATION_ITEM_DETAILS_READYNOW_DEFAULT_VALUE_web:   |-
+  Single Scoop \(100\-300 CAL\)
+  \$\d+\.\d\d
+  Qty\: 1
+  Select Flavor\: Brookie Batter \(190/300 CAL / Scoop\)
+  Select Toppings\: No Topping
+  Select a Cup or Cone\: Cup
+
+ORDERCONFIRMATION_ITEM_DETAILS_READYNOW_DEFAULT_VALUE_Android: &orderconfirmation_item_readynow_value  |-
+  Single Scoop \(100\-300 CAL\)
+  \$\d+\.\d\d
+  QTY\: 1
+  Select Flavor\: Brookie Batter \(190/300 CAL / Scoop\)
+  Select Toppings\: No Topping
+  Select a Cup or Cone\: Cup
+
+ORDERCONFIRMATION_ITEM_DETAILS_READYNOW_DEFAULT_VALUE_iOS:  *orderconfirmation_item_readynow_value
+
+ORDERHISTORY_ITEM_DETAILS_MIXEDCART_DEFAULT_VALUE_web:    |-
+  10 Magic Candles
+  \$\d+\.\d\d
+  1
+  \$\d+\.\d\d
+
+ORDERHISTORY_ITEM_DETAILS_MIXEDCART_DEFAULT_VALUE_Android:  &orderhistory_item_mixedcart_value  |-
+  10 Magic Candles
+  \$\d+\.\d\d
+
+ORDERHISTORY_ITEM_DETAILS_MIXEDCART_DEFAULT_VALUE_iOS:  *orderhistory_item_mixedcart_value
+
+# Store localization page
+STORELOCATOR_NO_SHOP_FOUND_VALUE_1_web: 'No shops found within 20 miles of your search'
+STORELOCATOR_NO_SHOP_FOUND_VALUE_1_Android: &store_no_shop_found_mobile_value |-
+  No shops found within
+  20 miles of your search
+STORELOCATOR_NO_SHOP_FOUND_VALUE_1_iOS: *store_no_shop_found_mobile_value
+STORELOCATOR_CHANGESTOREMODAL_VALUE_web: |-
+  Changing Shops?
+  
+  Changing your selected shop will clear any items in your cart. Product price and availability may vary by location.
+STORELOCATOR_CHANGESTOREMODAL_VALUE_Android: &store_shop_change_modal |-
+  Changing Shops?
+  Changing your selected shop will clear any items in your cart. Product price and availability may vary by location.
+STORELOCATOR_CHANGESTOREMODAL_VALUE_iOS: *store_shop_change_modal
+STORELOCATOR_SEARCH_PLACEHOLDER_VALUE_web: Enter city, state, or zip code
+STORELOCATOR_SEARCH_PLACEHOLDER_VALUE_Android: &zipcodeField_value Enter City, State or Zip Code
+STORELOCATOR_SEARCH_PLACEHOLDER_VALUE_iOS: *zipcodeField_value
+
+AMENITIES_OPTION_2_VALUE_web: Drive Thru
+AMENITIES_OPTION_2_VALUE_Android: &amenities_value Drive-Thru
+AMENITIES_OPTION_2_VALUE_iOS: *amenities_value
+
+STORELOCATOR_NO_SHOP_FOUND_VALUE_2_web: 'No shops found within 50 miles of your search'
+STORELOCATOR_NO_SHOP_FOUND_VALUE_2_Android: &store_no_shop_found_mobile_value_2 |-
+  No shops found within
+  50 miles of your search
+STORELOCATOR_NO_SHOP_FOUND_VALUE_2_iOS: *store_no_shop_found_mobile_value_2
+
+NONDEFAULT_BUILDER_MOD_EXTRATOPPING_4_VALUE_web:  Choose one or more
+NONDEFAULT_BUILDER_MOD_EXTRATOPPING_4_VALUE_Android:  &ExtraTopping Choose One Or More
+NONDEFAULT_BUILDER_MOD_EXTRATOPPING_4_VALUE_iOS:  *ExtraTopping
