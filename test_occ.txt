@@ -1,0 +1,8 @@
+*** Settings ***
+Documentation
+
+Resource	keywords.txt
+
+*** Test Cases ***
+
+Verify OCC displays the order details for the order placed from the application

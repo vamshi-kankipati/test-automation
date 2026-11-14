@@ -1,0 +1,1025 @@
+*** Keywords ***
+enter_testdata_in_locator_field
+	[Arguments]	${testdata}=	${locator}=
+
+
+click_on_element_locator
+	[Arguments]	${locator}=
+
+
+enter_random_testdata_type_in_locator_field_length_optional
+	[Arguments]	${testdata_type}=	${locator}=	${length_optional}=
+
+
+choose_testdata_by_text_from_list_locator
+	[Arguments]	${testdata}=	${list_locator}=
+
+
+verify_locator_is_present
+	[Arguments]	${locator}=
+
+
+verify_locator_contains_expected_message
+	[Arguments]	${locator}=	${message}=
+
+
+verify_user_is_directed_to_window_title
+	[Arguments]	${title}=
+
+
+login_to_application__jbw
+	[Arguments]	${emailaddress}=EMAILADDRESS_DEFAULT_VALUE	${password}=PASSWORD_DEFAULT_VALUE	${__free_text}=
+	Given enter_testdata_in_locator_field	${emailaddress}	LOGIN_EMAILADDRESS_TEXTBOX
+	And enter_testdata_in_locator_field	${password}	LOGIN_PASSWORD_TEXTBOX
+	And click_on_element_locator	LOGIN_SIGNIN_BUTTON
+
+
+login_with_a_facebook_account__jbw
+	[Arguments]	${facebookemailaddress}=FACEBOOKEMAILADDRESS_DEFAULT_VALUE	${facebookpassword}=FACEBOOKPASSWORD_DEFAULT_VALUE
+	And click_on_element_locator	LOGIN_CONTINUEWITHFACEBOOK_BUTTON
+	And user_switches_to_a_new_window	FACEBOOK_WINDOW_TITLE
+	And enter_testdata_in_locator_field	${facebookemailaddress}	FACEBOOK_USERNAME_TEXTBOX
+	And enter_testdata_in_locator_field	${facebookpassword}	FACEBOOK_PASSWORD_TEXTBOX
+	And click_on_element_locator	FACEBOOK_SIGNIN_BUTTON
+
+
+create_a_new_account__jbw
+	[Arguments]	${firstname}=FIRSTNAME_RANDOM_VALUE	${lastname}=LASTNAME_RANDOM_VALUE	${emailaddress}=EMAILADDRESS_RANDOM_VALUE	${phonenumber}=PHONENUMBER_RANDOM_VALUE	${password}=PASSWORD_VALID_VALUE	${confirm_password}=PASSWORD_VALID_VALUE
+	And enter_testdata_in_locator_field	${firstname}	CREATEACCOUNT_FIRSTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	${lastname}	CREATEACCOUNT_LASTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	${emailaddress}	CREATEACCOUNT_EMAILADDRESS_TEXTBOX
+	And enter_testdata_in_locator_field	${phonenumber}	CREATEACCOUNT_PHONENUMBER_TEXTBOX
+	And enter_testdata_in_locator_field	${password}	CREATEACCOUNT_PASSWORD_TEXTBOX
+	And enter_testdata_in_locator_field	${confirm_password}	CREATEACCOUNT_CONFIRMPASSWORD_TEXTBOX
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Editable	CREATEACCOUNT_FIRSTNAME_TEXTBOX	CREATEACCOUNT_FIRSTNAME_VARIABLE
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Editable	CREATEACCOUNT_LASTNAME_TEXTBOX	CREATEACCOUNT_LASTNAME_VARIABLE
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Editable	CREATEACCOUNT_EMAILADDRESS_TEXTBOX	CREATEACCOUNT_EMAILADDRESS_VARIABLE
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Editable	CREATEACCOUNT_PHONENUMBER_TEXTBOX	CREATEACCOUNT_PHONENUMBER_VARIABLE
+	And click_on_element_locator	CREATEACCOUNT_CREATEACCOUNT_BUTTON
+
+
+open_mailbox_and_wait_for_email_host_emailaddress_password
+	[Arguments]	${host}=	${emailaddress}=	${password}=
+
+
+open_link_in_email__link
+	[Arguments]	${link}=
+
+
+verify_email_header_contains_expected_message__header_expected_message
+	[Arguments]	${header}=	${expected_message}=
+
+
+verify_email_body_contains_expected_message__locator_message
+	[Arguments]	${locator}=	${message}=
+
+
+verify_email_body_contains_expected_element__locator
+	[Arguments]	${locator}=
+
+
+verify_email_body_contains_expected_link__link
+	[Arguments]	${link}=
+
+
+load_the_application
+
+
+place_a_delivery_now_order_with_cash_for_registered_user__jbw
+	And login_to_application__jbw
+	And add_a_combo_product_to_cart_with_default_modifier__jbw	MENU_CATEGORY_1	CATEGORY_1_COMBO_PRODUCT_1
+	And verify_subtotal_amount_is_correct_on_cart_screen
+	And verify_total_amount_is_correct_on_cart_screen
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Non-Editable	CART_SUBTOTAL_TEXT	ORDER_SUBTOTAL_VALUE
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Non_Editable	CART_TOTAL_TEXT	ORDER_TOTAL_VALUE
+	And click_on_element_locator	CART_PROCEEDTOCHECKOUT_BUTTON
+	And select_cash_payment_and_place_order__jbw
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Non_Editable	ORDERCONFIRMATION_ORDERNUMBER_TEXT	ORDER_NUMBER_VALUE
+
+
+place_a_delivery_later_order_with_cash_for_registered_user__jbw
+	And login_to_application__jbw
+	And add_a_combo_product_to_cart_with_default_modifier__jbw
+	And click_on_element_locator	CART_PROCEEDTOCHECKOUT_BUTTON
+	And checkout_with_guest_user_login__jbw
+	And select_cash_payment_and_place_order__jbw
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Non_Editable	ORDERCONFIRMATION_ORDERNUMBER_TEXT	ORDER_NUMBER_VALUE
+
+
+click_on_element_locator_with_text
+	[Arguments]	${locator}=	${text}=
+
+
+log_out_from_the_application__jbw
+	And click_on_element_locator	HEADER_MYACCOUNT_LINK
+	And click_on_element_locator	MYACCOUNT_LOGOUT_LINK
+
+
+clear_value_from_locator
+	[Arguments]	${locator}=
+
+
+pending_step_may_need_new_template
+
+
+user_switches_to_a_new_window
+	[Arguments]	${new}=NEW
+
+
+login_with_a_facebook_account_copy_1
+	Given click_on_element_locator	LOGIN_CONTINUEWITHFACEBOOK_BUTTON
+	And verify_user_is_directed_to_window_title	FACEBOOK_WINDOW_TITLE
+	And enter_testdata_in_locator_field	FACEBOOKEMAILADDRESS_VALID_VALUE	FACEBOOK_USERNAME_TEXTBOX
+	And enter_testdata_in_locator_field	FACEBOOKPASSWORD_VALID_VALUE	FACEBOOK_PASSWORD_TEXTBOX
+	When click_on_element_locator	FACEBOOK_SIGNIN_BUTTON
+	Then verify_locator_is_present	HEADER_MYACCOUNT_LINK
+
+
+create_a_new_account__jbm
+	And enter_testdata_in_locator_field	FIRSTNAME_VALID_VALUE	SIGNUP_FIRSTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	LASTNAME_VALID_VALUE	SIGNUP_LASTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	EMAILADDRESS_NEW_VALUE	SIGNUP_EMAILADDRESS_TEXTBOX
+	And enter_testdata_in_locator_field	PHONENUMBER_VALID_VALUE	SIGNUP_PHONENUMBER_TEXTBOX
+	And enter_testdata_in_locator_field	PASSWORD_VALID_VALUE	SIGNUP_PASSWORD_TEXTBOX
+	And click_on_element_locator	SIGNUP_CONTINUE_BUTTON
+
+
+get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison
+	[Arguments]	${editable_non_editable}=Editable	${locator}=	${variable}=
+
+
+login_with_a_registered_user__jbm
+	[Arguments]	${emailaddress}=EMAILADDRESS_DEFAULT_VALUE	${password}=PASSWORD_DEFAULT_VALUE	${__free_text}=
+	Given enter_testdata_in_locator_field	EMAILADDRESS_VALID_VALUE	LOGIN_EMAILADDRESS_TEXTBOX
+	And enter_testdata_in_locator_field	PASSWORD_VALID_VALUE	LOGIN_PASSWORD_TEXTBOX
+	When click_on_element_locator	LOGIN_BUTTON
+	Then verify_locator_contains_expected_message	HOMEPAGE_CONTENT	Welcome
+
+
+go_back_to_previous_page_using_browser_back_button
+
+
+no_operation
+
+
+localize_to_delivery_store_for_now_ordering__jbw
+	[Arguments]	${delivery_address}=DELIVERY_ADDRESS_DEFAULT
+	And enter_testdata_in_locator_field	${delivery_address}	DELIVERY_ADDRESSINPUT_TEXTBOX
+	And choose_testdata_by_text_from_list_locator	${delivery_address}	ADDRESS_AUTOSUGGESTIONS_DROPDOWN
+	And click_on_element_locator	DELIVERY_CONTINUE_BUTTON
+	And verify_user_is_directed_to_window_title	DELIVERY_CONFIRMOREDITADDRESS_WINDOW_TITLE
+	And click_on_element_locator	DELIVERY_CONTINUE_BUTTON
+
+
+add_a_new_address_to_account__jbw
+	[Arguments]	${address}=TESTSTORE_DEFAULT_ADDRESS
+	Given click_on_element_locator	SAVEDADDRESSES_ADD_LINK
+	And enter_testdata_in_locator_field	${address}	SAVEDADDRESSES_INPUTADDRESS_TEXTBOX
+	And choose_testdata_by_text_from_list_locator	${address}	SAVEDADDRESSES_SUGGESTION_DROPDOWN
+	And click_on_element_locator	SAVEDADDRESSES_CONTINUE_BUTTON
+	When click_on_element_locator	SAVEDADDRESSES_SAVEADDRESS_BUTTON
+	Then verify_locator_contains_expected_message	SAVEDADDRESSES_POPUP_MESSAGE	NEWADDRESS_ADDED_TEXT
+	And verify_locator_contains_expected_message	SAVEDADDRESSES_ADDRESS_LIST	${address}
+
+
+localize_to_delivery_store_for_later_ordering__jbw
+	[Arguments]	${delivery_address}=DELIVERY_ADDRESS_DEFAULT	${later_day}=1	${later_time}=12-00-PM
+	And enter_testdata_in_locator_field	${delivery_address}	DELIVERY_ADDRESSINPUT_TEXTBOX
+	And choose_testdata_by_text_from_list_locator	${delivery_address}	ADDRESS_AUTOSUGGESTIONS_DROPDOWN
+	And click_on_element_locator	DELIVERY_CONTINUE_BUTTON
+	And verify_user_is_directed_to_window_title	DELIVERY_CONFIRMOREDITADDRESS_WINDOW_TITLE
+	And click_on_element_locator	DELIVERY_LATER_ICON
+	And click_on_element_locator	DELIVERY_LATER_DAY
+	And choose_testdata_by_text_from_list_locator	${later_day}	DELIVERY_LATER_DAY_LIST
+	And choose_testdata_by_text_from_list_locator	${later_time}	DELIVERY_LATER_TIME_LIST
+	And click_on_element_locator	DELIVERY_CONTINUE_BUTTON
+
+
+enter_address_value_in_address_inputs_manually__jbw
+	[Arguments]	${province}=PROVINCE_VALUE_1	${city}=CITY_VALUE_1	${house_number}=HOUSENUMBER_VALUE_1	${street}=STREET_VALUE_1	${barangay}=BARANGAY_VALUE_1	${landmark}=LANDMARK_VALUE_1
+	And choose_testdata_by_text_from_list_locator	${province}	DELIVERY_PROVINCE_DROPDOWN
+	And choose_testdata_by_text_from_list_locator	${city}	DELIVERY_CITY_DROPDOWN
+	And enter_testdata_in_locator_field	${house_number}	DELIVERY_HOUSENUMBER_TEXTBOX
+	And enter_testdata_in_locator_field	${street}	DELIVERY_STREET_TEXTBOX
+	And enter_testdata_in_locator_field	${barangay}	DELIVERY_BARANGAY_TEXTBOX
+	And enter_testdata_in_locator_field	${landmark}	DELIVERY_LANDMARK_TEXTBOX
+
+
+localize_to_pickup_store_for_now_ordering__jbw
+	[Arguments]	${pickup_address}=DELIVERY_ADDRESS_DEFAULT	${store_name}=STORE_NAME_1	${disposition}=PICKUP_DRIVETHRU_BUTTON
+	And enter_testdata_in_locator_field	${pickup_address}	PICKUP_ADDRESSINPUT_TEXTBOX
+	And choose_testdata_by_text_from_list_locator	${pickup_address}	STORELOCATOR_AUTOSUGGESTIONS_DROPDOWN
+	And verify_locator_is_present	${store_name}
+	And verify_locator_is_present	PICKUP_ORDER_BUTTON
+	And click_on_element_locator	PICKUP_ORDER_BUTTON
+	And click_on_element_locator	PICKUP_CONTINUE_BUTTON
+	And click_on_element_locator	${disposition}
+
+
+localize_to_pickup_store_for_later_ordering__jbw
+	[Arguments]	${pickup_address}=DELIVERY_ADDRESS_DEFAULT	${store_name}=STORE_NAME_1	${disposition}=PICKUP_TAKEOUTCOUNTER_BUTTON	${later_day}=1	${later_time}=12-00-PM
+	And enter_testdata_in_locator_field	${pickup_address}	PICKUP_ADDRESSINPUT_TEXTBOX
+	And choose_testdata_by_text_from_list_locator	${pickup_address}	STORELOCATOR_AUTOSUGGESTIONS_DROPDOWN
+	And verify_locator_is_present	${store_name}
+	And verify_locator_is_present	PICKUP_ORDER_BUTTON
+	And click_on_element_locator	PICKUP_ORDER_BUTTON
+	And click_on_element_locator	PICKUP_LATER_ICON
+	And choose_testdata_by_text_from_list_locator	${later_day}	PICKUP_LATER_DAY_LIST
+	And choose_testdata_by_text_from_list_locator	${later_time}	PICKUP_LATER_TIME_LIST
+	And click_on_element_locator	PICKUP_CONTINUE_BUTTON
+	And click_on_element_locator	${disposition}
+
+
+add_a_solo_product_to_cart__jbw
+	[Arguments]	${category}=MENU_CATEGORY_3	${product}=CATEGORY_3_SOLO_PRODUCT_1
+	And click_on_element_locator_with_text	HOMEPAGE_MENUCATEGORY_TILE	${category}
+	And click_on_element_locator_with_text	MENU_PRODUCT_TILE	${product}
+	And verify_locator_is_present	MENU_ITEMADDED_POPUP
+	And click_on_element_locator	ITEMADDED_CHECKOUT_BUTTON
+	And skip_the_upsell_screen__jbw
+
+
+checkout_with_guest_user_login__jbw
+	And enter_testdata_in_locator_field	FIRSTNAME_RANDOM_VALUE	CHECKOUT_FIRSTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	LASTNAME_RANDOM_VALUE	CHECKOUT_LASTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	EMAILADDRESS_RANDOM_VALUE	CHECKOUT_EMAILADDRESS_TEXTBOX
+	And enter_testdata_in_locator_field	PHONENUMBER_RANDOM_VALUE	CHECKOUT_PHONENUMBER_TEXTBOX
+	And click_on_element_locator	CHECKOUT_CONTINUE_BUTTON
+
+
+checkout_with_guest_user_registration__jbw
+	And enter_testdata_in_locator_field	FIRSTNAME_RANDOM_VALUE	CHECKOUT_FIRSTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	LASTNAME_RANDOM_VALUE	CHECKOUT_LASTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	EMAILADDRESS_RANDOM_VALUE	CHECKOUT_EMAILADDRESS_TEXTBOX
+	And enter_testdata_in_locator_field	PHONENUMBER_RANDOM_VALUE	CHECKOUT_PHONENUMBER_TEXTBOX
+	And enter_testdata_in_locator_field	PASSWORD_VALID_VALUE	CHECKOUT_PASSWORD_TEXTBOX
+	And enter_testdata_in_locator_field	PASSWORD_VALID_VALUE	CHECKOUT_CONFIRMPASSWORD_TEXTBOX
+	And click_on_element_locator	CHECKOUT_CONTINUE_BUTTON
+
+
+select_cash_payment_and_place_order__jbw
+	And choose_testdata_by_text_from_list_locator	PAYMENT_CASH_RADIO	PAYMENT_OPTIONS_LIST
+	And enter_testdata_in_locator_field	CASH_CHANGE_AMOUNT	PAYMENT_CASHCHANGE_TEXTBOX
+	And click_on_element_locator	CHECKOUT_PLACEORDER_BUTTON
+
+
+enter_address_value_in_address_inputs_manually__jbw_copy_1
+	[Arguments]	${province}=PROVINCE_VALUE_1	${city}=CITY_VALUE_1	${house_number}=HOUSENUMBER_VALUE_1	${street}=STREET_VALUE_1	${barangay}=BARANGAY_VALUE_1	${landmark}=LANDMARK_VALUE_1
+	And verify_user_is_directed_to_window_title	DELIVERY_CONFIRMOREDITADDRESS_WINDOW_TITLE
+	And choose_testdata_by_text_from_list_locator	${province}	DELIVERY_PROVINCE_DROPDOWN
+	And choose_testdata_by_text_from_list_locator	${city}	DELIVERY_CITY_DROPDOWN
+	And enter_testdata_in_locator_field	${house_number}	DELIVERY_HOUSENUMBER_TEXTBOX
+	And enter_testdata_in_locator_field	${street}	DELIVERY_STREET_TEXTBOX
+	And enter_testdata_in_locator_field	${barangay}	DELIVERY_BARANGAY_TEXTBOX
+	And enter_testdata_in_locator_field	${landmark}	DELIVERY_LANDMARK_TEXTBOX
+
+
+add_a_solo_product_to_cart__jbm
+	[Arguments]	${category}=MENU_CATEGORY_3	${product}=CATEGORY3_PRODUCT_1	${__free_text}=
+	And click_on_element_locator	${category}
+	And click_on_element_locator	${product}
+	And verify_locator_is_present	CART_ITEMADDED_POPUP
+	And click_on_element_locator	CART_ITEMADDEDPOPUP_CHECKOUT_BUTTON
+
+
+log_out_from_the_application_from_menu__jbm
+	Then click_on_element_locator	HEADER_ACCOUNT_LOGO
+	And click_on_element_locator	LOGOUT_BUTTON
+	And verify_locator_contains_expected_message	SIGNOUT_POPUP	Are you sure?
+	And click_on_element_locator	YES_BUTTON
+	And verify_user_is_directed_to_window_title	HOMEPAGE_WINDOW_TITLE
+
+
+place_a_delivery_now_order_with_cash_for_guest_user__jbw
+	And click_on_element_locator_with_text	HOMEPAGE_MENUCATEGORY_TILE	MENU_CATEGORY_1
+	And click_on_element_locator_with_text	PRODUCT_SELECT_BUTTON	CATEGORY_1_PRODUCT_1
+	And localize_to_delivery_store_for_now_ordering__jbw
+	And click_on_element_locator	HEADER_HOME_LINK
+	And add_a_combo_product_to_cart_with_default_modifier__jbw
+	And checkout_with_guest_user_login__jbw
+	And verify_subtotal_amount_is_correct_on_cart_screen
+	And verify_total_amount_is_correct_on_cart_screen
+	And click_on_element_locator	CART_PROCEEDTOCHECKOUT_BUTTON
+	And select_cash_payment_and_place_order__jbw
+
+
+change_the_status_for_order_order_number_from_current_status_to_new_status__om
+	[Arguments]	${order_number}=	${current_status}=	${new_status}=
+
+
+place_a_delivery_later_order_with_cash_for_guest_user__jbw
+	And click_on_element_locator_with_text	HOMEPAGE_MENUCATEGORY_TILE	MENU_CATEGORY_1
+	And click_on_element_locator_with_text	PRODUCT_SELECT_BUTTON	CATEGORY_1_PRODUCT_1
+	And localize_to_delivery_store_for_later_ordering__jbw
+	And click_on_element_locator	HEADER_HOME_LINK
+	And add_a_combo_product_to_cart_with_default_modifier__jbw	MENU_CATEGORY_1	CATEGORY_1_COMBO_PRODUCT_1
+	And click_on_element_locator	CART_PROCEEDTOCHECKOUT_BUTTON
+	And checkout_with_guest_user_login__jbw
+	And select_cash_payment_and_place_order__jbw
+
+
+sleep_for_time_period
+	[Arguments]	${time_period}=
+
+
+skip_the_upsell_screen__jbw
+
+
+mark_item_product_as_tempunavailable__om
+	[Arguments]	${product}=	${tempunavailable}=
+
+
+store_store_status_is_status__om
+	[Arguments]	${store}=	${status}=
+
+
+add_a_combo_product_to_cart_with_default_modifier__jbw
+	[Arguments]	${category}=MENU_CATEGORY_1	${product}=CATEGORY_1_COMBO_PRODUCT_1
+	And click_on_element_locator_with_text	HOMEPAGE_MENUCATEGORY_TILE	${category}
+	And click_on_element_locator_with_text	MENU_PRODUCT_TILE	${product}
+	And click_on_element_locator	MENU_CONTINUE_BUTTON
+	And verify_locator_is_present	MENU_ITEMADDED_POPUP
+	And click_on_element_locator	ITEMADDED_CHECKOUT_BUTTON
+	And skip_the_upsell_screen__jbw
+
+
+add_senior_citizen_details_and_apply_discount__jbw
+	[Arguments]	${src_name}=SRC_NAME_RANDOM_VALUE	${src_id}=SRC_ID_RANDOM_VALUE
+	And enter_testdata_in_locator_field	${src_name}	CART_SRCNAME_TEXTBOX
+	And enter_testdata_in_locator_field	${src_id}	CART_SRCID_TEXTBOX
+	And click_on_element_locator	CART_DISCOUNTAPPLY_BUTTON
+
+
+repeat_test_step_name_x_times_arguments_arg1_arg2_arg3_arg4_arg5_inline
+	[Arguments]	${test_step_name}=	${x}=	${arg1}=	${arg2}=	${arg3}=	${arg4}=	${arg5}=
+
+
+checkout_with_registered_user_login__jbw
+	And click_on_element_locator	CHECKOUT_SIGNIN_BUTTON
+	And login_to_application__jbw
+
+
+verify_subtotal_amount_is_correct_on_cart_screen
+
+
+verify_total_amount_is_correct_on_cart_screen
+
+
+select_modifiers
+	[Arguments]	${__datatable}=
+
+
+verify_discount_calculated_is_correct_on_cart_screen
+
+
+verify_saved_variable_value_matches_with_the_current_value_of_the_locator
+	[Arguments]	${saved_variable}=	${locator}=
+
+
+add_pwd_details_and_apply_discount__jbw
+	[Arguments]	${pwd_name}=PWD_NAME_VALUE_1	${pwd_id}=PWD_ID_VALUE_1
+	And enter_testdata_in_locator_field	${pwd_name}	CART_PWDNAME_TEXTBOX
+	And enter_testdata_in_locator_field	${pwd_id}	CART_PWDID_TEXTBOX
+	And click_on_element_locator	CART_DISCOUNTAPPLY_BUTTON
+
+
+select_credit_card_swipe_payment_and_place_order__jbw
+	And choose_testdata_by_text_from_list_locator	PAYMENT_CREDITCARD_RADIO	PAYMENT_OPTIONS_LIST
+	And click_on_element_locator	CHECKOUT_PLACEORDER_BUTTON
+
+
+select_pesopay_online_payment_and_place_order__jbw
+	And choose_testdata_by_text_from_list_locator	PAYMENT_PESOPAY_RADIO	PAYMENT_OPTIONS_LIST
+	And click_on_element_locator	CHECKOUT_PLACEORDER_BUTTON
+	And verify_user_is_directed_to_window_title	PESOPAY_WINDOW_TITLE
+	And click_on_element_locator	PESOPAY_VISA_OPTION
+	And enter_testdata_in_locator_field	PESOPAY_CARD_NUMBER_VALUE	PESOPAY_CARDNUMBER_TEXTBOX
+	And choose_testdata_by_text_from_list_locator	PESOPAY_EXPIRY_MONTH_VALUE 	PESOPAY_EXPIRY_MONTH_LIST
+	And choose_testdata_by_text_from_list_locator	PESOPAY_EXPIRY_YEAR_VALUE	PESOPAY_EXPIRY_YEAR_LIST
+	And enter_testdata_in_locator_field	PESOPAY_CARD_NAME_VALUE	PESOPAY_CARDNAME_TEXTBOX
+	And enter_testdata_in_locator_field	PESOPAY_CARD_VERIFICATIONCODE_VALUE	PESOPAY_CARDVERIFICATIONCODE_TEXTBOX
+	And enter_testdata_in_locator_field	PESOPAY_CARD_EMAILADDRESS_VALUE	PESOPAY_CARDEMAILADDRESS_TEXTBOX
+	And click_on_element_locator	PESOPAY_SUBMIT_BUTTON
+	And verify_user_is_directed_to_window_title	PESOPAY_TRANSACTIONCONFIRM_WINDOW_TITLE
+	And click_on_element_locator	PESOPAY_TRANSACTIONCONTINUE_BUTTON
+
+
+select_paymaya_online_payment_and_place_order__jbw
+	And choose_testdata_by_text_from_list_locator	PAYMENT_PAYMAYA_RADIO	PAYMENT_OPTIONS_LIST
+	And click_on_element_locator	CHECKOUT_PLACEORDER_BUTTON
+	And verify_user_is_directed_to_window_title	PAYMAYA_WINDOW_TITLE
+	And enter_testdata_in_locator_field	FIRSTNAME_DEFAULT_VALUE	PAYMAYA_CARDFIRSTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	LASTNAME_DEFAULT_VALUE	PAYMAYA_CARDLASTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	PAYMAYA_CARD_NUMBER_VALUE	PAYMAYA_CARDNUMBER_TEXTBOX
+	And choose_testdata_by_text_from_list_locator	PAYMAYA_CARD_EXPIRY_VALUE	PAYMAYA_EXPIRY_DATE
+	And enter_testdata_in_locator_field	PAYMAYA_CARD_CVV_VALUE	PAYMAYA_CARDCVV_TEXTBOX
+	And click_on_element_locator	PAYMAYA_COMPLETEORDER_BUTTON
+	And verify_user_is_directed_to_window_title	PAYMAYA_PAYMENTSUCCESSFUL_WINDOW_TITLE
+	And click_on_element_locator	PAYMAYA_BACKTOMERCHANT_BUTTON
+
+
+select_gcash_online_payment_and_place_order__jbw
+	And choose_testdata_by_text_from_list_locator	PAYMENT_GCASH_RADIO	PAYMENT_OPTIONS_LIST
+	And click_on_element_locator	CHECKOUT_PLACEORDER_BUTTON
+	And verify_user_is_directed_to_window_title	GCASH_WINDOW_TITLE
+	And enter_testdata_in_locator_field	GCASH_MOBILENUMBER_VALUE	GCASH_MOBILENUMBER_TEXTBOX
+	And click_on_element_locator	GCASH_NEXT_BUTTON
+	And enter_testdata_in_locator_field	GCASH_MPIN_VALUE	GCASH_MPIN_TEXTBOX
+	And click_on_element_locator	GCASH_NEXT_BUTTON
+	And click_on_element_locator	GCASH_PAY_BUTTON
+
+
+place_a_pickup_now_order_with_cash_for_guest_user__jbw
+	And click_on_element_locator_with_text	HOMEPAGE_MENUCATEGORY_TILE	MENU_CATEGORY_1
+	And click_on_element_locator_with_text	PRODUCT_SELECT_BUTTON	CATEGORY_1_PRODUCT_1
+	And localize_to_pickup_store_for_now_ordering__jbw
+	And click_on_element_locator	HEADER_HOME_LINK
+	And add_a_combo_product_to_cart_with_default_modifier__jbw
+	And checkout_with_guest_user_login__jbw
+	And verify_subtotal_amount_is_correct_on_cart_screen
+	And verify_total_amount_is_correct_on_cart_screen
+	And click_on_element_locator	CART_PROCEEDTOCHECKOUT_BUTTON
+	And select_cash_payment_and_place_order__jbw
+
+
+place_a_pickup_later_order_with_cash_for_guest_user__jbw
+	And click_on_element_locator_with_text	HOMEPAGE_MENUCATEGORY_TILE	MENU_CATEGORY_1
+	And click_on_element_locator_with_text	PRODUCT_SELECT_BUTTON	CATEGORY_1_PRODUCT_1
+	And localize_to_pickup_store_for_later_ordering__jbw
+	And click_on_element_locator	HEADER_HOME_LINK
+	And add_a_combo_product_to_cart_with_default_modifier__jbw
+	And click_on_element_locator	CART_PROCEEDTOCHECKOUT_BUTTON
+	And checkout_with_guest_user_login__jbw
+	And select_cash_payment_and_place_order__jbw
+
+
+place_a_pickup_later_order_with_cash_for_registered_user__jbw
+	And login_to_application__jbw
+	And add_a_combo_product_to_cart_with_default_modifier__jbw
+	And click_on_element_locator	CART_PROCEEDTOCHECKOUT_BUTTON
+	And checkout_with_guest_user_login__jbw
+	And select_cash_payment_and_place_order__jbw
+
+
+place_a_pickup_now_order_with_cash_for_registered_user__jbw
+	And login_to_application__jbw
+	And add_a_combo_product_to_cart_with_default_modifier__jbw
+	And checkout_with_guest_user_login__jbw
+	And verify_subtotal_amount_is_correct_on_cart_screen
+	And verify_total_amount_is_correct_on_cart_screen
+	And click_on_element_locator	CART_PROCEEDTOCHECKOUT_BUTTON
+	And select_cash_payment_and_place_order__jbw
+
+
+cancel_order_order_id_from_order_manager__om
+	[Arguments]	${order_id}=
+
+
+order_status_for_order_id_is_received__occ
+	[Arguments]	${order_id}=	${received}=
+
+
+payment_status_for_order_id_is_received__occ
+	[Arguments]	${order_id}=	${received}=
+
+
+location_services_enabled__jbm
+
+
+load_the_application__jbm
+
+
+verify_locator_is_not_present
+	[Arguments]	${locator}=
+
+
+verify_page_is_refreshed_every_time_period
+	[Arguments]	${time_period}=
+
+
+store_store_status_is_status__occ
+	[Arguments]	${store}=	${status}=
+
+
+mark_item_product_as_tempunavailable__occ
+	[Arguments]	${product}=	${tempunavailable}=
+
+
+login_with_a_facebook_account__jbw_copy_1
+	[Arguments]	${facebookemailaddress}=FACEBOOKEMAILADDRESS_DEFAULT_VALUE	${facebookpassword}=FACEBOOKPASSWORD_DEFAULT_VALUE
+	And click_on_element_locator	LOGIN_CONTINUEWITHFACEBOOK_BUTTON
+	And user_switches_to_a_new_window	FACEBOOK_WINDOW_TITLE
+	And enter_testdata_in_locator_field	${facebookemailaddress}	FACEBOOK_USERNAME_TEXTBOX
+	And enter_testdata_in_locator_field	${facebookpassword}	FACEBOOK_PASSWORD_TEXTBOX
+	And click_on_element_locator	FACEBOOK_SIGNIN_BUTTON
+
+
+create_a_new_account__jbw_copy_1
+	[Arguments]	${firstname}=FIRSTNAME_RANDOM_VALUE	${lastname}=LASTNAME_RANDOM_VALUE	${emailaddress}=EMAILADDRESS_RANDOM_VALUE	${phonenumber}=PHONENUMBER_RANDOM_VALUE	${password}=PASSWORD_VALID_VALUE	${confirm_password}=PASSWORD_VALID_VALUE
+	And enter_testdata_in_locator_field	${firstname}	CREATEACCOUNT_FIRSTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	${lastname}	CREATEACCOUNT_LASTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	${emailaddress}	CREATEACCOUNT_EMAILADDRESS_TEXTBOX
+	And enter_testdata_in_locator_field	${phonenumber}	CREATEACCOUNT_PHONENUMBER_TEXTBOX
+	And enter_testdata_in_locator_field	${password}	CREATEACCOUNT_PASSWORD_TEXTBOX
+	And enter_testdata_in_locator_field	${confirm_password}	CREATEACCOUNT_CONFIRMPASSWORD_TEXTBOX
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Editable	CREATEACCOUNT_FIRSTNAME_TEXTBOX	CREATEACCOUNT_FIRSTNAME_VARIABLE
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Editable	CREATEACCOUNT_LASTNAME_TEXTBOX	CREATEACCOUNT_LASTNAME_VARIABLE
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Editable	CREATEACCOUNT_EMAILADDRESS_TEXTBOX	CREATEACCOUNT_EMAILADDRESS_VARIABLE
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Editable	CREATEACCOUNT_PHONENUMBER_TEXTBOX	CREATEACCOUNT_PHONENUMBER_VARIABLE
+	And click_on_element_locator	CREATEACCOUNT_CREATEACCOUNT_BUTTON
+
+
+create_a_new_account__jbw_copy_2
+	[Arguments]	${firstname}=FIRSTNAME_RANDOM_VALUE	${lastname}=LASTNAME_RANDOM_VALUE	${emailaddress}=EMAILADDRESS_RANDOM_VALUE	${phonenumber}=PHONENUMBER_RANDOM_VALUE	${password}=PASSWORD_VALID_VALUE	${confirm_password}=PASSWORD_VALID_VALUE
+	And enter_testdata_in_locator_field	${firstname}	CREATEACCOUNT_FIRSTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	${lastname}	CREATEACCOUNT_LASTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	${emailaddress}	CREATEACCOUNT_EMAILADDRESS_TEXTBOX
+	And enter_testdata_in_locator_field	${phonenumber}	CREATEACCOUNT_PHONENUMBER_TEXTBOX
+	And enter_testdata_in_locator_field	${password}	CREATEACCOUNT_PASSWORD_TEXTBOX
+	And enter_testdata_in_locator_field	${confirm_password}	CREATEACCOUNT_CONFIRMPASSWORD_TEXTBOX
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Editable	CREATEACCOUNT_FIRSTNAME_TEXTBOX	CREATEACCOUNT_FIRSTNAME_VARIABLE
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Editable	CREATEACCOUNT_LASTNAME_TEXTBOX	CREATEACCOUNT_LASTNAME_VARIABLE
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Editable	CREATEACCOUNT_EMAILADDRESS_TEXTBOX	CREATEACCOUNT_EMAILADDRESS_VARIABLE
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Editable	CREATEACCOUNT_PHONENUMBER_TEXTBOX	CREATEACCOUNT_PHONENUMBER_VARIABLE
+	And click_on_element_locator	CREATEACCOUNT_CREATEACCOUNT_BUTTON
+
+
+create_a_new_account__grnw
+	[Arguments]	${firstname}=FIRSTNAME_DEFAULT_VALUE	${lastname}=LASTNAME_DEFAULT_VALUE	${password}=PASSWORD_DEFAULTVALID_VALUE	${confirm_password}=PASSWORD_DEFAULTVALID_VALUE	${phonenumber_length}=PHONENUMBER_DEFAULT_LENGTH	${phonenumber_areacode_prefix}=PHONENUMBER_DEFAULTAREACODE_PREFIX
+	And enter_testdata_in_locator_field	${firstname}	CREATEACCOUNT_FIRSTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	${lastname}	CREATEACCOUNT_LASTNAME_TEXTBOX
+	And enter_random_testdata_type_in_locator_field_length_optional	TYPE_EMAIL	CREATEACCOUNT_EMAILADDRESS_TEXTBOX
+	And enter_random_phone_number_length_with_prefixed_area_code_in_the_phone_number_locator_field	${phonenumber_length}	${phonenumber_areacode_prefix}	CREATEACCOUNT_PHONENUMBER_TEXTBOX
+	And enter_random_phone_number_length_with_prefixed_area_code_in_the_phone_number_locator_field	${phonenumber_length}	${phonenumber_areacode_prefix}	CREATEACCOUNT_ALTERNATEPHONENUMBER_TEXTBOX
+	And enter_testdata_in_locator_field	${password}	CREATEACCOUNT_PASSWORD_TEXTBOX
+	And enter_testdata_in_locator_field	${confirm_password}	CREATEACCOUNT_CONFIRMPASSWORD_TEXTBOX
+	And click_on_element_locator	CREATEACCOUNT_CREATEACCOUNT_BUTTON
+
+
+login_to_application__grnw
+	[Arguments]	${emailaddress}=EMAILADDRESS_DEFAULT_VALUE	${password}=PASSWORD_DEFAULT_VALUE
+	And enter_testdata_in_locator_field	${emailaddress}	LOGIN_EMAILADDRESS_TEXTBOX
+	And enter_testdata_in_locator_field	${password}	LOGIN_PASSWORD_TEXTBOX
+	And click_on_element_locator	LOGIN_SIGNIN_BUTTON
+
+
+login_with_a_facebook_account__grnw
+	[Arguments]	${facebookemailaddress}=FACEBOOKEMAILADDRESS_DEFAULT_VALUE	${facebookpassword}=FACEBOOKPASSWORD_DEFAULT_VALUE
+	And click_on_element_locator	LOGIN_CONTINUEWITHFACEBOOK_BUTTON
+	And user_switches_to_a_new_window
+	And verify_user_is_directed_to_window_title	FACEBOOK_WINDOW_TITLE
+	And enter_testdata_in_locator_field	${facebookemailaddress}	FACEBOOK_USERNAME_TEXTBOX
+	And enter_testdata_in_locator_field	${facebookpassword}	FACEBOOK_PASSWORD_TEXTBOX
+	And click_on_element_locator	FACEBOOK_SIGNIN_BUTTON
+	And user_switches_to_a_new_window	MAIN
+
+
+enter_address_value_in_address_inputs_manually__jbw_copy_2
+	[Arguments]	${province}=PROVINCE_VALUE_1	${city}=CITY_VALUE_1	${house_number}=HOUSENUMBER_VALUE_1	${street}=STREET_VALUE_1	${barangay}=BARANGAY_VALUE_1	${landmark}=LANDMARK_VALUE_1
+	And verify_user_is_directed_to_window_title	DELIVERY_CONFIRMOREDITADDRESS_WINDOW_TITLE
+	And choose_testdata_by_text_from_list_locator	${province}	DELIVERY_PROVINCE_DROPDOWN
+	And choose_testdata_by_text_from_list_locator	${city}	DELIVERY_CITY_DROPDOWN
+	And enter_testdata_in_locator_field	${house_number}	DELIVERY_HOUSENUMBER_TEXTBOX
+	And enter_testdata_in_locator_field	${street}	DELIVERY_STREET_TEXTBOX
+	And enter_testdata_in_locator_field	${barangay}	DELIVERY_BARANGAY_TEXTBOX
+	And enter_testdata_in_locator_field	${landmark}	DELIVERY_LANDMARK_TEXTBOX
+
+
+localize_to_pickup_store_for_now_ordering__jbw_copy_1
+	[Arguments]	${pickup_address}=DELIVERY_ADDRESS_DEFAULT	${store_name}=STORE_NAME_1	${disposition}=PICKUP_DRIVETHRU_BUTTON
+	And enter_testdata_in_locator_field	${pickup_address}	PICKUP_ADDRESSINPUT_TEXTBOX
+	And choose_testdata_by_text_from_list_locator	${pickup_address}	STORELOCATOR_AUTOSUGGESTIONS_DROPDOWN
+	And verify_locator_is_present	${store_name}
+	And verify_locator_is_present	PICKUP_ORDER_BUTTON
+	And click_on_element_locator	PICKUP_ORDER_BUTTON
+	And click_on_element_locator	PICKUP_CONTINUE_BUTTON
+	And click_on_element_locator	${disposition}
+
+
+localize_to_pickup_store_for_later_ordering__jbw_copy_1
+	[Arguments]	${pickup_address}=DELIVERY_ADDRESS_DEFAULT	${store_name}=STORE_NAME_1	${disposition}=PICKUP_TAKEOUTCOUNTER_BUTTON	${later_day}=1	${later_time}=12-00-PM
+	And enter_testdata_in_locator_field	${pickup_address}	PICKUP_ADDRESSINPUT_TEXTBOX
+	And choose_testdata_by_text_from_list_locator	${pickup_address}	STORELOCATOR_AUTOSUGGESTIONS_DROPDOWN
+	And verify_locator_is_present	${store_name}
+	And verify_locator_is_present	PICKUP_ORDER_BUTTON
+	And click_on_element_locator	PICKUP_ORDER_BUTTON
+	And click_on_element_locator	PICKUP_LATER_ICON
+	And choose_testdata_by_text_from_list_locator	${later_day}	PICKUP_LATER_DAY_LIST
+	And choose_testdata_by_text_from_list_locator	${later_time}	PICKUP_LATER_TIME_LIST
+	And click_on_element_locator	PICKUP_CONTINUE_BUTTON
+	And click_on_element_locator	${disposition}
+
+
+checkout_with_guest_user_login__jbw_copy_1
+	And enter_testdata_in_locator_field	FIRSTNAME_RANDOM_VALUE	CHECKOUT_FIRSTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	LASTNAME_RANDOM_VALUE	CHECKOUT_LASTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	EMAILADDRESS_RANDOM_VALUE	CHECKOUT_EMAILADDRESS_TEXTBOX
+	And enter_testdata_in_locator_field	PHONENUMBER_RANDOM_VALUE	CHECKOUT_PHONENUMBER_TEXTBOX
+	And click_on_element_locator	CHECKOUT_CONTINUE_BUTTON
+
+
+localize_to_delivery_store_for_now_ordering__grnw
+	[Arguments]	${delivery_address}=DELIVERYADDRESS_DEFAULT_VALUE
+	And enter_testdata_in_locator_field	${delivery_address}	DELIVERY_ADDRESSINPUT_TEXTBOX
+	And choose_testdata_by_text_from_list_locator	${delivery_address}	ADDRESS_AUTOSUGGESTIONS_DROPDOWN
+	And click_on_element_locator	DELIVERY_CONTINUE_BUTTON
+	And verify_user_is_directed_to_window_title	DELIVERY_CONFIRMOREDITADDRESS_WINDOW_TITLE
+	And click_on_element_locator	DELIVERY_CONTINUE_BUTTON
+
+
+localize_to_delivery_store_for_later_ordering__grnw
+	[Arguments]	${delivery_address}=DELIVERY_ADDRESS_DEFAULT	${later_day}=1	${later_time}=12-00-PM
+	And enter_testdata_in_locator_field	${delivery_address}	DELIVERY_ADDRESSINPUT_TEXTBOX
+	And choose_testdata_by_text_from_list_locator	${delivery_address}	ADDRESS_AUTOSUGGESTIONS_DROPDOWN
+	And click_on_element_locator	DELIVERY_CONTINUE_BUTTON
+	And verify_user_is_directed_to_window_title	DELIVERY_CONFIRMOREDITADDRESS_WINDOW_TITLE
+	And click_on_element_locator	DELIVERY_LATER_ICON
+	And click_on_element_locator	DELIVERY_LATER_DAY
+	And choose_an_option_by_index_value_from_list_locator	${later_day}	DELIVERY_LATER_DAY_LIST
+	And click_on_element_locator	DELIVERY_LATER_TIME
+	And choose_testdata_by_text_from_list_locator	${later_time}	DELIVERY_LATER_TIME_LIST
+	And click_on_element_locator	DELIVERY_CONTINUE_BUTTON
+
+
+enter_address_values_in_address_input_fields__grnw
+	[Arguments]	${province}=PROVINCE_VALUE_1	${city}=CITY_VALUE_1	${house_number}=HOUSENUMBER_VALUE_1	${street}=STREET_VALUE_1	${barangay}=BARANGAY_VALUE_1	${landmark}=LANDMARK_VALUE_1
+	And verify_user_is_directed_to_window_title	DELIVERY_CONFIRMOREDITADDRESS_WINDOW_TITLE
+	And choose_testdata_by_text_from_list_locator	${province}	DELIVERY_PROVINCE_DROPDOWN
+	And choose_testdata_by_text_from_list_locator	${city}	DELIVERY_CITY_DROPDOWN
+	And enter_testdata_in_locator_field	${house_number}	DELIVERY_HOUSENUMBER_TEXTBOX
+	And enter_testdata_in_locator_field	${street}	DELIVERY_STREET_TEXTBOX
+	And enter_testdata_in_locator_field	${barangay}	DELIVERY_BARANGAY_TEXTBOX
+	And enter_testdata_in_locator_field	${landmark}	DELIVERY_LANDMARK_TEXTBOX
+
+
+open_a_new_tab_in_browser_and_load_the_new_url
+	[Arguments]	${new_url}=
+
+
+enter_random_phone_number_length_with_prefixed_area_code_in_the_phone_number_locator_field
+	[Arguments]	${phone_number_length}=	${prefixed_area_code}=	${phone_number_locator}=
+
+
+close_the_page_with_window_title
+	[Arguments]	${window_title}=MAIN
+
+
+add_a_solo_product_to_cart__grnw
+	[Arguments]	${category}=MENU_CATEGORY_9	${product}=CATEGORY_9_PRODUCT_1
+	And click_on_element_locator	HOMEPAGE_FULLMENU_BUTTON
+	And click_on_element_locator_with_text	SIDENAVIGATION_MENU_OPTION	${category}
+	And click_on_element_locator_with_text	PRODUCT_ADDTOCART_BUTTON	${product}
+
+
+skip_the_crosssell_screen__grnw
+
+
+checkout_with_guest_user_login_grnw
+	[Arguments]	${firstname}=FIRSTNAME_DEFAULT_VALUE	${lastname}=LASTNAME_DEFAULT_VALUE	${phonenumber_length}=PHONENUMBER_LENGTH	${phonenumber_areacode_prefix}=PHONENUMBER_AREACODE_PREFIX
+	And enter_testdata_in_locator_field	${firstname}	CHECKOUT_FIRSTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	${lastname}	CHECKOUT_LASTNAME_TEXTBOX
+	And enter_random_testdata_type_in_locator_field_length_optional	TYPE_EMAIL	CHECKOUT_EMAILADDRESS_TEXTBOX
+	And enter_random_phone_number_length_with_prefixed_area_code_in_the_phone_number_locator_field	${phonenumber_length}	${phonenumber_areacode_prefix}	CHECKOUT_PHONENUMBER_TEXTBOX
+	And click_on_element_locator	CHECKOUT_CONTINUE_BUTTON
+
+
+select_cash_payment_and_place_order__grnw
+	And choose_testdata_by_text_from_list_locator	PAYMENT_CASH_RADIO	PAYMENT_OPTIONS_LIST
+	And enter_testdata_in_locator_field	CASH_CHANGE_AMOUNT	PAYMENT_CASHCHANGE_TEXTBOX
+	And click_on_element_locator	CHECKOUT_PLACEORDER_BUTTON
+
+
+localize_to_pickup_store_for_later_ordering__jbw_copy_2
+	[Arguments]	${pickup_address}=DELIVERY_ADDRESS_DEFAULT	${store_name}=STORE_NAME_1	${disposition}=PICKUP_TAKEOUTCOUNTER_BUTTON	${later_day}=1	${later_time}=12-00-PM
+	And enter_testdata_in_locator_field	${pickup_address}	PICKUP_ADDRESSINPUT_TEXTBOX
+	And choose_testdata_by_text_from_list_locator	${pickup_address}	STORELOCATOR_AUTOSUGGESTIONS_DROPDOWN
+	And verify_locator_is_present	${store_name}
+	And verify_locator_is_present	PICKUP_ORDER_BUTTON
+	And click_on_element_locator	PICKUP_ORDER_BUTTON
+	And click_on_element_locator	PICKUP_LATER_ICON
+	And choose_testdata_by_text_from_list_locator	${later_day}	PICKUP_LATER_DAY_LIST
+	And choose_testdata_by_text_from_list_locator	${later_time}	PICKUP_LATER_TIME_LIST
+	And click_on_element_locator	PICKUP_CONTINUE_BUTTON
+	And click_on_element_locator	${disposition}
+
+
+checkout_with_guest_user_login__jbw_copy_2
+	And enter_testdata_in_locator_field	FIRSTNAME_RANDOM_VALUE	CHECKOUT_FIRSTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	LASTNAME_RANDOM_VALUE	CHECKOUT_LASTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	EMAILADDRESS_RANDOM_VALUE	CHECKOUT_EMAILADDRESS_TEXTBOX
+	And enter_testdata_in_locator_field	PHONENUMBER_RANDOM_VALUE	CHECKOUT_PHONENUMBER_TEXTBOX
+	And click_on_element_locator	CHECKOUT_CONTINUE_BUTTON
+
+
+create_a_new_account__jbw_copy_1
+	[Arguments]	${firstname}=FIRSTNAME_RANDOM_VALUE	${lastname}=LASTNAME_RANDOM_VALUE	${emailaddress}=EMAILADDRESS_RANDOM_VALUE	${phonenumber}=PHONENUMBER_RANDOM_VALUE	${password}=PASSWORD_VALID_VALUE	${confirm_password}=PASSWORD_VALID_VALUE
+	And enter_testdata_in_locator_field	${firstname}	CREATEACCOUNT_FIRSTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	${lastname}	CREATEACCOUNT_LASTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	${emailaddress}	CREATEACCOUNT_EMAILADDRESS_TEXTBOX
+	And enter_testdata_in_locator_field	${phonenumber}	CREATEACCOUNT_PHONENUMBER_TEXTBOX
+	And enter_testdata_in_locator_field	${password}	CREATEACCOUNT_PASSWORD_TEXTBOX
+	And enter_testdata_in_locator_field	${confirm_password}	CREATEACCOUNT_CONFIRMPASSWORD_TEXTBOX
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Editable	CREATEACCOUNT_FIRSTNAME_TEXTBOX	CREATEACCOUNT_FIRSTNAME_VARIABLE
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Editable	CREATEACCOUNT_LASTNAME_TEXTBOX	CREATEACCOUNT_LASTNAME_VARIABLE
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Editable	CREATEACCOUNT_EMAILADDRESS_TEXTBOX	CREATEACCOUNT_EMAILADDRESS_VARIABLE
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Editable	CREATEACCOUNT_PHONENUMBER_TEXTBOX	CREATEACCOUNT_PHONENUMBER_VARIABLE
+	And click_on_element_locator	CREATEACCOUNT_CREATEACCOUNT_BUTTON
+
+
+place_a_delivery_now_order_with_cash_for_registered_user__jbw_copy_1
+	And login_to_application__jbw
+	And add_a_combo_product_to_cart_with_default_modifier__jbw	MENU_CATEGORY_1	CATEGORY_1_COMBO_PRODUCT_1
+	And verify_subtotal_amount_is_correct_on_cart_screen
+	And verify_total_amount_is_correct_on_cart_screen
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Non-Editable	CART_SUBTOTAL_TEXT	ORDER_SUBTOTAL_VALUE
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Non_Editable	CART_TOTAL_TEXT	ORDER_TOTAL_VALUE
+	And click_on_element_locator	CART_PROCEEDTOCHECKOUT_BUTTON
+	And select_cash_payment_and_place_order__jbw
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Non_Editable	ORDERCONFIRMATION_ORDERNUMBER_TEXT	ORDER_NUMBER_VALUE
+
+
+place_a_delivery_later_order_with_cash_for_registered_user__jbw_copy_1
+	And login_to_application__jbw
+	And add_a_combo_product_to_cart_with_default_modifier__jbw
+	And click_on_element_locator	CART_PROCEEDTOCHECKOUT_BUTTON
+	And checkout_with_guest_user_login__jbw
+	And select_cash_payment_and_place_order__jbw
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Non_Editable	ORDERCONFIRMATION_ORDERNUMBER_TEXT	ORDER_NUMBER_VALUE
+
+
+localize_to_pickup_store_for_now_ordering__jbw_copy_2
+	[Arguments]	${pickup_address}=DELIVERY_ADDRESS_DEFAULT	${store_name}=STORE_NAME_1	${disposition}=PICKUP_DRIVETHRU_BUTTON
+	And enter_testdata_in_locator_field	${pickup_address}	PICKUP_ADDRESSINPUT_TEXTBOX
+	And choose_testdata_by_text_from_list_locator	${pickup_address}	STORELOCATOR_AUTOSUGGESTIONS_DROPDOWN
+	And verify_locator_is_present	${store_name}
+	And verify_locator_is_present	PICKUP_ORDER_BUTTON
+	And click_on_element_locator	PICKUP_ORDER_BUTTON
+	And click_on_element_locator	PICKUP_CONTINUE_BUTTON
+	And click_on_element_locator	${disposition}
+
+
+localize_to_pickup_store_for_later_ordering__jbw_copy_3
+	[Arguments]	${pickup_address}=DELIVERY_ADDRESS_DEFAULT	${store_name}=STORE_NAME_1	${disposition}=PICKUP_TAKEOUTCOUNTER_BUTTON	${later_day}=1	${later_time}=12-00-PM
+	And enter_testdata_in_locator_field	${pickup_address}	PICKUP_ADDRESSINPUT_TEXTBOX
+	And choose_testdata_by_text_from_list_locator	${pickup_address}	STORELOCATOR_AUTOSUGGESTIONS_DROPDOWN
+	And verify_locator_is_present	${store_name}
+	And verify_locator_is_present	PICKUP_ORDER_BUTTON
+	And click_on_element_locator	PICKUP_ORDER_BUTTON
+	And click_on_element_locator	PICKUP_LATER_ICON
+	And choose_testdata_by_text_from_list_locator	${later_day}	PICKUP_LATER_DAY_LIST
+	And choose_testdata_by_text_from_list_locator	${later_time}	PICKUP_LATER_TIME_LIST
+	And click_on_element_locator	PICKUP_CONTINUE_BUTTON
+	And click_on_element_locator	${disposition}
+
+
+add_a_solo_product_to_cart__jbw_copy_1
+	[Arguments]	${category}=MENU_CATEGORY_3	${product}=CATEGORY_3_SOLO_PRODUCT_1
+	And click_on_element_locator_with_text	HOMEPAGE_MENUCATEGORY_TILE	${category}
+	And click_on_element_locator_with_text	MENU_PRODUCT_TILE	${product}
+	And verify_locator_is_present	MENU_ITEMADDED_POPUP
+	And click_on_element_locator	ITEMADDED_CHECKOUT_BUTTON
+	And skip_the_upsell_screen__jbw
+
+
+checkout_with_guest_user_login__jbw_copy_3
+	And enter_testdata_in_locator_field	FIRSTNAME_RANDOM_VALUE	CHECKOUT_FIRSTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	LASTNAME_RANDOM_VALUE	CHECKOUT_LASTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	EMAILADDRESS_RANDOM_VALUE	CHECKOUT_EMAILADDRESS_TEXTBOX
+	And enter_testdata_in_locator_field	PHONENUMBER_RANDOM_VALUE	CHECKOUT_PHONENUMBER_TEXTBOX
+	And click_on_element_locator	CHECKOUT_CONTINUE_BUTTON
+
+
+checkout_with_guest_user_registration__jbw_copy_1
+	And enter_testdata_in_locator_field	FIRSTNAME_RANDOM_VALUE	CHECKOUT_FIRSTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	LASTNAME_RANDOM_VALUE	CHECKOUT_LASTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	EMAILADDRESS_RANDOM_VALUE	CHECKOUT_EMAILADDRESS_TEXTBOX
+	And enter_testdata_in_locator_field	PHONENUMBER_RANDOM_VALUE	CHECKOUT_PHONENUMBER_TEXTBOX
+	And enter_testdata_in_locator_field	PASSWORD_VALID_VALUE	CHECKOUT_PASSWORD_TEXTBOX
+	And enter_testdata_in_locator_field	PASSWORD_VALID_VALUE	CHECKOUT_CONFIRMPASSWORD_TEXTBOX
+	And click_on_element_locator	CHECKOUT_CONTINUE_BUTTON
+
+
+place_a_delivery_now_order_with_cash_for_guest_user__jbw_copy_1
+	And click_on_element_locator_with_text	HOMEPAGE_MENUCATEGORY_TILE	MENU_CATEGORY_1
+	And click_on_element_locator_with_text	PRODUCT_SELECT_BUTTON	CATEGORY_1_PRODUCT_1
+	And localize_to_delivery_store_for_now_ordering__jbw
+	And click_on_element_locator	HEADER_HOME_LINK
+	And add_a_combo_product_to_cart_with_default_modifier__jbw
+	And checkout_with_guest_user_login__jbw
+	And verify_subtotal_amount_is_correct_on_cart_screen
+	And verify_total_amount_is_correct_on_cart_screen
+	And click_on_element_locator	CART_PROCEEDTOCHECKOUT_BUTTON
+	And select_cash_payment_and_place_order__jbw
+
+
+place_a_delivery_later_order_with_cash_for_guest_user__jbw_copy_1
+	And click_on_element_locator_with_text	HOMEPAGE_MENUCATEGORY_TILE	MENU_CATEGORY_1
+	And click_on_element_locator_with_text	PRODUCT_SELECT_BUTTON	CATEGORY_1_PRODUCT_1
+	And localize_to_delivery_store_for_later_ordering__jbw
+	And click_on_element_locator	HEADER_HOME_LINK
+	And add_a_combo_product_to_cart_with_default_modifier__jbw	MENU_CATEGORY_1	CATEGORY_1_COMBO_PRODUCT_1
+	And click_on_element_locator	CART_PROCEEDTOCHECKOUT_BUTTON
+	And checkout_with_guest_user_login__jbw
+	And select_cash_payment_and_place_order__jbw
+
+
+add_a_combo_product_to_cart_with_default_modifier__jbw_copy_1
+	[Arguments]	${category}=MENU_CATEGORY_1	${product}=CATEGORY_1_COMBO_PRODUCT_1
+	And click_on_element_locator_with_text	HOMEPAGE_MENUCATEGORY_TILE	${category}
+	And click_on_element_locator_with_text	MENU_PRODUCT_TILE	${product}
+	And click_on_element_locator	MENU_CONTINUE_BUTTON
+	And verify_locator_is_present	MENU_ITEMADDED_POPUP
+	And click_on_element_locator	ITEMADDED_CHECKOUT_BUTTON
+	And skip_the_upsell_screen__jbw
+
+
+add_senior_citizen_details_and_apply_discount__jbw_copy_1
+	[Arguments]	${src_name}=SRC_NAME_RANDOM_VALUE	${src_id}=SRC_ID_RANDOM_VALUE
+	And enter_testdata_in_locator_field	${src_name}	CART_SRCNAME_TEXTBOX
+	And enter_testdata_in_locator_field	${src_id}	CART_SRCID_TEXTBOX
+	And click_on_element_locator	CART_DISCOUNTAPPLY_BUTTON
+
+
+add_pwd_details_and_apply_discount__jbw_copy_1
+	[Arguments]	${pwd_name}=PWD_NAME_VALUE_1	${pwd_id}=PWD_ID_VALUE_1
+	And enter_testdata_in_locator_field	${pwd_name}	CART_PWDNAME_TEXTBOX
+	And enter_testdata_in_locator_field	${pwd_id}	CART_PWDID_TEXTBOX
+	And click_on_element_locator	CART_DISCOUNTAPPLY_BUTTON
+
+
+select_credit_card_swipe_payment_and_place_order__jbw_copy_1
+	And choose_testdata_by_text_from_list_locator	PAYMENT_CREDITCARD_RADIO	PAYMENT_OPTIONS_LIST
+	And click_on_element_locator	CHECKOUT_PLACEORDER_BUTTON
+
+
+select_pesopay_online_payment_and_place_order__jbw_copy_1
+	And choose_testdata_by_text_from_list_locator	PAYMENT_PESOPAY_RADIO	PAYMENT_OPTIONS_LIST
+	And click_on_element_locator	CHECKOUT_PLACEORDER_BUTTON
+	And verify_user_is_directed_to_window_title	PESOPAY_WINDOW_TITLE
+	And click_on_element_locator	PESOPAY_VISA_OPTION
+	And enter_testdata_in_locator_field	PESOPAY_CARD_NUMBER_VALUE	PESOPAY_CARDNUMBER_TEXTBOX
+	And choose_testdata_by_text_from_list_locator	PESOPAY_EXPIRY_MONTH_VALUE 	PESOPAY_EXPIRY_MONTH_LIST
+	And choose_testdata_by_text_from_list_locator	PESOPAY_EXPIRY_YEAR_VALUE	PESOPAY_EXPIRY_YEAR_LIST
+	And enter_testdata_in_locator_field	PESOPAY_CARD_NAME_VALUE	PESOPAY_CARDNAME_TEXTBOX
+	And enter_testdata_in_locator_field	PESOPAY_CARD_VERIFICATIONCODE_VALUE	PESOPAY_CARDVERIFICATIONCODE_TEXTBOX
+	And enter_testdata_in_locator_field	PESOPAY_CARD_EMAILADDRESS_VALUE	PESOPAY_CARDEMAILADDRESS_TEXTBOX
+	And click_on_element_locator	PESOPAY_SUBMIT_BUTTON
+	And verify_user_is_directed_to_window_title	PESOPAY_TRANSACTIONCONFIRM_WINDOW_TITLE
+	And click_on_element_locator	PESOPAY_TRANSACTIONCONTINUE_BUTTON
+
+
+select_paymaya_online_payment_and_place_order__jbw_copy_1
+	And choose_testdata_by_text_from_list_locator	PAYMENT_PAYMAYA_RADIO	PAYMENT_OPTIONS_LIST
+	And click_on_element_locator	CHECKOUT_PLACEORDER_BUTTON
+	And verify_user_is_directed_to_window_title	PAYMAYA_WINDOW_TITLE
+	And enter_testdata_in_locator_field	FIRSTNAME_DEFAULT_VALUE	PAYMAYA_CARDFIRSTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	LASTNAME_DEFAULT_VALUE	PAYMAYA_CARDLASTNAME_TEXTBOX
+	And enter_testdata_in_locator_field	PAYMAYA_CARD_NUMBER_VALUE	PAYMAYA_CARDNUMBER_TEXTBOX
+	And choose_testdata_by_text_from_list_locator	PAYMAYA_CARD_EXPIRY_VALUE	PAYMAYA_EXPIRY_DATE
+	And enter_testdata_in_locator_field	PAYMAYA_CARD_CVV_VALUE	PAYMAYA_CARDCVV_TEXTBOX
+	And click_on_element_locator	PAYMAYA_COMPLETEORDER_BUTTON
+	And verify_user_is_directed_to_window_title	PAYMAYA_PAYMENTSUCCESSFUL_WINDOW_TITLE
+	And click_on_element_locator	PAYMAYA_BACKTOMERCHANT_BUTTON
+
+
+select_gcash_online_payment_and_place_order__jbw_copy_1
+	And choose_testdata_by_text_from_list_locator	PAYMENT_GCASH_RADIO	PAYMENT_OPTIONS_LIST
+	And click_on_element_locator	CHECKOUT_PLACEORDER_BUTTON
+	And verify_user_is_directed_to_window_title	GCASH_WINDOW_TITLE
+	And enter_testdata_in_locator_field	GCASH_MOBILENUMBER_VALUE	GCASH_MOBILENUMBER_TEXTBOX
+	And click_on_element_locator	GCASH_NEXT_BUTTON
+	And enter_testdata_in_locator_field	GCASH_MPIN_VALUE	GCASH_MPIN_TEXTBOX
+	And click_on_element_locator	GCASH_NEXT_BUTTON
+	And click_on_element_locator	GCASH_PAY_BUTTON
+
+
+place_a_pickup_now_order_with_cash_for_guest_user__jbw_copy_1
+	And click_on_element_locator_with_text	HOMEPAGE_MENUCATEGORY_TILE	MENU_CATEGORY_1
+	And click_on_element_locator_with_text	PRODUCT_SELECT_BUTTON	CATEGORY_1_PRODUCT_1
+	And localize_to_pickup_store_for_now_ordering__jbw
+	And click_on_element_locator	HEADER_HOME_LINK
+	And add_a_combo_product_to_cart_with_default_modifier__jbw
+	And checkout_with_guest_user_login__jbw
+	And verify_subtotal_amount_is_correct_on_cart_screen
+	And verify_total_amount_is_correct_on_cart_screen
+	And click_on_element_locator	CART_PROCEEDTOCHECKOUT_BUTTON
+	And select_cash_payment_and_place_order__jbw
+
+
+place_a_pickup_later_order_with_cash_for_guest_user__jbw_copy_1
+	And click_on_element_locator_with_text	HOMEPAGE_MENUCATEGORY_TILE	MENU_CATEGORY_1
+	And click_on_element_locator_with_text	PRODUCT_SELECT_BUTTON	CATEGORY_1_PRODUCT_1
+	And localize_to_pickup_store_for_later_ordering__jbw
+	And click_on_element_locator	HEADER_HOME_LINK
+	And add_a_combo_product_to_cart_with_default_modifier__jbw
+	And click_on_element_locator	CART_PROCEEDTOCHECKOUT_BUTTON
+	And checkout_with_guest_user_login__jbw
+	And select_cash_payment_and_place_order__jbw
+
+
+add_a_new_address_to_account__grnw
+	[Arguments]	${address}=SAVED_ADDRESS_DEFAULT_VALUE
+	And click_on_element_locator	SAVEDADDRESSES_ADD_LINK
+	And enter_testdata_in_locator_field	${address}	SAVEDADDRESSES_INPUTADDRESS_TEXTBOX
+	And choose_testdata_by_text_from_list_locator	${address}	SAVEDADDRESSES_SUGGESTION_DROPDOWN
+	And click_on_element_locator	SAVEDADDRESSES_CONTINUE_BUTTON
+	And click_on_element_locator	SAVEDADDRESSES_SAVEADDRESS_BUTTON
+
+
+add_a_combo_product_to_cart__grnw
+	[Arguments]	${category}=MENU_CATEGORY_4	${product}=CATEGORY_4_PRODUCT_1
+	And click_on_element_locator	HOMEPAGE_FULLMENU_BUTTON
+	And click_on_element_locator_with_text	SIDENAVIGATION_MENU_OPTION	${category}
+	And click_on_element_locator_with_text	PRODUCT_ADDTOCART_BUTTON	${product}
+	And click_on_element_locator	MENU_CONTINUE_BUTTON
+
+
+checkout_with_registered_user_login__grw
+	[Arguments]	${emailaddress}=EMAILADDRESS_DEFAULT_VALUE	${password}=PASSWORD_DEFAULT_VALUE
+	And click_on_element_locator	CHECKOUT_SIGNIN_BUTTON
+	And login_to_application__grnw	${emailaddress}	${password}
+
+
+add_senior_citizen_details_and_apply_discount__grnw
+	And enter_random_testdata_type_in_locator_field_length_optional	TYPE_TEXT	CART_SRCNAME_TEXTBOX	SRC_NAME_MAX_LENGTH
+	And enter_random_testdata_type_in_locator_field_length_optional	TYPE_ALPHANUMERIC	CART_SRCID_TEXTBOX	SRC_ID_MAX_LENGTH
+	And click_on_element_locator	PAYMENT_WINDOW_TITLE
+
+
+place_a_delivery_later_order_with_cash_for_guest_user__grnw
+	And click_on_element_locator_with_text	HOMEPAGE_MENUCATEGORY_TILE	MENU_CATEGORY_1
+	And click_on_element_locator_with_text	PRODUCT_SELECT_BUTTON	CATEGORY_1_PRODUCT_1
+	And localize_to_delivery_store_for_later_ordering__grnw	DELIVERY_ADDRESS_DEFAULT	1	12-00-PM
+	And click_on_element_locator	HEADER_HOME_LINK
+	And add_a_combo_product_to_cart__grnw	MENU_CATEGORY_4	CATEGORY_4_PRODUCT_1
+	And click_on_element_locator	CART_PROCEEDTOCHECKOUT_BUTTON
+	And checkout_with_guest_user_login_grnw	FIRSTNAME_DEFAULT_VALUE	LASTNAME_DEFAULT_VALUE	PHONENUMBER_LENGTH	PHONENUMBER_AREACODE_PREFIX
+	And select_cash_payment_and_place_order__grnw
+
+
+place_a_delivery_later_order_with_cash_for_registered_user__grnw
+	[Arguments]	${emailaddress}=EMAILADDRESS_DEFAULT_VALUE	${password}=PASSWORD_DEFAULT_VALUE	${category}=MENU_CATEGORY_5	${product}=CATEGORY_4_PRODUCT_1	${later_day}=1	${later_time}=12-00-PM
+	And login_to_application__grnw	${emailaddress}	${password}
+	And click_on_element_locator	HEADER_ADDRESSEDIT_LINK
+	And verify_user_is_directed_to_window_title	DELIVERY_CONFIRMOREDITADDRESS_WINDOW_TITLE
+	And click_on_element_locator	DELIVERY_LATER_ICON
+	And choose_testdata_by_text_from_list_locator	${later_day}	DELIVERY_LATER_DAY_LIST
+	And choose_testdata_by_text_from_list_locator	${later_time}	DELIVERY_LATER_TIME_LIST
+	And click_on_element_locator	DELIVERY_CONTINUE_BUTTON
+	And click_on_element_locator	HOMEPAGE_FULLMENU_BUTTON
+	And click_on_element_locator_with_text	SIDENAVIGATION_MENU_OPTION	${category}
+	And click_on_element_locator_with_text	PRODUCT_ADDTOCART_BUTTON	${product}
+	And click_on_element_locator	ADDRESSCONFIRMATION_POPUP_YES_BUTTON
+	And click_on_element_locator	MENU_CONTINUE_BUTTON
+	And click_on_element_locator	CART_PROCEEDTOCHECKOUT_BUTTON
+	And select_cash_payment_and_place_order__grnw
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Non_Editable	ORDERCONFIRMATION_ORDERNUMBER_TEXT	ORDER_NUMBER_VALUE
+
+
+select_pesopay_online_payment_and_place_order__grnw
+	[Arguments]	${card_type}=PESOPAY_VISA_OPTION	${card_number}=PESOPAY_CARD_NUMBER_VALUE	${expiry_month}=PESOPAY_EXPIRY_MONTH_VALUE	${expiry_year}=PESOPAY_EXPIRY_YEAR_VALUE	${card_name}=PESOPAY_CARD_NAME_VALUE	${verificationcode_value}=PESOPAY_CARD_VERIFICATIONCODE_VALUE	${emailaddress}=PESOPAY_CARD_EMAILADDRESS_VALUE
+	And choose_testdata_by_text_from_list_locator	PAYMENT_PESOPAY_RADIO	PAYMENT_OPTIONS_LIST
+	And click_on_element_locator	CHECKOUT_PLACEORDER_BUTTON
+	And verify_user_is_directed_to_window_title	PESOPAY_WINDOW_TITLE
+	And click_on_element_locator	${card_type}
+	And enter_testdata_in_locator_field	${card_number}	PESOPAY_CARDNUMBER_TEXTBOX
+	And choose_testdata_by_text_from_list_locator	${expiry_month}	PESOPAY_EXPIRY_MONTH_LIST
+	And choose_testdata_by_text_from_list_locator	${expiry_year}	PESOPAY_EXPIRY_YEAR_LIST
+	And enter_testdata_in_locator_field	${card_name}	PESOPAY_CARDNAME_TEXTBOX
+	And enter_testdata_in_locator_field	${verificationcode_value}	PESOPAY_CARDVERIFICATIONCODE_TEXTBOX
+	And enter_testdata_in_locator_field	${emailaddress}	PESOPAY_CARDEMAILADDRESS_TEXTBOX
+	And click_on_element_locator	PESOPAY_SUBMIT_BUTTON
+	And verify_user_is_directed_to_window_title	PESOPAY_TRANSACTIONCONFIRM_WINDOW_TITLE
+	And click_on_element_locator	PESOPAY_TRANSACTIONCONTINUE_BUTTON
+
+
+place_a_delivery_now_order_with_cash_for_registered_user__grnw
+	[Arguments]	${emailaddress}=EMAILADDRESS_DEFAULT_VALUE	${password}=PASSWORD_DEFAULT_VALUE	${category}=MENU_DEFAULT_ALACARTECATEGORY_NAME	${product}=DEFAULT_ALACARTECATEGORY_DEFAULTPRODUCT_NAME
+	And login_to_application__grnw	${emailaddress}	${password}
+	And click_on_element_locator	HOMEPAGE_FULLMENU_BUTTON
+	And click_on_element_locator_with_text	SIDENAVIGATION_MENU_OPTION	${category}
+	And click_on_element_locator_with_text	PRODUCT_ADDTOCART_BUTTON	${product}
+	And click_on_element_locator	ADDRESSCONFIRMATION_POPUP_YES_BUTTON
+	And click_on_element_locator	MENU_CONTINUE_BUTTON
+	And click_on_element_locator	CART_PROCEEDTOCHECKOUT_BUTTON
+	And select_cash_payment_and_place_order__grnw
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Non_Editable	ORDERCONFIRMATION_ORDERNUMBER_TEXT	ORDER_NUMBER_VALUE
+
+
+choose_an_option_by_index_value_from_list_locator
+	[Arguments]	${value}=	${list_locator}=
+
+
+place_a_delivery_now_order_with_cash_for_facebook_user__grnw
+	[Arguments]	${emailaddress}=FACEBOOKEMAILADDRESS_DEFAULT_VALUE	${password}=FACEBOOKPASSWORD_DEFAULT_VALUE	${category}=MENU_CATEGORY_4	${product}=CATEGORY_4_PRODUCT_1
+	And login_with_a_facebook_account__grnw	FACEBOOKEMAILADDRESS_DEFAULT_VALUE	FACEBOOKPASSWORD_DEFAULT_VALUE
+	And click_on_element_locator	HOMEPAGE_FULLMENU_BUTTON
+	And click_on_element_locator_with_text	SIDENAVIGATION_MENU_OPTION	${category}
+	And click_on_element_locator_with_text	PRODUCT_ADDTOCART_BUTTON	${product}
+	And click_on_element_locator	ADDRESSCONFIRMATION_POPUP_YES_BUTTON
+	And click_on_element_locator	MENU_CONTINUE_BUTTON
+	And click_on_element_locator	CART_PROCEEDTOCHECKOUT_BUTTON
+	And select_cash_payment_and_place_order__grnw
+	And get_editable_non_editable_value_from_the_locator_and_save_it_in_a_variable_for_comparison	Non_Editable	ORDERCONFIRMATION_ORDERNUMBER_TEXT	ORDER_NUMBER_VALUE
+
+

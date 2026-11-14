@@ -1,0 +1,199 @@
+---
+- name: Create account for new user - SMBW
+  uid: 6aa464bc-4c33-4ad4-b369-8551a1feb55d
+  parameters:
+  - name: FIRSTNAME
+  - name: LASTNAME
+  - name: ZIPCODE
+  - name: PASSWORD
+  - name: PHONENUMBER_AREACODE_PREFIX
+  - name: PHONENUMBER_LENGTH
+  body_hash: 1e2b0704af151de7197c19006a27a2cb
+- name: CLICK on  element "locator"
+  uid: 5cc71313-2f73-4a3b-b458-10055d0461aa
+  parameters:
+  - name: locator
+  - name: __datatable
+  - name: __free_text
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: ENTER "testdata" in "locator" field
+  uid: 3eef8ba4-356b-4908-98ed-a642df91c02a
+  parameters:
+  - name: locator
+  - name: testdata
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Load the SMB application
+  uid: 97a13fd6-bbf7-4e22-a454-60ca86b5d307
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Localize to a store for Delivery order for Now - SMBW
+  uid: 626639d9-6a70-4cb5-b8b5-7227610210c4
+  parameters:
+  - name: PARTIALDELIVERYADDRESS
+  - name: AUTOSUGGESTED_DELIVERYADDRESS
+  body_hash: 76a8fbc56d0dceb5f939cea85e7abfa7
+- name: CHOOSE "testdata" by TEXT from "locator" list
+  uid: 52ab5ae6-16ba-4b43-8a6f-6de0a2493c5c
+  parameters:
+  - name: testdata
+  - name: locator
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Login as Facebook user - SMBW
+  uid: 367cfb30-ef4b-46a7-b04a-49f9f6d3ae40
+  parameters:
+  - name: FBEMAILADDRESS
+  - name: FBPASSWORD
+  body_hash: 8a541149e7a52b0946124469ccd59fa4
+- name: User switches to a "NEW" window
+  uid: 4b9902f2-c68d-49fc-b248-dae64532f266
+  parameters:
+  - name: NEW
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: VERIFY "locator" contains expected "message"
+  uid: ef307a0c-dfcd-4534-9606-b39b50d5f99b
+  parameters:
+  - name: locator
+  - name: message
+  - name: __datatable
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: VERIFY "locator" is present
+  uid: 94e2268a-e1c2-4e77-96a9-902f9db111d9
+  parameters:
+  - name: locator
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Add an ala carte item without customizing to cart - SMBW
+  uid: 12519fc4-ab43-476d-9932-42fbbcb5ab41
+  parameters:
+  - name: MENU_CATEGORY_BUTTON
+  - name: ITEM_ADDTOCART_BUTTON
+  - name: ITEM_NAME
+  body_hash: 575237e16eef0408b7859e3a4bdd8bee
+- name: ENTER random "testdata_type" in "locator" field concatenating "value" "length_Optional"
+  uid: 4635ca69-24d3-42d1-a6eb-8428e01c1a55
+  parameters:
+  - name: testdata_type
+  - name: locator
+  - name: value
+  - name: length_Optional
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Enter Credit card information - SMBW
+  uid: 5f514cc3-ca73-46d8-93ac-89422643907f
+  parameters:
+  - name: NAMEONCARD_VALUE
+  - name: CREDITCARDNUMBER_VALUE
+  - name: CREDITCARDMONTH_VALUE
+  - name: CREDITCARDYEAR_VALUE
+  - name: CREDITCARDCVV_VALUE
+  - name: CREDITCARDZIP_VALUE
+  body_hash: 6892507720aaa08832c840599b56502d
+- name: SELECT "testdata" from the list dropdown "locator"
+  uid: 4d3a49d2-9f1b-4888-8f21-5f196f12a53a
+  parameters:
+  - name: testdata
+  - name: locator
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Place order - SMBW
+  uid: 65410298-491f-4690-8799-4e849f866265
+  parameters: []
+  body_hash: 6948ad4ed88b4bcabd833143ff3a50c8
+- name: Checkout - SMBW
+  uid: 60ab92c1-de3c-4cf6-a0a4-6c3d4705d80c
+  parameters: []
+  body_hash: 10894179bda14c561971a4e43433c3e0
+- name: OPEN Mailbox and wait for email "host", "emailaddress", "password"
+  uid: c363831d-00a8-4974-8c8d-27c4c6b71313
+  parameters:
+  - name: host
+  - name: emailaddress
+  - name: password
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: VERIFY EMAIL HEADER contains expected message - "header" "message"
+  uid: 45b51743-e5f3-4d67-9d49-742578f523da
+  parameters:
+  - name: header
+  - name: message
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: VERIFY EMAIL BODY contains expected message - "locator" "message"
+  uid: 6fce13a4-6a34-4f6e-af6a-bcba89bb915b
+  parameters:
+  - name: locator
+  - name: message
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: VERIFY EMAIL BODY contains expected link - "link"
+  uid: 861b499a-300d-44f7-9fe6-ff70100767f2
+  parameters:
+  - name: link
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: VERIFY EMAIL BODY contains expected element - "locator"
+  uid: 1db87ad0-989b-47b3-9230-6a187a1ee9aa
+  parameters:
+  - name: locator
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: OPEN link in email - EMAILBODY_PASSWORDRESET_LINK
+  uid: b8990f31-5916-4afd-8f2c-ebfa3bf84dbc
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: VERIFY user is directed to window "window_title"
+  uid: dcadbb58-12ab-4c50-b561-a8806537b012
+  parameters:
+  - name: window_title
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Repeat "test_step_name" "x" times. Arguments "arg1" "arg2" "arg3" "arg4" "arg5"
+  uid: 276c2f16-a867-426a-8c06-770745c5b171
+  parameters:
+  - name: x
+  - name: test_step_name
+  - name: arg1
+  - name: arg2
+  - name: arg3
+  - name: arg4
+  - name: arg5
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: 'CLICK on elements "arg1" "arg2" '
+  uid: 77c2f230-20cd-4f48-aa74-87a000afb0e5
+  parameters:
+  - name: arg1
+  - name: arg2
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Repeatsss "test_step_name" "x" times.
+  uid: e579a32c-486b-4fd4-bd80-2e0fa97429e1
+  parameters:
+  - name: x
+  - name: test_step_name
+  - name: __datatable
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Repeat test name with different values "test_step_name"
+  uid: a2154f28-99d0-4c62-ba72-e360a509c578
+  parameters:
+  - name: test_step_name
+  - name: __datatable
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: ENTER random "testdata_type"  in "locator" field "length_Optional"
+  uid: d4b5cf69-7d2d-4201-9ba2-1a8f4b923bfe
+  parameters:
+  - name: locator
+  - name: testdata_type
+  - name: length_Optional
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Localize to a store for Pickup order for Later - SMBW
+  uid: abae1e5a-8c7a-414f-b094-00e8809d7f35
+  parameters:
+  - name: PARTIALPICKUPADDRESS
+  - name: AUTOSUGGESTED_PICKUPADDRESS
+  - name: PICKUPSTORE_NAME
+  - name: LATERDATE_OPTION
+  - name: LATERTIME_OPTION
+  body_hash: 983d1e5933ff7f6442e80853386a66ce
+- name: CLICK on element "locator" of "testdata" from "parent_locator"
+  uid: 389dfdf3-d1c8-4e5f-9a40-28c4e057f961
+  parameters:
+  - name: locator
+  - name: testdata
+  - name: parent_locator
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: CHOOSE an option by INDEX "index" from "dropdown_locator"
+  uid: 82689215-e774-470e-8d51-aa14dedbc033
+  parameters:
+  - name: index
+  - name: dropdown_locator
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
