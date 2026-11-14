@@ -1,0 +1,42 @@
+*** Settings ***
+Documentation
+{{#comment '... '}}{{#clear_empty_lines}}
+{{{ rendered_children.description}}}
+{{/clear_empty_lines}}{{/comment}}{{#if has_tags?}}
+Default Tags{{tab}}{{{ join rendered_children.tags '\t'}}}
+{{/if}}
+Resource{{tab}}${EXECDIR}${/}resources${/}common${/}initializeSuite.robot
+#Resource{{tab}}../resources/common/commonKeywordsMobile.robot
+#Resource{{tab}}../resources/common/initializeSuite.robot
+#Resource{{tab}}../resources/common/commonKeywordsBrowser.robot
+
+Suite Setup{{tab}}Run Keyword{{tab}}Import File for execution
+{{#unless is_empty?}}
+Test Setup{{tab}}Run Keywords{{tab}}{{join rendered_children.body "\n...         AND      \t"}}
+{{/unless}}
+Test Teardown{{tab}}Run Keywords{{tab}}Run Keyword If Test Failed{{tab}}take_screenshot_for_failed_tests
+...     AND        close_session
+*** Test Cases ***{{#if datatables_present?}}
+{{#each rendered_children.splitted_scenarios as |scenario|}}
+{{#if scenario.datatable}}{{#each scenario.datasets as |dataset|}}{{dataset.scenario_name}} {{normalize_with_spaces dataset.name}}{{#if dataset.test_snapshot_uid}} (uid:{{normalize dataset.test_snapshot_uid}}){{/if}}{{#indent}}
+{{#if scenario.tags}}[Tags]{{tab}}{{{join scenario.tags "\t"}}}
+{{/if}}[Template]{{tab}}{{normalize_with_spaces dataset.scenario_name}} keyword
+{{join dataset.arguments '\t'}}{{/indent}}
+
+{{/each}}
+{{else}}{{scenario.name}}{{#if scenario.uid}}(uid:{{normalize scenario.uid}}){{/if}}{{#indent}}
+{{#if scenario.tags}}[Tags]{{tab}}{{{join scenario.tags "\t"}}}
+{{/if}}{{join scenario.body '\n'}}{{/indent}}
+{{/if}}{{/each}}
+*** Keywords ***
+
+{{#each rendered_children.splitted_scenarios as |scenario|}}{{#if scenario.datatable}}{{scenario.name}} keyword{{#indent}}
+[Arguments]{{tab}}{{join scenario.parameters '\t'}}
+{{join scenario.body '\n'}}{{/indent}}
+
+{{/if}}{{/each}}{{else}}
+{{#each rendered_children.splitted_scenarios as |scenario|}}
+{{scenario.name}}{{#if scenario.uid}}(uid:{{normalize scenario.uid}}){{/if}}{{#indent}}{{#if scenario.tags}}
+[Tags]{{tab}}{{{ join scenario.tags '\t'}}}{{/if}}
+{{join scenario.body '\n'}}{{/indent}}
+{{/each}}{{/if}}

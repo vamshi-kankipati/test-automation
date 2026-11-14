@@ -1,0 +1,23 @@
+jb-ph-mobile:
+  qa_b:
+    token: "41163931198565171921969326382443322432018449912551984729"
+    projectId: 1111
+    android:
+      testRunId: 632303
+    ios:
+      testRunId: 666747
+jollibee_web:
+  qa_b:
+    token: "11223344"
+    projectId: 300192
+    testRunId: 666748
+test1_web:
+  qa_b:
+    token: "21882318346766778013971558762558916973571387195425173544"
+    projectId: 371425
+    testRunId: 666748
+test2_web:
+  qa_b:
+    token: "21882318346766778013971558762558916973571387195425173544"
+    projectId: 371425
+    testRunId: 666748
