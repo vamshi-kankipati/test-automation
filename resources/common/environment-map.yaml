@@ -1,0 +1,7 @@
+JB_Web:
+  qa_a: https://www-a-qa-jb-ph.tillster.com/home
+  qa_b: https://www-b-qa-jb-ph.tillster.com/home
+  data: jollibee__web/data
+smashburger_web:
+  qa_a: https://www-a-qa-sb-us.tillster.com/
+  data: /data

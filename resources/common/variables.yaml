@@ -1,0 +1,4376 @@
+---
+HEADER:
+  HEADER_ADDRESS_TEXT:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      -DELIVERYADDRESS_LOCALIZED_DEFAULT_VALUE
+      -DELIVERYADDRESS_LOCALIZED_NONDEFAULT_1_VALUE
+  HEADER_ADDRESS_EDIT_LINK:
+    locator-type: "i18"
+  HEADER_DELIVERTO_LOCATOR:
+    locator-type: "data-test-id [HeaderDeliverToLbl]"
+  HEADER_TITLE:
+    locator-type: "data-test-id [TBD]"
+  HEADER_LOGO_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  HEADER_SHOWMENU_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  HEADER_SHOW_ACCOUNT_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  HEADER_SHOWMENU_HAMBURGER_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  HEADER_LOGGEDIN_STATE_SHOWMENU_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  HEADER_PICKUP_CONFIRMORDER_SHOWMENU_BUTTON:
+    locator-type: "data-test-id [HeaderShowMenutBtn]"
+  HEADER_CART_BUTTON_CROSSELL:
+    locator-type: "data-test-id [TBD]"
+  HEADER_CART_BUTTON_RECOMMENDER:
+    locator-type: "data-test-id [HeaderCartBtn]"
+  HEADER_CART_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  HEADER_CART_COUNT:
+    locator-type: "qa-label [HeaderCartCount]"
+  HEADER_INIT_CART_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  HEADER_EDIT_ADDRESS_LINK:
+    locator-type: "i18"
+  HEADER_RETURN_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  ORDERTYPE_HEADER_TILE:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - ORDERTYPE_HEADER_TITLE_TEXT
+  HEADER_CART_BUTTON_HOME:
+    locator-type: "data-test-id [TBD]"
+  HEADER_ORDERTYPE_LOCATOR:
+    locator-type: "i18"
+  HEADER_WELCOME_LOCATOR:
+    locator-type: "i18"
+  HEADER_STORES_LOCATOR:
+    locator-type: "i18"
+  HEADER_LOGIN_BUTTON:
+    locator-type: "qa-label [HeaderSettingsIcon]"
+  HEADER_SIGNUP_BUTTON:
+    locator-type: "i18"
+  HEADER_LOGIN_TITLE:
+    locator-type: "i18"
+  HEADER_LOGIN_TITLE_WEB:
+    locator-type: "i18"
+  HEADER_PROFILE_TITLE:
+    locator-type: "qa-label [HeaderCenterTitle]"
+  HEADER_LOGOUT_LINK:
+    locator-type: "qa-label [LogoutLnk]"
+  HEADER_FINDASHOP_LINK:
+    locator-type: "i18"
+  HEADER_ONLINEORDER_LINK:
+    locator-type: "i18"
+  HEADER_DELIVERY_LINK:
+    locator-type: "i18"
+  HEADER_GIFTCARDS_LINK:
+    locator-type: "i18"
+  HEADER_OURSTORY_LINK:
+    locator-type: "i18"
+  HEADER_OURMENU_LINK:
+     locator-type: "i18"
+  HEADER_FRANCHISING_LINK:
+    locator-type: "i18"
+  HEADER_ESTIMATED_DELIVERY_TIME_LABEL:
+    locator-type: "qa-label [PromiseTimeLnk]"
+    test-data-variable:
+      - HEADER_ESTIMATED_DELIVERY_TIME_FOR_STORE_BP_09_VALUE
+      - HEADER_ESTIMATED_DELIVERY_TIME_FOR_STORE_BP_10_VALUE
+  HEADER_HAMBURGERMENU_LINK:
+    locator-type: "i18"
+
+MY ACCOUNT:
+MYACCOUNT_ORDERHISTORY_LINK:
+  locator-type: "i18"
+MYACCOUNT_ACCOUNTINFO_BUTTON:
+  locator-type: "data-test-id"
+MYACCOUNT_INFO_LINK:
+  locator-type: "i18"
+MY_ACCOUNT_WALLET_DEFAULT_SAVED_CARD:
+  locator-type: "data-test-id [TBD]"
+
+LOADING:
+  loading_icon:
+    locator-type: "data-test-id [TBD]"
+
+NAVBAR:
+  NAVBAR_HOMEPAGE_BUTTON:
+    locator-type: "qa-label [BottomTabHomeIcon]"
+  NAVBAR_REORDER_BUTTON:
+    locator-type: "qa-label [BottomTabReorderIcon]"
+  NAVBAR_COUPONS_BUTTON:
+    locator-type: "qa-label [BottomTabCouponIcon]"
+  NAVBAR_ORDER_BUTTON:
+    locator-type: "qa-label [BottomTabOrderIcon]"
+  NAVBAR_LOCATIONS_BUTTON:
+    locator-type: "qa-label [BottomTabStoresIcon]"
+
+SIDE-NAVIGATION:
+  SIDENAVIGATION_MYPAYMENT_BUTTON:
+    locator-type: "i18 + data-test-id [TBD]"
+  SIDENAVIGATION_LOGIN_SIGNUP_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  SIDENAVIGATION_LOGIN_BUTTON:
+    locator-type: "i18"
+  SIDENAVIGATION_SIGNUP_BUTTON:
+    locator-type: "i18"
+  SIDENAVIGATION_SAVEDADDRESS_BUTTON:
+    locator-type: "i18"
+  SIDENAVIGATION_ACCTINFO_BACK_BUTTON:
+    locator-type: "qa-label [HeaderCloseIcon]"
+  SIDENAVIGATION_ACCOUNTINFO_BUTTON:
+    locator-type: "i18"
+  SIDENAVIGATION_ACCOUNTINFO_MENU:
+    locator-type: "data-test-id [TBD]"
+  SIDENAVIGATION_SIGNOUT_BUTTON:
+    locator-type: "i18"
+  SIDENAVIGATION_ACCOUNTINFO_EMAIL:
+    locator-type: "EditAccountInfoEmailTxt"
+  SIDENAVIGATION_EDITPROFILE_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  SIDENAVIGATION_ORDERHISTORY_BUTTON:
+    locator-type: "i18"
+  ORDERHISTORY_EXPAND_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  SIDENAVIGATION_ORDERTRACKER_BUTTON:
+    locator-type: "data-test-id [SideNaviagationOrderTrackerBtn]"
+  SIDENAVIDATION_WINDOW:
+    locator-type: "data-test-id [TBD]"
+  SIDENAVIGATION_TUTORIAL_BUTTON:
+    locator-type: "qa-label [TutorialLnk]"
+  SIGNOUT_YES_BUTTON:
+    locator-type: "i18"
+  SIGNOUT_POPUP_BUTTON:
+    locator-type: "i18"
+  SIDENAVIGATION_ABOUTUS_BUTTON:
+    locator-type: "qa-label [SettingsAboutUsLnk]"
+  SIDENAVIGATION_PRIVACYPOLICY_BUTTON:
+    locator-type: "data-test-id [SideNavigationPrivacyPolicyBtn]"
+  SIDENAVIGATION_TERMSANDCODITIONS_BUTTON:
+    locator-type: "data-test-id [SideNavigationTermsAndConditionsBtn]"
+  SIDENAVIGATION_CONTACTUS_BUTTON:
+    locator-type: "qa-label [SettingsContactUsLnk]"
+  SIDENAVIGATION_PAYMENTMETHODS_BUTTON:
+    locator-type: "qa-label [SettingsPaymentMethodsLnk]"
+  SIDENAVIGATION_ORDERPENDING_SAVED_CANCEL_BUTTON:
+    locator-type: "data-qa-label [CancelBtn]"
+    test-data-variable:
+      - TEMP_ORDERCONFIRMATION_ORDERNUMBER_VALUE
+  SIDENAVIGATION_ORDERPENDING_CANCEL_CONFIRM_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  SIDENAVIGATION_ORDERPENDING_CANCEL_CONFIRM_OK_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  SIDENAVIGATION_NOTIFICATION_BUTTON:
+    locator-type: "i18"
+  SIDENAVIGATION_ORDERPENDING_CANCEL_MESSAGE:
+    locator-type: "i18"
+  SIDENAVIGATION_ORDERPENDING_ORDER_NUMBER:
+    locator-type: "data-qa-label [PendingOrderNuberLbl]"
+  SIDENAVIGATION_NOTIFICATIONS_BUTTON:
+    locator-type: "i18"
+  SIDENAVIGATION_REWARDS_BUTTON:
+    locator-type: "i18 + data-testid [footer-toolbar-item-rewards]"
+  SIDENAVIGATION_TITLE_1_LOCATOR:
+    locator-type: "i18"
+  SIDENAVIGATION_TITLE_2_LOCATOR:
+    locator-type: "i18"
+  SIDENAVIGATION_GREETINGS_LOCATOR:
+    locator-type: "i18"
+  SIDENAVIGATION_FAQS_BUTTON:
+    locator-type: "i18"
+  SIDENAVIGATION_PARTNERSHIPS_BUTTON:
+    locator-type: "i18"
+  SIDENAVIGATION_TERMSOFSERVICE_BUTTON:
+    locator-type: "i18"
+  SIDENAVIGATION_APPVERSION_LOCATOR:
+    locator-type: "i18"
+  SIDENAVIGATION_PAYINSHOP_BUTTON:
+    locator-type: "i18"
+  SIDENAVIGATION_BIOMETRIC_BUTTON:
+    locator-type: "i18"
+  SIDENAVIGATION_DUNKINREWARDS_BUTTON:
+    locator-type: "data-test-id"
+  SIDENAVIGATION_DELETEACCOUNT_BUTTON:
+    locator-type: "i18"
+  SIDENAVIGATION_BIRTHDAYCLUB_BUTTON:
+    locator-type: "i18"
+  SIDENAVIGATION_SENDAGIFT_BUTTON:
+    locator-type: "i18"
+  SIDENAVIGATION_CLOSE_ICON:
+    locator-type: "data-qa-label [AppHeaderBackBtn]"
+  MOBILE_SIDENAVIGATION_GREETING_ELEMENT:
+    locator-type: "i18"
+
+BIRTHDAY CLUB:
+  BIRTHDAYCLUB_ACCOUNT_ABSOLUTELY_BUTTON:
+    locator-type: "i18"
+  BIRTHDAYCLUB_MONTH_BUTTON:
+    locator-type: "i18"
+  BIRTHDAYCLUB_MONTH_OPTION:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - BIRTHDAY_MONTH_INDEX_VALUE
+  BIRTHDAYCLUB_DAY_BUTTON:
+    locator-type: "i18"
+  BIRTHDAYCLUB_DAY_OPTION:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - BIRTHDAY_DAY_INDEX_VALUE
+  BIRTHDAYCLUB_SAVEINFO_BUTTON:
+    locator-type: "data-qa-label [SaveMyBirthdayClubInfoBtn]"
+  BIRTHDAYCLUB_PERKS_POPUPCLOSE_BUTTON:
+    locator-type: "data-qa-label [AppCloseBtn]"
+  BIRTHDAYCLUB_PERKS_POPUP_TITLE:
+    locator-type: "data-qa-label [AppCloseBtn]+i18"
+  BIRTHDAYCLUB_PERKS_POPUP_BODY:
+    locator-type: "data-qa-label [AppCloseBtn]+i18"
+  BIRTHDAYCLUB_BIRTHDAYRULE_HEADING:
+    locator-type: "i18"
+  BIRTHDAYCLUB_BIRTHDATE_TEXT:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - BIRTHDATE_DEFAULT_VALUE
+  BIRTHDAYCLUB_NEXT_BUTTON:
+    locator-type: "i18"
+  BIRTHDAYCLUB_POPUP_TITLE:
+    locator-type: "data-qa-label [HeadlineLbl]"
+    test-data-variable:
+      - BIRTHDAY_CONFIRMATION_TITLE_VALUE
+  BIRTHDAYCLUB_NOWLETSEXPLORE_BUTTON:
+    locator-type: "data-qa-label [SaveMyBirthdayClubInfoBtn]"
+  BIRTHDAYCLUB_TITLE_LOCATOR:
+    locator-type: "i18"
+  BIRTHDAYCLUB_BIRTHDAYCLUBTAB_BUTTON:
+    locator-type: "qa-attribute [BRMyBirthdayClubMyBirthdayClubLnk]"
+  BIRTHDAYCLUB_FAMILYMEMBERSTAB_BUTTON:
+    locator-type: "data-qa-label [BRFamilyMembersFamilyMembersLnk]"
+  BIRTHDAYCLUB_FAMILYMEMBERS_MESSAGE_LOCATOR:
+    locator-type: "i18"
+  BIRTHDAYCLUB_FAMILYMEMBERS_ADD_BUTTON:
+    locator-type: "data-qa-label [AddFamilyMemberLnk]"
+  BIRTHDAYCLUB_FAMILYMEMBERS_FIRSTNAME_TEXTBOX:
+    locator-type: "data-qa-label [BRFamilyMemberFirstNameTxt]"
+    test-data-variable:
+      - FAMILYMEMBER_FIRSTNAME_DEFAULT_VALUE
+      - FAMILYMEMBER_FIRSTNAME_NONDEFAULT_VALUE
+  BIRTHDAYCLUB_FAMILYMEMBERS_LASTNAME_TEXTBOX:
+    locator-type: "data-qa-label [BRFamilyMemberLastNameTxt]"
+    test-data-variable:
+      - FAMILYMEMBER_LASTNAME_DEFAULT_VALUE
+      - FAMILYMEMBER_LASTNAME_NONDEFAULT_VALUE
+  BIRTHDAYCLUB_FAMILYMEMBERS_RELATIONSHIP_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  BIRTHDAYCLUB_FAMILYMEMBERS_RELATIONSHIP_OPTION:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+    - FAMILYMEMBER_RELATIONSHIP_INDEX_VALUE
+  BIRTHDAYCLUB_FAMILYMEMBERS_BIRTHDAYMONTH_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  BIRTHDAYCLUB_FAMILYMEMBERS_BIRTHDAYMONTH_OPTION:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - FAMILYMEMBER_BIRTHMONTH_INDEX_VALUE
+  BIRTHDAYCLUB_FAMILYMEMBERS_BIRTHDAYDAY_BUTTON:
+    locator-type: "i18"
+  BIRTHDAYCLUB_FAMILYMEMBERS_BIRTHDAYDAY_OPTION:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - FAMILYMEMBER_BIRTHDAY_INDEX_VALUE
+  BIRTHDAYCLUB_FAMILYMEMBERS_SAVE_BUTTON:
+    locator-type: "i18"
+  BIRTHDAYCLUB_FAMILYMEMBERS_DELETE_BUTTON:
+    locator-type: "i18"
+  BIRTHDAYCLUB_ABSOLUTELY_BUTTON:
+    locator-type: "qa-attribute [BRBirthdayClubAbsolutelyBtn]"
+  BIRTHDAYCLUB_SAVEINFO_BUTTON_DISABLED_STATE:
+    locator-type: "data-qa-label [SaveMyBirthdayClubInfoBtn]"
+  BIRTHDAYCLUB_FAMILYMEMBERS_ADDED_LOCATOR:
+    locator-type: "data-qa-label [AddedFamilyMemberLbl]"
+  BIRTHDAYCLUB_FAMILYMEMBERS_REMOVE_BUTTON:
+    locator-type: "qa-attribute [BRFamilyMemberRemoveBtn]"
+  BIRTHDAYCLUB_FAMILYMEMBERS_ADDED_DETAILS_LOCATOR:
+    locator-type: "i18"
+    test-data-variable:
+      -FAMILYMEMBER_SAVEDINFO_DEFAULT_BIRTHDATE_VALUE
+
+
+TUTORIAL:
+  TUTORIAL_HEADER_TITLE:
+    locator-type: "qa-label [HeaderCenterTitle]"
+
+PAYMENT-METHODS:
+  PAYMENTMETHODS_HEADER_LABEL:
+    locator-type: "i18"
+  PAYMENTMETHODS_ADD_NEWCARD_BUTTON:
+    locator-type: "data-qa-label [PaymentMethodsAddNewCardBtn]"
+  PAYMENTMETHODS_SAVE_NEWCARD_BUTTON:
+    locator-type: "qa-label [AddNewCardContinueBtn]"
+  PAYMENTMETHODS_NEWCARD_CONFIRMATION_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  PAYMENTMETHODS_NEWCARD_EDIT_LINK:
+    locator-type: "data-qa-label [EditPaymentMethodsEditBtn]"
+  PAYMENTMETHODS_CARD_NUMBER:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - PAYMENT_INVALID_CARD_NUMBER_VALUE
+  PAYMENTMETHODS_NAME_CARD_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+  PAYMENTMETHODS_CARD_NUMBER_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+  PAYMENTMETHODS_EXP_DATE_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+  PAYMENTMETHODS_ZIPCODE_TEXTBOX:
+    locator-type: "qa-attribute"
+  PAYMENTMETHODS_CVV_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+  PAYMENTMETHODS_NAME_CARD_EDIT_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+  PAYMENTMETHODS_NEWCARD_EDIT_LINK_BACK_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  PAYMENTMETHODS_CARD_REMOVE_BUTTON:
+    locator-type: "data-qa-label [EditPaymentMethodsDeleteBtn]"
+  PAYMENTMETHODS_CARD_REMOVE_CONFIRMATION_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  PAYMENTMETHODS_CARD_BALANCE:
+    locator-type: "data-test-id [TBD]"
+  PAYMENTMETHODS_CARD_ENDING_LOCATOR:
+    locator-type: "i18"
+  PAYMENTMETHODS_ADD_GIFTCARD_BUTTON:
+    locator-type: "i18"
+  PAYMENTMETHODS_GIFTCARD_NUMBER_LOCATOR:
+    locator-type: "i18"
+  PAYMENTMETHODS_GIFTCARD_BALANCE_LOCATOR:
+    locator-type: "data-test-id [BRGiftCardBalance]"
+  
+EDIT-PROFILE:
+  EDITPROFILE_FIRSTNAME_TEXTBOX:
+    locator-type: "data-test-id [FirstNameInput]"
+    test-data-variable:
+    - FIRSTNAME_WRONG_VALUE_3
+    - COMPLETENAME_DEFAULT_VALUE
+    - MAX_FIRSTNAME_LIMIT
+  EDITPROFILE_FIRSTNAME_TEXTBOX_ERROR:
+    locator-type: "i18"
+  EDITPROFILE_LASTNAME_TEXTBOX:
+    locator-type: "data-test-id [LastNameInput]"
+    test-data-variable:
+      - LASTNAME_WRONG_VALUE_3
+      - MAX_LASTNAME_LIMIT
+  EDITPROFILE_LASTNAME_TEXTBOX_ERROR:
+    locator-type: "i18"
+  EDITPROFILE_SAVE_BUTTON:
+    locator-type: "i18 + data-qa-label [SaveLocationBtn]"
+  EDITPROFILE_SUCCESS_BUTTON:
+    locator-type: "i18 + data-test-id [TBD]"
+  EDITPROFILE_SUCCESS_BANNER:
+    locator-type: "i18"
+  EDITPROFILE_SIGNOUT_YES_BUTTON:
+    locator-type: "i18"
+  EDITPROFILE_PHONENUMBER_TEXTBOX:
+    locator-type: "data-test-id [PhonenumberTextbox] + qa-label [EditAccountInfoPhoneNumberTxt]"
+    test-data-variable:
+      - US_MOBILE_PATTERN_VALUE
+      - PHONE_ALPHABET_VALIDATING_VALUE
+      - PHONE_SPECIALCHARATER_VALIDATING_VALUE
+  EDITPROFILE_CHANGEPASSWORD_BUTTON:
+    locator-type: "i18 + data-test-id [TBD] + qa-label [EditAccountInfoChangePasswordLnk]"
+  EDITPROFILE_CHANGEPASSWORD_CREATENEWPASSWORD_LABEL:
+    locator-type: "i18"
+  EDITPROFILE_CHANGEPASSWORD_INVALIDCONFIRMPASSWORD_ERROR_MSG:
+    locator-type: "i18 + data-qa-label [InvalidConfirmPasswordLabel]"
+  EDITPROFILE_CURRENTPASSWORD_TEXTBOX:
+    locator-type: "data-qa-label [CurrentPasswordTxt]"
+  EDITPROFILE_NEWPASSWORD_TEXTBOX:
+    locator-type: "i18 + data-test-id [TBD] + qa-label [ChangePasswordNewPasswordTxt]"
+  EDITPROFILE_CONFIRMPASSWORD_TEXTBOX:
+    locator-type: "i18 + data-test-id [TBD] + qa-label [ChangePasswordConfirmNewPasswordTxt]"
+  EDITPROFILE_CONFIRMPASSWORD_ERROR_MESSAGE:
+    locator-type: "data-test-id [TBD]"
+  EDITPROFILE_PASSWORDCHANGE_SUBMIT_BUTTON:
+    locator-type: "i18 + data-test-id [TBD] + qa-label [ChangePasswordSubmitBtn]"
+  EDITPROFILE_PASSWORDCHANGE_SUCCESS_POPUP:
+    locator-type: "i18 + data-test-id [TBD]"
+  EDITPROFILE_PASSWORDCHANGE_ERROR_MESSAGE:
+    locator-type: "i18 + data-qa-label [PopupErrorMsgLbl]"
+  EDITPROFILE_PASSWORDCHANGE_ERROROK_BUTTON:
+    locator-type: "i18 + data-qa-label [PopupOkBtn]"
+  EDITPROFILE_PASSWORDCHANGE_SUCCESSOK_BUTTON:
+    locator-type: "i18 + data-test-id [TBD] + qa-label [ChangePasswordConfirmationOkLnk]"
+  EDITPROFILE_PASSWORDCHANGE_KEYPADCLOSE_BUTTON:
+    locator-type: "i18"
+  EDITPROFILE_EMAIL_DISABLED_TEXTBOX:
+    locator-type: "qa-label [EditAccountInfoEmailTxt]"
+  EDITPROFILE_EMAIL_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - TEMP_EDITPROFILE_UPDATEDEMAILADDRESS_VALUE
+      - EDITPROFILE_DEFAULT_VALUE
+  EDITPROFILE_DELETE_ACCOUNT_LINK:
+    locator-type: "i18"
+  EDITPROFILE_DELETE_ACCOUNT_POPUP_HEADER_TITLE:
+    locator-type: "i18"
+  EDITPROFILE_DELETE_ACCOUNT_BUTTON:
+    locator-type: "i18"
+  EDITPROFILE_DELETE_ACCOUNT_POPUP_TEXT:
+    locator-type: "i18"
+  EDITPROFILE_DELETE_ACCOUNT_POPUP_YES_BUTTON:
+    locator-type: "i18"
+  EDITPROFILE_SAVE_BUTTON_DISABLED_STATE:
+    locator-type: "data-qa-label [SaveLocationBtn]"
+  EDITPROFILE_CHANGE_PASSWORD_TEXTBOX:
+    locator-type: "qa-label [ChangePasswordNewPasswordTxt]"
+  EDITPROFILE_CONFIRM_PASSWORD_TEXTBOX:
+    locator-type: "qa-label [ChangePasswordConfirmNewPasswordTxt]"
+  EDITPROFILE_CHANGE_PASSWORD_SUBMIT_BUTTON:
+    locator-type: "i18"
+  EDITPROFILE_CHANGE_PASSWORD_SUBMIT_BUTTON_DISABLED_STATE:
+    locator-type: "i18"
+  EDITPROFILE_DETAILSUPDATED_POPUP_MSG:
+    locator-type: "i18"
+  EDITPROFILE_DETAILSUPDATED_CONFIRM_BUTTON:
+    locator-type: "i18"
+  EDITPROFILE_REWARDS_DUNKIN_ARROW:
+    locator-type: "data-qa-label"
+  EDITPROFILE_REWARDS_DUNKIN_CHECKBOX_ENABLED:
+    locator-type: "data-test-id [TBD]"
+  EDITPROFILE_REWARDS_DUNKIN_CHECKBOX_DISABLED:
+    locator-type: "data-test-id [TBD]"
+  EDITPROFILE_HEADER_TEXT:
+    locator-type: "i18"
+  EDITPROFILE_CLOSE_BUTTON:
+    locator-type: "i18"
+  EDITPROFILE_NO_PASSWORD_ERROR_LABEL:
+    locator-type: "i18"
+  EDITPROFILE_GENERIC_ERROR_MESSAGE:
+    locator-type: "i18"
+    test-data-variable:
+      - PHONENUMBER_DIGITCOUNT_VALIDATION_ERROR_MESSAGE
+      - PHONENUMBER_ONLYNUMBER_VALIDATION_ERROR_MESSAGE
+      - EMAIL_UPDATE_ERROR_MESSAGE
+  EDITPROFILE_HEADING_LOCATOR:
+    locator-type: "i18"
+
+DELETE-ACCOUNT-PAGE:
+  DELETEACCOUNT_WINDOW_HEADING:
+    locator-type: "i18 [TBD]"
+  DELETEACCOUNT_EMAILADDRESS_TEXTBOX:
+    locator-type: "i18"
+  DELETEACCOUNT_RECAPCHA_ICON:
+    locator-type: "i18 [TBD]"
+  DELETEACCOUNT_CONTINUE_BUTTON:
+    locator-type: "i18"
+
+SIGNUP/SIGNIN-PAGE:
+  LOGINSIGNUP_LOGIN_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  LOGINSIGNUP_CONTINUEWITHFACEBOOK_BUTTON:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      -LOGINSIGNUP_FACEBOOK_BUTTON_X_COORDINATE_Samsung_Galaxy_S21
+      -LOGINSIGNUP_FACEBOOK_BUTTON_Y_COORDINATE_Samsung_Galaxy_S21
+      -LOGINSIGNUP_FACEBOOK_BUTTON_X_COORDINATE_iPhone_12_Mini
+      -LOGINSIGNUP_FACEBOOK_BUTTON_Y_COORDINATE_iPhone_12_Mini
+      -LOGINSIGNUP_FACEBOOK_BUTTON_X_COORDINATE_Google_Pixel_4
+      -LOGINSIGNUP_FACEBOOK_BUTTON_Y_COORDINATE_Google_Pixel_4
+  LOGINSIGNUP_CONTINUEWITHAPPLE_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  LOGINSIGNUP_SIGNUP_WITH_EMAIL_BUTTON:
+    locator-type: "i18 + data-test-id [TBD]"
+  LOGINSIGNUP_HAVE_ACCOUNT:
+    locator-type: "data-test-id [TBD]"
+  LOGINSIGNUP_ACCOUNT_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  LOGIN_SIGNIN_BUTTON_DISABLED_STATE:
+    locator-type: "qa-label [LoginContinueBtn]"
+  LOGIN_TERMSOFSERVICE_RECAPTCHA_LINK:
+    locator-type: "data-test-id [TBD]"
+  LOGIN_PRIVACYPOLICY_RECAPTCHA_LINK:
+    locator-type: "i18 [TBD]"
+  PRIVACYPOLICY_RECAPTCHA_TITLE:
+    locator-type: "i18"
+  LOGIN_TERMSANDCONDITIONS_LINK:
+    locator-type: "qa-label [LoginTnCLnk]"
+  LOGIN_PRIVACYPOLICY_LINK:
+    locator-type: "qa-label [LoginPrivacyPolicyLnk]"
+  LOGIN_SIGNUP_LINK:
+    locator-type: "i18"
+  LOGIN_LETSGETSTARTED_BUTTON:
+    locator-type: "third_party"
+  LOGIN_HEADER_CART_LINK:
+    locator-type: "data-qa-label [AppHeaderCartBtn]"
+
+SIGNUP-PAGE:
+  CREATEACCOUNT_PAGE_TITLE:
+    locator-type: "i18"
+  CREATEACCOUNT_FIRSTNAME_TEXTBOX:
+    locator-type: "qa-label [SignUpFirstNameTxt]"
+  CREATEACCOUNT_FIRSTNAME_TEXTBOX_ERROR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - FIRSTNAME_NONDEFAULT_VALUE
+      - FIRSTNAME_WRONG_VALUE
+      - FIRSTNAME_WRONG_VALUE_2
+      - CREATEACCOUNT_INPUTFIRSTNAME_INLINE_ERROR_1_MSG
+      - CREATEACCOUNT_INPUTFIRSTNAME_INLINE_ERROR_2_MSG
+  CREATEACCOUNT_LASTNAME_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+  CREATEACCOUNT_LASTNAME_TEXTBOX_ERROR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - LASTNAME_WRONG_VALUE
+      - LASTNAME_WRONG_VALUE_2
+      - LASTNAME_EXCEEDMAXLENGTH_VALUE
+      - LASTNAME_MAXLENGTH_VALUE
+      - CREATEACCOUNT_INPUTLASTNAME_INLINE_ERROR_1_MSG
+      - CREATEACCOUNT_INPUTLASTNAME_INLINE_ERROR_2_MSG
+  CREATEACCOUNT_EMAILADDRESS_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+  CREATEACCOUNT_EMAILADDRESS_TEXTBOX_ERROR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - EMAIL_WRONG_VALUE
+      - EMAIL_WRONG_VALUE_2
+      - EMAIL_EXCEEDMAXLENGTH_VALUE
+      - EMAIL_MAXLENGTH_VALUE
+  CREATEACCOUNT_PHONENUMBER_TEXTBOX:
+    locator-type: "data-test-id [PhonenumberTextbox]"
+    test-data-variable:
+      - PHONENUMBER_WRONG_VALUE_1
+      - PHONENUMBER_WRONG_VALUE_1_CONFIRMATION
+      - PHONENUMBER_WRONG_VALUE_1
+      - PHONENUMBER_VALUE
+  CREATEACCOUNT_PHONENUMBER_TEXTBOX_ERROR:
+    locator-type: "i18"
+  CREATEACCOUNT_PASSWORD_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+  CREATEACCOUNT_PASSWORD_TEXTBOX_ERROR:
+    locator-type: "i18"
+  CREATEACCOUNT_CONFIRM_PASSWORD_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+  CREATEACCOUNT_CONFIRMPASSWORD_TEXTBOX_ERROR:
+    locator-type: "i18"
+  CREATEACCOUNT_CONTINUE_BUTTON:
+    locator-type: "data-qa-label [SignUpContinueBtn]"
+  CREATEACCOUNT_CONTINUE_DISABLED_BUTTON:
+    locator-type: "i18"
+  CREATEACCOUNT_SPECIALOFFERS_CHECKBOX:
+    locator-type: "data-test-id [TBD] + i18"
+  CREATEACCOUNT_ENROLLME_CHECKBOX:
+    locator-type: "i18"
+  CREATEACCOUNT_BIOMETRICS_CHECKBOX:
+    locator-type: "i18"
+  CREATEACCOUNT_SPECIALOFFERS_CHECKED_STATE:
+    locator-type: "data-test-id [TBD]"
+  CREATEACCOUNT_MAKEITOFICIAL_POPUP_OK_BUTTON:
+    locator-type: "i18"
+  CREATEACCOUNT_TERMANDCONDITION_RADIO_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  CREATEACCOUNT_ERRORMSG_POPUP_BODY:
+    locator-type: "i18"
+    test-data-variable:
+      - CREATEACCOUNT_ALREADYEXISTS_ERRORMSG
+  CREATEACCOUNT_ERRORMSG_POPUP_HEADING:
+    locator-type: "i18"
+    test-data-variable:
+      - CREATEACCOUNT_ALREADYEXISTS_ERROR_HEADING_MSG
+  CREATEACCOUNT_CREATEACCOUNT_BUTTON_DISABLED_STATE:
+    locator-type: "data-test-id [TBD]"
+  CREATEACCOUNT_PASSWORDSHOWHIDE_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  CREATEACCOUNT_PASSWORDSHOW_LINK:
+    locator-type: "data-test-id [TBD]"
+  CREATEACCOUNT_PASSWORD_SHOW_STATE:
+    locator-type: "data-test-id [TBD]"
+  CREATEACCOUNT_PRIVACYPOLICY_LINK:
+    locator-type: "i18 + qa-label [SignUpPrivacyPolicyLnk]"
+  CREATEACCOUNT_PRIVACY_POLICY_PAGE_TITLE:
+    locator-type: "i18"
+  CREATEACCOUNT_TERMANDCONDITION_LINK:
+    locator-type: "i18 + qa-label [LoginTnCLnk]"
+  CREATEACCOUNT_TERMANDCONDITION_PAGE_TITLE:
+    locator-type: "i18"
+  CREATEACCOUNT_RECAPTCHA_TEXT:
+    locator-type: "data-test-id [TBD]"
+  CREATEACCOUNT_PRIVACYPOLICY_RECAPTCHA_LINK:
+    locator-type: "data-test-id [TBD]"
+  CREATEACCOUNT_TERMSOFSERVICE_RECAPTCHA_LINK:
+    locator-type: "data-test-id [TBD]"
+  CREATEACCOUNT_PASSWORD_ERROR:
+    locator-type: "data-qa-label [InvalidNewPasswordLabel]"
+  CREATEACCOUNT_PASSWORD_ERROR_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - CREATEACCOUNT_INPUTPASSWORD_INLINE_ERROR_1_MSG
+      - CREATEACCOUNT_INPUTPASSWORD_INLINE_ERROR_2_MSG
+  CREATEACCOUNT_LOGIN_LINK:
+    locator-type: "i18"
+  CREATEACCOUNT_CONTINUEWITHFACEBOOK_BUTTON:
+    locator-type: "i18"
+  CREATEACCOUNT_CONTINUEWITHGOOGLE_BUTTON:
+    locator-type: "i18"
+  CREATEACCOUNT_CONTINUEWITHAPPLE_BUTTON:
+    locator-type: "third_party"
+  CREATEACCOUNT_DUPLICATEEMAIL_POPUP_HEADING:
+    locator-type: "i18"
+  CREATEACCOUNT_DUPLICATEEMAIL_POPUP_BODY:
+    locator-type: "i18"
+  CREATEACCOUNT_DUPLICATEEMAIL_POPUP_CHANGEEMAIL_BUTTON:
+    locator-type: "i18"
+  CREATEACCOUNT_ZIPCODE_TEXTBOX_ERROR:
+    locator-type: "i18"
+  CREATEACCOUNT_LOYALTY_OPTIN_TEXT:
+    locator-type: "data-test-id [TBD]"
+  CREATEACCOUNT_LOYALTY_OPTIN_IMAGE:
+    locator-type: "data-test-id [TBD]"
+  CREATEACCOUNT_LOYALTY_LEARNMORE_LINK:
+    locator-type: "i18"
+  CREATEACCOUNT_ALERT_ERROR_MSG:
+    locator-type: "i18"
+  CREATEACCOUNT_SIGNUP_BUTTON:
+    locator-type: "data-qa-label [SignUpBtn]"
+  CREATEACCOUNT_USER_ALREADY_EXISTS_POPUP_TITLE:
+    locator-type: "i18"
+  CREATEACCOUNT_USER_ALREADY_EXISTS_POPUP_MESSAGE:
+    locator-type: "i18"
+  CREATEACCOUNT_USER_ALREADY_EXISTS_LOGIN_BUTTON:
+    locator-type: "i18"
+  CREATEACCOUNT_USER_ALREADY_EXISTS_ACCEPT_BUTTON:
+    locator-type: "i18"
+  CREATEACCOUNT_PASSWORDHIDE_LINK:
+    locator-type: "i18"
+
+SIGNIN-PAGE:
+  LOGIN_CONTINUEWITHAPPLE_BUTTON:
+    locator-type: "third_party"
+  LOGIN_CONTINUEWITHFACEBOOK_BUTTON:
+    locator-type: "i18 + third_party"
+  LOGIN_CONTINUE_BUTTON_DISABLED_STATE:
+    locator-type: "data-test-id [TBD]"
+  LOGIN_EMAILADDRESS_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - EMAILADDRESS_DEFAULT_VALUE
+      - EMAILADDRESS_RESET_PASSWORD_VALUE
+      - EMAILADDRESS_PLACEORDER_VALUE
+      - EMAILADDRESS_LOYALTY_ORDERHISTORY_VALUE
+      - EMAILADDRESS_LOYALTY_REWARDS_VALUE
+      - EMAILADDRESS_REORDER_USER_PICKUP_ONLY
+      - EMAILADDRESS_REORDER_USER_PICKUP_ONLY_2_VALUE
+      - EMAILADDRESS_REORDER_USER_PICKUP_ONLY_3_VALUE
+      - EMAILADDRESS_REORDER_USER_PICKUP_ONLY_4_VALUE
+      - EMAILADDRESS_REORDER_USER_PICKUP_ONLY_5_VALUE
+      - EMAILADDRESS_REORDER_USER_DELIVERY_ONLY
+      - EMAILADDRESS_PLACEORDER_DELIVERY_USER_ONLY_VALUE
+      - EMAILADDRESS_REORDER_USER_DELIVERY_ONLY_2_VALUE
+      - EMAILADDRESS_REORDER_USER_DELIVERY_ONLY_3_VALUE
+      - LOGIN_INCORRECTEMAIL_1_VALUE
+  LOGIN_PASSWORD_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - PASSWORD_DEFAULTVALID_VALUE
+      - PASSWORD_RESET_PASSWORD_VALUE
+      - PASSWORD_LOYALTY_ORDERHISTORY_VALUE
+      - PASSWORD_LOYALTY_REWARDS_VALUE
+      - PASSWORD_WRONG_VALUE
+      - PASSWORD_LESSCHAR_VALUE
+  LOGIN_PASSWORDSHOW_LINK:
+    locator-type: "qa-label [LoginPasswordTxt]"
+  LOGIN_PASSWORDHIDE_LINK:
+    locator-type: "qa-label [LoginPasswordTxt]"
+  LOGIN_PASSWORD_SHOW_STATE:
+    locator-type: "qa-label [LoginPasswordTxt]"
+  LOGIN_PASSWORD_HIDDEN_STATE:
+    locator-type: "qa-label [LoginPasswordTxt]"
+  LOGIN_PASSWORD_ERROR_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - LOGIN_INPUTPASSWORD_INLINE_ERROR_1_MSG
+      - LOGIN_INPUTPASSWORD_INLINE_ERROR_2_MSG
+      - LOGIN_INPUTPASSWORD_INLINE_ERROR_3_MSG
+      - LOGIN_INPUTPASSWORD_INLINE_ERROR_4_MSG
+  LOGIN_EMAILADDRESS_ERROR_LABEL:
+    locator-type: "i18"
+  LOGIN_PASSWORDREQUIRED_ERROR_LABEL:
+    locator-type: "i18"
+  LOGIN_PASSWORD_MINLENGTH_ERROR_LABEL:
+    locator-type: "i18"
+  LOGIN_KEEPMESIGNEDIN_CHECKBOX_LABEL:
+    locator-type: "i18"
+  LOGIN_KEEPMESIGNEDIN_CHECKBOX:
+    locator-type: "data-qa-label [RememberMeCbx]"
+  LOGIN_KEEPMESIGNEDIN_CHECKBOX_ENABLED_STATE:
+    locator-type: "data-qa-label [RememberMeCbx]"
+  LOGIN_KEEPMESIGNEDIN_CHECKBOX_DISABLED_STATE:
+    locator-type: "data-qa-label [RememberMeCbx]"
+  LOGIN_SIGNIN_BUTTON:
+    locator-type: "data-qa-label [LoginContinueBtn]"
+  LOGIN_SUBMIT_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  LOGIN_SUBMIT_BUTTON_DISABLED:
+    locator-type: "i18"
+  LOGIN_FORGOT_BUTTON:
+    locator-type: "data-test-id [ForgotPasswordLnk]"
+  LOGIN_ERRORPOPUP_BODY:
+    locator-type: "data-test-id [TBD] + i18"
+    test-data-variable:
+      - LOGIN_INVALIDCREDENTIALS_ERRORMSG
+  LOGIN_ERRORPOPUP_TRYAGAIN_BUTTON:
+    locator-type: "i18"
+  LOGIN_ERRORPOPUP_BODY_MSG:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - LOGIN_INVALIDCREDENTIALS_POPUP_ERRORMSG
+  LOGINSIGNUP_TEXT_MESSAGE:
+    locator-type: "i18"
+    test-data-variable:
+      - SIGNUP_HEADER_TXT
+      - SIGNUP_MIDDLE_TXT
+      - LOGINSIGNUP_MIDDLE_TXT_FIRST_TIME
+      - LOGINSIGNUP_MIDDLE_TXT
+  LOGIN_PAGE_TITLE:
+    locator-type: "i18"
+  LOGIN_SENDCODE_BUTTON:
+    locator-type: "i18"
+  LOGIN_CONFIRMCODE_BUTTON:
+    locator-type: "i18"
+  LOGIN_SECURITYCODE_RESEND_BUTTON:
+    locator-type: "i18"
+  LOGIN_SECURITYCODE_RESEND_POPUP_TITLE:
+    locator-type: "i18"
+  LOGIN_SECURITYCODE_RESEND_POPUP_TEXT:
+    locator-type: "data-test-id"
+  LOGIN_SECURITYCODE_RESEND_POPUP_OK_BUTTON:
+    locator-type: "data-test-id"
+  LOGIN_SECURITYCODE_TEXTBOX_ERROR:
+    locator-type: "i18"
+  LOGIN_TERMS&CONDITION_LINK:
+    locator-type: "i18"
+
+OM-CONFIGURATIONS:
+  test-data-variable:
+    - OM_ORDERSTATUS_COMPLETED_VALUE
+    - MOVE_ORDER_TO_READY
+    - MOVE_ORDER_TO_COMPLETED
+
+EMAIL-CONFIGURATIONS:
+  test-data-variable:
+    - ORDERCANCEL_EMAILBODY_MSG
+    - MAILBOX_SUBJECT_ORDER_CANCELLATION_VALUE
+    - MAILBOX_SUBJECT_REFUND_DEFAULT
+    - MAILBOX_REFUND_EMAILBODY_MSG
+    - MAILBOX_FROMEMAIL_STOREACCOUNT_VALUE
+    - PAYMENTREFUND_SUBJECT_DEFAULT_VALUE
+    - PICKUP_LATER_EMAILBODY_MSG
+    - PICKUP_NOW_EMAILBODY_MSG
+    - PICKUP_LATER_SUBJECT_STOREACCOUNT_DEFAULT_VALUE
+
+FORGOT/RESET-PASSWORD-PAGE:
+  FORGOTPASSWORD_EMAILADDRESS_TEXTBOX_ERROR:
+    locator-type: "i18"
+  LOGIN_FORGOTPASSWORD_PAGE_TITLE:
+    locator-type: "i18"
+  LOGIN_FORGOTPASSWORD_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  LOGIN_FORGOTPASSWORD_WINDOW_TITLE:
+    locator-type: "i18 + data-test-id [TBD]"
+  LOGIN_FORGOTPASSWORD_EMAILADDRESS_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+  LOGIN_FORGOTPASSWORD_CANCEL_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  LOGIN_FORGOTPASSWORD_CONTINUE_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  LOGIN_FORGOTPASSWORD_CONTINUE_BUTTON_DISABLED:
+    locator-type: "data-test-id [TBD]"
+  LOGIN_FORGOTPASSWORD_EMAILSUBMITTEDCONFIRM_OK_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  LOGIN_FORGOTPASSWORD_EMAILSUBMITTED_DESCRIPTION_LOCATOR:
+    locator-type: "data-test-id"
+  LOGIN_FORGOTPASSWORD_HEADER_LABEL:
+    locator-type: "data-test-id [TBD]"
+  LOGIN_FORGOTPASSWORD_DESCRIPTION_LABEL:
+    locator-type: "i18"
+  LOGIN_FORGOTPASSWORD_CREATEACCOUNT_BUTTON:
+    locator-type: "i18"
+  LOGIN_RESETPASSWORD_POPUP:
+    locator-type: "data-test-id [TBD]"
+  LOGIN_RESETPASSWORD_PASSWORD_TEXTBOX:
+    locator-type: "data-test-id [NewPasswordTxt]"
+  LOGIN_RESETPASSWORD_RETYPEPASSWORD_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+  LOGIN_RESETPASSWORD_SUBMIT_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  LOGIN_RESETPASSWORD_SUBMIT_BUTTON_DISABLED:
+    locator-type: "qa-label [ChangePasswordSubmitBtn]"
+  LOGIN_FORGOTPASSWORD_CLOSE_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  LOGIN_FORGOTPASSWORD_EMAILSUBMITTEDCONFIRM_TEXT:
+    locator-type: "data-test-id [TBD]"
+  LOGIN_RESETPASSWORD_SUCCESS_POPUP:
+    locator-type: "data-test-id [TBD]"
+  LOGIN_RESETPASSWORD_SUCCESS_POPUP_BODY:
+    locator-type: "data-test-id [TBD]"
+  LOGIN_RESETPASSWORD_SUCCESS_POPUP_CLOSE_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  LOGIN_RESETPASSWORD_LINKEXPIRED_POPUP_HEADING:
+    locator-type: "i18"
+  LOGIN_RESETPASSWORD_LINKEXPIRED_POPUP_CONTINUE_BUTTON:
+    locator-type: "i18"
+  FORGOT_PASSWORD_TEXT_MESSAGE:
+    locator-type: "data-test-id [TBD]"
+  LOGIN_PASSWORD_RESET_NOTIFICATION:
+    locator-type: "data-test-id [ForgotPasswordConfirmationTxt]"
+  FORGOT_PASSWORD_CONTINUE_BUTTON_DISABLED_STATE:
+    locator-type: "data-test-id [TBD]"
+  LOGIN_RESETPASSWORD_INVALID_EMAIL_MESSAGE:
+    locator-type: "data-test-id [TBD]"
+  LOGIN_FORGOTPASSWORD_MODAL:
+    locator-type: "data-qa-label [FrgtPsswdLbl]"
+  LOGIN_FORGOTPASSWORD_READYTORESET_BUTTON:
+    locator-type: "i18"
+  LOGIN_FORGOTPASSWORD_READYTORESET_BUTTON_DISABLED_STATE:
+    locator-type: "i18"
+  LOGIN_FORGOTPASSWORD_SIGNUP_BUTTON:
+    locator-type: "data-qa-label"
+  LOGIN_PRIVACY_POLICY_LINK:
+    locator-type: "i18"
+
+RESET-PASSWORD:
+  RESETPASSWORD_PASSWORD_ERROR_LOCATOR:
+    locator-type: "data-test-id [input-password-inline-error]"
+    test-data-variable:
+      - RESETPASSWORD_INPUTPASSWORD_INLINE_ERROR_1_MSG
+      - RESETPASSWORD_INPUTPASSWORD_INLINE_ERROR_2_MSG
+      - RESETPASSWORD_INPUTPASSWORD_INLINE_ERROR_3_MSG
+      - RESETPASSWORD_INPUTPASSWORD_INLINE_ERROR_4_MSG
+      - RESETPASSWORD_INPUTPASSWORD_INLINE_ERROR_5_MSG
+  RESETPASSWORD_RETYPEPASSWORD_PASSWORD_ERROR_LOCATOR:
+    locator-type: "data-test-id [input-confirmPassword-inline-error]"
+
+FACEBOOK-LOGIN:
+  FACEBOOK_USERNAME_TEXTBOX:
+    locator-type: "third_party"
+    test-data-variable:
+      - FACEBOOKEMAILADDRESS_DEFAULT_VALUE
+  FACEBOOK_PASSWORD_TEXTBOX:
+    locator-type: "third_party"
+    test-data-variable:
+      - FACEBOOKPASSWORD_DEFAULT_VALUE
+  FACEBOOK_SIGNIN_BUTTON:
+    locator-type: "third_party"
+  FACEBOOK_TERMS_AND_PRIVACYPOLICY_CHECKBOX:
+    locator-type: "third_party"
+  FACEBOOK_CONFIRM_LOGIN_CONTINUE_BUTTON:
+    locator-type: "third_party"
+  FACEBOOK_CONFIRM_COOKIES_BUTTON:
+    locator-type: "third_party"
+  FACEBOOK_INCORRECTEMAILADDRESS_ERRORMSG:
+    locator-type: "third_party"
+  FACEBOOK_EDIT_ACCESS_LINK:
+    locator-type: "third_party"
+  FACEBOOK_EMAILADDRESS_ACCESS_BUTTON:
+    locator-type: "third_party"
+  FACEBOOK_EMAILADDRESS_PERMISSION_POPUP:
+    locator-type: "third_party"
+  FACEBOOK_CONTINUE_BUTTON:
+    locator-type: "third_party"
+
+GOOGLE:
+  LOGINSIGNUP_CONTINUEWITHGOOGLE_BUTTON:
+    locator-type: "i18"
+  GOOGLE_EMAILADDDRESS_TEXTBOX:
+    locator-type: "third_party"
+    test-data-variable:
+      - GOOGLE_EMAILADDRESS_DEFAULT_VALUE
+  GOOGLE_PASSWORD_TEXTBOX:
+    locator-type: "third_party"
+    test-data-variable:
+      - GOOGLE_PASSWORD_DEFAULT_VALUE
+  GOOGLE_LOGIN_EMAIL_NEXT_BUTTON:
+    locator-type: "third_party"
+  GOOGLE_LOGIN_PASSWORD_NEXT_BUTTON:
+    locator-type: "third_party"
+  GOOGLE_LOGIN_AGREE_BUTTON:
+    locator-type: "third_party"
+  GOOGLE_LOGIN_ACCESS_ALLOW_BUTTON:
+    locator-type: "third_party"
+  GOOGLE_CONFIRM_COOKIES_BUTTON:
+    locator-type: "third_party"
+  GOOGLE_CONFIRM_RECOVERY_EMAIL_BUTTON:
+    locator-type: "third_party"
+  GOOGLE_CONFIRM_RECOVERY_EMAIL_INPUT:
+    locator-type: "third_party"
+  GOOGLE_CONFIRM_RECOVERY_NEXT_BUTTON:
+    locator-type: "third_party"
+  GOOGLE_MAP_DIRECTION_BUTTON:
+    locator-type: "third_party"
+  HIDE_KEYBOARD:
+    locator-type: "native"
+
+SIGN-OUT:
+  MYACCOUNT_SIGNOUT_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  SIGNOUT_CONFIRMATION_POPUP:
+    locator-type: "data-qa-label [::data.yesQa] + i18"
+  SIGNOUTPOPUP_BUTTON:
+    locator-type: "data-qa-label [::data.yesQa] +i18"
+  SIGNOUTPOPUP_YES_BUTTON:
+    locator-type: "i18"
+
+PRIVACY-POLICY-AND-TERMS-&-CONDITIONS:
+  PRIVACYPOLICY_HEADER:
+    locator-type: "data-test-id [PrivacyPolicyWindowTitle]"
+  TERMSANDCONDITIONS_HEADER:
+    locator-type: "data-test-id [TermsAndConditionsWindowTitle]"
+
+FOOTER:
+  FOOTER_ORDER_BUTTON:
+    locator-type: "data-test-id [FooterOrderBtn] + native"
+  FOOTER_HOMEPAGE_BUTTON:
+    locator-type: "native"
+  FOOTER_LOCATIONS_BUTTON:
+    locator-type: "i18 + data-testid [footer-toolbar-item-locations-active]"
+  FOOTER_REORDER_BUTTON:
+    locator-type: "i18"
+  FOOTER_PROMOS_BUTTON:
+    locator-type: "i18 + data-test-id [FooterPromosBtn]"
+  FOOTER_STORES_BUTTON:
+    locator-type: "i18 + data-test-id [TBD]"
+  FOOTER_COUPONS_BUTTON:
+    locator-type: "i18 + data-test-id [FooterCouponsBtn] + native"
+  FOOTER_HOME_BUTTON:
+    locator-type: "i18 + data-test-id [TBD]"
+  FOOTER_FAQS_LINK:
+    locator-type: "data-qa-label [faqs]"
+  FOOTER_FAQS_WINDOW_TITLE:
+    locator-type: "i18 + qa-label [HeaderCenterTitle]"
+  FOOTER_PARTNERSHIPS_LINK:
+    locator-type: "data-qa-label [partnerships]"
+  FOOTER_COPYRIGHT_LABEL:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - FOOTER_COPYRIGHT_LABEL_VALUE
+  FOOTER_PARTNERSHIPS_WINDOW_TITLE:
+    locator-type: "i18 + qa-label [HeaderCenterTitle]"
+  FOOTER_PRIVACYPOLICY_LINK:
+    locator-type: "data-qa-label [privacyPolicy] + qa-label [SettingsPrivacyPolicyLnk]"
+  FOOTER_PRIVACYPOLICY_WINDOW_TITLE:
+    locator-type: "i18 + qa-label [HeaderCenterTitle]"
+  FOOTER_TERMSANDCONDITIONS_LINK:
+    locator-type: "data-qa-label [terms-and-conditions] + qa-label [SettingsTerms&ConditionsLnk]"
+  FOOTER_TERMANDCONDITIONS_WINDOW_TITLE:
+    locator-type: "i18 + qa-label [HeaderCenterTitle]"
+  TERMANDCONDITIONS_WINDOW_TITLE:
+    locator-type: "i18 + qa-label [HeaderCenterTitle]"
+  FOOTER_PRIVACYACT_LINK:
+    locator-type: "data-qa-label [terms-and-conditions] + qa-label [SettingsTerms&ConditionsLnk]"
+  PRIVACYACT_WINDOW_TITLE:
+    locator-type: "i18 + qa-label [HeaderCenterTitle]"
+  FOOTER_ACCESSIBILITY_LINK:
+    locator-type: "data-qa-label [terms-and-conditions] + qa-label [SettingsTerms&ConditionsLnk]"
+  FOOTER_COOKIESETTINGS_LINK:
+    locator-type: "data-test-id [FooterCookieSettingsLnk]"
+  ACCESSIBILITY_WINDOW_TITLE:
+    locator-type: "i18 + qa-label [HeaderCenterTitle]"
+
+LEGALS_PAGES:
+  FAQS_BODY_TEXT:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - FAQS_BODY_TEXT_VALUE
+  PRIVACYPOLICY_BODY_TEXT:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - PRIVACYPOLICY_BODY_TEXT_VALUE
+  TERMSANDCONDITIONS_BODY_TEXT:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - TERMSANDCONDITIONS_BODY_TEXT_VALUE
+  PARTNERSHIPS_BODY_TEXT:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - PARTNERSHIPS_BODY_TEXT_VALUE
+
+HOMEPAGE:
+  HOMEPAGE_VIEWALL_TILE:
+    locator-type: "data-test-id [TBD]"
+  HOMEPAGE_ORDERS_TILE:
+    locator-type: "data-test-id [TBD]"
+  HOMEPAGE_GREETING_SIGNUP_ELEMENT:
+    locator-type: "i18"
+  HOMEPAGE_GREETINGNAME_ELEMENT:
+    locator-type: "i18"
+  HOMEPAGE_GREETING_ELEMENT:
+    locator-type: "i18 + data-test-id [HomePageGreeting]"
+  HOMEPAGE_GUEST_GREETING_ELEMENT:
+    locator-type: "i18"
+  HOMEPAGE_NOORDERS_GREETING_ELEMENT:
+    locator-type: "i18"
+  HOMEPAGE_NOORDERS_GREETING_BUTTON:
+    locator-type: "i18"
+  HOMEPAGE_WITHORDERS_GREETING_ELEMENT:
+    locator-type: "i18"
+  HOMEPAGE_WITHORDERS_GREETING_BUTTON:
+    locator-type: "i18"
+  HOMEPAGE_ORDERNOW_BUTTON:
+    locator-type: "data-test-id [HomePageOrderNowBtn]"
+  HOMEPAGE_REORDER_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  HOMEPAGE_VIEWPROMOS_BUTTON:
+    locator-type: "data-test-id [HomePageTile-Homepage : View All Promos Click] + data-test-id [homepageviewpromos]"
+  HOMEPAGE_VIEWCOUPONS_BUTTON:
+    locator-type: "data-test-id [homepageviewcoupons]"
+  HOMEPAGE_HERO_BANNER:
+    locator-type: "data-test-id [TBD]"
+  HOMEPAGE_MENUCATEGORY_TILE:
+    locator-type: "data-test-id [TBD-%s]"
+    test-data-variable:
+      - MENU_CATEGORY_1_NAME
+      - MENU_CATEGORY_1_FRENCH_NAME
+      - MENU_CATEGORY_2_NAME
+      - MENU_CATEGORY_3_NAME
+      - MENU_CATEGORY_4_NAME
+      - MENU_CATEGORY_5_NAME
+      - MENU_CATEGORY_6_NAME
+      - MENU_CATEGORY_7_NAME
+      - MENU_CATEGORY_8_NAME
+      - MENU_CATEGORY_9_NAME
+      - MENU_CATEGORY_10_NAME
+      - MENU_CATEGORY_11_NAME
+      - MENU_CATEGORY_12_NAME
+      - MENU_CATEGORY_13_NAME
+      - MENU_CATEGORY_14_NAME
+      - MENU_CATEGORY_15_NAME
+      - MENU_CATEGORY_16_NAME
+      - MENU_CATEGORY_17_NAME
+      - MENU_CATEGORY_18_NAME
+      - MENU_CATEGORY_19_NAME
+  HOMEPAGE_VIEWFULLMENU_BUTTON:
+    locator-type: "data-test-id [HomePageTile-Homepage: View All Menu Categories Click] + i18"
+  HOMEPAGE_WHATSNEW_1:
+    locator-type: "data-test-id [HomePageTile-Homepage : Watch Now Click]"
+  HOMEPAGE_LOGIN_REGISTRATION_BANNER:
+    locator-type: "data-test-id [HomePageRegistrationBanner]"
+  HOMEPAGE_LOGIN_REGISTRATION_BANNER_ICON:
+    locator-type: "data-test-id [TBD]"
+  HOMEPAGE_LOGIN_REGISTRATION_BANNER_TITLE:
+    locator-type: "i18"
+  HOMEPAGE_LOGIN_BUTTON:
+    locator-type: "i18"
+  HOMEPAGE_SIGNUP_BUTTON:
+    locator-type: "i18"
+  HOMEPAGE_LOGIN_REGISTRATION_BANNER_SUBTITLE:
+    locator-type: "i18"
+    test-data-variable:
+      - LOGINSIGNUP_APPMIGRATION_TXT
+  HOMEPAGE_DELIVERY_BANNER:
+    locator-type: "i18"
+  HOMEPAGE_ORDERTRACKER_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  HOMEPAGE_DELIVERYTRACKER:
+    locator-type: "data-test-id [TBD]"
+  HOMEPAGE_VIEWDEALS_BUTTON:
+    locator-type: "i18"
+  HOMEPAGE_BIOMETRICS_NOTNOW_BUTTON:
+    locator-type: "i18"
+
+MENU-PAGE:
+  FULLMENU_CATEGORY_TILE:
+    locator-type: "data-test-id [TBD]"
+  ORDERSTAB_MENU_CATEGORY_TILE:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - MENU_CATEGORY_1_NAME
+      - MENU_CATEGORY_2_NAME
+      - MENU_CATEGORY_3_NAME
+      - MENU_CATEGORY_4_NAME
+      - MENU_CATEGORY_5_NAME
+      - MENU_CATEGORY_6_NAME
+      - MENU_CATEGORY_7_NAME
+      - MENU_CATEGORY_8_NAME
+      - MENU_CATEGORY_9_NAME
+      - MENU_CATEGORY_10_NAME
+      - MENU_CATEGORY_11_NAME
+      - MENU_CATEGORY_12_NAME
+      - MENU_CATEGORY_13_NAME
+      - MENU_CATEGORY_14_NAME
+      - MENU_CATEGORY_15_NAME
+      - MENU_CATEGORY_16_NAME
+      - MENU_CATEGORY_17_NAME
+      - MENU_CATEGORY_18_NAME
+      - MENU_CATEGORY_19_NAME
+  PRODUCT_SELECT_BUTTON:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - MENU_ALACARTECATEGORY_NAME
+      - DEFAULT_COMBOCATEGORY_DEFAULT_COMBO_NAME
+      - DEFAULT_COMBO_DEFAULT_PRODUCT_NAME
+      - DEFAULT_ALACARTECATEGORY_DEFAULT_PRODUCT_NAME
+      - DEFAULT_MENU_ALACARTECATEGORY_NAME
+      - MENU_COMBOCATEGORY_PERMANENTDISABLEDCOMBO_NAME
+      - MENU_COMBOCATEGORY_TEMPORARYDISABLEDCOMBO_NAME
+      - MENU_COMBOCATEGORY_TEMPORARYDISABLEDPRODUCT_NAME
+      - MENU_BREAKFASTCOMBOCATEGORY_DEFAULTCOMBO_NAME
+      - BREAKFAST_COMBOCATEGORY_DEFAULTPRODUCT_NAME
+      - COMBOCATEGORY19_COMBO_1_NAME
+      - COMBO1_PRODUCT_1_NAME
+      - NONDEFAULT_COMBO_1_NAME
+      - NONDEFAULT_COMBO_3_NAME
+      - NONDEFAULT_COMBO1_PRODUCT_1_NAME
+  PRODUCTDETAILS_ADDTOCART_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  PRODUCTDETAILS_ADDTOCART_BUTTON_DISABLED_STATE:
+    locator-type: "i18 + data-test-id [TBD]"
+  PRODUCTDETAILS_ADDTODEAL_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  PRODUCTDETAILS_ADDTOORDER_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  PRODUCT_MODIFIER_RADIOBUTTON:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - DEFAULT_REQUIRED_MODIFIER_1
+      - DEFAULT_REQUIRED_MODIFIER_2
+      - DEFAULT_REQUIRED_SIDE
+      - MENU_COMBO_PRODUCT_COSTUMIZATION_STEP_TITLE_BEVERAGE
+  PRODUCT_COSTUMIZATION_FLOW_PRICE_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - DEFAULT_BUILDERUI_ALACARTE_PRICE_VALUE
+  PRODUCT_DRESSING_BUTTON:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - NO_DRESSING_NAME
+  UPSELL_CLOSE_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  MENU_ALACARTPRODUCT_LOCATOR:
+    locator-type: "native"
+  MENU_CATEGORY_TITLE:
+    locator-type: "qa-label [HeaderCenterTitle] + i18"
+    test-data-variable:
+      - MENU_CATEGORIES_LIST
+      - MENU_SINGLE_CATEGORY_ITEMS_LIST
+  MENU_CATEGORY_LOCATOR:
+    locator-type: "data-test-id [TBD] + data-qa-label [MenuCategoryTitle]"
+    test-data-variable:
+      - MENU_CATEGORY_1_NAME
+      - MENU_CATEGORY_2_NAME
+      - MENU_CATEGORY_3_NAME
+      - MENU_CATEGORY_4_NAME
+      - MENU_CATEGORY_5_NAME
+      - MENU_CATEGORY_6_NAME
+      - MENU_CATEGORY_7_NAME
+      - MENU_CATEGORY_8_NAME
+      - MENU_CATEGORY_9_NAME
+      - MENU_CATEGORY_10_NAME
+      - MENU_CATEGORY_11_NAME
+      - MENU_CATEGORY_12_NAME
+      - MENU_CATEGORY_13_NAME
+      - MENU_CATEGORY_14_NAME
+      - MENU_CATEGORY_15_NAME
+      - MENU_CATEGORY_16_NAME
+      - MENU_CATEGORY_17_NAME
+      - MENU_CATEGORY_18_NAME
+      - MENU_CATEGORY_19_NAME
+      - DEFAULT_ALACARTECATEGORY_NAME
+      - DEFAULT_ALACARTECATEGORY_FRENCH_NAME
+      - ALACARTECATEGORY_1_NAME
+      - ALACARTECATEGORY_2_NAME
+      - DEFAULT_MENU_BYOCATEGORY_NAME
+      - DEFAULT_MENU_COMBOCATEGORY_NAME
+      - DEFAULT_MENU_CATEGORY_NOT_AVAIALBLE_NAME
+      - DEFAULT_BUNDLECATEGORY_NONDEFAULT_BUNDLE_NAME
+      - DEFAULT_BUNDLECATEGORY_NONDEFAULT_BUNDLE_2_NAME
+  MENU_SUBCATEGORY_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - DEFAULT_ALACARTE_SUBCATEGORY_NAME
+      - DEFAULT_COMBOCATEGORY_COMBO_NAME
+      - NONDEFAULT_ALACARTE_SUBCATEGORY_1_NAME
+      - DEFAULT_BUNDLECATEGORY_NONDEFAULT_BUNDLE_PRODUCT_NAME
+      - DEFAULT_BUNDLECATEGORY_NONDEFAULT_BUNDLE_PRODUCT_2_NAME
+      - DEFAULT_BUNDLECATEGORY_NONDEFAULT_BUNDLE_PRODUCT_3_NAME
+  MENU_PRODUCT_BUILDERUI_PRODUCTNAME_LABEL:
+    locator-type: "data-test-id [TBD]"
+  MENU_PRODUCT_BUILDER_MODIFIER_BUTTON:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - PRODUCT_BUILDER_ITEM_LEVEL_CHEESE_TEXT_VALUE
+      - PRODUCT_BUILDER_ITEM_LEVEL_CHANGENOODLE_TEXT_VALUE
+  MENU_PRODUCT_BUILDERUI_STORECLOSED_ERROR_POPUP_BODY:
+    locator-type: "i18"
+  MENU_PRODUCT_BUILDERUI_PRODUCTNAME_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  MENU_PRODUCT_BUILDERUI_READY_24HR_BADGE:
+    locator-type: "data-test-id"
+  MENU_PRODUCT_BUILDERUI_SAVECHANGES_BUTTON:
+    locator-type: "i18"
+  MENU_PRODUCT_MODIFIER_RADIOBUTTON:
+    locator-type: "data-test-id"
+    test-data-variable:
+      - MOD_SERVESIZE_1_VALUE
+      - NONDEFAULT_BUILDER_MOD_EXTRATOPPING_4_VALUE
+  MENU_PRODUCT_BUILDERUI_SELECTED_CUSTOMIZATIONTYPE_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  MENU_PRODUCT_BUILDERUI_SPECIALINSTRUCTIONS_INPUT_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+  MENU_PRODUCT_BUILDERUI_CUSTOM_MESSAGE_LOCATOR:
+    locator-type: "data-test-id"
+    test-data-variable:
+      -DEFAULT_BUNDLECATEGORY_NONDEFAULT_BUNDLE_PRODUCT_NAME
+      -DEFAULT_BUNDLECATEGORY_NONDEFAULT_BUNDLE_PRODUCT_2_NAME
+      -DEFAULT_BUNDLECATEGORY_NONDEFAULT_BUNDLE_PRODUCT_3_SUBPRODUCT_DRINK_1_NAME
+      -DEFAULT_BUNDLECATEGORY_NONDEFAULT_BUNDLE_PRODUCT_3_NAME
+      -DEFAULT_BUNDLECATEGORY_NONDEFAULT_BUNDLE_PRODUCT_2_SUBPRODUCT_SIDE_1_NAME
+  MENU_PRODUCT_INFO_MODAL_IMAGE:
+    locator-type: "data-test-id [MenuProductInfoModal]"
+  MENU_PRODUCT_INFO_MODAL_TITLE:
+    locator-type: "data-test-id [MenuProductInfoModal]"
+    test-data-variable:
+      - DEFAULT_PRODUCT_INFO_ICON_NAME
+  MENU_PRODUCT_INFO_MODAL_BODY:
+    locator-type: "data-test-id [MenuProductInfoModal]"
+    test-data-variable:
+      - DEFAULT_PRODUCT_INFO_ICON_DESCRIPTION
+  MENU_DEAL_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - ALACARTECATEGORY_DEAL_NAME
+      - ALACARTECATEGORY_DEAL_NAME2
+      - ALACARTECATEGORY_DEAL_NAME3
+      - ALACARTECATEGORY_DEAL_NAME4
+  MENU_DEAL_ITEM_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - ALACARTECATEGORY_PRODUCT_NAME3
+      - DEFAULT_ALACARTECATEGORY_PRODUCT_NAME2
+  MENU_DEAL_ITEM_TEXT_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+      -DEFAULT_MENU_SUBCATEGORY_NOT_AVAIALBLE_NAME
+  MENU_CONTINUE_BUTTON:
+    locator-type: "i18 + native"
+  MENU_MAKEITACOMBO_YES_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  MENU_HEROIMAGECATEGORY_TITLE:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - MENU_HEROIMAGECATEGORY_TITLE_VALUE
+  MENU_CUSTOMIZEADDON_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  MENU_SIDEOREXTRAS_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  MENU_SIDEORDRINK_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - MENU_COMBO_SIDE_ITEM_1_NAME
+      - MENU_COMBO_SIDE_ITEM_2_NAME
+      - MENU_COMBO_SIDE_ITEM_3_NAME
+      - MENU_COMBO_SIDE_ITEM_4_NAME
+      - DEFAULT_BUNDLECATEGORY_NONDEFAULT_BUNDLE_PRODUCT_2_SUBPRODUCT_SIDE_1_NAME
+      - DEFAULT_BUNDLECATEGORY_NONDEFAULT_BUNDLE_PRODUCT_3_SUBPRODUCT_DRINK_1_NAME
+  MENU_SIDEORDRINK_PRICE_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  MENU_PRODUCT_READY_24HR_BADGE:
+    locator-type: "data-test-id"
+  MENU_PRODUCT_MOREDETAILS_LOCATOR:
+    locator-type: "data-test-id"
+  MENU_PRODUCT_MOREDETAILS_PRODUCTNAME_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  MENU_PRODUCT_ALLERGENS_TEXT:
+    locator-type: "i18"
+  MENU_PRODUCT_NUTRITIONINFO_TEXT:
+    locator-type: "i18"
+  MENU_FILTER_LOCATOR:
+    locator-type: "data-test-id"
+  MENU_FILTER_DROPDOWN:
+    locator-type: "data-test-id"
+    test-data-variable:
+      - MENU_FILTERBY_1_VALUE
+      - MENU_FILTERBY_2_VALUE
+      - MENU_FILTERBY_3_VALUE
+      - MENU_FILTERBY_4_VALUE
+      - MENU_FILTERBY_5_VALUE
+      - MENU_FILTERBY_6_VALUE
+      - MENU_FILTERBY_7_VALUE
+      - MENU_FILTERBY_8_VALUE
+  MENU_FILTER_SUBCATEGORY_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - MENU_FILTERSBY_SUBCATEGORY_1_VALUE
+      - MENU_FILTERSBY_SUBCATEGORY_2_VALUE
+      - MENU_FILTERSBY_SUBCATEGORY_3_VALUE
+      - MENU_FILTERSBY_SUBCATEGORY_4_VALUE
+      - MENU_FILTERSBY_SUBCATEGORY_5_VALUE
+      - MENU_FILTERSBY_SUBCATEGORY_6_VALUE
+      - MENU_FILTERSBY_SUBCATEGORY_7_VALUE
+      - MENU_FILTERSBY_SUBCATEGORY_8_VALUE
+  MENU_FILTER_PAGE_CLOSE_BUTTON:
+    locator-type: "i18"
+  MENU_SEARCH_EMPTY_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+  MENU_CONTINUE_PRICE_LOCATOR:
+    locator-type: "i18"
+  MENU_SANDWICHSIZE_LOCATOR:
+    locator-type: "native"
+  MENU_ADDTOORDER_BUTTON:
+    locator-type: "data-qa-label [MultiStepAddToCartBtn] + i18"
+  MENU_TITLE:
+    locator-type: "i18"
+  MENU_BUNDLE_BUILDERUI_PRODUCTNAME_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  MENU_PRODUCT_LOCATOR:
+    locator-type: "data-test-id [ItemSelector] + data-qa-label [MenuItemTitle]"
+    test-data-variable:
+      - DEFAULT_COMBOCATEGORY_DEFAULT_COMBO_NAME
+      - DEFAULT_COMBO_DEFAULT_PRODUCT_NAME
+      - DEFAULT_ALACARTECATEGORY_PRODUCT_NAME
+      - DEFAULT_ALACARTECATEGORY_DEFAULT_PRODUCT_NAME
+      - DEFAULT_ALACARTECATEGORY_DEFAULT_PRODUCT_FRENCH_NAME
+      - MENU_COMBOCATEGORY_PERMANENTDISABLEDCOMBO_NAME
+      - MENU_COMBOCATEGORY_TEMPORARYDISABLEDCOMBO_NAME
+      - MENU_COMBOCATEGORY_TEMPORARYDISABLEDPRODUCT_NAME
+      - MENU_BREAKFASTCOMBOCATEGORY_DEFAULTCOMBO_NAME
+      - BREAKFAST_COMBOCATEGORY_DEFAULTPRODUCT_NAME
+      - COMBOCATEGORY19_COMBO_1_NAME
+      - COMBO1_PRODUCT_1_NAME
+      - NONDEFAULT_COMBO_1_NAME
+      - NONDEFAULT_COMBO_3_NAME
+      - NONDEFAULT_COMBO1_PRODUCT_1_NAME
+      - ALACARTECATEGORY_PRODUCT_NAME1
+      - ALACARTECATEGORY_PRODUCT_NAME2
+      - ALACARTECATEGORY_PRODUCT_NAME7
+      - DEFAULT_PRODUCT_NAME
+      - DEFAULT_BUNDLECATEGORY_NAME
+      - DEFAULT_BUNDLECATEGORY_DEFAULT_BUNDLE_NAME
+      - DEFAULT_BUNDLE_DEFAULT_PRODUCT_NAME
+      - NONDEFAULT_ALACARTEPRODUCT_1_NAME
+      - ALACARTE_PRODUCT_NAME
+      - ALACARTE_PRODUCT_2_NAME
+      - ALACARTE_PRODUCT_NAME_3
+      - ALACARTE_PRODUCT_NAME_4
+      - ALACARTE_PRODUCT_NAME_5
+      - ALACARTE_PRODUCT_NAME_7
+      - NONDEFAULT_PRODUCT_1_NAME
+      - DEFAULT_COMBO_ITEM_4
+      - DEFAULT_COMBO_ITEM_5
+      - DEFAULT_COMBO_ITEM_6
+      - DEFAULT_BUNDLECATEGORY_NONDEFAULT_BUNDLE_NAME
+      - DEFAULT_BUNDLECATEGORY_NONDEFAULT_BUNDLE_2_NAME
+  FULLMENU_WINDOW_TITLE:
+    locator-type: "data-test-id [TBD]"
+  MENU_CATEGORY_FAVORITES:
+    locator-type: "i18 + data-test-id [TBD]"
+    test-data-variable:
+      - MENU_CATEGORY_FAVORITES_NAME
+  CATEGORY_SCREEN_HEADING:
+    locator-type: "data-test-id [CategoryScreenHeadingTxt]"
+  CATEGORY_SCREEN_TITLE:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - MENU_CATEGORY_1_NAME
+      - MENU_CATEGORY_1_FRENCH_NAME
+      - MENU_CATEGORY_2_NAME
+      - MENU_CATEGORY_3_NAME
+      - MENU_CATEGORY_4_NAME
+      - MENU_CATEGORY_5_NAME
+      - MENU_CATEGORY_6_NAME
+      - MENU_CATEGORY_7_NAME
+      - MENU_CATEGORY_8_NAME
+      - MENU_CATEGORY_9_NAME
+      - MENU_CATEGORY_10_NAME
+      - MENU_CATEGORY_11_NAME
+      - MENU_CATEGORY_12_NAME
+      - MENU_CATEGORY_13_NAME
+      - MENU_CATEGORY_14_NAME
+      - MENU_CATEGORY_15_NAME
+      - MENU_CATEGORY_16_NAME
+      - MENU_CATEGORY_17_NAME
+      - MENU_CATEGORY_18_NAME
+      - MENU_CATEGORY_19_NAME
+  MENU_ITEMHEART_ICON_UNCHECKED:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - DEFAULT_COMBOCATEGORY_DEFAULT_COMBO_NAME
+      - DEFAULT_COMBO_DEFAULT_PRODUCT_NAME
+      - DEFAULT_ALACARTECATEGORY_DEFAULT_PRODUCT_NAME
+      - DEFAULT_ALACARTECATEGORY_TABLESERVICE_PRODUCT_NAME
+      - DEFAULT_PRODUCT_INFO_ICON_NAME
+      - DEFAULT_COMBOCATEGORY_INFO_ICON_NAME
+      - MENU_COMBOCATEGORY_PERMANENTDISABLEDCOMBO_NAME
+      - MENU_COMBOCATEGORY_TEMPORARYDISABLEDCOMBO_NAME
+      - MENU_COMBOCATEGORY_TEMPORARYDISABLEDPRODUCT_NAME
+      - MENU_BREAKFASTCOMBOCATEGORY_DEFAULTCOMBO_NAME
+      - BREAKFAST_COMBOCATEGORY_DEFAULTPRODUCT_NAME
+      - COMBOCATEGORY19_COMBO_1_NAME
+      - COMBO1_PRODUCT_1_NAME
+      - NONDEFAULT_COMBO_1_NAME
+      - NONDEFAULT_COMBO_3_NAME
+      - NONDEFAULT_COMBO1_PRODUCT_1_NAME
+  MENU_ITEMHEART_ICON_CHECKED:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - DEFAULT_COMBOCATEGORY_DEFAULT_COMBO_NAME
+      - DEFAULT_COMBO_DEFAULT_PRODUCT_NAME
+      - DEFAULT_ALACARTECATEGORY_DEFAULT_PRODUCT_NAME
+      - MENU_COMBOCATEGORY_PERMANENTDISABLEDCOMBO_NAME
+      - MENU_COMBOCATEGORY_TEMPORARYDISABLEDCOMBO_NAME
+      - MENU_COMBOCATEGORY_TEMPORARYDISABLEDPRODUCT_NAME
+      - MENU_BREAKFASTCOMBOCATEGORY_DEFAULTCOMBO_NAME
+      - BREAKFAST_COMBOCATEGORY_DEFAULTPRODUCT_NAME
+      - COMBOCATEGORY19_COMBO_1_NAME
+      - COMBO1_PRODUCT_1_NAME
+      - NONDEFAULT_COMBO_1_NAME
+      - NONDEFAULT_COMBO_3_NAME
+      - NONDEFAULT_COMBO1_PRODUCT_1_NAME
+  FAVORITE_ADDED_NOTIFICATION_LOCATOR:
+    locator-type: "i18"
+  FAVORITE_REMOVED_NOTIFICATION_LOCATOR:
+      locator-type: "i18"
+  MENU_PRODUCT_LIST:
+    locator-type: "data-test-id [TBD]"
+  MENU_PRODUCT_COMBO_BREADCRUMB:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - MENU_COMBO_PRODUCT_BREADCRUMB_MAIN
+      - MENU_COMBO_PRODUCT_BREADCRUMB_DRINKS
+      - MENU_COMBO_PRODUCT_BREADCRUMB_SIDE
+      - MENU_COMBO_PRODUCT_BREADCRUMB_ENTREE
+  MENU_PRODUCT_COMBO_COSTUMIZATION_STEP_TITLE:
+    locator-type: "data-test-id [ProductCustomizationHeadingTxt]"
+    test-data-variable:
+      - PRODUCTWIDGET_LABEL_MAIN_VALUE
+      - PRODUCTWIDGET_LABEL_DRINK_VALUE
+      - MENU_COMBO_PRODUCT_COSTUMIZATION_STEP_TITLE_MAIN
+  MENU_PRODUCT_COMBO_CUSTOM_STEP_SIDE:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - MENU_COMBO_PRODUCT_COSTUMIZATION_STEP_TITLE_SIDE
+  MENU_PRODUCT_COMBO_CUSTOM_CHECK_SIDE:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - MENU_COMBO_PRODUCT_CHECKED_SIDE_TEXT
+  MENU_PRODUCT_COMBO_CUSTOM_CHECKED_SIDE:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - MENU_COMBO_PRODUCT_CHECKED_SIDE_TEXT
+  MENU_PRODUCT_COMBO_CUSTOM_SELECT_SIDE:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - DEFAULT_PRODUCT_SUBPRODUCT_SIDE_2_NAME
+  MENU_PRODUCT_COMBO_CUSTOM_SELECTED_SIDE:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - DEFAULT_PRODUCT_SUBPRODUCT_SIDE_1_NAME
+  MENU_PRODUCT_COMBO_CUSTOM_STEP_BEVERAGE:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+  MENU_PRODUCT_COMBO_CUSTOM_SELECT_BEVERAGE:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - MENU_COMBO_PRODUCT_SELECTED_BEVERAGE
+      - DEFAULT_PRODUCT_SUBPRODUCT_DRINK_2_NAME
+  MENU_PRODUCT_COMBO_CUSTOM_SELECTED_BEVERAGE:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - MENU_COMBO_PRODUCT_SELECTED_BEVERAGE
+      - DEFAULT_PRODUCT_SUBPRODUCT_DRINK_1_NAME
+  CROSS_SELL_NOTHANKS_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  CROSS_SELL_CLOSE_BUTTON:
+    locator-type: "data-test-id [close-icon]"
+  CROSS_SELL_CONTINUE_BUTTON:
+    locator-type: "i18"
+    test-data-variable:
+      - CROSS_SELL_ITEM_1_NAME
+      - CROSS_SELL_ITEM_1_SUBFLAVOR1_NAME
+      - CROSS_SELL_ITEM_1_SAUCE1_NAME
+      - CROSS_SELL_ITEM_2_NAME
+      - CROSS_SELL_ITEM_2_SUBFLAVOR1_NAME
+      - CROSS_SELL_ITEM_2_SAUCE1_NAME
+  PRODUCT_CUSTOMIZATION_PAGE_CONTINUE_BUTTON:
+    locator-type: "data-test-id [ContinueBtn]"
+  PRODUCT_CUSTOMIZATION_ACCORDION_DEFAULT_STATE:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - CART_RECOMMENDER_MOD_HEADER_NAME
+  PRODUCT_CUSTOMIZATION_QUANTITY:
+    locator-type: "data-test-id [TBD]"
+  PRODUCT_CUSTOMIZATION_QUANTITY_INCREASE_BUTTON:
+    locator-type: "data-qa-label [IncreaseQuantityBtn]"
+  PRODUCT_CUSTOMIZATION_QUANTITY_DECREASE_BUTTON:
+    locator-type: "data-qa-label [DecreaseQuantityBtn]"
+  PRODUCT_ADDTOORDER_BUTTON:
+    locator-type: "i18 + data-test-id [TBD]"
+  PRODUCT_CUSTOMIZATION_ACCORDION:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - CART_RECOMMENDER_MOD_HEADER_NAME
+  PRODUCT_CUSTOMIZATION_MOD_DIP_SELECTION:
+    locator-type: "data-test-id [TBD]"
+  PRODUCT_CUSTOMIZATION_SAVE_BUTTON:
+    locator-type: "data-test-id [MultiStepAddToCartBtn]"
+  PRODUCT_ADDTOCART_BUTTON:
+    locator-type: "data-test-id [MultiStepAddToCartBtn]"
+  PRODUCT_ADDTOCART_CONTINUE_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  PRODUCT_ADDTOCART_YES_ADD_BUTTON:
+    locator-type: "data-test-id [ProductAddToCartYesBtn]"
+  PRODUCT_ADDTOCART_NO_THANKS_BUTTON:
+    locator-type: "data-qa-label [UpsellNoThanksBtn]"
+  PRODUCT_CONTINUE_BUTTON:
+    locator-type: "i18"
+  PRODUCT_SELECTION_PAGE_CONTINUE_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  PRODUCT_SELECTION_PAGE_CLOSE_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  MENU_PRODUCT_SELECTION_PAGE_CLOSE_BUTTON:
+    locator-type: "data-test-id"
+  MENU_PRODUCTS_BACK_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  VIEW_MENU_ANYWAYS_BUTTON:
+    locator-type: "i18"
+  MENU_ITEMADDED_POPUP:
+    locator-type: "i18"
+  MENU_ITEMADDED_TOAST_BANNER:
+    locator-type: "i18"
+  MENU_ITEMADDED_TOAST_MESSAGE:
+    locator-type: "i18"
+  MENU_ITEMNOTAVAILABLE_POPUP:
+    locator-type: "i18"
+  MENU_ITEMNOTAVAILABLE_POPUP_BODY:
+    locator-type: "i18"
+  MENU_ITEMNOTAVAILABLE_POPUP_OK_BUTTON:
+    locator-type: "i18"
+  MENU_STORECHANGE_POPUP_CONTINUE_BUTTON:
+    locator-type: "i18"
+  POPUP_CLOSE_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  MENU_STOREHEART_ICON_UNCHECKED:
+    locator-type: "i18 + data-test-id [TBD]"
+    test-data-variable:
+      - DEFAULT_COMBOCATEGORY_DEFAULT_COMBO_NAME
+      - DEFAULT_COMBO_DEFAULT_PRODUCT_NAME
+      - DEFAULT_ALACARTECATEGORY_DEFAULT_PRODUCT_NAME
+      - MENU_COMBOCATEGORY_PERMANENTDISABLEDCOMBO_NAME
+      - MENU_COMBOCATEGORY_TEMPORARYDISABLEDCOMBO_NAME
+      - MENU_COMBOCATEGORY_TEMPORARYDISABLEDPRODUCT_NAME
+      - MENU_BREAKFASTCOMBOCATEGORY_DEFAULTCOMBO_NAME
+      - BREAKFAST_COMBOCATEGORY_DEFAULTPRODUCT_NAME
+      - COMBOCATEGORY19_COMBO_1_NAME
+      - COMBO1_PRODUCT_1_NAME
+      - NONDEFAULT_COMBO_1_NAME
+      - NONDEFAULT_COMBO_3_NAME
+      - NONDEFAULT_COMBO1_PRODUCT_1_NAME
+  MENU_PRODUCT_MOD_NONE_LOCATOR:
+    locator-type: "data-test-id [ModSize-None]"
+  ITEMADDED_CHECKOUT_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  MENU_PRODUCT_MOD_DECREASEQTY_LOCATOR:
+    locator-type: "i18 + data-test-id [ModDecreaseQty]"
+    test-data-variable:
+      - DEFAULT_COMBOCATEGORY_DEFAULT_COMBO_NAME
+      - DEFAULT_COMBO_DEFAULT_PRODUCT_NAME
+      - DEFAULT_ALACARTECATEGORY_DEFAULT_PRODUCT_NAME
+      - MENU_COMBOCATEGORY_PERMANENTDISABLEDCOMBO_NAME
+      - MENU_COMBOCATEGORY_TEMPORARYDISABLEDCOMBO_NAME
+      - MENU_COMBOCATEGORY_TEMPORARYDISABLEDPRODUCT_NAME
+      - MENU_BREAKFASTCOMBOCATEGORY_DEFAULTCOMBO_NAME
+      - BREAKFAST_COMBOCATEGORY_DEFAULTPRODUCT_NAME
+      - COMBOCATEGORY19_COMBO_1_NAME
+      - COMBO1_PRODUCT_1_NAME
+      - NONDEFAULT_COMBO_1_NAME
+      - NONDEFAULT_COMBO_3_NAME
+      - NONDEFAULT_COMBO1_PRODUCT_1_NAME
+  MENU_PRODUCT_MOD_INCREASEQTY_LOCATOR:
+    locator-type: "i18 + data-test-id [ModIncreaseQty]"
+    test-data-variable:
+      - DEFAULT_COMBOCATEGORY_DEFAULT_COMBO_NAME
+      - DEFAULT_COMBO_DEFAULT_PRODUCT_NAME
+      - DEFAULT_ALACARTECATEGORY_DEFAULT_PRODUCT_NAME
+      - MENU_COMBOCATEGORY_PERMANENTDISABLEDCOMBO_NAME
+      - MENU_COMBOCATEGORY_TEMPORARYDISABLEDCOMBO_NAME
+      - MENU_COMBOCATEGORY_TEMPORARYDISABLEDPRODUCT_NAME
+      - MENU_BREAKFASTCOMBOCATEGORY_DEFAULTCOMBO_NAME
+      - BREAKFAST_COMBOCATEGORY_DEFAULTPRODUCT_NAME
+      - COMBOCATEGORY19_COMBO_1_NAME
+      - COMBO1_PRODUCT_1_NAME
+      - NONDEFAULT_COMBO_1_NAME
+      - NONDEFAULT_COMBO_3_NAME
+      - NONDEFAULT_COMBO1_PRODUCT_1_NAME
+  MENU_PRODUCT_ONLYWANTITONHALF_LINK:
+    locator-type: "data-test-id [TBD]"
+  MENU_PRODUCT_NEXT_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  MENU_PRODUCT_RIGHTHALF_NEXT_BUTTON:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - RIGHTHALF_DEFAULT_ALACARTECATEGORY_PRODUCT
+  MENU_PRODUCT_SELECT_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  MENU_PRODUCT_RIGHTHALF_SELECT_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  MENU_PRODUCT_MOD_HEADING_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  MENU_PRODUCT_CRUST_HEADING_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  MENU_PRODUCT_CYO_MOD_HEADING_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  MENU_PRODUCT_CRUST_SELECTION_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - MODIFIER_NAME_DEFAULT_VALUE
+      - MODIFIER_NAME_TEMP_UNAVAILABLE_VALUE
+  MENU_PRODUCT_COMBO_BREADCRUMB_MAIN_TITLE:
+    locator-type: "i18"
+  MENU_PRODUCT_COMBO_BREADCRUMB_SIDE_TITLE:
+    locator-type: "i18"
+  MENU_PRODUCT_MOD_HEADING_DROPDOWN:
+    test-data-variable:
+      - MODIFIER_NAME_VALUE_1
+      - MODIFIER_NAME_VALUE_2
+      - MODIFIER_NAME_VALUE_3
+  MENU_PRODUCT_MOD_SELECTION_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - MODIFIER_SELECTION_NAME_DEFAULT_VALUE
+      - MOD_SALAD_1_NAME
+      - MOD_SALAD_1_FRENCH_NAME
+  MENU_PRODUCT_MOD_SELECTED_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - MOD_PROTEIN_1_NAME
+      - MOD_CHEESE_1_NAME
+      - MOD_VEGGIES_1_NAME
+  MENU_PRODUCT_MOD_SELECTED_NAME_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  MENU_PRODUCT_MOD_TOPPING_RIGHT_HALF_SELECTION_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  MENU_SIDE_MOD_SELECTION_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - MODIFIER_SELECTION_NAME_VALUE_1
+      - MODIFIER_SELECTION_NAME_VALUE_2
+      - MODIFIER_SELECTION_NAME_VALUE_3
+      - MODIFIER_SELECTION_NAME_VALUE_4
+      - MODIFIER_SELECTION_NAME_VALUE_5
+      - MODIFIER_SELECTION_NAME_VALUE_6
+      - MODIFIER_SELECTION_NAME_VALUE_7
+      - MODIFIER_SELECTION_NAME_VALUE_8
+  MENU_SIZE_SELECTION:
+    locator-type: "data-qa-label [ProductNameLbl]"
+    test-data-variable:
+      - DEFAULT_MENU_SIZE
+      - DEFAULT_MENU_SIZE_2
+      - DEFAULT_MENU_SIZE_3
+      - DEFAULT_MENU_SIZE_4
+      - DEFAULT_MENU_SIZE_5
+      - DEFAULT_MENU_SIZE_6
+  MENU_QUANTITY_MINUS_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  MENU_QUANTITY_PLUS_BUTTON_DISABLED:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - MODIFIER_NAME_VALUE_1
+      - COMBO_MODIFIER_NAME_VALUE_7
+      - COMBO_MODIFIER_NAME_VALUE_9
+  MENU_QUANTITY_PLUS_BUTTON:
+    locator-type: "data-qa-label [ProductNameLbl]"
+    test-data-variable:
+      - MODIFIER_DEFAULT_VALUE
+      - MODIFIER_NAME_VALUE_1
+      - MODIFIER_NAME_VALUE_2
+      - NONDEFAULT_MOD_TEMPORARYDISABLED_1_NAME
+      - NONDEFAULT_MOD_PERMANENTDISABLED_1_NAME
+      - COMBO_MODIFIER_NAME_VALUE_8
+  MENU_QUANTITY_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - MENU_ALACARTE_CUSTOMIZATION_ADDED
+      - MENU_ALACARTE_CUSTOMIZATION_2x_ADDED
+      - MENU_ALACARTE_CUSTOMIZATION_3x_ADDED
+      - DEFAULT_MENU_CUSTOMIZATION_ADDED_VALUE
+      - MENU_CUSTOMIZATION_ADDED
+      - MENU_CUSTOMIZATION_2x_ADDED
+      - MENU_CUSTOMIZATION_3x_ADDED
+  MENU_SAVE_BUTTON:
+    locator-type: "i18"
+  MENU_DONE_BUTTON:
+    locator-type: "i18"
+  MENU_BUNDLE_PRODUCT_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  MENU_PERSONALISE_BUTTON:
+    locator-type: "i18"
+  MENU_ITEM_DISABLED_OVERLAY_TEXT:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - NONDEFAULT_ALACARTE_TEMPORARYDISABLED_1_NAME
+      - NONDEFAULT_MOD_SKU_ID_1
+      - NONDEFAULT_PRODUCT_SKU_ID_1
+      - NONDEFAULT_MOD_SKU_ID_2
+      - NONDEFAULT_PRODUCT_SKU_ID_2
+      - NONDEFAULT_PRODUCT_SKU_ID_3
+      - NONDEFAULT_PRODUCT_SKU_ID_5
+      - NONDEFAULT_PRODUCT_SKU_ID_6
+      - NONDEFAULT_PRODUCT_SKU_ID_7
+  MENU_ITEM_IMAGE_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - DEFAULT_ALACARTECATEGORY_IMAGE_URL
+  MENU_ITEM_TITLE_LOCATOR:
+    locator-type: "i18"
+  MENU_ITEM_PRICE_LOCATOR:
+    locator-type: "i18"
+  GLUTENFREE_PRODUCT_NAME:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - DEFAULT_GLUTENFREE_PRODUCT_NAME
+  GLUTENFREE_CATEGORY_NAME:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - DEFAULT_GLUTENFREE_CATEGORY_NAME
+  MENU_STORECLOSED_TEXT:
+    locator-type: "data-test-id [TBD]"
+  SITEMAP_MENU_CATEGORY_LINK:
+    locator-type: "data-test-id [TBD]"
+  MENU_ADDTOCART_CONFIRMATION_CONTINUESHOPPING_BUTTON:
+    locator-type: "i18"
+    locator-type: "data-test-id [TBD]"
+  SITEMAP_MENU_JOY_LINK:
+    locator-type: "i18"
+
+  DELIVERY-LOCALIZATION:
+    DELIVERYADDRESS_INPUT_TEXTBOX:
+      locator-type: "data-test-id [TBD]"
+    ADDRESS_AUTOSUGGESTIONS_DROPDOWN:
+      locator-type: "data-test-id [TBD]"
+    DELIVERY_ADDRESSINPUT_TEXTBOX:
+      locator-type: "data-test-id [TBD]"
+      test-data-variable:
+        - DELIVERYADDRESS_DEFAULT_VALUE
+        - DELIVERY_NOT_AVAILABLE_ADDRESS_VALUE
+        - DELIVERYADDRESS_NO_LOAYALTY_VALUE
+        - DELIVERYADDRESS_NOPOSTALCODE_VALUE
+        - DELIVERYADDRESS_DELIVERY_CLOSED_TEST_VALUE
+        - DELIVERYADDRESS_DELIVERY_CLOSED_TEST_DROPDOWN_VALUE
+        - DELIVERYADDRESS_DROPDOWN_VALUE
+        - DELIVERYADDRESS_OUTSIDECOVERAGEAREA_VALUE
+        - DELIVERYADDRESS_NONDEFAULT_1_VALUE
+        - DELIVERYADDRESS_FROM_DEFAULT_COORDINATES_VALUE
+        - DELIVERYADDRESS_DEFAULT_VALUE_1
+        - DELIVERYADDRESS_DEFAULT_VALUE_1
+    DELIVERY_ADDRESSINPUT_TEXTBOX_2:
+      locator-type: "data-test-id [TBD]"
+      test-data-variable:
+        - DELIVERYADDRESS_DEFAULT_VALUE_2
+    DELIVERY_ADDRESS_AUTOSUGGESTIONS_DROPDOWN:
+      locator-type: "i18 + data-test-id [PredictionAddressOption]"
+      test-data-variable:
+        - DELIVERY_ADDRESS_1
+        - DELIVERY_ADDRESS_2
+        - DELIVERYADDRESS_NOPOSTALCODE_DROPDOWN_VALUE
+    DELIVERY_ADDRESS_HEADING:
+      locator-type: "i18"
+    DELIVERY_STORESELECTION_HEADING:
+      locator-type: "i18"
+    DELIVERY_NOT_AVAILABLE_ALERT:
+      locator-type: "i18"
+    DELIVERY_CONTINUE_BUTTON:
+      locator-type: "i18"
+    DELIVERY_CONFIRM_LOCATION_BUTTON:
+      locator-type: "data-test-id [TBD]"
+    DELIVERY_CONFIRMLOCATION_LABEL:
+      locator-type: "i18 [TBD]"
+    START_YOUR_ORDER_BUTTON:
+      locator-type: "i18"
+    DELIVERYADDRESS_CITYERROR_LOCATOR:
+      locator-type: "i18"
+    DELIVERYADDRESS_ZIPCODEERROR_LOCATOR:
+      locator-type: "i18"
+    DELIVERY_NOW_BUTTON:
+      locator-type: "i18"
+    DELIVERY_LATER_BUTTON:
+      locator-type: "i18"
+    DELIVERY_LATER_DAY:
+      locator-type: "i18 + data-test-id [LaterDaySelector]"
+    DELIVERY_LATER_DAY_LOCATOR:
+      locator-type: "data-test-id [LaterDaySelector]"
+    DELIVERY_LATER_DAY_OPTIONS:
+      locator-type: "data-test-id [TBD]"
+      test-data-variable:
+        - DELIVERY_LATER_DAY_INDEX_VALUE
+        - DELIVERY_LATER_DAY_INDEX_VALUE_IOS
+        - THURSDAY_FULL_FRENCH_TEXT
+        - FRIDAY_FULL_FRENCH_TEXT
+    DELIVERY_LATER_TIME:
+      locator-type: "i18 + data-test-id [LaterTimeSelector]"
+    DELIVERY_LATER_TIME_LINK:
+      locator-type: "i18"
+    DELIVERY_LATER_TIME_SELECTOR:
+      locator-type: "data-test-id [LaterTimeSelector] + data-test-id [LaterDaySelector]"
+    DELIVERY_LATER_TIME_OPTIONS:
+      locator-type: "data-test-id [LaterTimeSelector]"
+      test-data-variable:
+        - DELIVERY_LATER_TIME_INDEX_VALUE
+        - LUNCH_TIME
+        - OUTSIDE_LUNCH_TIME
+        - LUNCH_TIME_UPDATED
+    DELIVERY_LATER_TIME_HOUR_OPTION:
+      test-data-variable:
+        - DELIVERY_LATER_TIME_LAST_SLOT_VALUE
+        - DELIVERY_LATER_TIME_INDEX_VALUE
+        - DELIVERY_LATER_TIME_1145AM_VALUE
+        - DELIVERY_INSIDE_BREAKFAST_TIME_INDEX_VALUE
+        - DELIVERY_AFTER_BREAKFAST_TIME_INDEX_VALUE
+    DELIVERY_DESEIREDTIME_TITLE:
+      locator-type: "i18"
+    DELIVERY_ESTIMATED_DATETIME_LOCATOR:
+      locator-type: "data-test-id [TBD]"
+      test-data-variable:
+        - DELIVERY_ESTIMATED_DATETIME_PATTERN_DEFAULT_VALUE
+        - DELIVERY_ESTIMATED_DATETIME_PATTERN_NONDEFAULT_VALUE
+    DELIVERY_HOME_BUTTON:
+      locator-type: "i18 + data-test-id [TBD]"
+    DELIVERY_HOME_BUTTON_ENABLED_STATE:
+      locator-type: "data-test-id [TBD]"
+    DELIVERY_OFFICE_BUTTON:
+      locator-type: "i18 + data-test-id [TBD]"
+    DELIVERY_OFFICE_BUTTON_ENABLED_STATE:
+      locator-type: "data-test-id [TBD]"
+    DELIVERY_PROVINCE_TEXTBOX:
+      locator-type: "data-test-id [TBD]"
+    DELIVERY_CITY_TEXTBOX:
+      locator-type: "data-test-id [TBD]"
+    DELIVERY_CITY_TEXTBOX_NONEMPTY_LOCATOR:
+      locator-type: "i18"
+    DELIVERY_ADDRESSDETAILS_HEADER_TITLE:
+      locator-type: "i18"
+    DELIVERY_CONFIRM_LOCATION_LABEL:
+      locator-type: "i18"
+    DELIVERY_STATE_TEXTBOX_NONEMPTY_LOCATOR:
+      locator-type: "i18"
+    DELIVERY_ZIPCODE_TEXTBOX_NONEMPTY_LOCATOR:
+      locator-type: "data-test-id [TBD]"
+    DELIVERY_ZIPCODE_TEXTBOX_EMPTY_LOCATOR:
+      locator-type: "data-test-id [TBD]"
+      test-data-variable:
+        - DELIVERYADDRESS_DEFAULT_ZIPCODE_VALUE
+    DELIVERY_STREET_TEXTBOX:
+      locator-type: "data-test-id [TBD]"
+    DELIVERY_STREET_TEXTBOX_NONEMPTY_LOCATOR:
+      locator-type: "i18"
+    DELIVERY_BUILDING_TEXTBOX:
+      locator-type: "data-test-id [TBD]"
+    DELIVERY_PROVINCE_DROPDOWN:
+      locator-type: "data-test-id [TBD]"
+    DELIVERY_CITY_DROPDOWN:
+      locator-type: "data-test-id [TBD]"
+    DELIVERY_LANDMARK_TEXTBOX:
+      locator-type: "data-test-id [TBD]"
+    DELIVERY_NOSTORES_AVAILABLE_MESSAGE:
+      locator-type: "i18"
+    LOCALIZATION_CONTINUE_BUTTON:
+      locator-type: "data-test-id [TBD]"
+    LOCALIZATION_RETURN_BUTTON:
+      locator-type: "data-test-id [TBD]"
+    LOCALIZATION_ADDRESSCLEAR_BUTTON:
+      locator-type: "data-test-id"
+    LOCALIZATION_NEWADDRESS_BUTTON:
+      locator-type: "data-test-id [TBD]"
+    LOCALIZATION_NEWADDRESS_DROPDOWN:
+      locator-type: "data-test-id [TBD]"
+    LOCALIZATION_DELIVERY_BUTTON:
+      locator-type: "data-test-id [DeliveryIcon]"
+    DELIVERY_LOCALIZATION_CROSS_ICON:
+      locator-type: "data-test-id [TBD]"
+    LOCALIZATION_REQUESTLOCATIONACCESSPOPUP_HEADING:
+      locator-type: "i18"
+    LOCALIZATION_REQUESTLOCATIONACCESSPOPUP_BODY:
+      locator-type: "i18"
+    LOCALIZATION_STARTORDER_BUTTON:
+      locator-type: "i18"
+    LOCALIZATION_STORESELECT_BUTTON:
+      locator-type: "i18"
+      test-data-variable:
+        - PICKUP_STORENAME_PICKUP_CLOSED_TEST_VALUE
+        - PICKUP_NONDEFAULT_STORENAME_2_VALUE
+        - PICKUP_NONDEFAULT_STORENAME_3_VALUE
+        - PICKUP_NONDEFAULT_STORENAME_4_VALUE
+        - PICKUP_NONDEFAULT_STORENAME_5_VALUE
+        - PICKUP_STORENAME_ONLYNOWORDERING_VALUE
+    LOCALIZATION_SEARCH_BUTTON:
+      locator-type: "data-qa-label [SearchStoreTxt]"
+    LOCALIZATION_STOREHOURS_BUTTON:
+      locator-type: "i18"
+    LOCALIZATION_ORDERNOW_BUTTON:
+      locator-type: "data-qa-label [StoreNameLbl]"
+      test-data-variable:
+        - PICKUP_STORENAME_DEFAULT_VALUE
+    LOCALIZATION_YOUAREHERE_LOCATOR:
+      locator-type: "i18"
+    LOCALIZATION_DEFAULT_ORDER_TYPE_SELECTED:
+      locator-type: "data-test-id [TBD]"
+    LOCALIZATION_ENTERDATA_INPUT:
+      locator-type: "data-qa-label [SearchStoreTxt]"
+    DELIVERY_START_ORDER_BUTTON:
+      locator-type: "data-qa-label [GenericCKBtn]"
+    DELIVERY_REORDER_START_BUTTON:
+      locator-type: "data-qa-label [GenericCKBtn]"
+    DELIVERY_START_ORDER_DISABLED_BUTTON:
+      locator-type: "data-qa-label [GenericCKBtn] + data-test-id [StoreOrderBtn]"
+    DELIVERY_LATER_CONFIRM_BUTTON:
+      locator-type: "data-test-id [DeliveryIcon]"
+    DELIVERY_CHANGE_POPUP_PROCEED_BUTTON:
+      locator-type: "i18 + data-test-id [TBD]"
+    DELIVERY_ADDNEW_ADDRESS_LOCATOR:
+      locator-type: "i18"
+    DELIVERY_CURRENTLOCATION_BUTTON:
+      locator-type: "data-test-id [TBD]"
+    STORELOCATOR_CONTINUE_BUTTON:
+      locator-type: "data-test-id [TBD]"
+    STORELOCATOR_CONFIRMADDRESS_ELEMENT:
+      locator-type: "data-test-id [TBD]"
+    DELIVERY_BANNER_ORDER:
+      locator-type: "data-test-id [TBD]"
+    DELIVERY_LOCALIZATION_ADDRESS_BAR:
+      locator-type: "data-test-id [TBD]"
+    DELIVERY_SUGGESTIONS_DROPDOWN:
+      locator-type: "i18"
+    DELIVERY_HOUSE_NUMBER_TEXTBOX:
+      locator-type: "i18"
+    DELIVERY_STREET_NAME_TEXTBOX:
+      locator-type: "i18"
+    DELIVERY_BLOCK_NUMBER_TEXTBOX:
+      locator-type: "i18"
+    DELIVERY_AREA_NAME_TEXTBOX:
+      locator-type: "i18"
+    DELIVERY_ORDER_NOW_BUTTON:
+      locator-type: "i18"
+    DELIVERY_TRACKER_LOCATOR:
+      locator-type: "i18"
+    DELIVERY_TRACKER_ORDER_LOCATOR:
+      locator-type: "data-test-id [TBD]"
+    DELIVERY_TRACKER_LIST:
+      locator-type: "data-test-id [TBD]"
+    DELIVERY_STORENOTFOUNDPOPUP_HEADING:
+      locator-type: "i18"
+    DELIVERY_STORENOTFOUNDPOPUP_BODY:
+      locator-type: "i18"
+    DELIVERY_STORENOTFOUNDPOPUP_OK_BUTTON:
+        locator-type: "i18"
+    DELIVERY_CONFIRM_LOCATION_BUTTON_DISABLED_STATE:
+        locator-type: "data-test-id [TBD]"
+    SAVEDADDRESSES_REMOVEADDRESS_ICON":
+        locator-type: "data-test-id [TBD]"
+    SAVEDADDRESSES_DELETEADDRESSPOPUP_BODY:
+        locator-type: "i18"
+    SAVEDADDRESSES_DELETEADDRESSPOPUP_YES_BUTTON:
+        locator-type: "i18"
+    SAVEDADDRESSES_DELETEADDRESSPOPUP_NO_BUTTON:
+        locator-type: "i18"
+
+PICK-UP-LOCALIZATION:
+  LOCALIZATION_PICKUP_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  LOCALIZATION_DINEIN_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  LOCALIZATION_PICKUP_BUTTON_ENABLED:
+    locator-type: "data-test-id [TBD]"
+  LOCALIZATION_POPUP_RETURN_BUTTON:
+    locator-type: "i18"
+  LOCALIZATION_POPUP_OK_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  LOCALIZATION_PAGE_TITLE:
+    locator-type: "i18"
+  LOCALIZATION_ARROW_BUTTON:
+    locator-type: "qa-label [StoresCurrentLocationIcon]"
+  PICKUP_NEARBY_BUTTON:
+    locator-type: "i18 + data-test-id [NearbyIcon]"
+  PICKUP_NEARBY_BUTTON_ENABLED:
+    locator-type: "i18 + data-test-id [NearbyIcon]"
+  PICKUP_FILTROS_BUTTON:
+      locator-type: "i18"
+  PICKUP_FAVORITES_BUTTON:
+    locator-type: "i18 + data-test-id [StoreFavoritesIcon]"
+  PICKUP_FAVORITES_BUTTON_ENABLED:
+    locator-type: "i18 + data-test-id [StoreFavoritesIcon]"
+  PICKUP_FAVORITES_TAB:
+    locator-type: "i18"
+  PICKUP_NEARBY_TAB:
+    locator-type: "i18"
+  PICKUP_FAVORITES_STORERESULTS_LIST:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - PICKUP_FAVORITE_STORENAME_1_VALUE
+      - PICKUP_FAVORITE_STORENAME_2_VALUE
+  PICKUP_ADDRESSINPUT_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - PICKUPADDRESS_PICKUP_CLOSED_TEST_VALUE
+      - PICKUPADDRESS_PICKUP_CLOSED_TEST_DROPDOWN_VALUE
+      - PICKUPADDRESS_DEFAULT_VALUE_1
+      - PICKUPADDRESS_NONDEFAULT_2_VALUE
+      - PICKUPADDRESS_NONDEFAULT_3_VALUE
+      - PICKUPADDRESS_NONDEFAULT_4_VALUE
+      - PICKUPADDRESS_NONDEFAULT_5_VALUE
+  PICKUP_LOGINFIRST_POPUP_MSG:
+    locator-type: "i18"
+  PICKUP_LOGINFIRST_POPUP_LOGIN_BUTTON:
+    locator-type: "i18 + data-test-id [TBD]"
+  PICKUP_LOGINFIRST_POPUP_CANCEL_BUTTON:
+    locator-type: "i18"
+  PICKUP_STORECLOSED_LABEL_VALUE:
+    locator-type: "i18"
+  PICKUP_ONLINEORDERING_CLOSED_LABEL:
+    locator-type: "i18"
+  PICKUP_STORECLOSED_INFORMATION_LABEL:
+    locator-type: "i18"
+    test-data-variable:
+      - PICKUP_STORECLOSED_INFORMATION_LABEL_VALUE
+  FAVORITES_LOGINFIRST_POPUP_MSG:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - FAVORITES_LOGINFIRST_MSG_VALUE
+  DINEIN_LATER_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  DINEIN_ADDRESSINPUT_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+  DINEIN_STORENAME_DEFAULT_VALUE:
+    locator-type: "data-test-id [TBD]"
+  DINEIN_LATER_DAY_INDEX_VALUE:
+    locator-type: "data-test-id [TBD]"
+  DINEIN_LATER_DAY_SELECTOR:
+    locator-type: "data-test-id [TBD]"
+  DINEIN_LATER_DAY_SELECTOR_IOS:
+    locator-type: "data-test-id [TBD]"
+  DINEIN_LATER_DAY_SELECTOR_ANDROID:
+    locator-type: "data-test-id [TBD]"
+  DINEIN_LATER_DAY_LIST:
+    locator-type: "data-test-id [TBD]"
+  DINEIN_LATER_TIME_SELECTOR:
+    locator-type: "data-test-id [TBD]"
+  DINEIN_LATER_TIME_LIST:
+    locator-type: "data-test-id [TBD]"
+  DINEIN_LATER_TIME_INDEX_VALUE:
+    locator-type: "data-test-id [TBD]"
+  PICKUP_ADDRESSAUTOSUGGESTIONS_DROPDOWN:
+    locator-type: "data-test-id [PredictionAddressOption]"
+  DINEIN_ADDRESSAUTOSUGGESTIONS_DROPDOWN:
+    locator-type: "data-test-id [PredictionAddressOption]"
+    test-data-variable:
+      - PICKUPADDRESS_DEFAULT_VALUE
+      - PICKUPSTOREADDRESS_DEFAULT_VALUE
+      - PICKUPADDRESS_NONDEFAULT_1_VALUE
+      - PICKUPADDRESS_PICKUP_CLOSED_TEST_VALUE
+      - PICKUPADDRESS_OUTSIDECOVERAGEAREA_VALUE
+      - PICKUPADDRESS_INVALIDADDRESS_VALUE
+      - PICKUPADDRESS_FAVORITES_DEFAULT_VALUE
+      - PICKUPADDRESS_DROPDOWN_VALUE
+      - PICKUPADDRESS_FAVORITE_DROPDOWN_VALUE
+      - PICKUPADDRESS_ORDERTHRESHOLD_1_TEST_VALUE
+  PICKUP_STOREDETAILS_LINK:
+    locator-type: "i18 + data-test-id [TBD]"
+  PICKUP_STORERESULTS_LIST:
+    locator-type: "data-test-id [TBD]"
+  PICKUPSTORE_SELECT_BUTTON:
+    locator-type: "i18 + data-test-id [GenericCKBtn]"
+  PICKUPSTORE_SELECT_BUTTON_DISABLED_STATE:
+    locator-type: "i18 + data-test-id [GenericCKBtn]"
+  PICKUP_NOW_BUTTON_DISABLED_STATE:
+    locator-type: "i18"
+  DINEINSTORE_SELECT_BUTTON:
+    locator-type: "i18 + data-test-id [TBD]"
+  DINEINADDRESS_DEFAULT_VALUE:
+    locator-type: "i18 + data-test-id [TBD]"
+  PICKUP_CONTINUE_BUTTON:
+    locator-type: "i18"
+  DINEIN_CONTINUE_BUTTON:
+    locator-type: "i18"
+  PICKUP_MAP_STORE_ICON:
+    locator-type: "data-test-id [TBD]"
+  PICKUP_DISPOSITIONS_LIST:
+    locator-type: "data-test-id [TBD]"
+  PICKUP_DISPOSITIONS_LIST_OPTIONS:
+    locator-type: "data-test-id [TBD]"
+  PICKUPDISPOSITION_TAKEOUT_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  PICKUPDISPOSITION_BUTTON:
+    test-data-variable:
+      - PICKUPDISPOSITION_DEFAULT_VALUE
+      - PICKUPDISPOSITION_DRIVETHRU_VALUE
+      - PICKUPDISPOSITION_DINEIN_VALUE
+      - PICKUPDISPOSITION_TAKEOUT_VALUE
+      - PICKUPDISPOSITION_CURBSIDE_VALUE
+  PICKUPDISPOSITION_CURBSIDE_BUTTON:
+    locator-type: "i18"
+  FAVORITES_SIGNIN_LINK:
+    locator-type: "i18"
+  LOGIN_WINDOW_TITLE:
+    locator-type: "i18 + data-test-id [TBD]"
+  PICKUP_STOREHEART_ICON_UNCHECKED:
+    locator-type: "data-test-id [StoreHeartIcon]"
+  PICKUP_STOREHEART_ICON_CHECKED:
+    locator-type: "data-test-id [StoreHeartIcon]"
+  FAVORITES_STORENAME_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - PICKUPADDRESS_DEFAULT_VALUE
+      - PICKUPADDRESS_CONFIG_TEST
+      - PICKUPADDRESS_CONFIG_TEST_2
+      - PICKUPADDRESS_CONFIG_TEST_3
+      - PICKUP_STORENAME_DEFAULT_VALUE
+      - PICKUP_NONDEFAULT_STORENAME_1_VALUE
+      - PICKUPSTORENAME_CONFIG_TEST
+      - PICKUPSTORENAME_CONFIG_TEST_2
+      - PICKUPSTORENAME_CONFIG_TEST_3
+      - PICKUPSTOREADDRESS_DEFAULT_VALUE
+      - PICKUPADDRESS_FAVORITE_VALUE
+  FAVORITES_NOSTOREMESSAGE_LOCATOR:
+    locator-type: "i18"
+  FAVORITE_ADDRESSSELECTION_ERROR_POPUP_BODY:
+    locator-type: "i18"
+  PICKUP_LATER_BUTTON:
+    locator-type: "i18"
+  PICKUP_ASAP_BUTTON_ACTIVE_STATE:
+    locator-type: "i18"
+  PICKUP_LATER_DAY_SELECTOR:
+    locator-type: "i18 + data-test-id [LaterDaySelector]"
+  PICKUP_LATER_DAY_SELECTOR_ANDROID:
+    locator-type: "data-test-id [TBD]"
+  PICKUP_LATER_DAY_SELECTOR_IOS:
+    locator-type: "data-test-id [TBD]"
+  PICKUP_LATER_DAY_LIST:
+    locator-type: "data-test-id [TBD] + data-testid [time-picker-select-date-sheet]"
+    test-data-variable:
+      - TUESDAY_FULL_TEXT
+      - WEDNESDAY_FULL_TEXT
+      - THURSDAY_FULL_TEXT
+      - FRIDAY_FULL_TEXT
+      - SATURDAY_FULL_TEXT
+  PICKUP_LATER_TIME_SELECTOR:
+    locator-type: "i18 + data-test-id [LaterTimeSelector]"
+    test-data-variable:
+      - LOCALIZATION_DATETIME_DEFAULT_FORMAT
+      - APPLICATION_DATETIME_DEFAULT_FORMAT
+      - ORDERHISTORY_DATETIME_DEFAULT_FORMAT
+  PICKUP_LATER_TIME_LIST:
+    locator-type: "data-test-id [LaterTimeSelector] + data-testid [time-picker-select-time-sheet]"
+    test-data-variable:
+      - PICKUP_LATER_TIME_OUTSIDEBREAKFASTHOURSSLOT_VALUE
+      - PICKUP_LATER_TIME_BREAKFASTHOURSSLOT_VALUE
+  PICKUP_FILTERS_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  HEADER_PICKUPFROM_LOCATOR:
+    locator-type: "data-test-id [HeaderPickupFromLbl]"
+  HEADER_BACK_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  HEADER_BACK_BUTTON_LOCATOR:
+    locator-type: "qa-label [HeaderBackIcon]"
+  HEADER_CLOSE_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  HEADER_CLOSE_BUTTON_LOCATOR:
+    locator-type: "qa-label [HeaderCloseIcon]"
+  HEADER_MENUBACK_BUTTON_LOCATOR:
+    locator-type: "qa-label [HeaderBackIcon]"
+  HEADER_SHOWMENU_BUTTON:
+    locator-type: "qa-label [HeaderSettingsIcon]"
+  HEADER_CART_LINK:
+    locator-type: "qa-label [HeaderCartIcon] + i18"
+  HEADER_CAMPER_LINK:
+    locator-type: "i18"
+  HEADER_LOYALTY_IMG:
+    locator-type: "data-test-id [TBD]"
+  HEADER_CART_LINK_DISABLED:
+    locator-type: "data-test-id [TBD]"
+  HEADER_GREETINGNAME_ELEMENT:
+    locator-type: "data-test-id [TBD]"
+  PICKUP_LBS_ICON:
+    locator-type: "data-test-id [TBD]"
+  PICKUP_LOCALIZATION_CROSS_ICON:
+    locator-type: "data-test-id [TBD]"
+  LOCALIZATION_PICKUP_POPUP_RETURN_BUTTON:
+    locator-type: "data-qa-label [GenericCKBtn]"
+  HEADER_MYACCOUNT_LINK:
+    locator-type: "i18"
+  HEADER_LOGO_LINK:
+    locator-type: "i18"
+
+STORES-LOCALIZATION:
+  STORES_WINDOW_TITLE:
+    locator-type: "i18 + data-test-id [TBD]"
+  STOREDETAILS_STORENAME_HEADING:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - DELIVERY_DEFAULT_STORE_NAME
+      - PICKUP_STORENAME_DEFAULT_VALUE
+      - PICKUP_STORENAME_NONDEFAULT_1_VALUE
+      - PICKUP_STORENAME_NONDEFAULT_2_VALUE
+      - PICKUP_STORENAME_NOTIN1KMRADIUS_VALUE
+      - PICKUP_STORENAME_NOT24HOURS_VALUE
+      - STORELOCATOR_STORENAME_DEFAULT_VALUE
+  STOREDETAILS_STOREPHONENUMBER_LOCATOR:
+    locator-type: "data-qa-label [StorePhoneNumberValue]"
+    test-data-variable:
+      - STOREPHONENUMBER_DEFAULT_VALUE
+  STOREDETAILS_DIRECTIONS_LINK:
+    locator-type: "data-test-id [StoreDirectionsLnk]"
+  STOREDETAILS_SERVICES_LABEL:
+    locator-type: "i18"
+  STOREDETAILS_PICKUP_ICON:
+    locator-type: "qa-label [StoreDetailsTakeoutIcon]"
+  STOREDETAILS_DELIVERY_ICON:
+    locator-type: "qa-label [StoreDetailsDeliveryIcon]"
+  STOREDETAILS_STREET_ADDRESS_LOCATOR:
+    locator-type: "data-qa-label [StoresStreetAddressLbl]"
+    test-data-variable:
+      - DEFAULT_PICKUP_STOREDETAILS_VALUE
+  STOREDETAILS_DRIVETHRU_HOURS_LABEL:
+    locator-type: "i18"
+  STORELOCATOR_DRIVETHRU_ICON:
+    locator-type: "data-test-id"
+  STORELOCATOR_24HOURS_ICON:
+    locator-type: "data-test-id"
+  STOREDETAILS_STORE_HOURS_LABEL:
+    locator-type: "i18"
+  STOREDETAILS_PICKUP_HOURS_LABEL:
+    locator-type: "i18"
+  STOREDETAILS_PICKUP_HOURS_LOCATOR:
+    locator-type: "data-test-id[TBD]"
+    test-data-variable:
+      - STOREHOURS_DEFAULT_VALUE
+  STOREDETAILS_DELIVERY_HOURS_LABEL:
+    locator-type: "i18"
+  STOREDETAILS_PHONENUMBER_LABEL:
+    locator-type: "i18"
+    test-data-variable:
+      - STOREPHONENUMBER_DEFAULT_VALUE
+  STOREDETAILS_PHONENUMBER_LINK:
+    locator-type: "i18"
+    test-data-variable:
+      - STOREPHONENUMBER_DEFAULT_VALUE
+  STOREDETAILS_DRIVETHRU_SCHEDULE_LOCATOR:
+    locator-type: "i18 and data-test-id[TBD]"
+    test-data-variable:
+      - STORESCHEDULE_DEFAULT_VALUE
+  STOREDETAILS_DINEIN_SCHEDULE_LOCATOR:
+    locator-type: "i18 and data-test-id[TBD]"
+    test-data-variable:
+      - STORESCHEDULE_DEFAULT_VALUE
+  STOREDETAILS_TAKEAWAY_SCHEDULE_LOCATOR:
+    locator-type: "i18 and data-test-id[TBD]"
+    test-data-variable:
+      - STORESCHEDULE_DEFAULT_VALUE
+  STOREDETAILS_DELIVERY_SCHEDULE_LOCATOR:
+    locator-type: "i18 and data-test-id[TBD]"
+    test-data-variable:
+      - STORESCHEDULE_DEFAULT_VALUE
+  STOREDETAILS_STREET_ADDRESS_LABEL:
+    locator-type: "data-test-id[TBD]"
+    test-data-variable:
+      - STORE_DEFAULT_ADDRESS_VALUE
+  STOREDETAILS_BACK_BUTTON:
+    locator-type: "data-test-id [CloseBtn]"
+  FAVORITES_STORE_HEADERCLOSE_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  LOGIN_MSG_TO_SAVE_FAVORITE_STORE_POPUP:
+    locator-type: "data-test-id [FavoritesPopupErrorMessageTxt]"
+  STORELOCATOR_ADDRESSINPUT_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+  STORELOCATOR_ADDRESSAUTOSUGGESTIONS_DROPDOWN:
+    locator-type: "data-test-id [PredictionAddressOption]"
+    test-data-variable:
+      - STORELOCATOR_STORENAME_DEFAULT_VALUE
+  STORELOCATOR_ADDRESSCLEAR_BUTTON:
+    locator-type: "data-qa-label [DeleteBtn]"
+  STORELOCATOR_STOREDETAILS_LINK:
+    locator-type: "data-test-id [StoreDetailsLnk]"
+    test-data-variable:
+      - STORELOCATOR_STORENAME_DEFAULT_VALUE
+  STORELOCATOR_STOREDETAILS_ICON:
+    locator-type: "i18  + data-test-id [StoreDetailsIcon]"
+    test-data-variable:
+      - STORELOCATOR_STORENAME_DEFAULT_VALUE
+  STORELOCATOR_NEARBY_BUTTON:
+    locator-type: "i18 + data-test-id [NearbyIcon]"
+  STORELOCATOR_NEARBY_BUTTON_HIGHLIGHTED:
+    locator-type: "i18 + data-test-id [NearbyIcon]"
+  STORELOCATOR_FAVORITES_BUTTON:
+    locator-type: "i18 + data-test-id [StoreFavoritesIcon]"
+  STORELOCATOR_FAVORITES_BUTTON_HIGHLIGHTED:
+    locator-type: "i18 + data-test-id [TBD]"
+  STORELOCATOR_ORDERTYPECHANGE_TO_DELIVERY_POPUP:
+    locator-type: "i18"
+  STORELOCATOR_ORDERTYPECHANGE_POPUP_PROCEED:
+    locator-type: "i18"
+  STORELOCATOR_ORDERTYPECHANGE_TO_PICKUP_POPUP:
+    locator-type: "i18"
+  STORELOCATOR_ORDERTYPECHANGEPOPUP_HEADING:
+    locator-type: "i18"
+  STORELOCATOR_STORECHANGE_POPUP_HEADING:
+    locator-type: "i18"
+  STORELOCATOR_STORECHANGE_POPUP_BODY:
+    locator-type: "i18"
+  STORELOCATOR_STORECHANGE_POPUP_CONFIRM_BUTON:
+    locator-type: "i18"
+  STORELOCATOR_STORECHANGE_POPUP_CANCEL_BUTON:
+    locator-type: "i18"
+  STORELOCATOR_ORDERTYPECHANGEPOPUP_TEXT:
+    locator-type: "i18"
+  STORELOCATOR_ORDERTYPECHANGEPOPUP_PROCEED_BUTTON:
+    locator-type: "i18"
+  STORELOCATOR_ORDERTYPECHANGEPOPUP_CANCEL_BUTTON:
+     locator-type: "i18"
+  STORELOCATOR_STORESEARCH_EXPAND_BUTTON:
+    locator-type: "data-qa-label [ExpandRadiusBtn]"
+  STORELOCATOR_SHOP_HOURS_LABEL:
+    locator-type: "data-qa-label [StoreHoursLbl]"    
+  PICKUP_STORENOTFOUNDPOPUP_HEADING:
+    locator-type: "i18"
+  PICKUP_STORENOTFOUNDPOPUP_BODY:
+     locator-type: "i18"
+  PICKUP_STORENOTFOUNDPOPUP_OK_BUTTON:
+    locator-type: "i18"
+  PICKUP_TRYANOTHERLOCATION_LABEL:
+    locator-type: "i18"
+  PICKUP_CURRENTLOCATION_BUTTON:
+    locator-type: "i18"
+  PICKUP_INVALIDZIPCODE_POPUP_HEADER:
+    locator-type: "i18"
+  PICKUP_INVALIDZIPCODE_POPUP_BODY:
+    locator-type: "i18"
+  PICKUP_INVALIDZIPCODE_POPUP_OK_BUTTON:
+    locator-type: "i18"
+  PICKUP_INVALIDZIPCODE_POPUP_CLOSE_BUTTON:
+    locator-type: "i18"
+  PICKUP_INVALIDADDRESSPOPUP_HEADING:
+    locator-type: "i18"
+  PICKUP_INVALIDADDRESSPOPUP_BODY:
+    locator-type: "i18"
+  PICKUP_INVALIDADDRESSPOPUP_OK_BUTTON:
+    locator-type: "i18"
+  PICKUP_NONEARBYSTORE_LABEL:
+    locator-type: "i18"
+    test-data-variable:
+      - STORELOCATOR_NO_SHOP_FOUND_VALUE_1
+      - STORELOCATOR_NO_SHOP_FOUND_VALUE_2
+  PICKUP_INVALIDADDRESS_HEADING:
+    locator-type: "i18"
+  PICKUP_INVALIDADDRESS_BODY:
+    locator-type: "i18"
+  LOCALIZATION_ORDERTYPE_HEADING:
+    locator-type: "i18 + data-test-id [TBD]"
+  STORELOCATOR_CONTINUE_BUTTONN:
+    locator-type: "data-test-id [ContinueBtn]"
+  STORELOCATOR_ORDERTYPE_LIST_OPTIONS:
+    locator-type: "data-test-id [TBD]"
+  STORELOCATOR_SELECT_BUTTON:
+    locator-type: "i18 + data-test-id [TBD]"
+  STORELOCATOR_MAP_STORE_ICON:
+    locator-type: "data-test-id [MapStoreNumberIcon]"
+  STORELOCATOR_STOREHEART_ICON_CHECKED:
+    locator-type: "i18 + data-test-id [StoreHeartIcon]"
+  STORELOCATOR_STOREHEART_ICON_UNCHECKED:
+    locator-type: "i18 + data-test-id [StoreHeartIcon]"
+  STORELOCATOR_LBS_ICON:
+    locator-type: "data-test-id [TBD]"
+  STORELOCATOR_STORERESULTS_LIST:
+    locator-type: "data-test-id [TBD]"
+  LOCATION_SERVICE_OFF_ALERT:
+    locator-type: "data-test-id [TBD]"
+  STORE_UNAVAILABLE_WARNING_TEXT:
+    locator_type: "i18"
+    test-data-variable:
+      - STOREID_TEMPDISABLED_VALUE
+  STORES_MAP_LBS_OFF_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  ORDERTYPE_SCREEN_TEXT:
+    locator-type: "i18"
+  STORELOCATOR_ORDERTYPECHANGE_TEXT:
+    locator-type: "i18"
+    test-data-variable:
+      - STORELOCATOR_TEXT
+  STORELOCATOR_ORDERTYPECHANGE_POPUP:
+    locator-type: "data-test-id [TBD]"
+    STORELOCATOR_ORDERTYPECHANGE_TO_PICKUP_POPUP:
+      locator-type: "i18"
+    LOCALIZATION_ORDERTYPE_HEADING:
+      locator-type: "i18 + data-test-id [TBD]"
+    STORELOCATOR_CONTINUE_BUTTONN:
+      locator-type: "data-test-id [ContinueBtn]"
+    STORELOCATOR_ORDERTYPE_LIST_OPTIONS:
+      locator-type: "data-test-id [TBD]"
+    STORELOCATOR_SELECT_BUTTON:
+      locator-type: "i18 + data-test-id [TBD]"
+    STORELOCATOR_MAP_STORE_ICON:
+      locator-type: "data-test-id [MapStoreNumberIcon]"
+    STORELOCATOR_STOREHEART_ICON_CHECKED:
+      locator-type: "i18 + data-test-id [StoreHeartIcon]"
+    STORELOCATOR_STOREHEART_ICON_UNCHECKED:
+      locator-type: "i18 + data-test-id [StoreHeartIcon]"
+    STORELOCATOR_LBS_ICON:
+      locator-type: "data-test-id [TBD]"
+    STORELOCATOR_STORERESULTS_LIST:
+      locator-type: "data-test-id [TBD]"
+    LOCATION_SERVICE_OFF_ALERT:
+      locator-type: "data-test-id [TBD]"
+    STORE_UNAVAILABLE_WARNING_TEXT:
+      locator_type: "i18"
+      test-data-variable:
+        - STOREID_TEMPDISABLED_VALUE
+    STORES_MAP_LBS_OFF_LOCATOR:
+      locator-type: "data-test-id [TBD]"
+    STORELOCATOR_ORDER_CONFIRM_BUTTON:
+      locator_type: "i18"
+
+FILTERS-LOCALIZATION:
+  FILTERS_HEADING_LOCATOR:
+    locator-type: "i18 + data-test-id [TBD]"
+  FILTERS_RADIUS_SELECTOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - RADIUS_OPTION_1_VALUE
+  FILTERS_APPLYFILTERS_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  FILTERS_AMENITIES_LIST:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - AMENITIES_OPTION_1_VALUE
+      - AMENITIES_OPTION_2_VALUE
+  FAVORITES_STOREDETAILS_LINK:
+    locator-type: "data-test-id [StoreDetailsLnk]"
+    test-data-variable:
+      - DELIVERY_DEFAULT_STORE_NAME
+      - PICKUP_STORENAME_DEFAULT_VALUE
+      - PICKUP_STORENAME_NOTIN1KMRADIUS_VALUE
+      - PICKUP_STORENAME_NOT24HOURS_VALUE
+      - STORELOCATOR_STORENAME_DEFAULT_VALUE
+
+UPSELL_POPUP:
+  UPSELL_POPUP_LOCATOR:
+    locator-type: "i18 + data-test-id [TBD]"
+  UPSELL_NOTHANKS_BUTTON:
+    locator-type: "i18"
+  UPSELL_ADDTOCART_BUTTON:
+    locator-type: "i18"
+  UPSELL_ITEMS_COUNT:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - UPSELL_ITEMS_ZERO_COUNT_VALUE
+  UPSELL_INCREASE_QUANTITY_ICON:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - UPSELL_ITEM_1_NAME
+      - UPSELL_ITEM_1_FRENCH_NAME
+      - UPSELL_ITEM_2_NAME
+      - UPSELL_ITEM_3_NAME
+      - UPSELL_ITEM_4_NAME
+
+CART-PAGE:
+  CART_WINDOW_TITLE:
+    locator-type: "i18 + data-test-id [TBD]"
+  CART_HEADERCLOSE_ICON:
+    locator-type: "data-test-id [TBD]"
+  CART_ADDRESS_DETAILS_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - CART_ADDITIONAL_ADDRESS_DETAILS
+      - DELIVERY_ADDRESS_CONFIRMATION_VALUE
+  CART_PICKUP_DATETIME_LOCATOR:
+    locator-type: "i18"
+  CART_DELIVERY_DATETIME_LOCATOR:
+    locator-type: "i18"
+  CART_PICKUPADDRESS_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - PICKUPSTOREADDRESS_DEFAULT_VALUE
+  CART_STORE_ADDRESS:
+    locator-type: "data-test-id [store-address]"
+  CART_PHONENUMBER_TEXTBOX:
+    locator-type: "data-test-id [PhonenumberTextbox]"
+  CART_SUBTOTAL_LOCATOR:
+    locator-type: "data-test-id [OrderSubTotalValue]"
+  CART_TOTAL_FINALPRICE_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  CART_CHECKOUT_BUTTON:
+    locator-type: "data-qa-label [MyOrderPlaceOrderBtn]"
+  CART_DELIVERY_PRICE_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  CART_MAINITEMPRICE_LOCATOR:
+    locator-type: "data-test-id [TBD] + data-qa-label [MyOrderItemPrice]"
+  CART_MAINITEMNAME_LOCATOR:
+    locator-type: "data-qa-label [MyOrderItemName]"
+    test-data-variable:
+      - DEFAULT_BYOPRODUCT_NAME
+      - DEFAULT_COMBOCATEGORY_COMBO_NAME
+  CART_ITEM_PRICE_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  CART_ITEM_LIST_PATTERN:
+    locator-type: "data-test-id [MyOrderItemName]"
+    test-data-variable:
+      - CROSSSELL_PRODUCT_CHICKEN_MOD_PATTERN
+  CART_DELIVERY_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  CART_PROCEEDTOCHECKOUT_BUTTON:
+    locator-type: "i18"
+  CART_QTY_TOTAL_ITEM:
+    locator-type: "data-test-id [CartQuantityTextbox]"
+  CART_ORDERTOTAL_FINALPRICE_LOCATOR:
+    locator-type: "data-test-id [TBD] + data-qa-label [MyOrderCartTotal]"
+  CART_ORDERTOTAL_LINEITEMS_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  CART_ORDERTOTAL_ADDITINGITEMS_LOCATOR_LIST_DELIVERY:
+      locator-type: "data-test-id [TBD] +i18"
+  CART_ORDERTOTAL_ADDITINGITEMS_LOCATOR_LIST_PICKUP:
+    locator-type: "data-test-id [TBD] +i18"
+  CART_ORDERTOTAL_NEGATINGITEMS_LOCATOR_LIST:
+      locator-type: "data-test-id [TBD] +i18"
+  CART_VATPRICE_LOCATOR:
+    locator-type: "data-test-id [VatPriceTxt-ExcludedCharge]"
+  CART_DISCOUNTPRICE_LOCATOR:
+    locator-type: "data-test-id [DiscountPriceTxt-ExcludedCharge]"
+  CART_ORDERMORE_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  CART_DELIVERYESTIMATEDTIME_TEXT:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - DELIVERY_ESTIMATED_TIME_DEFAULT_VALUE
+      - DELIVERY_ESTIMATED_TIME_FOR_STORE_BP_10_VALUE
+
+  CART_DELIVERYLATERTIME_TEXT:
+    locator-type: "data-test-id [TBD]"
+  CART_PICKUPSTOREDISPOSITION_TEXT:
+    locator-type: "data-test-id [PickupDispositionTxt]"
+  CART_PICKUPFROM_LOCATOR:
+    locator-type: "i18"
+  CART_DELIVERTO_LOCATOR:
+    locator-type: "i18"
+  CART_EDIT_ADDRESS_ICON:
+    locator-type: "i18"
+  CART_EMPTY_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  CART_CONTINUESHOPPING_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  CART_EMPTYCART_MESSAGE:
+    locator-type: "data-test-id [TBD]"
+  CART_RECOMMENDER_SECTION_HEADING:
+    locator-type: "i18"
+    test-data-variable:
+      - RECOMMENDER_SECTION_HEADING_MSG
+  CART_RECOMMENDER_SECTION:
+    locator-type: "data-test-id [TBD]"
+  CART_RECOMMENDER_TITLE:
+    locator-type: "i18"
+    test-data-variable:
+    - CART_RECOMMENDER_TITLE_TEXT
+  CART_RECOMENDER_PRODUCT:
+     locator-type: "data-test-id [TBD]"
+  CART_RECOMENDER_BUTTON:
+     locator-type: "data-test-id [TBD]"
+  HALFANDHALF_ADDTOCART_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  CART_QUANTITYDECREASE_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  CART_QUANTITYINCREASE_BUTTON:
+    locator-type: "data-test-id [IncreaseQtyBtn]"
+    test-data-variable:
+      - DEFAULT_COMBOCATEGORY_DEFAULT_COMBO_NAME
+      - DEFAULT_COMBO_DEFAULT_PRODUCT_NAME
+      - DEFAULT_ALACARTECATEGORY_DEFAULT_PRODUCT_NAME
+      - DEFAULT_ALACARTECATEGORY_DEFAULT_PRODUCT_FRENCH_NAME
+      - MENU_COMBOCATEGORY_PERMANENTDISABLEDCOMBO_NAME
+      - MENU_COMBOCATEGORY_TEMPORARYDISABLEDCOMBO_NAME
+      - MENU_COMBOCATEGORY_TEMPORARYDISABLEDPRODUCT_NAME
+      - MENU_BREAKFASTCOMBOCATEGORY_DEFAULTCOMBO_NAME
+      - BREAKFAST_COMBOCATEGORY_DEFAULTPRODUCT_NAME
+      - COMBOCATEGORY19_COMBO_1_NAME
+      - COMBO1_PRODUCT_1_NAME
+      - NONDEFAULT_COMBO_1_NAME
+      - NONDEFAULT_COMBO_3_NAME
+      - NONDEFAULT_COMBO_4_CART_NAME
+      - NONDEFAULT_COMBO1_PRODUCT_1_NAME
+  CART_ITEM_TILE:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - CART_ITEM_DETAILS_COMBO_WITH_DEFAULT_VALUES
+      - CART_ITEM_DETAILS_BUNDLE_WITH_DEFAULT_VALUES
+      - CART_ITEM_DETAILS_BUNDLE_WITH_UPDATED_MODS_VALUE
+      - CART_ITEM_DETAILS_COMBO_WITH_UPDATED_MODS_VALUES
+      - CART_ITEM_DETAILS_BUNDLE_NONDEFAULT_1_VALUE
+      - CART_ITEM_DETAILS_BUNDLE_NONDEFAULT_1_WITH_UPDATED_MODS_VALUES
+      - CART_ITEM_DETAILS_COMBO_WITH_MOD_VALUES
+      - CART_ITEM_DETAILS_COMBO_WITH_MAXED_MOD_VALUES
+      - CART_ITEM_DETAILS_ALACARTE_WITH_MAXED_MOD_VALUES
+      - CART_ITEM_DETAILS_ALACARTE_WITH_MAXED_MODS_VALUES
+      - CART_ITEM_DETAILS_ALACARTE_WITH_MAXED_MODS_VALUES_2
+      - CART_ITEM_DETAILS_ALACARTE_DEFAULT_VALUE
+      - CART_ITEM_DETAILS_COMBO_PERSONALISED_VALUES
+      - CART_DUPLICATE_ITEM_NAMES
+      - CART_ORDERMORE_ITEM_NAMES
+      - CART_BUNDLE_ITEM_DETAILS_WITH_ADDED_QUANTITY_MODS_AND_PRICES
+      - CHECKOUT_BUNDLE_ITEM_DETAILS_WITH_ADDED_QUANTITY_MODS_AND_PRICES
+      - CART_DEFAULT_ITEM_DETAILS_WITH_CUSTOMIZE_VALUE
+      - CART_ITEM_DETAILS_COMBO_NONDEFAULT_1_VALUE
+  CART_DUPLICATEITEM_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  CART_DUPLICATEITEM_POPUP:
+    locator-type: "data-test-id [IncreaseQtyBtn]"
+    test-data-variable:
+      - CART_DUPLICATEITEM_HEADER_POPUP
+  CART_DUPLICATEITEM_POPUP_HEADING_LOCATOR:
+    locator-type: "i18"
+  CART_DUPLICATEITEM_POPUP_BODY_LOCATOR:
+    locator-type: "i18"
+  CART_DUPLICATEITEM_POPUP_NO_BUTTON:
+    locator-type: "i18"
+  CART_QUANTITY_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - CART_ITEM_QUANTITY_1_VALUE
+      - CART_ITEM_QUANTITY_2_VALUE
+      - CART_ITEM_QUANTITY_4_VALUE
+  CART_MODITEMPRICE_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  CART_LIST_ITEMS_LENGTH:
+    locator-type: "data-test-id [TBD]"
+  CART_COUPON_DETAIL:
+    locator-type: "data-test-id [TBD]"
+  CART_COUPON_REMOVE_POPUP_OK_BUTTON:
+    locator-type: "i18"
+  CART_MODIFIER_LOCATOR:
+    locator-type: "data-qa-label [MyOrderCartItemModifierName]"
+    test-data-variable:
+      - NONDEFAULT_MOD_TEMPORARYDISABLED_1_NAME
+      - NONDEFAULT_MOD_PERMANENTDISABLED_1_NAME
+      - IGNORE_MODIFIER_VALUE
+  CART_REDEEM_REWARD_TEXT:
+    locator-type: "data-test-id [TBD]"
+  CART_REDEEM_REWARD_VALUE:
+    locator-type: "data-test-id [TBD]"
+  CART_ITEM_EDIT_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  CART_EDIT_BUTTON:
+    locator-type: "data-test-id [MyOrderItemName]"
+  CART_ITEM_DELETE_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  CART_ITEM_DELETE_CONFIRM_BUTTON:
+    locator-type: "i18"
+  CART_UPDATEORDER_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  CART_PROMOCODE_DETAILS_LABEL:
+    locator-type: "i18"
+  CART_PROMOCODE_DETAIL_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - COUPON_DETAIL_VALUE_1
+      - COUPON_DETAIL_VALUE_2
+  CART_PROMOCODE_REMOVE_BUTTON:
+    locator-type: "data-qa-label [CouponCodeTxt]"
+  CART_PROMOCODE_LOCATOR:
+    locator-type: "data-qa-label [CouponCodeTxt]"
+    test-data-variable:
+      - DEFAULT_VOUCHER_VALUE
+      - PROMOCODE_APPLIED_VALUE
+  CART_PROMOCODE_APPLY_BUTTON:
+    locator-type: "i18n"
+  CART_PROMOCODE_TERMS_LABEL:
+    locator-type: "i18"
+  CART_PROMOCODE_SIGNUP_LINK:
+    locator-type: "i18"
+  CART_PROMOCODE_LOGIN_LINK:
+    locator-type: "i18"
+  CART_DELETE_CONFIRMATION_POPUP:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - CART_ITEM_DELETE_POPUP_HEADING_VALUE
+  CART_DELETE_CONFIRMATION_POPUP_BODY:
+    locator-type: "i18"
+    test-data-variable:
+      - CART_ITEM_DELETE_POPUP_BODY_MSG
+  CART_DELETE_CONFIRMATION_POPUP_YES_BUTTON:
+    locator-type: "i18"
+  CART_DELETE_CONFIRMATION_POPUP_NO_BUTTON:
+    locator-type: "i18"
+    CART_DELETE_CONFIRMATION_POPUP_PRODUCTNAME_LABEL:
+      locator-type: "data-test-id [TBD]"
+  CART_OUTSIDE_LUNCH_HOURS_ITEMS_REMOVAL_POPUP_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - CART_OUTSIDE_LUNCH_HOURS_ITEMS_REMOVAL_POPUP_HEADING
+      - CART_OUTSIDE_LUNCH_HOURS_ITEMS_REMOVAL_POPUP_SUBHEADING
+  CART_OUTSIDE_LUNCH_HOURS_TOAST_NOTIFICATION_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  CART_SIDEITEMNAME_LOCATOR:
+    locator-type: "data-test-id [TBD["
+    test-data-variable:
+      - DEFAULT_REQUIRED_SIDE
+  CART_TIMECHANGE_POPUP_PROCEED:
+    locator-type: "data-test-id [TBD]"
+  CART_DUPLICATEITEM_POPUP_PROCEED:
+    locator-type: "data-test-id [TBD]"
+  CART_LOYALTY_TOTAL_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - LOYALTY_TOTAL_VALUE
+  CART_LOYALTY_SUBTOTAL_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - LOYALTY_SUBTOTAL_VALUE
+  CART_LOYALTY_DISCOUNT_AMOUNT_LOCATOR:
+    locator-type: "data-qa-label [MyOrderItemPrice]"
+  CART_LOYALTY_REDEEMED_POINTS:
+    locator-type: "data-test-id [CartLoyaltyRedeemedPoints]"
+  CART_LOYALTY_REDEEM_TEXT:
+    locator-type: "data-qa-label [MyOrderItemName]"
+    test-data-variable:
+      - LOYALTY_CUSTOMIZABLE_PRODUCT_VALUE
+      - LOYALTY_PRODUCT_DEFAULT_VALUE
+  CART_REMOVE_ITEM_LOCATOR:
+    locator-type: "data-qa-label [MyOrderRemoveItemIcon]"
+  CART_REMOVE_ITEM_POPUP_PROCEED:
+    locator-type: "data-test-id [TBD]"
+  CART_FREE_COOKIE:
+    locator-type: "data-qa-label [MyOrderItemName]"
+  CART_FREE_COOKIE_PRICE:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - CART_FREE_ITEM_VALUE
+  CART_REMOVE_FREE_COOKIE:
+    locator-type: "data-test-id [TBD]"
+  CART_FINISHING_TOUCHES_CHECKBOX:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - FINISHING_TOUCHES_KETCHUP
+      - FINISHING_TOUCHES_CRACKERS
+  CART_FINISHING_TOUCHES_CHECKBOX_CHECKED:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - FINISHING_TOUCHES_KETCHUP
+      - FINISHING_TOUCHES_CRACKERS
+  CART_ADDITIONAL_DETAILS_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - CART_ADDITIONAL_DETAILS_VALUE
+  CART_PROMOCODE_TEXTBOX:
+    locator-type: "data-qa-label [CouponCodeTxt]"
+    test-data-variable:
+      - COUPON_VALUE_1
+      - COUPON_VALUE_2
+  CART_PROMOCODE_APPLY_LINK:
+    locator-type: "i18"
+  CART_PROMOCODE_DISCOUNTPRICE:
+    locator-type: "data-test-id [MyOrderCartCoupon]"
+  CART_PROMOCODE_DISCOUNT_LABEL:
+    locator-type: "i18"
+  CART_PRODUCT_DETAIL_PRODUCT:
+    locator-type: "data-qa-label [MyOrderItemName]"
+    test-data-variable:
+      - NONDEFAULT_ALACARTE_TEMPORARYDISABLED_1_NAME
+      - NONDEFAULT_ALACARTE_PERMANENTDISABLED_1_NAME
+      - NONDEFAULT_ALACARTE_PERMANENTDISABLED_3_NAME
+  CART_ITEMNAME_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - DEFAULT_COMBO_ITEM_1
+      - DEFAULT_COMBO_ITEM_2
+      - DEFAULT_COMBO_ITEM_3
+      - DEFAULT_COMBO_ITEM_5
+  CART_ORDERHISTORY_BUTTON:
+    locator-type: "i18"
+  CART_MAXIMUMORDER_ERROR_POPUP_HEADER:
+    locator-type: "i18"
+  CART_MAXIMUMORDER_ERROR_POPUP_ACCEPT_BUTTON:
+    locator-type: "i18"
+  CART_MINIMUMORDER_ERROR_POPUP_HEADER:
+    locator-type: "i18"
+  CART_MINIMUMORDER_ERROR_POPUP_BODY:
+    locator-type: "data-test-id [TBD]"
+  CART_MINIMUMORDER_ERROR_POPUP_ACCEPT_BUTTON:
+    locator-type: "i18"
+  CART_UNAVAILABLE_PRODUCT_POPUP_BODY:
+    locator-type: "i18"
+  CART_UNAVAILABLE_PRODUCT_POPUP_CONFIRMATION_BUTTON:
+    locator-type: "i18"
+  CART_PRODUCT_NAME_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  CART_RESTORE_POPUP_HEADING:
+    locator-type: "i18"
+  CART_RESTORE_POPUP_BODY:
+    locator-type: "i18"
+  CART_CLOSE_BUTTON:
+    locator-type: "qa-label [HeaderCloseIcon]"
+  CART_BR_REWARDS_LABEL:
+    locator-type: "i18"
+  CART_BR_REWARDS_VALUE_LOCATOR:
+    locator-type: "i18"
+  CART_REWARDS_QUANTITY_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - CART_REWARD_QUANTITY_1_VALUE
+  CART_REWARDS_CARD_LOCATOR:
+    locator-type: "data-testid [reward-card-icon] + i18"
+  CART_REWARDS_ITEM_NAME_LOCATOR:
+    locator-type: "data-testid [cart-item-title-text] + i18"
+    test-data-variable:
+      - REWARDS_DEFAULT_VALUE
+      - REWARDS_CUSTOMIZABLE_DEFAULT_VALUE
+  CART_REWARDS_ITEM_MOD_NAME_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - REWARDS_MOD_DEFAULT_VALUE
+      - IGNORE_REWARD_MODIFIER_VALUE
+  CART_REWARDS_LEVEL_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  CART_REWARDS_DELETE_BUTTON:
+    locator-type: "i18"
+  CART_REWARDS_EDIT_BUTTON:
+    locator-type: "i18"
+
+PROMO-CODE:
+  PROMOCODE_INVALID_POPUP_MESSAGE:
+    locator-type: "i18"
+  PROMOCODE_INVALID_POPUP_ACCEPT_BUTTON:
+    locator-type: "i18"
+
+RECOMMENDER-POPUP:
+  RECOMMENDER_ADDTOCART_BUTTON:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - RECOMMENDER_ITEM_1_NAME
+      - RECOMMENDER_ITEM_2_NAME
+      - RECOMMENDER_ITEM_3_NAME
+      - RECOMMENDER_ITEM_4_NAME
+      - RECOMMENDER_ITEM_5_NAME
+      - RECOMMENDER_ITEM_6_NAME
+  RECOMMENDER_POPUP_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  RECOMMENDER_INCREASE_QUANTITY_ICON:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+    - RECOMMENDER_ITEM_4_NAME
+    - RECOMMENDER_ITEM_5_NAME
+    - RECOMMENDER_ITEM_6_NAME
+  ITEM_UNAVAILABLE_POPUP_NO_BUTTON:
+    locator-type: "i18"
+  RECOMMENDER_PRODUCT_QUANTITY:
+    locator-type: "data-test-id [TBD]"
+  RECOMMENDER_MOD_RADIO_BUTTON:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - CROSSSELL_PRODUCT_CHICKEN_MOD_NAME
+  RECOMMENDER_QUANTITYDECREASE_BUTTON_DISABLED_STATE:
+    locator-type: "data-qa-label [DecreaseQuantityBtn]"
+
+CHECKOUT-PAGE:
+  CHECKOUT_PAGE_TITLE:
+    locator-type: "i18"
+  CHECKOUT_ALREADYHAVEANACCOUNT_TEXT:
+    locator-type: "i18"
+  CHECKOUT_FIRSTNAME_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - FIRSTNAME_DEFAULT_FRENCH_VALUE
+  CHECKOUT_LASTNAME_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - LASTNAME_DEFAULT_FRENCH_VALUE
+  CHECKOUT_EMAILADDRESS_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - EMAILADDRESS_MISSINGDOMAIN_VALUE
+      - EMAILADDRESS_MISSINGLOWERDOMAIN_VALUE
+      - EMAILADDRESS_MISSINGUPPERDOMAIN_VALUE
+      - EMAILADDRESS_INVALIDUPPERDOMAIN_VALUE
+      - EMAILADDRESS_MISSINGATCHAR_VALUE
+      - EMAILADDRESS_DOUBLEATCHAR_VALUE
+      - EMAILADDRESS_MISSINGDOT_VALUE
+      - EMAILADDRESS_MISSINGUSERNAME_VALUE
+      - EMAILADDRESS_INCORRECTUSERNAME_1_VALUE
+      - EMAILADDRESS_INCORRECTUSERNAME_2_VALUE
+      - EMAILADDRESS_MINIMUMVALIDCHAR_VALUE
+      - EMAILADDRESS_USERNAMEWITHSPECIALCHAR_VALUE
+      - PASSWORD_LESSCHAR_VALUE
+      - PASSWORD_MINIMUMVALIDCHAR_VALUE
+      - PASSWORD_SPECIALCHAR_VALUE
+      - EMAILADDRESS_SAVEDCARD_FRENCH_VALUE
+  CHECKOUT_CONTINUE_BUTTON:
+    locator-type: "data-qa-label [ContinueBtn]"
+  CHECKOUT_CONTINUE_DISABLED_BUTTON:
+    locator-type: "i18"
+  CHECKOUT_CONTINUE_GUEST_DISABLED_BUTTON:
+    locator-type: "i18"
+  CHECKOUT_CONTINUE_GUEST_BUTTON:
+    locator-type: "i18"
+  CHECKOUT_REGISTRY_CONTINUE_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_PASSWORD_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_PASSWORD_TEXTBOX_ERROR:
+    locator-type: "i18"
+  CHECKOUT_CONFIRM_PASSWORD_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+  MAKE_IT_OFFICIAL_POPUP_OK_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_DISCOUNTS_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  DISCOUNTS_SC_CARD_CHECKBOX:
+    locator-type: "data-test-id [Discount - Senior Citizen Card]"
+  DISCOUNTS_PWD_CARD_CHECKBOX:
+    locator-type: "data-test-id [Discount - PWD Card]"
+  DISCOUNTS_SRCNAME_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+  DISCOUNTS_SRCID_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+  DISCOUNTS_APPLY_BUTTON:
+    locator-type: "data-test-id [ApplyDiscountBtn]"
+  CHECKOUT_VATPRICE_LOCATOR:
+    locator-type: "data-test-id [VatPriceTxt-ExcludedCharge]"
+  CHECKOUT_DISCOUNTPRICE_LOCATOR:
+    locator-type: "data-test-id [DiscountPriceTxt-ExcludedCharge]"
+  CHECKOUT_PAYMENTMETHODS_TILE:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_PAYMENTINFORMATION_LABEL:
+    locator-type: "i18"
+  CHECKOUT_GPAY_LABEL:
+    locator-type: "i18"
+  CHECKOUT_APPLEPAY_LABEL:
+    locator-type: "i18"
+  CHECKOUT_REGISTERTODAY_LABEL:
+      locator-type: "i18"
+  CHECKOUT_PAYMENT_OPTIONS:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - CHECKOUT_PAYMENT_CASH
+      - CHECKOUT_PAYMENT_PESOPAY
+      - CHECKOUT_PAYMENT_PAYMAYA
+      - CHECKOUT_PAYEMENT_CREDIT_ON_DELIEVRY
+      - CHECKOUT_PAYEMENT_ONLINE_PAYMENT_LUKA
+  CHECKOUT_CASHCHANGE_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_PAYMENTCONTINUE_BUTTON:
+    locator-type: "data-qa-label [PaymentMethodContinueBtn] + i18"
+  CHECKOUT_PAYMENTCHANGE_BUTTON:
+    locator-type: "i18"
+  CHECKOUT_PAYMENTRADIO_BUTTON:
+    locator-type: "data-qa-label [inptPayOnlineRdo]"
+  CHECKOUT_PAYMENT_ONLINE:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_PLACEORDER_BUTTON:
+    locator-type: "data-test-id [TBD] +i18"
+  CHECKOUT_PLACEORDER_BUTTON_DISABLED:
+    locator-type: "data-qa-label [MyOrderPlaceOrderBtn] + i18"
+  CHECKOUT_PLACEORDER_DISBALED_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_WINDOW_TITLE:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_ITEM_IN_BAG:
+    test-data-variable:
+      - DEFAULT_COMBOCATEGORY_DEFAULT_COMBO_NAME
+      - DEFAULT_COMBO_DEFAULT_PRODUCT_NAME
+      - DEFAULT_ALACARTECATEGORY_DEFAULT_PRODUCT_NAME
+      - MENU_COMBOCATEGORY_PERMANENTDISABLEDCOMBO_NAME
+      - MENU_COMBOCATEGORY_TEMPORARYDISABLEDCOMBO_NAME
+      - MENU_COMBOCATEGORY_TEMPORARYDISABLEDPRODUCT_NAME
+      - MENU_BREAKFASTCOMBOCATEGORY_DEFAULTCOMBO_NAME
+      - BREAKFAST_COMBOCATEGORY_DEFAULTPRODUCT_NAME
+      - COMBOCATEGORY19_COMBO_1_NAME
+      - COMBO1_PRODUCT_1_NAME
+      - NONDEFAULT_COMBO_1_NAME
+      - NONDEFAULT_COMBO_3_NAME
+      - NONDEFAULT_COMBO1_PRODUCT_1_NAME
+  CHECKOUT_PAYMENTZIPCODE_TEXTBOX:
+    locator-type: "data-test-id [ZipCodeTxt]"
+    test-data-variable:
+      - ZIPCODE_DEFAULT_VALUE
+      - CHECKOUT_WRONG_CARD_ZIPCODE_VALUE
+  CHECKOUT_PHONENUMBER_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_PAYMENTCITY_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_STATE_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_STORE_ADDRESS:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_PAYMENTCARDEXPIRITY_TEXTBOX:
+    locator-type: "data-test-id [ExpirationDateTxt]"
+    test-data-variable:
+      - DEFAULT_CARD_EXPIRITYDATE_VALUE
+      - CHECKOUT_WRONG_CARD_EXPIRITYDATE_VALUE
+      - INVALID_EXPIRY_DATE_1_VALUE
+      - INVALID_EXPIRY_DATE_2_VALUE
+      - CHECKOUT_WRONG_CARD_EXPIRYDATE_VALUE
+      - CREDITCARD_3DS_CHALLENGE_EXPIRY_VALUE
+  CHECKOUT_PAYMENTBILLINGADDRESS_TEXTBOX:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_PAYMENTBILLINGADDRESSAUTOSUGGESTIONS_DROPDOWN_OPTION:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_PAYMENTCARDNAME_TEXTBOX:
+    locator-type: "data-test-id [CardNameTxt]"
+    test-data-variable:
+      - DEFAULT_CARD_NAME_VALUE
+      - VISA_DEFAULT_CARD_FIRSTNAME_FRENCH_VALUE
+      - CREDITCARD_3DS_CHALLENGE_NAME_VALUE
+  CHECKOUT_PAYMENTCARDNUMBER_TEXTBOX:
+    locator-type: "data-test-id [CreditCardNumberTxt]"
+    test-data-variable:
+      - DEFAULT_CARD_NUMBER_VALUE
+      - CHECKOUT_WRONG_CARD_NUMBER_VALUE
+      - INVALID_CARD_NUMBER_VALUE
+      - INVALID_CARD_NUMBER_1_VALUE
+      - INVALID_CARD_NUMBER_2_VALUE
+      - CARD_WITHCHALLENGE_NUMBER_VALUE
+      - CARD_WITHCHALLENGEFAIL_NUMBER_VALUE
+      - CREDITCARD_3DS_CHALLENGE_NUMBER_VALUE
+  CHECKOUT_PAYMENTCARDNUMBER_TEXTBOX_ERROR:
+    locator-type: "i18"
+  CHECKOUT_PAYMENT_CREDITCARDNUMBER_TEXTBOX_ERROR:
+    locator-type: "resource-id [input-cardNumber-inline-error] + i18"
+    test-data-variable:
+      - CHECKOUT_PAYMENT_INPUTCARDNUMBER_INLINE_ERROR_1_MSG
+      - CHECKOUT_PAYMENT_INPUTCARDNUMBER_INLINE_ERROR_2_MSG
+  CHECKOUT_PAYMENT_CREDITCARDNAME_TEXTBOX_ERROR:
+    locator-type: "resource-id [input-cardHolderName-inline-error + i18]"
+    test-data-variable:
+      - CHECKOUT_PAYMENT_INPUTCARDNAME_INLINE_ERROR_1_MSG
+  CHECKOUT_PAYMENT_CREDITCARDEXPIRY_TEXTBOX_ERROR:
+    locator-type: "resource-id [input-expireDate-inline-error] + i18"
+    test-data-variable:
+      - CHECKOUT_PAYMENT_INPUTEXPIRYDATE_INLINE_ERROR_1_MSG
+      - CHECKOUT_PAYMENT_INPUTEXPIRYDATE_INLINE_ERROR_2_MSG
+  CHECKOUT_PAYMENT_CREDITCARDCVVCODE_TEXTBOX_ERROR:
+    locator-type: "resource-id [input-cvv-inline-error] + i18"
+    test-data-variable:
+      - CHECKOUT_PAYMENT_INPUTCVV_INLINE_ERROR_1_MSG
+      - CHECKOUT_PAYMENT_INPUTCVV_INLINE_ERROR_2_MSG
+  CHECKOUT_PAYMENT_CREDITCARDZIPCODE_TEXTBOX_ERROR:
+    locator-type: "resource-id [input-billingPostcode-inline-error] + i18"
+    test-data-variable:
+      - CHECKOUT_PAYMENT_INPUTBILLINGPOSTCODE_INLINE_ERROR_1_MSG
+      - CHECKOUT_PAYMENT_INPUTBILLINGPOSTCODE_INLINE_ERROR_2_MSG
+  CHECKOUT_PAYMENT_CREDITCARDFISCALID_TEXTBOX_ERROR:
+    locator-type: "resource-id [input-identityDocumentNumber-inline-error] + i18"
+    test-data-variable:
+      - CHECKOUT_PAYMENT_INPUTIDENTITYDOCUMENTNUMBER_INLINE_ERROR_1_MSG
+      - CHECKOUT_PAYMENT_INPUTIDENTITYDOCUMENTNUMBER_INLINE_ERROR_2_MSG
+  CHECKOUT_PAYMENTCVV_TEXTBOX:
+    locator-type: "data-test-id [CVVTxt]"
+    test-data-variable:
+      - DEFAULT_CARD_CVVCODE_VALUE
+      - INVALID_CVV_SECURITYCODE_VALUE
+      - CHECKOUT_WRONG_CARD_CVVCODE_VALUE
+      - CREDITCARD_3DS_CHALLENGE_CVV_VALUE
+  CHECKOUT_CHALLENGESIMULATOR_OTP_TEXTBOX:
+    locator-type:  "iframe id='three-ds-2-challenge-iframe'"
+    test-data-variable:
+      - CREDITCARD_3DS_CHALLENGE_OTP_VALUE
+  PAYMENT_SAVE_CARD_CHECKBOX:
+     locator-type: "data-test-id [TBD]"
+  CHECKOUT_CHALLENGE_POPUP_OK_BUTTON:
+    locator-type: "i18"
+  CHECKOUT_CHALLENGESIMULATOR_CONTINUETRANSACTION_BUTTON:
+    locator-type:  "iframe id='three-ds-2-challenge-iframe'"
+  CHECKOUT_CHALLENGESIMULATOR_SUBMIT_BUTTON:
+    locator-type:  "iframe id='three-ds-2-challenge-iframe'"
+  CHECKOUT_PAYMENTCARDNUMBER_TEXTBOX_INCOMPLETECARDNUMBER_ERROR:
+    locator-type: "i18 [TBD]"
+  CHECKOUT_PAYMENTCARDNUMBER_TEXTBOX_INVALIDCARDNUMBER_ERROR:
+    locator-type: "i18 [TBD]"
+  CHECKOUT_PAYMENTCVV_TEXTBOX_CVV_REQUIRED_ERROR:
+    locator-type: "i18 [TBD]"
+  CHECKOUT_PAYMENTCARDEXPIRY_TEXTBOX_INVALID_EXPIRYDATE_ERROR:
+    locator-type: "i18 [TBD]"
+  CHECKOUT_PAYMENTCARDEXPIRY_TEXTBOX_EXPIRED_EXPIRYDATE_ERROR:
+    locator-type: "i18 [TBD]"
+  CHECKOUT_PAYMENTFAILED_TEXT:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_PAYMENTFAILED_BODY_MSG:
+    locator-type: "i18"
+  CHECKOUT_PAYMENTFAILED_BACKTOCART_BUTTON:
+    locator-type: "i18"
+  CHECKOUT_PAYMENTFAILED_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_PAYMENTMETHOD_GIFTCARD_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_PAYMENTMETHOD_GIFTCARD_RELOAD_SUBTITLE:
+    locator-type: "i18"
+  CHECKOUT_PAYMENTMETHOD_GIFTCARD_RELOAD_TEXT:
+    locator-type: "i18"
+  CHECKOUT_PAYMENTMETHOD_GIFTCARD_RELOAD_VALUE_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_PAYMENTMETHOD_GIFTCARD_RELOAD_OPTIONSEXPAND_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_PAYMENTMETHOD_GIFTCARD_RELOAD_SELECTSAVEDCARD_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_RELOAD_PLACEORDER_BUTTON:
+    locator-type: "i18"
+  CHECKOUT_PAYMENTMETHOD_FUNDS_ERROR_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_SAVECARD_CHECKBOX:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_FISCAL_ID_LOCATOR:
+    locator-type: "data-test-id [FiscalNumberTxt]"
+    test-data-variable:
+      - CHECKOUT_WRONG_CARD_FISCAL_ID_VALUE
+  CHECKOUT_ADDRESSEDIT_CONTINUE_BUTTON:
+    locator-type: "i18"
+  CHECKOUT_FISCALID_IDENTIFICATION_NUMBER_INPUT_FIELD:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_SELECT_FISCAL_ID_LIST:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - FISCAL_ID_LIST_OPTIONS_VALUE
+  SELECT_FISCAL_ID_LIST_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - FISCAL_ID_LIST_OPTIONS
+  CHECKOUT_PAYMENTMETHOD_CREDITCARD_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_PAYMENTMETHOD_CHANGE_BUTTON:
+    locator-type: "i18"
+  CHECKOUT_SELECTSAVEDCARD_BUTTON:
+    locator-type: "data-test-id [ChangeSelectedCard]"
+    test-data-variable:
+      - CARD_NAME_VALUE_1
+      - CARD_NAME_VALUE_2
+      - CARD_NAME_VALUE_3
+      - CARD_NAME_VALUE_4
+      - CARD_DEFAULT_ENDING_VALUE
+      - PAYMENT_GIFTCARD_CARD_ENDING_VALUE 
+  CHECKOUT_SAVEDCARD_TEXT:
+    locator-type: "data-qa-label [SavedCreditCard]"
+  CHECKOUT_SAVEDCARD_CLOSE_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_PAYMENTMETHOD_ADD_BUTTON:
+    locator-type: "i18"
+  CHECKOUT_PAYMENTMETHOD_ADDCONFIRM_BUTTON:
+    locator-type: "data-qa-label [SaveCreditCardBtn]"
+  CHECKOUT_EARNED_LOYALTY_POINTS_TEXT:
+    locator-type: "i18"
+  ORDERHISTORY_LOYALTY_POINTS_VALUE_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+        - SPECIALITY_PIZZA_LOYALTY_POINTS
+  CHECKOUT_PHONENUMBER_FIELD_LOCATOR:
+    locator-type: "i18"
+  CHECKOUT_PICKUPFROM_LOCATOR:
+    locator-type: "i18"
+  CHECKOUT_PICKUP_DATETIME_LOCATOR:
+    locator-type: "i18"
+  CHECKOUT_DELIVERY_DATETIME_LOCATOR:
+    locator-type: "i18"
+  CHECKOUT_DELIVERTO_LOCATOR:
+    locator-type: "i18"
+  CHECKOUT_CURBSIDE_MAKE_MODEL_TEXT_BOX:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+        - CHECKOUT_CURBSIDE_MAKE_MODEL
+  CHECKOUT_CURBSIDE_COLOR_TEXT_BOX:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+        - CHECKOUT_CURBSIDE_COLOR_VALUE
+  CHECKOUT_CURBSIDE_VEHICLE_TEXT:
+    locator-type: "i18"
+  CHECKOUT_PRICE_AMOUNT:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_PRODUCT_DETAIL:
+    locator-type: "data-qa-label [MyOrderItemName]"
+  CHECKOUT_PICKUP_TIME:
+    locator-type: "data-qa-label [MyOrderPickUpTime]"
+  CHECKOUT_PICKUP_ADDRESS:
+    locator-type: "data-qa-label [MyOrderStreetAddress]"
+  CHECKOUT_PICKUP_ADDRESS_CONFIRMATION_BUTTON:
+    locator-type: "i18"
+    test-data-variable:
+      - PICKUPADDRESS_LOCALIZED_DEFAULT_VALUE
+      - PICKUPADDRESS_LOCALIZED_NONDEFAULT_1_VALUE
+  CHECKOUT_DELIVERY_ADDRESS:
+    locator-type: "native"
+  CHECKOUT_DELIVERY_ADDRESS_TEXT:
+    locator-type: "data-qa-label [MyOrderDeliveryStreetAddress]"
+  CHECKOUT_DELIVERYSTOREDISPOSITION_TEXT:
+    locator-type: "i18"
+  CHECKOUT_DELIVERY_ADDRESS_CONFIRMATION_BUTTON:
+    locator-type: "i18"
+    test-data-variable:
+      - DELIVERYADDRESS_LOCALIZED_NONDEFAULT_1_VALUE
+  CHECKOUT_DELIVERY_TIME:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_PAYMENTMETHOD_WRONG_NUMBER_MESSAGE:
+    locator-type: "i18 + data-qa-label [CardNumberTxtErrorcreditcard]"
+  CHECKOUT_PAYMENTMETHOD_WRONG_EXPDATE_MESSAGE:
+    locator-type: "i18 + data-qa-label [ExpiryDateTxtErrorfutureDate]"
+  CHECKOUT_DONE_BUTTON:
+    locator-type: "native"
+  CHECKOUT_FINISHING_TOUCHES_1_PRICE:
+    locator-type: "data-qa-label [MyOrderItemName]"
+    test-data-variable:
+      - CART_FREE_ITEM_VALUE
+  CHECKOUT_FINISHING_TOUCHES_2_PRICE:
+    locator-type: "data-qa-label [MyOrderItemName]"
+    test-data-variable:
+      - CART_FREE_ITEM_VALUE
+  CHECKOUT_SUBTOTAL_LOCATOR:
+    locator-type: "data-test-id [OrderSubTotalValue]"
+  CHECKOUT_TOTAL_LOCATOR:
+    locator-type: "data-qa-label [OrderTotalValue]"
+  CHECKOUT_DELIVERYFEE_LOCATOR:
+    locator-type: "data-test-id [OrderDeliveryFeeValue]"
+  CHECKOUT_TIP_LOCATOR:
+    locator-type: "data-test-id [OrderTipValue]"
+    test-data-variable:
+      - CART_TIP_PERCENTAGE_VALUE_NOTIP
+  CHECKOUT_TAX_LOCATOR:
+    locator-type: "data-test-id [OrderTaxValue]"
+  CHECKOUT_PAYMENTCONFIRMATIONMODAL_OK_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_PROMOCODE_DISCOUNTPRICE:
+    locator-type: "data-test-id [MyOrderCartCoupon]"
+  CHECKOUT_GUEST_LOGIN_BUTTON:
+    locator-type: "i18"
+  CHECKOUT_GUEST_LOGIN:
+    locator-type: "i18"
+  CHECKOUT_GUEST_SCREEN_TITLE:
+    locator-type: "i18"
+  CHECKOUT_GUESTLOGINERROR_ACCEPT_BUTTON:
+    locator-type: "i18"
+  CHECKOUT_GUESTLOGINERROR_TEXT_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - CHECKOUT_GUESTLOGINERROR_TITLE_VALUE
+      - CHECKOUT_GUESTLOGINERROR_MESSAGE_VALUE
+  CHECKOUT_BACK_BUTTON:
+    locator-type: "qa-label [HeaderBackIcon]"
+  CHECKOUT_PRODUCT_NAME_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_DELIVERY_SPECIAL_INSTRUTIONS:
+    locator-type: "i18"
+    test-data-variable:
+      - SPECIAL_INSTRUTIONS_VALUE
+      - CHECKOUT_DELIVERY_SPECIAL_INSTRUCTIONS_PLACEHOLDER_VALUE
+      - SPECIAL_INSTRUCTIONS_QUANTITY_VALUE
+      - SPECIAL_INSTRUCTIONS_QUANTITY_EXCEED_VALUE
+      - SPECIAL_INSTRUCTIONS_WITHEMOJIS_VALUE
+      - SPECIAL_INSTRUCTIONS_WITHOUTEMOJIS_VALUE
+  CHECKOUT_ITEM_TILE:
+    locator-type: "i18"
+    test-data-variable:
+      - CHECKOUT_DUPLICATE_ITEM_NAMES
+      - CHECKOUT_ORDERMORE_ITEM_NAMES
+      - CHECKOUT_BUNDLE_ITEM_DETAILS_WITH_ADDED_QUANTITY_MODS_AND_PRICES
+      - CHECKOUT_ITEM_DETAILS_COMBO_WITH_DEFAULT_VALUES
+      - CHECKOUT_ITEM_DETAILS_ALACARTE_DEFAULT_VALUE
+      - CHECKOUT_DEFAULT_ITEM_DETAILS_WITH_CUSTOMIZE_VALUE
+  CHECKOUT_EDITCART_LABEL:
+    locator-type: "i18"
+  CHECKOUT_DELIVERY_SPECIAL_INSTRUTIONS_EMPTY:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_PASSWORD_ERROR_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - CHECKOUT_INPUTPASSWORD_INLINE_ERROR_1_MSG
+      - CHECKOUT_INPUTPASSWORD_INLINE_ERROR_2_MSG
+  CHECKOUT_UNAVAILABLE_PRODUCT_POPUP_TITLE:
+    locator-type: "i18"
+  CHECKOUT_UNAVAILABLE_PRODUCT_POPUP_BODY:
+    locator-type: "i18"
+  CHECKOUT_PARTIAL_UNAVAILABLE_ITEMS_POPUP_BODY:
+    locator-type: "i18"
+  CHECKOUT_UNAVAILABLE_PRODUCT_POPUP_CONFIRMATION_BUTTON:
+    locator-type: "i18"
+  CHECKOUT_OUTSIDE_LUNCH_HOURS_ITEMS_REMOVAL_POPUP_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - CHECKOUT_OUTSIDE_LUNCH_HOURS_ITEMS_REMOVAL_POPUP_HEADING
+  CHECKOUT_PAYMENTMETHOD_GPAY_BUTTON:
+    locator-type: "i18"
+  CHECKOUT_PAYMENTMETHOD_APPLEPAY_BUTTON:
+    locator-type: "i18"
+  CHECKOUT_REWARDS_EXPAND_BUTTON:
+    locator-type: "i18"
+  CHECKOUT_REWARDS_SIGNMEUP_TEXT:
+    locator-type: "i18"
+  CHECKOUT_REWARDS_IMAGE:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - LOYALTY_REWARD_LOGO_IMAGE_URL
+  CHECKOUT_REWARDS_SIGNUP_TEXT:
+    locator-type: "i18"
+  CHECKOUT_REWARDS_SIGNUP_LINK:
+    locator-type: "i18"
+  CHECKOUT_REWARDS_CHECKBOX:
+    locator-type: "data-qa-label [SignUpLoyaltyCbx]"
+  CHECKOUT_REWARDS_TERMS_TEXT:
+    locator-type: "i18"
+  CHECKOUT_REWARDS_TERMS_LINK:
+    locator-type: "i18"
+  CHECKOUT_REWARDS_CARD_LOCATOR:
+    locator-type: "data-testid [reward-card-icon] + i18"
+  CHECKOUT_REWARDS_ITEM_NAME_LOCATOR:
+    locator-type: "data-testid [cart-item-title-text] + i18"
+  CHECKOUT_REWARDS_LEVEL_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  CHECKOUT_REWARDS_DELETE_BUTTON:
+    locator-type: "i18"
+  CHECKOUT_REWARDS_EDIT_BUTTON:
+    locator-type: "i18"
+
+ORDER-CONFIRMATION-PAGE:
+  ORDERCONFIRMATION_ORDERNUMBER_SUBTITLE_LOCATOR:
+    locator-type: "i18"
+  ORDERCONFIRMATION_ORDERNUMBER_LOCATOR:
+    locator-type: "data-test-id [OrderNumberTxt]"
+  ORDERCONFIRMATION_ORDERPLACED_LOYALTY_MESSAGE:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - ORDERCONFIRMATION_LOYALTY_VALUE_1
+      - ORDERCONFIRMATION_LOYALTY_VALUE_2
+      - ORDERCONFIRMATION_LOYALTY_VALUE_3
+      - IGNORE_CURRENCY_SYMBOL
+  ORDERCONFIRMATION_PICKUP_DATETIME_LOCATOR:
+    locator-type: "i18"
+  ORDERCONFIRMATION_DELIVERY_DATETIME_LOCATOR:
+    locator-type: "i18"
+  ORDERCONFIRMATION_PICKUP_ORDERNUMBER_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  ORDERSCHEDULED_ORDERNUMBER_LOCATOR:
+    locator-type: "data-test-id [OrderNumberTxt]"
+  ORDERSCHEDULED_DELIVERYTIME_LOCATOR:
+    locator-type: "i18 + data-test-id [TBD]"
+  ORDERSCHEDULED_PHONENUMBER_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  ORDERSCHEDULED_TIME_LOCATOR:
+    locator-type: "data-test-id [OrderInfoTxt]"
+  ORDERCONFIRMATION_DELIVERY_ADDRESS:
+    locator-type: "data-test-id [TBD]"
+  ORDERCONFIRMATION_DELIVERY_TIME:
+    locator-type: "data-test-id [TBD]"
+  ORDERCONFIRMATION_ORDERNUMBER_LABEL:
+    locator-type: "i18"
+  ORDERCONFIRMATION_ORDERDATE_LABEL:
+    locator-type: "i18"
+  ORDERCONFIRMATION_ORDER_DATETIME_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  ORDERCONFIRMATION_PAYMENT_LABEL:
+    locator-type: "i18"
+  ORDERCONFIRMATION_PAYMENT_TYPE:
+    locator-type: "i18"
+  ORDERCONFIRMATION_PICKUP_TIME_LABEL:
+    locator-type: "i18 [TBD]"
+  ORDERCONFIRMATION_STOREDETAILS_TAKEOUT_LABEL:
+    locator-type: "i18 [TBD]"
+  ORDERCONFIRMATION_DIRECTIONS_LINK:
+    locator-type: "i18 [TBD]"
+  ORDERCONFIRMATION_SUBTOTAL_LABEL:
+    locator-type: "i18"
+  ORDERCONFIRMATION_SUBTOTAL_LOCATOR:
+    locator-type: "i18"  
+  ORDERCONFIRMATION_TOTAL_LABEL:
+    locator-type: "i18"
+  ORDERCONFIRMATION_TOTAL_LOCATOR:
+    locator-type: "data-qa-label [OrderTotalValue]"
+  ORDERCONFIRMATION_DISCOUNT_LABEL:
+    locator-type: "i18"
+  ORDERCONFIRMATION_DISCOUNTPRICE_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  ORDERCONFIRMATION_VATPRICE_LOCATOR:
+    locator-type: "i18"  
+  ORDERCONFIRMATION_STATUS_BAR:
+    locator-type: "data-test-id [TBD]"
+  ORDERCONFIRMATION_ITEM_TILE:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - ORDERCONFIRMATION_ITEM_DETAILS_BUNDLE_WITH_DEFAULT_VALUES
+  ORDERCONFIRMATION_PICKUPFROM_LOCATOR:
+    locator-type: "i18"
+  ORDERCONFIRMATION_DELIVERTO_LOCATOR:
+    locator-type: "i18"
+    test-data-variable:
+      - PAYMENT_TYPE_CASH_VALUE
+  ORDERCONFIRMATION_REWARDS_IMAGE:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - LOYALTY_REWARD_LOGO_IMAGE_URL
+  ORDERCONFIRMATION_REWARDS_SIGNUP_TEXT:
+    locator-type: "i18"
+  ORDERCONFIRMATION_REWARDS_SIGNUP_LINK:
+    locator-type: "i18"
+  ORDERCONFIRMATION_REWARDS_OFFER_VALUE:
+    locator-type: "data-test-id [TBD]"
+  ORDERCONFIRMATION_REWARDS_POPUP_SIGNMEUP_TEXT:
+    locator-type: "i18"
+  ORDERCONFIRMATION_REWARDS_POPUP_IMAGE:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - LOYALTY_REWARD_LOGO_IMAGE_URL
+  ORDERCONFIRMATION_REWARDS_POPUP_CHECKBOX:
+    locator-type: "data-qa-label [SignUpLoyaltyCbx]"
+  ORDERCONFIRMATION_REWARDS_POPUP_TERMS_TEXT:
+    locator-type: "i18"
+  ORDERCONFIRMATION_REWARDS_POPUP_TERMS_LINK:
+    locator-type: "i18"
+  ORDERCONFIRMATION_REWARDS_POPUP_SIGNUP_BUTTON:
+    locator-type: "i18"
+  ORDERSCHEDULED_PICKUPTIME_LOCATOR:
+    locator-type: "i18 [TBD]"
+    test-data-variable:
+      - ORDERSCHEDULED_DATETIME_DEFAULT_FORMAT
+  ORDERSCHEDULED_STOREDETAILS_HEADING_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  ORDERSCHEDULED_STOREDETAILS_TEXT_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  ORDERSCHEDULED_INQUIRYMESSAGE_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  ORDERSCHEDULED_INQUIRYSTORE_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  ORDERSCHEDULED_DELIVERYMESSAGE_TEXT:
+    locator-type: "i18"
+  ORDERCONFIRMATION_PRODUCT_DETAIL:
+    locator-type: "data-test-id [TBD]"
+  ORDERCONFIRMATION_STORE_ADDRESS:
+    locator-type: "data-qa-label [OrderReceivedStreetAddress]"
+  ORDERCONFIRMATION_PICKUP_TIME:
+    locator-type: "data-test-id [TBD]"
+  ORDERCONFIRMATION_PRICE_AMOUNT:
+    locator-type: "i18"
+  DATE_TIME_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  ORDERCONFIRMATION_FREE_COOKIE_PRICE:
+    locator-type: "data-test-id [TBD]"
+  ORDERCONFIRMATION_FINISHING_TOUCHES_1_PRICE:
+    locator-type: "data-test-id [TBD]"
+  ORDERCONFIRMATION_FINISHING_TOUCHES_2_PRICE:
+    locator-type: "data-test-id [TBD]"
+  ORDERSUMMARY_ORDERNUMBER_LOCATOR:
+    locator-type: "i18"
+    test-data-variable:
+      -TEMP_ORDERNUMBER_VALUE
+  ORDERCONFIRMATION_APPSTORE_LINK:
+    locator-type: "data-test-id [TBD]"
+  ORDERCONFIRMATION_GOOGLEPLAY_LINK:
+    locator-type: "data-test-id [TBD]"
+  ORDERCONFIRMATION_DOWNLOADAPP_DISCLAIMER_TEXT:
+    locator-type: "i18"
+  ORDERCONFIRMATION_ESTIMATED_DELIVERY_TIME_LABEL:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      -ORDERCONFIRMATION_ESTIMATED_DELIVERY_TIME_FOR_STORE_BP_09_VALUE
+      -ORDERCONFIRMATION_ESTIMATED_DELIVERY_TIME_FOR_STORE_BP_10_VALUE
+
+
+
+PAYMAYA-PAYMENT:
+  PAYMAYA_CARDFIRSTNAME_TEXTBOX:
+  PAYMAYA_CARDLASTNAME_TEXTBOX:
+  PAYMAYA_CARDNUMBER_TEXTBOX:
+  PAYMAYA_EXPIRY_DATE_TEXTBOX:
+  PAYMAYA_CVVCODE_TEXTBOX:
+  PAYMAYA_COMPLETEORDER_BUTTON:
+  PAYMAYA_WINDOW_TITLE_MOBILE:
+  PAYMAYA_PAYMENTSUCCESSFUL_WINDOW_TITLE:
+  PAYMAYA_LOADING:
+  PAYMAYA_POPUP_TEXT:
+  PAYMAYA_PAYMENTUNSUCCESSFUL_WINDOW_TITLE:
+  ORDER_FAILED_POPUP_HEADING:
+    locator-type: "i18"
+  ORDER_FAILED_POPUP_BODY_MSG:
+    locator-type: "i18"
+  PAYMAYA_BACKTOMERCHANT_BUTTON:
+  PAYMAYA_KEYPADCLOSE_BUTTON:
+    locator-type: "native"
+
+PAYMAYA-VAULT-PAYMENT:
+  PAYMAYA_VAULT_OPTION:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - CHECKOUT_PAYMENT_PAYMAYA_VAULT
+  PAYMAYA_VAULT_CARDNUMBER_TEXTBOX:
+    locator-type: "qa-label [AddNewCardCreditCardNumberTxt]"
+    test-data-variable:
+      - PAYMAYA_VAULT_DEFAULT_CARD_NUMBER_VALUE
+  PAYMAYA_VAULT_EXPIRY_DATE_TEXTBOX:
+    locator-type: "qa-label [AddNewCardExpirationDateTxt]"
+    test-data-variable:
+      - PAYMAYA_VAULT_DEFAULT_EXPIRY_VALUE
+  PAYMAYA_VAULT_CVVCODE_TEXTBOX:
+    locator-type: "qa-label [AddNewCardCVVTxt]"
+    test-data-variable:
+      - PAYMAYA_VAULT_DEFAULT_CARD_CVVCODE_VALUE
+  PAYMAYA_VAULT_CONTINUE_BUTTON:
+    locator-type: "qa-label [AddNewCardContinueBtn]"
+    test-data-variable:
+      - PAYMAYA_VAULT_INVALID_EXPIRY_VALUE
+
+PESOPAY-PAYMENT:
+  PESOPAY_CARDNUMBER_TEXTBOX:
+  PESOPAY_EXPIRY_MONTH_LIST:
+  PESOPAY_EXPIRY_MONTH_LIST_OPTIONS:
+  PESOPAY_EXPIRY_YEAR_LIST:
+  PESOPAY_EXPIRY_YEAR_LIST_OPTIONS:
+  PESOPAY_CARDNAME_TEXTBOX:
+  PESOPAY_CARDVERIFICATIONCODE_TEXTBOX:
+  PESOPAY_CARDEMAILADDRESS_TEXTBOX:
+  PESOPAY_SUBMIT_BUTTON:
+  PESOPAY_TRANSACTIONCONFIRMWINDOW_OK_BUTTON_iOS:
+  PESOPAY_TRANSACTIONCONFIRMWINDOW_OK_BUTTON_Android:
+  PESOPAY_WINDOW_TITLE:
+
+LUKA-PAYMENT:
+  LUKA_CARDHOLDERNAME_TEXTBOX:
+    locator-type: "third_party"
+    test-data-variable:
+        - LUKA_DEFAULT_CARD_NAME_VALUE
+  LUKA_CARDNUMBER_TEXTBOX:
+    locator-type: "third_party"
+    test-data-variable:
+        - LUKA_DEFAULT_CARD_NUMBER_VALUE
+  LUKA_EXPIRY_MONTH_LIST:
+    locator-type: "third_party"
+  LUKA_EXPIRY_MONTH_LIST_OPTIONS:
+    locator-type: "third_party"
+    test-data-variable:
+      - LUKA_DEFAULT_EXPIRY_MONTH_INDEX_VALUE
+  LUKA_EXPIRY_YEAR_LIST:
+    locator-type: "third_party"
+  LUKA_EXPIRY_YEAR_LIST_OPTIONS:
+    locator-type: "third_party"
+    test-data-variable:
+      - LUKA_DEFAULT_EXPIRY_YEAR_INDEX_VALUE
+  LUKA_CVVCODE_TEXTBOX:
+    locator-type: "third_party"
+    test-data-variable:
+        - LUKA_DEFAULT_CARD_CVV_VALUE
+  LUKA_PAY_BUTTON:
+    locator-type: "third_party"
+  LUKA_BACKTOMERCHANT_BUTTON:
+    locator-type: "third_party"
+  LUKA_SAVE_CARD_TOGGLE_BUTTON:
+    locator-type: "third_party"
+
+CANCEL-ORDER:
+  CANCEL_ORDER_NOTIFICATION_POPUP:
+    locator-type: "i18"
+  CANCEL_ORDER_NOTIFICATION_POPUP_BODY:
+    locator-type: "i18"
+  CANCEL_ORDER_NOTIFICATION_POPUP_OK_BUTTON:
+    locator-type: "i18 + data-test-id [CancelOrderNotificationOkBtn]"
+
+COUPONS-PAGE:
+  PROMOS_WINDOW_TITLE:
+    locator-type: "data-test-id [TBD]"
+  COUPON_ITEM_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - COUPON_DEFAULT_VALUE
+      - COUPON_NONDEFAULT_1_VALUE
+  COUPON_EXPIRY_LABEL:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - COUPON_DEFAULT_VALUE
+      - "Dynamic i18"
+  COUPON_DISCLOSURE_ICON:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - COUPON_DEFAULT_VALUE
+  COUPON_ORDER_TYPE_MOBILE_ORDER:
+    locator-type: "i18"
+  COUPON_ORDER_TYPE_INSTORE_ORDER:
+    locator-type: "i18"
+    test-data-variable:
+      - COUPON_DEFAULT_VALUE
+  COUPON_VALID_TIMER_ALERT_OK_BUTTON:
+    locator-type: "i18"
+  COUPON_SHORTCODE_WINDOW_TITLE:
+    locator-type: "data-test-id [TBD]"
+  COUPON_SHORTCODE_VALUE_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  COUPON_ADDED_INFO_TEXT:
+    locator-type: "i18 + data-test-id [TBD]"
+  DISCOUNT_LOCATOR:
+    locator-type: "data-test-id [DiscountPriceTxt-ExcludedCharge]"
+  DISCOUNT_AMOUNT_ORDER_HISTORY:
+    locator-type: "data-test-id [TBD]"
+  COUPON_REDEEM_DONE_BUTTON:
+    locator-type: "i18"
+  COUPONS_PAGE_TITLE:
+    locator-type: "i18"
+  COUPONPAGE_COUPON_GUESTPOPUP_SIGNUP_MESSAGE:
+    locator-type: "i18 + qa-label [UnlockCouponHeaderLbl]"
+  COUPONPAGE_COUPON_GUESTPOPUP_OK_BUTTON:
+    locator-type: "i18 + qa-label [UnlockCouponOkBtn]"
+  COUPONPAGE_COUPON_GUESTPOPUP_NOTHANKS_BUTTON:
+    locator-type: "i18 + qa-label [UnlockCouponOkBtn]"
+
+STORE-MANAGEMENT:
+  DELIVERY_PERMANENTDISABLED_ERROR_POPUP_HEADING:
+    locator-type: "i18"
+  DELIVERY_PERMANENTDISABLED_ERROR_POPUP_BODY:
+    locator-type: "i18"
+  DELIVERY_STORECLOSED_ERROR_POPUP_HEADING:
+    locator-type: "i18"
+  DELIVERY_STORECLOSED_ERROR_POPUP_BODY:
+    locator-type: "i18"
+  DELIVERY_STORECLOSED_ERROR_POPUP_OK_BUTTON:
+    locator-type: "i18"
+  DELIVERY_STORECLOSED_ERROR_POPUP_SEARCHSTORE_BUTTON:
+    locator-type: "i18"
+  DELIVERY_STORECLOSED_ERROR_POPUP_RETURN_BUTTON:
+    locator-type: "i18"
+  DELIVERY_STORECLOSED_INFORMATION_LABEL:
+    locator-type: "i18"
+    test-data-variable:
+      - DELIVERY_STORECLOSED_INFORMATION_LABEL_VALUE
+  DELIVERY_TEMPORARYDISABLED_ERROR_POPUP_HEADING:
+    locator-type: "i18"
+  DELIVERY_TEMPORARYDISABLED_ERROR_POPUP_BODY:
+    locator-type: "i18"
+  DELIVERY_STORECLOSED_DISABLED_ASAP_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  DELIVERY_STORECLOSED_HEADING:
+    locator-type: "i18"
+    test-data-variable:
+      - STORECLOSED_HEADING_MESSAGE
+
+MENU-FAVOURITES:
+  FAVORITES_NOFAVOURITESMESSAGE_LOCATOR:
+    locator-type: "i18 + data-test-id [TBD]"
+
+ORDER-HISTORY-PAGE:
+  ORDERHISTORY_PICKUP_DATETIME_LOCATOR:
+    locator-type: "i18"
+  ORDERHISTORY_DELIVERY_DATETIME_LOCATOR:
+    locator-type: "i18"
+  ORDERHISTORY_ORDER_NUMBER:
+    locator-type: "data-qa-label [OrderHistoryDetailsOrderNumber] + i18"
+  ORDERHISTORY_ORDER_TOTAL:
+    locator-type: "data-test-id [TBD]"
+  ORDERHISTORY_ORDER_SUBTOTAL:
+    locator-type: "data-test-id [TBD]"
+  ORDERHISTORY_VATPRICE_LOCATOR:
+    locator-type: "data-qa-label [TaxPriceLbl]"
+  ORDERHISTORY_DISCOUNTPRICE_LOCATOR:
+    locator-type: "data-qa-label [CouponDiscountTxt]"
+  ORDERHISTORY_PAYMENTTYPE_LOCATOR:
+    locator-type: "i18"
+  ORDERHISTORY_WINDOW_TITLE:
+    locator-type: "i18"
+  ORDERHISTORY_TITLE_LABEL:
+    locator-type: "i18"
+  ORDERHISTORY_REORDER_BUTTON:
+    locator-type: "i18"
+  ORDERHISTORY_CANCEL_BUTTON:
+    locator-type: "i18"
+  ORDERHISTORY_CANCEL_CONFIRM_BUTTON:
+    locator-type: "i18"
+  ORDERHISTORY_CANCEL_CONFIRMATION_BODY:
+    locator-type: "i18"
+  ORDERHISTORY_CANCEL_CONFIRMATION_OK_BUTTON:
+    locator-type: "i18"
+  ORDERHISTORY_REORDER_CONFIRM_BUTTON:
+    locator-type: "i18"
+  ORDERHISTORY_ORDER_REORDER_BUTTON:
+    locator-type: "i18"
+  ORDERHISTORY_REORDER_SAVED_ORDER_BUTTON:
+    locator-type: "data-qa-label [REORDER]"
+  ORDERHISTORY_REORDER_ITEMADDED_POPUP_TITLE:
+    locator-type: "data-test-id [TBD]"
+  ORDERHISTORY_REORDER_ITEMADDED_POPUP_BODY:
+    locator-type: "data-test-id [TBD]"
+  ORDERHISTORY_REORDER_ITEMADDED_POPUP_OK_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  ORDERHISTORY_REORDER_CONFIRM_ADD_TO_ORDER_POPUP_TITLE:
+    locator-type: "i18"
+  ORDERHISTORY_REORDER_CONFIRM_ADD_TO_ORDER_POPUP_BODY:
+    locator-type: "i18"
+  ORDERHISTORY_LOADMORE_BUTTON:
+    locator-type: "i18"
+  ORDERHISTORY_ORDER_EXPAND_BUTTON:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - ORDERHISTORY_REORDER_VALUE
+  ORDERHISTORY_ORDERNOW_BUTTON:
+    locator-type: "qa-label [OrderHistoryOrderNowBtn] + i18"
+  ORDERHISTORY_MINUS_BUTTON:
+    locator-type: "data-qa-label [OrderHistoryOrderExpandIcon]"
+  ORDERHISTORY_PLUS_BUTTON:
+    locator-type: "data-qa-label [OrderHistoryOrderExpandIcon]"
+  ORDERHISTORY_REORDER_CONFIRMATION_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  ORDERHISTORY_REORDER_CANCEL_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  ORDER_REORDER_BUTTON:
+    locator-type: "i18"
+  ORDERHISTORY_REORDER_SPECIFICORDER_BUTTON:
+    locator-type: "i18"
+  ORDERHISTORY_REORDER_UNAVAILABLE_TITLE:
+    locator-type: "i18"
+  ORDERHISTORY_REORDER_UNAVAILABLE_MESSAGE:
+    locator-type: "data-test-id [TBD]"
+  ORDERHISTORY_REORDER_UNAVAILABLE_YES_BUTTON:
+    locator-type: "i18"
+  ORDERHISTORY_REORDER_UNAVAILABLE_NO_BUTTON:
+    locator-type: "i18"
+  ORDERHISTORY_REORDER_PRODUCT_UNAVAILABLE_BODY:
+    locator-type: "i18"
+  ORDERHISTORY_REORDER_PRODUCT_UNAVAILABLE_OK_BUTTON:
+    locator-type: "i18"
+  ORDERHISTORY_NOORDER_LABEL:
+    locator-type: "i18"
+  ORDERHISTORY_PICKUP_ORDER_PLACED_LABEL:
+    locator-type: "i18"
+  ORDERHISTORY_PICKUP_ADDRESS_LABEL:
+    locator-type: "i18"
+  ORDERHISTORY_PICKUP_LASTORDER_ADDRESS_LABEL:
+    locator-type: "i18"
+  ORDERHISTORY_DELIVERY_ORDER_PLACED_LABEL:
+    locator-type: "i18"
+  ORDERHISTORY_DELIVERY_ADDRESS_LABEL:
+    locator-type: "i18"
+  ORDERHISTORY_PRODUCT_DETAIL:
+    locator-type: "data-qa-label [OrderHistoryDetailsItemList]"
+    test-data-variable:
+      - ORDERHISTORY_ITEM_DETAILS_MIXEDCART_DEFAULT_VALUE
+  ORDERHISTORY_DELIVERYSTOREDETAILS_TEXT:
+    locator-type: "data-qa-label [OrderHistoryDetailsStreetAddress]"
+    test-data-variable:
+      - DELIVERY_STOREADDRESS_DEFAULT_VALUE
+  ORDERHISTORY_DELIVERYTIME_LOCATOR:
+    locator-type: "data-qa-label [OrderHistoryDetailsOrderDate]"
+  ORDERHISTORY_OLDORDERS_COUNT_LOCATOR:
+    locator-type: "data-qa-label [OrderHistoryOrderExpandIcon]"
+    test-data-variable:
+      - DEFAULT_OLDORDERS_COUNT
+      - UPDATED_ORDERS_COUNT
+  ORDERHISTORY_STOREADDRESS_TEXT:
+    test-data-variable:
+      - STOREADDRESS_DEFAULT_VALUE
+  ORDERHISTORY_VIEWDETAILS_ORDERNUMBER_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  ORDERHISTORY_DROPDOWN_OPTIONS:
+    locator-type: "data-test-id [TBD]"
+  ORDERHISTORY_EMPTY_TITLE:
+    locator-type: "data-qa-label [OrderHistoryDetailsNoOrdersYet]"
+  ORDERHISTORY_EMPTY_MESSAGE:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - ORDERHISTORY_EMPTY_MESSAGE_VALUE
+  ORDERHISTORY_EMPTY_ORDERBUTTON:
+    locator-type: "qa-label [OrderHistoryOrderNowBtn]
+
+PAYMENT-PAGE:
+  PAYMENT_SAVECARD_CHECKBOX:
+    locator-type: "data-test-id [TBD]"
+  PAYMENT_ADDPAYMENTMETHOD_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  PAYMENT_CARDNUMBER_ERROR_TEXT:
+    locator-type: "third_party"
+  PAYMENT_DUPLICATE_CARD_ERROR_TEXT:
+    locator-type: "i18"
+  PAYMENT_ERRORNOTIFICATION_HEADER:
+    locator-type: "i18"
+  PAYMENT_ERRORNOTIFICATION_BODY:
+    locator-type: "i18"
+  PAYMENT_ERRORNOTIFICATION_OK_BUTTON:
+    locator-type: "i18"
+  PAYMENT_CARD_TITLE:
+    locator-type: "i18"
+
+ORDER-TRACKER-PAGE:
+  ORDERTRACKER_SCREEN_TITLE:
+    locator-type: "i18"
+  ORDERTRACKER_ORDERVALUE_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  ORDERTRACKER_DELIVEREDFROM_TEXT:
+    locator-type: "data-test-id [TBD]"
+  ORDERTRACKER_MESSAGETHESTORE_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  MESSAGETOSTORE_REASONS_ICON:
+    locator-type: "data-test-id [TBD]"
+  MESSAGETOSTORE_SUBMIT_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  MESSAGETOSTORE_CONFIRMATION_POPUP:
+    locator-type: "i18 + data-test-id [ReorderBtn]"
+  MESSAGETOSTORE_REASONS_LIST:
+    locator-type: "i18"
+  ORDERSTATUS_RECEIVED_HIGHLIGHTED:
+    locator-type: "data-test-id [TBD]"
+  ORDERSTATUS_KITCHEN_HIGHLIGHTED:
+    locator-type: "data-test-id [TBD]"
+  ORDERSTATUS_INTRANSIT_HIGHLIGHTED:
+    locator-type: "data-test-id [TBD]"
+  ORDERSTATUS_DELIVERED_HIGHLIGHTED:
+    locator-type: "data-test-id [TBD]"
+  ORDERSTATUS_READYTOPICKUP_HIGHLIGHTED:
+    locator-type: "data-test-id [TBD]"
+
+LBS:
+  LBS_SKIP_ANDROID_BUTTON:
+    locator-type: "third_party"
+  LBS_SKIP_IOS_BUTTON:
+    locator-type: "third_party"
+  LBS_ALLOW_ANDROID_BUTTON:
+    locator-type: "third_party"
+    test-data-variable:
+      - STOREADDRESS_LATTITUDE_DEFAULT_VAULE
+      - STOREADDRESS_LONGITUDE_DEFAULT_VAULE
+      - PICKUPADDRESS_LATTITUDE_OUTSIDECOVERAGEAREA_VALUE
+      - PICKUPADDRESS_LONGITUDE_OUTSIDECOVERAGEAREA_VALUE
+      - DELIVERYADDRESS_LATTITUDE_OUTSIDECOVERAGEAREA_VALUE
+      - DELIVERYADDRESS_LONGITUDE_OUTSIDECOVERAGEAREA_VALUE
+  LBS_ENABLE_ANDROID_BUTTON:
+    locator-type: "third_party"
+  LBS_ALLOW_IOS_BUTTON:
+    locator-type: "third_party"
+  LBS_ALLOW_LOC_IOS_BUTTON:
+    locator-type: "third_party"
+  LBS_ALWAYS_ALLOW_IOS_BUTTON:
+    locator-type: "third_party"
+  LBS_DO_NOT_ALLOW_IOS_BUTTON:
+    locator-type: "third_party"
+  LBS_DENY_ANDROID_BUTTON:
+    locator-type: "third_party"
+  LBS_DENY_IOS_BUTTON:
+    locator-type: "third_party"
+  LBS_POPUP_RETURN_ANDROID_BUTTON:
+    locator-type: "third_party"
+  LBS_POPUP_RETURN_IOS_BUTTON:
+    locator-type: "third_party"
+  APP_LBS_HEADER_LABEL:
+    locator-type: "third_party"
+  APP_LBS_BODY_LABEL:
+    locator-type: "third_party"
+  APP_LBS_CONTINUE_BUTTON:
+    locator-type: "third_party"
+  LBS_POPUP_HEADER_LABEL:
+    locator-type: "third_party"
+  LBS_POPUP_BODY_LABEL:
+    locator-type: "third_party"
+  LBS_POPUP_ALLOW_ONCE_BUTTON:
+    locator-type: "third_party"
+  LBS_POPUP_ALLOW_WHILEUSINGAPP_BUTTON:
+    locator-type: "third_party"
+  LBS_POPUP_DENY_BUTTON:
+    locator-type: "third_party"
+
+APP TRACKING TRANSPARENCY POP-UP:
+  ATT_POPUP_HEADER_LABEL:
+    locator-type: "third_party"
+  ATT_POPUP_BODY_LABEL:
+    locator-type: "third_party"
+  ATT_POPUP_ALLOWTOTRACK_BUTTON:
+    locator-type: "third_party"
+  ATT_POPUP_ASKNOTTOTRACK_BUTTON:
+    locator-type: "third_party"
+
+COOKIES POP-UP:
+  APP_COOKIES_ACCEPT_BUTTON:
+    locator-type: "third_party"
+  APP_COOKIES_PREFERENCES_BUTTON:
+    locator-type: "third_party"
+  APP_COOKIES_HEADER_LABEL:
+    locator-type: "third_party"
+  APP_COOKIES_BODY_LABEL:
+    locator-type: "third_party"
+
+PUSH-NOTIFICATIONS:
+  ACTIVATE_NOTIFICATION_DENY_BUTTON:
+    locator-type: "third_party"
+  ACTIVATE_NOTIFICATION_OK_BUTTON:
+    locator-type: "third_party"
+  ACTIVATE_NOTIFICATION_ALLOW_BUTTON:
+    locator-type: "third_party"
+  NOTIFICATION_MAYBELATER_BUTTON:
+    locator-type: "native + i18"
+  PUSH_PRIMER_SCREEN_LOCATOR:
+    locator-type: "i18"
+  ACTIVATE_NOTIFICATION_ACCEPT_BUTTON:
+    locator-type: "i18"
+  ACTIVATE_NOTIFICATION_NATIVE_ACCEPT_BUTTON:
+    locator-type: "i18"
+  APP_NOTIFICATION_HEADER_LABEL:
+    locator-type: "third_party"
+  APP_NOTIFICATION_BODY_LABEL:
+    locator-type: "third_party"
+  APP_NOTIFICATION_POPUP_ALLOW_BUTTON:
+    locator-type: "i18"
+  APP_NOTIFICATION_POPUP_MAYBELATER_BUTTON:
+    locator-type: "i18"
+
+NOTIFICATIONS-PAGE:
+  NOTIFICATIONS_PAGE_TITLE:
+    locator-type: "i18"
+  NOTIFICATIONS_CHECKBOX_CHECKED:
+    locator-type: "i18"
+  NOTIFICATIONS_CHECKBOX_UNCHECKED:
+    locator-type: "i18"
+  NOTIFICATIONS_CLOSE_BUTTON:
+    locator-type: "qa-label [HeaderCloseIcon]"
+  NOTIFICATION_HEADER_LABEL:
+    locator-type: "third_party"
+  NOTIFICATION_BODY_LABEL:
+    locator-type: "third_party"
+  NOTIFICATION_POPUP_ALLOW_BUTTON:
+    locator-type: "third_party"
+  NOTIFICATION_POPUP_DENY_BUTTON:
+    locator-type: "third_party"
+  NOTIFICATION_CANCEL_BUTTON:
+    locator-type: "i18"
+
+
+LOYALTY-PAGE:
+  LOYALTY_HOME_SCREEN_TEXT:
+    locator-type: "data-test-id [TBD]"
+  LOYALTY_FAQ_TITLE:
+    locator-type: "i18"
+  HOMEPAGE_LOYALTY_NOREWARDS_TEXT:
+    locator-type: "i18"
+  HOMEPAGE_LOYALTY_REWARD_PROGRESSBAR_TITLE:
+    locator-type: "data-test-id [TBD]"
+  HOMEPAGE_LOYALTY_REWARDS_TEXT:
+    locator-type: "i18"
+  HOMEPAGE_LOYALTY_REWARDS_INFO_ICON:
+    locator-type: "i18"
+  HOMEPAGE_LOYALTY_REWARDS_VIEWALL_BUTTON:
+    locator-type: "data-qa-label"
+  HOMEPAGE_LOYALTY_REWARD_ITEM:
+    locator-type: "data-test-id"
+  HOMEPAGE_LOYALTY_SIGNUP_IMG:
+    locator-type: "data-test-id"
+    test-data-variable:
+      - LOYALTY_REWARD_LOGO_IMAGE_URL
+  HOMEPAGE_LOYALTY_SIGNUP_LINK:
+    locator-type: "data-test-id"
+  HOMEPAGE_LOYALTY_SIGNUP_TEXT:
+    locator-type: "data-test-id"
+    test-data-variable:
+      - LOYALTY_SIGNUP_MESSAGE_1
+      - LOYALTY_SIGNUP_MESSAGE_2
+  FOOTER_LOYALTY_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  FOOTER_CAMPERO_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  REWARD_LEVEL_SELECT_BUTTON:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - FIRST_REWARD_LEVEL_VALUE
+      - LOYALTY_CATEGORY_PREMIUM_VALUE
+  REWARD_ITEM_SELECT_BUTTON:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - FIRST_REWARD_LEVEL_ITEM_VALUE
+  LOYALTY_ADDTOCART_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  LOYALTY_ITEM_REDEEM_BUTTON:
+      locator-type: "data-test-id [TBD]"
+      test-data-variable:
+        - LOYALTY_PRODUCT_DEFAULT_VALUE
+        - LOYALTY_CATEGORY_2_PRODUCT_DEFAULT_VALUE
+        - LOYALTY_CATEGORY_3_PRODUCT_DEFAULT_VALUE
+        - LOYALTY_CUSTOMIZABLE_PRODUCT_VALUE
+  LOYALTY_PRODUCT_MOD_SELECTION_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - LOYALTY_MODIFIER_SELECTION_NAME_VALUE
+      - LOYALTY_MODIFIER_NAME_DEFAULT_VALUE
+      - LOYALTY_CUSTOMIZABLE_MODIFIER_DEFAULT_VALUE
+  LOYALTY_PRODUCT_MOD_HEADING_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  REWARD_LINK_DETAIL_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  REWARD_COUPON_ALREADYIN_CART_TEXT:
+    locator-type: "i18"
+  NO_LOYALTY_PROGRAM_ALERT_LOCATOR:
+    locator-type: "i18"
+  LOYALTY_ORDERHISTORY_REWARDSACTIVITY_DROPDOWN_SELECTOR:
+    locator-type: "i18"
+    test-data-variable:
+        - LOYALTY_ORDER_REDEEMED_VALUE_1
+        - LOYALTY_ORDER_REDEEMED_VALUE_2
+        - LOYALTY_SIGNUP_MESSAGE_1
+        - LOYALTY_SIGNUP_MESSAGE_2
+  LOYALTY_REWARDS_DUNKIN_BROWSER_TITLE_TEXT:
+    locator-type: "third_party"
+  LOYALTY_OPTIN_POPUP_TITLE:
+    locator-type: "i18"
+  LOYALTY_OPTIN_POPUP_CHECKBOX:
+    locator-type: "data-test-id [TBD]"
+  LOYALTY_OPTIN_POPUP_SIGNUP_BUTTON:
+    locator-type: "i18"
+  LOYALTY_REWARD_QUANTITY_TEXT:
+    locator-type: "qa-label [RewardCodeAvailableRewardLbl]"
+  LOYALTY_REWARD_QUANTITY_POINTS:
+      locator-type: "qa-label [RewardCodeAvailableRewardLbl]"
+      test-data-variable:
+        - TEMP_REWARD_VALUE
+        - LOYALTY_POINTS_BALANCE_VALUE
+        - LOYALTY_NEW_USER_POINTS_BALANCE_VALUE
+  LOYALTY_REDEEM_BUTTON:
+    locator-type: "data-test-id [LoyaltyRedeemBtn]"
+    test-data-variable:
+      - LOYALTY_CATEGORY_DEFAULT_VALUE
+  LOYALTY_SCREEN_TITLE:
+    locator-type: "data-test-id [TBD]"
+  LOYALTY_HEADER_TITLE:
+    locator-type: "i18"
+  LOYALTY_INFO_ICON:
+    locator-type: "qa-label [rewardInfoIcon]"
+  LOYALTY_CURRENT_TIER_ICON:
+    locator-type: "data-test-id [TBD]"
+  LOYALTY_CURRENT_TIER_LABEL:
+    locator-type: "data-test-id [TBD] + i18"
+    test-data-variable:
+      - LOYALTY_CURRENT_TIER_VALUE
+      - LOYALTY_NEW_USER_CURRENT_TIER_VALUE
+  LOYALTY_POINTS_TO_NEXT_LEVEL_TEXT:
+    locator-type: "data-test-id [TBD] + i18"
+    test-data-variable:
+      - LOYALTY_POINTS_TO_NEXT_LEVEL_VALUE
+  LOYALTY_TIER_PROGRESS_BAR:
+    locator-type: "data-test-id [TBD]"
+  LOYALTY_REWARD_LABEL_BRONZE:
+    locator-type: "data-test-id [TBD]"
+  LOYALTY_REWARD_LABEL_SILVER:
+    locator-type: "data-test-id [TBD]"
+  LOYALTY_REWARD_LABEL_GOLD:
+    locator-type: "data-test-id [TBD]"
+  LOYALTY_TIER_POINTS_VALUE:
+    locator-type: "data-test-id [TBD] + i18"
+    test-data-variable:
+      - LOYALTY_TIER_BRONZE_POINTS_VALUE
+      - LOYALTY_TIER_SILVER_POINTS_VALUE
+      - LOYALTY_TIER_GOLD_POINTS_VALUE
+  LOYALTY_REWARDS_CHALLENGE_POPUP_HEADER:
+    locator-type: "i18"
+  LOYALTY_REWARDS_CHALLENGE_ITEM_TEXT:
+    locator-type: "data-test-id [TBD]"
+  LOYALTY_REWARDS_CHALLENGE_PROGRESSBAR:
+    locator-type: "data-test-id [RewardsProgressBar]"
+  LOYALTY_REWARDS_CHALLENGE_POPUP_ORDER_BUTTON:
+    locator-type: "i18"
+  REWARD_GET_STARTED_CTA:
+    locator-type: "data-test-id [TBD]"
+
+ACCOUNT-INFO:
+  ACCOUNT_INFO_HEADER_TITLE:
+    locator-type: "data-test-id [TBD]"
+
+SPLASH-SCREEN:
+  SPLASH_SCREEN_MAYBE_LATER:
+    locator-type: "data-test-id [TBD]"
+  SPLASH_SCREEN_GET_STARTED:
+    locator-type: "data-test-id [TBD]"
+
+WELCOMEPAGE_DA:
+  WELCOME_LOGIN_BUTTON:
+    locator-type: "resource-id"
+  SIGNUP_WITHEMAIL_BUTTON:
+    locator-type: "qa-label [ForceSignUpWithEmail]"
+
+LOGIN_DA:
+  LOGIN_EMAILADDRESS_TEXTBOX:
+    locator-type: "i18"
+    test-data-variable:
+      - EMAILADDRESS_DEFAULT_VALUE
+      - EMAILADDRESS_NONDEFAULT_NOSAVEDCARD_VALUE
+  LOGIN_PASSWORD_TEXTBOX:
+    locator-type: "i18"
+    test-data-variable:
+      - PASSWORD_DEFAULTVALID_VALUE
+      - PASSWORD_NONDEFAULT_VALUE_1
+      - PASSWORD_NONDEFAULT_VALUE_2
+      - PASSWORD_NONDEFAULT_VALUE_3
+      - PASSWORD_VALIDATING_VALUE_2
+      - PASSWORD_EXCEEDMAXLENGTH_VALUE
+  LOGIN_LOGIN_BUTTON:
+    locator-type: "resource-id"
+  LOGIN_INVALIDCREDENTIALS_LOCATOR:
+    locator-type: "i18"
+    test-data-variable:
+      - LOGIN_INVALIDCREDENTIALS_ERRORMSG
+  LOGIN_EMAILREQUIRED_ERRORMSG:
+    locator-type: "i18"
+    test-data-variable:
+      - LOGIN_EMAILREQUIRED_TEXT
+  LOGIN_PASSWORDREQUIRED_ERRORMSG:
+    locator-type: "i18"
+    test-data-variable:
+      - LOGIN_PASSWORDREQUIRED_TEXT
+
+INITAL-LOGIN_DA:
+  INITIALLOGIN_EMAILADDRESS_TEXTBOX:
+    locator-type: "i18"
+    test-data-variable:
+      - EMAILADDRESS_NEWUSER_VALUE
+  INITIALLOGIN_PASSWORD_TEXTBOX:
+    locator-type: "i18"
+    test-data-variable:
+      - PASSWORD_NEWUSER_VALUE
+  INITIALLOGIN_LOGIN_BUTTON:
+    locator-type: "resource-id"
+  INITIALLOGIN_INVALIDCREDENTIALS_LOCATOR:
+    locator-type: "i18"
+  INITIALLOGIN_EMAILREQUIRED_ERRORMSG:
+    locator-type: "i18"
+  INITIALLOGIN_PASSWORDREQUIRED_ERRORMSG:
+    locator-type: "i18"
+
+HOMEPAGE_DA:
+  HOMEPAGE_MYTRANSPORTATION_BUTTON:
+    locator-type: "resource-id"
+  HOMEPAGE_STATUS_BUTTON:
+    locator-type: "resource-id"
+  HOMEPAGE_DELIVERY_BANNER:
+    locator-type: "i18"
+
+HEADER_DA:
+  HEADER_SHOWMENU_BUTTON:
+    locator-type: "resource-id"
+  HEADER_LOGO_IMAGE:
+    locator-type: "resource-id [TBD]"
+  HEADER_MYDELIVERIES_BUTTON:
+    locator-type: "resource-id"
+  HEADER_ORDERONLINE_LINK:
+    locator-type: "i18"
+
+OM_VARIABLES:
+  test-data-variable:
+    - DEFAULT_STOREID_VALUE
+    - NONDEFAULT_STOREID_3_VALUE
+    - NONDEFAULT_STOREID_4_VALUE
+    - NONDEFAULT_STOREID_5_VALUE
+    - OM_URL
+    - OM_KEY
+    - DELIVERY_QUOTE_API_KEY
+    - OM_PROXY_URL
+    - TENANT_ID
+
+OCC_VARIABLES:
+  test-data-variable:
+    - OCC_RECOMMENDER_PROPERTY
+    - OCC_URL
+    - OCC_EXTERNAL_PROPERTIES
+    - OCC_TENANT
+    - OCC_ENV
+    - OCC_ORDERSTATUS_CANCELLED_VALUE
+    - OCC_ORDERSTATUS_RECEIVED_VALUE
+    - OCC_ORDERSTATUS_PLACED_VALUE
+    - PAYMENT_TYPE_CREDITCARD
+    - PAYMENT_STATUS_SUCCESS
+    - ORDERSTATUS_REFUNDED_VALUE
+
+DAYPARTS:
+  PRODUCT_NOT_AVAIALBLE_ALERT:
+    locator-type: "i18"
+  PRODUCT_NOT_AVAIALBLE_ALERT_MESSAGE:
+    locator-type: "i18"
+
+KEYBOARD:
+  DONE_KEYBOARD_BUTTON:
+    locator-type: "native"
+
+Third Party 3DS:
+  3DS_PASSWORD_TEXTBOX:
+    locator-type: "third-party"
+  3DS_SUBMIT_BUTTON:
+    locator-type: "third-party"
+
+Cross Browser:
+  test-data-variable:
+    - BROWSER_FIREFOX
+    - MOBILE_CHROME_USER_AGENT
+    - MOBILE_CHROME_VIEWPORT
+MOBILE_PRODUCT_BUILDER_SELECT_SIZE_CLOSE_BUTTON:
+   locator-type: "data-test-id [TBD]"
+MOBILE_PICKUP_CHECKOUT_CONTINUETOPAYMENT_BUTTON:
+   locator-type: "i18"
+MISC:
+  test-data-variable:
+    - APP_VIEW
+    - IS_EDITABLE
+    - SWITCH_VIEW
+    - AUT_PACKAGE_NAME_ANDROID
+    - IGNORE_SPECIAL_SYMBOL_DAYTIME_VALUE
+    - APPLICATION_LOCALE
+
+Tenant Deeplink:
+  test-data-variable:
+    - TENANT_HOMEPAGE_URL
+    - TENANT_MENU_URL
+    - TENANT_STORELOCATOR_URL
+    - TENANT_COUPONSPAGE_URL
+    - TENANT_MYACCOUNTPAGE_URL
+    - TENANT_HOMEPAGE_INCORRECT_URL
+    - TENANT_MENU_INCORRECT_URL
+
+mobile__swipe_to_position:
+  test-data-variable:
+    - ORDERHISTORY_ORDERSPOSITION_VALUE
+
+Mobile Packages:
+  test-data-variable:
+    - CHROME_PACKAGE_NAME
+    - SAFARI_PACKAGE_NAME
+    - AUT_PACKAGE_NAME_iOS
+    - AUT_PACKAGE_NAME_ANDROID
+
+OM availability:
+  test-data-variable:
+    - NONDEFAULT_PRODUCT_SKU_ID_1
+    - NONDEFAULT_PRODUCT_SKU_ID_2
+    - NONDEFAULT_PRODUCT_SKU_ID_3
+    - NONDEFAULT_PRODUCT_SKU_ID_4
+    - NONDEFAULT_PRODUCT_SKU_ID_5
+    - NONDEFAULT_PRODUCT_SKU_ID_6
+    - NONDEFAULT_PRODUCT_SKU_ID_7
+    - NONDEFAULT_PRODUCT_SKU_ID_8
+    - NONDEFAULT_PRODUCT_SKU_ID_9
+    - NONDEFAULT_PRODUCT_SKU_ID_10
+    - NONDEFAULT_PRODUCT_SKU_ID_11
+    - NONDEFAULT_PRODUCT_SKU_ID_12
+    - NONDEFAULT_PRODUCT_SKU_ID_13
+    - NONDEFAULT_PRODUCT_SKU_ID_14
+
+SHOP_CARDS:
+  SHOP_CARDS_TITLE:
+    locator-type: "i18"
+  SHOP_CARDS_ADDNEWCARD_BUTTON:
+    locator-type: "data-qa-label [BRPayAddANewCardBtn]"
+  SHOP_CARDS_NOPE_BUTTON:
+    locator-type: "i18"
+  SHOP_CARDS_DESIGN_BUTTON:
+    locator-type: "data-qa-label [CardDesignBtn]"
+  SHOP_CARDS_DESIGN_NEXT_BUTTON:
+    locator-type: "i18"
+  SHOP_CARDS_VALUE_BUTTON:
+    locator-type: "data-qa-label [AddValueAmountBtn]"
+    test-data-variable:
+      - SHOP_CARDS_DEFAULT_VALUE
+      - SHOP_CARDS_NONDEFAULT_VALUE
+      - SHOP_CARDS_MERGED_VALUE
+      - SHOP_CARDS_CONFIRMATION_VALUE
+  SHOP_CARDS_CONFIRMATIONTEXT_LOCATOR:
+    locator-type: "data-qa-label [CardAddedMsgLbl]"
+  SHOP_CARDS_CONFIRMATIONBALANCE_LOCATOR:
+    locator-type: "data-qa-label [BalanceLbl]"
+  SHOP_CARDS_CLOSE_BUTTON:
+    locator-type: "data-qa-label [AppCloseBtn]"
+  SHOP_CARDS_EXISTINGCARD_BUTTON:
+    locator-type: "i18"
+  SHOP_CARDS_MERGECARD_BUTTON:
+    locator-type: "i18"
+  SHOP_CARDS_MERGECONFIRMATION_LOCATOR:
+    locator-type: "i18"
+  SHOP_CARDS_PAYINSTORE_BUTTON:
+    locator-type: "data-qa-label [BRPayPayInStoreBtn]"
+  SHOP_CARDS_ADDFUNDS_BUTTON:
+    locator-type: "i18"
+  SHOP_CARDS_TRANSACTIONHISTORY_BUTTON:
+    locator-type: "data-qa-label [BRPayTransactionHistoryBtn]"
+  SHOP_CARDS_BALANCE_LOCATOR:
+    locator-type: "data-test-id [TBD]"
+  SHOP_CARDS_AMOUNTEXCEEDED_POPUP_HEADER:
+    locator-type: "i18 + data-test-id [ErrorHeaderLbl]"
+  SHOP_CARDS_AMOUNTEXCEEDED_POPUP_TEXT:
+    locator-type: "i18 + data-test-id [PopupErrorMsgLbl]"
+  SHOP_CARDS_AMOUNTEXCEEDED_POPUP_OK_BUTTON:
+    locator-type: "i18"
+  SHOP_CARDS_DELETECARD_BUTTON:
+    locator-type: "data-test-id [BRPayDeleteCardBtn]"
+
+REWARDS-PAGE:
+  REWARDS_SCANINSHOPTAB_BUTTON:
+    locator-type: "i18"
+  REWARDS_SCANINSHOPTAB_BUTTON_ACTIVE:
+    locator-type: "i18"
+  REWARDS_REWARDSTAB_BUTTON:
+    locator-type: "i18"
+  REWARDS_REWARDSTAB_BUTTON_ACTIVE:
+    locator-type: "i18"
+  REWARDS_SCANINSHOP_REWARDS_TITLE:
+    locator-type: "i18"
+  REWARDS_SCANINSHOP_REWARDS_INFO:
+    locator-type: "i18 + data-test-id [TBD]"
+  REWARDS_SCANINSHOP_REWARDS_BUTTON:
+    locator-type: "data-test-id [BRRewardsScreenRewardBtn]"
+  REWARDS_SCANINSHOP_OFFERS_TITLE:
+    locator-type: "i18"
+  REWARDS_SCANINSHOP_OFFERS_INFO:
+    locator-type: "i18 + data-test-id [TBD]"
+  REWARDS_SCANINSHOP_OFFERS_BUTTON:
+    locator-type: "data-test-id [BRRewardsScreenOfferBtn]"
+  REWARDS_SCANINSHOP_EXPIRE_DATE_TEXT:
+    locator-type: "i18 [TBD]"
+  REWARDS_SCANINSHOP_SPOON_IMAGE:
+    locator-type: "data-test-id [TBD]"
+  REWARDS_POINTS_LIST:
+    locator-type: "data-testid [loyalty-rewards-list]"
+  REWARDS_POINTS_DRAWER_OPEN_BUTTON:
+    locator-type: "data-testid [loyalty-rewards-list]"
+  REWARDS_REWARD_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  REWARDS_REDEEM_BUTTON:
+    locator-type: "data-test-id [TBD]"
+    test-data-variable:
+      - REWARDS_REDEEM_ONLINE_VALUE
+      - REWARDS_REDEEM_STORE_VALUE
+  REWARDS_ADD_TO_CART_BUTTON:
+    locator-type: "data-testid [add-to-cart-button]"
+  REWARDS_MOD_PLUS_BUTTON:
+    locator-type: "data-testid [quantity-counter-increment-button]"
+  REWARDS_REWARD_CLOSE_BUTTON:
+    locator-type: "data-test-id [TBD]"
+  REWARDS_REWARD_CANCEL_BUTTON:
+    locator-type: "i18"
+
+SENDAGIFT-PAGE:
+  SENDAGIFT_HEADER_LOCATOR:
+    locator-type: "i18 + qa-attribute [AppHeaderTitleTxt]"
+  SENDAGIFT_VALUE_BUTTON:
+    locator-type: "data-qa-label [AddValueAmountBtn]"
+    test-data-variable:
+      - SENDAGIFT_AMOUNT_DEFAULT_VALUE
+  SENDAGIFT_DESIGN_BUTTON:
+    locator-type: "data-qa-label [CardDesignBtn]"
+  SENDAGIFT_NEXT_BUTTON:
+    locator-type: "i18"
+  SENDAGIFT_SENDERNAME_INPUT:
+    locator-type: "data-qa-label [BRSendAGiftYourNameTxt]"
+    test-data-variable:
+      - SENDAGIFT_SENDERNAME_DEFAULT_VALUE
+  SENDAGIFT_DELIVERYOPTION_EMAIL_BUTTON:
+    locator-type: "qa-attribute [BRSendAGiftEmailBtn]"
+  SENDAGIFT_RECIPIENTSEMAIL_INPUT:
+    locator-type: "data-qa-label [BRSendAGiftRecipientEmailTxt]"
+    test-data-variable:
+      - SENDAGIFT_RECIPENTEMAIL_DEFAULT_VALUE
+  SENDAGIFT_RECIPIENTSNAME_INPUT:
+    locator-type: "data-qa-label [BRSendAGiftRecipientNameTxt]"
+    test-data-variable:
+      - SENDAGIFT_RECIPENTNAME_DEFAULT_VALUE
+  SENDAGIFT_DELIVERYOPTION_TEXT_BUTTON:
+    locator-type: "qa-attribute [BRSendAGiftTextBtn]"
+  SENDAGIFT_RECIPIENTSPHONE_INPUT:
+    locator-type: "data-test-id [TBD]"
+  SENDAGIFT_INCORRECTEMAIL_ERROR_LABEL:
+    locator-type: "i18"
+  SENDAGIFT_INCORRECTPHONE_ERROR_LABEL:
+    locator-type: "i18 [TBD]"
+  SENDAGIFT_GOTOMYCONTACTS_LINK:
+    locator-type: "data-test-id [BRGoToMyContactsLink]"
+  SENDAGIFT_GOTOMYCONTACTS_POPUP_HEADER:
+    locator-type: "i18"
+  SENDAGIFT_CONFIRMATION_TEXT:
+    locator-type: "i18"
+
+BIOMETRIC-PAGE:
+  BIOMETRIC_LOGIN_ENABLE_LINK:
+    locator-type: "i18"
+  BIOMETRIC_ON_TOGGLE_BUTTON:
+    locator-type: "data-test-id [BRBiometricsToggleBtn]"
+  BIOMETRIC_LOGIN_TITLE:
+    locator-type: "i18"
+  BIOMETRIC_NOTENROLLED_ERROR_TITLE:
+    locator-type: "i18"
+  BIOMETRIC_NOTENROLLED_ERROR_TEXT:
+    locator-type: "i18"
+  BIOMETRIC_NOTENROLLED_ERROR_OK_BUTTON:
+    locator-type: "qa-attribute [BRConfirmPopUpYes]"

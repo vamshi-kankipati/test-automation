@@ -1,0 +1,15 @@
+{
+    "context": "variable_context",
+    "sorted_items_dtl": {
+        "selected_items": "selected_items_in_test_data"
+    },
+    "user_dtl": {
+        "user_id":null,
+        "is_loggedin":0,
+        "browser_time": "order_time"
+    },
+    "store_dtl": {
+        "store_id": "variable_store_id",
+        "order_datetime": "order_time"
+    }
+}

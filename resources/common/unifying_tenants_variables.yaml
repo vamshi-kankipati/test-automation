@@ -1,0 +1,111 @@
+---
+LOAD APP:
+  default_load_app_flow
+  default_load_app_startup_data
+
+LBS:
+  default_turn_off_lbs_notifications_flow
+
+LOGIN:
+  default_login_homepage_nav
+  login_submit_credentials_flow
+  login_authentication_data
+  login_successfull_assertion
+  login_successful_data
+  default_login_checkout_nav
+  default_login_submit_credentials_flow
+  default_login_authentication_data
+
+SIGN UP:
+  signup_homepage_nav
+  signup_enter_new_user_details_flow
+  signup_valid_testdata
+
+STORE LOCATOR - PICKUP:
+  default_sl_pickup_homepage_nav
+  default_sl_pickup_homepage_data
+  default_sl_pickup_store_selection_flow
+  default_pickup_address_data
+  order_time_pickup_later_flow
+  pickup_later_data
+  default_order_time_pickup_asap_flow
+
+STORE LOCATOR - DELIVERY:
+  sl_delivery_homepage_nav
+  sl_delivery_homepage_data
+  sl_delivery_store_selection_flow
+  delivery_address_data
+  order_time_delivery_later_flow
+  delivery_later_data
+  order_time_delivery_asap_flow
+
+MENU:
+  default_add_alacarte_item_flow
+  default_alacarte_item_data
+  menu_alacarte_product_nav
+  add_combo_item_flow
+  combo_item_data
+
+RECOMMENDER:
+  recommender_skip_recommendations_flow
+
+CART:
+  default_cart_menu_nav
+  cart_pickup_person_flow
+  cart_pickup_person_data
+  cart_fetch_total_amount_flow
+  cart_fetch_total_amount_data
+  cart_fetch_product_detail_flow
+  cart_fetch_product_detail_data
+  delete_item_cart_flow
+  delete_alacarte_item_data
+  cart_item_details_assertion
+  cart_item_details_combo_data
+  cart_correct_total_assertion
+  edit_combo_item_cart_flow
+  edit_combo_item_data
+  cart_item_details_updated_combo_data
+  cart_delete_item_assertion
+  cart_delete_item_alacarte_data
+
+FETCH_FOR_LATER_USER:
+  cart_fetch_subtotal_amount_flow
+  cart_fetch_subtotal_amount_data
+  cart_fetch_total_amount_flow
+  cart_fetch_total_amount_data
+  cart_fetch_product_detail_flow
+  cart_fetch_product_detail_data
+
+CHECKOUT:
+  default_checkout_cart_nav
+  checkout_item_details_exact_match_assertion
+  checkout_item_details_exact_match_data
+  checkout_fetched_item_detail_assertion
+  checkout_fetched_item_detail_data
+  checkout_item_details_assertion
+  checkout_item_details_updated_combo_data
+
+PAYMENT PAGE:
+  default_place_order_credit_card_flow
+  default_place_order_credit_card_data
+
+ORDER CONFIRMATION:
+  order_confirmation_delivery_order_details_assertion
+  order_confirmation_delivery_later_order_details_data
+  order_confirmation_pickup_order_details_assertion
+  order_confirmation_pickup_later_order_details_data
+  order_confirmation_pickup_store_details_assertion
+  order_confirmation_pickup_store_details_data
+  order_confirmation_pickup_alacarte_item_details_assertion
+  order_confirmation_alacarte_item_details_data
+  order_confirmation_visual_assertion
+  order_confirmation_visual_data
+  order_confirmation_delivery_details_assertion
+  order_confirmation_delivery_details_data
+  order_confirmation_delivery_alacarte_item_details_assertion
+  order_confirmation_alacarte_item_details_data
+  order_confirmation_delivery_later_visual_data
+  order_confirmation_pickup_combo_item_details_assertion
+  order_confirmation_combo_item_updated_mod_details_data
+  order_confirmation_delivery_combo_item_details_assertion
+  order_confirmation_combo_item_updated_mod_details_data
