@@ -1,0 +1,54 @@
+jb-ph-mobile:
+  qa_b:
+    token: "41163931198565171921969326382443322432018449912551984729"
+    projectId: 1111
+    android:
+      testRunId: 632303
+      testFairyProjectId: 6829900
+    ios:
+      testRunId: 666747
+      testFairyProjectId: 6829900
+  prod:
+    token: "41163931198565171921969326382443322432018449912551984729"
+    projectId: 1111
+    android:
+      testRunId: 632303
+      menuTestRunId: 632303
+      testFairyProjectId: 6829900
+    ios:
+      testRunId: 666747
+      menuTestRunId: 632303
+      testFairyProjectId: 6829900
+jollibee_web:
+  qa_b:
+    token: "11223344"
+    projectId: 300192
+    testRunId: 666748
+  prod:
+    token: "11224355"
+    projectId: 300192
+    testRunId: 666748
+    menuTestRunId: 632303
+test1_web:
+  qa_b:
+    token: "21882318346766778013971558762558916973571387195425173544"
+    projectId: 371425
+    testRunId: 666748
+test2_web:
+  qa_b:
+    token: "21882318346766778013971558762558916973571387195425173544"
+    projectId: 371425
+    testRunId: 666748
+ck-ph-mobile:
+  qa_b:
+    token: "21882318346766778013971558762558916973571387195425173544"
+    projectId: 371425
+    android:
+      testRunId: 666748
+    ios:
+      testRunId: 666748
+ck-ph-web:
+  qa_b:
+    token: "449229737404609903813501372061265899452155521167010303672"
+    projectId: 372322
+    testRunId: 755754
