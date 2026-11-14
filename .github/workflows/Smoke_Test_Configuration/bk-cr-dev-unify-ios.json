@@ -1,0 +1,13 @@
+{      
+  "environments": "dev-b",
+  "tags": "-i login -i place_order",
+  "tenants": "bk-cr",
+  "retries": "true",
+  "versiontested": "BKCR IOS Weekly Execution",
+  "device": "iPhone 15",
+  "os_version": "26.0",
+  "test_fairy_id": "6978360",
+  "suite_names": [
+    "suite_1"
+  ]
+}

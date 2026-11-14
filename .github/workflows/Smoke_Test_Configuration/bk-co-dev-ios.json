@@ -1,0 +1,17 @@
+{
+    "TENANT": "bk-co",
+    "PLATFORM": "mobile",
+    "TENANT_URL": "https://pwa-bk-co-b.dev.tillster.com/",
+    "OS": "iOS",
+    "TESTRUNID": 1083539,
+    "DEVICE": "iPhone 15",
+    "ENVIRONMENT": "dev-b_pwa",
+    "APPURL": "bs://5ab43f7b10abb1a03eaea7735893854bfa98b9f8",
+    "VERSIONTESTED": "BKCO IOS Weekly Execution",
+    "TEST_FAIRY_PROJECT_ID": "3643",
+    "OS_VERSION": "26.0",
+    "PROJECT_ID": 96,
+    "PROJECT_TOKEN": "420777574102743779813",
+    "CHANNEL": "bk-co-automation-bot",
+    "SUITE_NAMES": ["Suite_2","Suite_4","Suite_5"]
+}

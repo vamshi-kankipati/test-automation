@@ -1,0 +1,13 @@
+{      
+  "environments": "dev-b",
+  "tags": "-i login -i place_order",
+  "tenants": "bk-co",
+  "retries": "true",
+  "versiontested": "BKCO Android Weekly Execution",
+  "device": "Samsung Galaxy S26",
+  "os_version": "16",
+  "test_fairy_id": "6979022",
+  "suite_names": [
+    "suite_1"
+  ]
+}

@@ -1,0 +1,11 @@
+{      
+  "environments": "dev-b",
+  "tags": "-i login -i place_order",
+  "tenants": "bk-co",
+  "retries": "true",
+  "versiontested": "BKCO Web Weekly Execution",
+  "headless": "false",
+  "suite_names": [
+    "suite_1"
+  ]
+}

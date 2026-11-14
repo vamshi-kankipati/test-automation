@@ -1,0 +1,11 @@
+{      
+  "TESTRUNID": "912587",
+  "TENANT_URL": "https://www-por-us-a.demo.tillster.com/",
+  "TENANT": "por-us-web",
+  "ENVIRONMENT": "demo_a",
+  "PROJECT_ID": "382229",
+  "HEADLESS": "true",
+  "EXECUTION_LINE": "PRODUCTION",
+  "PROJECT_TOKEN": "123801799697432248436057420285749339681395261167138389895",
+  "SUITE_NAMES": ["Suite_1","Suite_2","Suite_3"]
+}

@@ -1,0 +1,11 @@
+{      
+  "TESTRUNID": "936717",
+  "TENANT_URL": "https://www-bp-ca-b.qa.tillster.com/",
+  "TENANT": "bp_ca_web",
+  "ENVIRONMENT": "qa_b",
+  "PROJECT_ID": "382793",
+  "HEADLESS": "true",
+  "EXECUTION_LINE": "PRODUCTION",
+  "PROJECT_TOKEN": "306207310794220617737335551566131797332866977968674583572",
+  "SUITE_NAMES": ["Suite_1","Suite_2","Suite_3"]
+}

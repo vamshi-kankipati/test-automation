@@ -1,0 +1,17 @@
+{
+    "TENANT": "bk-co",
+    "PLATFORM": "mobile",
+    "OS": "Android",
+    "TENANT_URL": "https://pwa-bk-co-b.qa.tillster.com/",
+    "TESTRUNID": 1063637,
+    "DEVICE": "Samsung Galaxy S24",
+    "ENVIRONMENT": "qa-b_pwa",
+    "APPURL": "bs://63bfdedd406c7ce94a4780fb1602b0eadafcbe3b",
+    "VERSIONTESTED": "BKCO ANDROID Weekly Execution",
+    "TEST_FAIRY_PROJECT_ID": "3703",
+    "OS_VERSION": 14,
+    "PROJECT_ID": 96,
+    "PROJECT_TOKEN": "420777574102743779813",
+    "CHANNEL": "bk-co-automation-bot",
+    "SUITE_NAMES": ["Suite_2","Suite_4","Suite_5"]
+}

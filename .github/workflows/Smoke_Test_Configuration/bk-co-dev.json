@@ -1,0 +1,12 @@
+{      
+  "TESTRUNID": "1039774",
+  "TENANT_URL": "https://pwa-bk-co-b.dev.tillster.com/",
+  "TENANT": "bk-co",
+  "ENVIRONMENT": "dev-b_pwa",
+  "PROJECT_ID": "96",
+  "HEADLESS": "true",
+  "EXECUTION_LINE": "PRODUCTION",
+  "PROJECT_TOKEN": "420777574102743779813",
+  "CHANNEL": "bk-co-automation-bot",
+  "SUITE_NAMES": ["Suite_2","Suite_4","Suite_5"]
+}
